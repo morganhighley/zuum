@@ -1,0 +1,468 @@
+{
+  "name": "Zuum Media H10X10-4K6G",
+  "version": "1.0.0",
+  "manufacturer": "Zuum Media",
+  "model": "H10X10-4K6G",
+  "type": "MatrixSwitcher",
+  "description": "4K60Hz 10x10 HDMI Matrix Switcher with Audio Extraction",
+  "author": "Crestron Driver",
+  "connectionType": "serial",
+  "communication": {
+    "protocol": "RS232",
+    "baudRate": 9600,
+    "dataBits": 8,
+    "stopBits": 1,
+    "parity": "None",
+    "delimiter": "\r\n"
+  },
+  "commands": {
+    "powerOn": {
+      "command": "POWER 01\r\n",
+      "description": "Power On Matrix"
+    },
+    "powerOff": {
+      "command": "POWER 00\r\n",
+      "description": "Power Off Matrix (Standby)"
+    },
+    "routeInput": {
+      "command": "TX{output} {input}\r\n",
+      "description": "Route input to output",
+      "parameters": {
+        "output": {
+          "type": "integer",
+          "min": 1,
+          "max": 10
+        },
+        "input": {
+          "type": "integer",
+          "min": 0,
+          "max": 10,
+          "note": "0 = OFF"
+        }
+      }
+    },
+    "audioSelect": {
+      "command": "AUDIO{output} {source}\r\n",
+      "description": "Select audio source for SPDIF output",
+      "parameters": {
+        "output": {
+          "type": "integer",
+          "min": 1,
+          "max": 2,
+          "note": "SPDIF output 1 or 2"
+        },
+        "source": {
+          "type": "string",
+          "values": ["H", "A"],
+          "note": "H=HDMI, A=ARC"
+        }
+      }
+    },
+    "saveScene": {
+      "command": "SAVE {scene}\r\n",
+      "description": "Save current configuration to scene",
+      "parameters": {
+        "scene": {
+          "type": "integer",
+          "min": 1,
+          "max": 10
+        }
+      }
+    },
+    "loadScene": {
+      "command": "LOAD {scene}\r\n",
+      "description": "Load saved scene configuration",
+      "parameters": {
+        "scene": {
+          "type": "integer",
+          "min": 1,
+          "max": 10
+        }
+      }
+    },
+    "lockPanel": {
+      "command": "LOCK {state}\r\n",
+      "description": "Lock/Unlock front panel and IR remote",
+      "parameters": {
+        "state": {
+          "type": "integer",
+          "values": [0, 1],
+          "note": "0=Unlock, 1=Lock"
+        }
+      }
+    },
+    "setIRID": {
+      "command": "IRID {id}\r\n",
+      "description": "Set IR Remote ID",
+      "parameters": {
+        "id": {
+          "type": "integer",
+          "min": 0,
+          "max": 9
+        }
+      }
+    },
+    "setDHCP": {
+      "command": "DHCP {state}\r\n",
+      "description": "Enable/Disable DHCP Client",
+      "parameters": {
+        "state": {
+          "type": "integer",
+          "values": [0, 1],
+          "note": "0=Disable, 1=Enable"
+        }
+      }
+    },
+    "setIPAddress": {
+      "command": "IP_ADDRESS {ip}\r\n",
+      "description": "Set IP Address",
+      "parameters": {
+        "ip": {
+          "type": "string",
+          "format": "xxx.xxx.xxx.xxx"
+        }
+      }
+    },
+    "setSubnetMask": {
+      "command": "SUBNET_MASK {mask}\r\n",
+      "description": "Set Subnet Mask",
+      "parameters": {
+        "mask": {
+          "type": "string",
+          "format": "xxx.xxx.xxx.xxx"
+        }
+      }
+    },
+    "setGateway": {
+      "command": "GATEWAY {gateway}\r\n",
+      "description": "Set Gateway",
+      "parameters": {
+        "gateway": {
+          "type": "string",
+          "format": "xxx.xxx.xxx.xxx"
+        }
+      }
+    },
+    "setMediaType": {
+      "command": "MEDIA_TYPE {type}\r\n",
+      "description": "Set Network Media Type",
+      "parameters": {
+        "type": {
+          "type": "integer",
+          "values": [0, 1, 2],
+          "note": "0=Auto, 1=10M, 2=100M"
+        }
+      }
+    },
+    "setMACFilter": {
+      "command": "MAC_FILTER {state}\r\n",
+      "description": "Enable/Disable MAC Filtering",
+      "parameters": {
+        "state": {
+          "type": "integer",
+          "values": [0, 1],
+          "note": "0=Disable, 1=Enable"
+        }
+      }
+    },
+    "getStatus": {
+      "command": "STATUS\r\n",
+      "description": "Get connection status"
+    },
+    "getVersion": {
+      "command": "VERSION\r\n",
+      "description": "Get firmware version"
+    },
+    "getHelp": {
+      "command": "HELP\r\n",
+      "description": "Get command help"
+    }
+  },
+  "properties": {
+    "power": {
+      "type": "boolean",
+      "description": "Power state",
+      "readOnly": false
+    },
+    "routing": {
+      "type": "object",
+      "description": "Current routing configuration",
+      "properties": {
+        "output1": {"type": "integer", "min": 0, "max": 10},
+        "output2": {"type": "integer", "min": 0, "max": 10},
+        "output3": {"type": "integer", "min": 0, "max": 10},
+        "output4": {"type": "integer", "min": 0, "max": 10},
+        "output5": {"type": "integer", "min": 0, "max": 10},
+        "output6": {"type": "integer", "min": 0, "max": 10},
+        "output7": {"type": "integer", "min": 0, "max": 10},
+        "output8": {"type": "integer", "min": 0, "max": 10},
+        "output9": {"type": "integer", "min": 0, "max": 10},
+        "output10": {"type": "integer", "min": 0, "max": 10}
+      }
+    },
+    "audioSources": {
+      "type": "object",
+      "description": "SPDIF audio source selection",
+      "properties": {
+        "spdif1": {"type": "string", "enum": ["H", "A"]},
+        "spdif2": {"type": "string", "enum": ["H", "A"]}
+      }
+    },
+    "panelLocked": {
+      "type": "boolean",
+      "description": "Front panel lock state"
+    },
+    "irID": {
+      "type": "integer",
+      "description": "IR Remote ID",
+      "min": 0,
+      "max": 9
+    },
+    "version": {
+      "type": "string",
+      "description": "Firmware version",
+      "readOnly": true
+    }
+  },
+  "actions": [
+    {
+      "name": "Power On",
+      "id": "powerOn",
+      "command": "powerOn"
+    },
+    {
+      "name": "Power Off",
+      "id": "powerOff",
+      "command": "powerOff"
+    },
+    {
+      "name": "Route Input 1 to Output 1",
+      "id": "route_1_to_1",
+      "command": "routeInput",
+      "parameters": {"output": 1, "input": 1}
+    },
+    {
+      "name": "Route Input 2 to Output 1",
+      "id": "route_2_to_1",
+      "command": "routeInput",
+      "parameters": {"output": 1, "input": 2}
+    },
+    {
+      "name": "Route Input 3 to Output 1",
+      "id": "route_3_to_1",
+      "command": "routeInput",
+      "parameters": {"output": 1, "input": 3}
+    },
+    {
+      "name": "Route Input 4 to Output 1",
+      "id": "route_4_to_1",
+      "command": "routeInput",
+      "parameters": {"output": 1, "input": 4}
+    },
+    {
+      "name": "Route Input 5 to Output 1",
+      "id": "route_5_to_1",
+      "command": "routeInput",
+      "parameters": {"output": 1, "input": 5}
+    },
+    {
+      "name": "Route Input 6 to Output 1",
+      "id": "route_6_to_1",
+      "command": "routeInput",
+      "parameters": {"output": 1, "input": 6}
+    },
+    {
+      "name": "Route Input 7 to Output 1",
+      "id": "route_7_to_1",
+      "command": "routeInput",
+      "parameters": {"output": 1, "input": 7}
+    },
+    {
+      "name": "Route Input 8 to Output 1",
+      "id": "route_8_to_1",
+      "command": "routeInput",
+      "parameters": {"output": 1, "input": 8}
+    },
+    {
+      "name": "Route Input 9 to Output 1",
+      "id": "route_9_to_1",
+      "command": "routeInput",
+      "parameters": {"output": 1, "input": 9}
+    },
+    {
+      "name": "Route Input 10 to Output 1",
+      "id": "route_10_to_1",
+      "command": "routeInput",
+      "parameters": {"output": 1, "input": 10}
+    },
+    {
+      "name": "Turn Off Output 1",
+      "id": "off_output_1",
+      "command": "routeInput",
+      "parameters": {"output": 1, "input": 0}
+    },
+    {
+      "name": "Load Scene 1",
+      "id": "loadScene1",
+      "command": "loadScene",
+      "parameters": {"scene": 1}
+    },
+    {
+      "name": "Load Scene 2",
+      "id": "loadScene2",
+      "command": "loadScene",
+      "parameters": {"scene": 2}
+    },
+    {
+      "name": "Load Scene 3",
+      "id": "loadScene3",
+      "command": "loadScene",
+      "parameters": {"scene": 3}
+    },
+    {
+      "name": "Load Scene 4",
+      "id": "loadScene4",
+      "command": "loadScene",
+      "parameters": {"scene": 4}
+    },
+    {
+      "name": "Load Scene 5",
+      "id": "loadScene5",
+      "command": "loadScene",
+      "parameters": {"scene": 5}
+    },
+    {
+      "name": "Load Scene 6",
+      "id": "loadScene6",
+      "command": "loadScene",
+      "parameters": {"scene": 6}
+    },
+    {
+      "name": "Load Scene 7",
+      "id": "loadScene7",
+      "command": "loadScene",
+      "parameters": {"scene": 7}
+    },
+    {
+      "name": "Load Scene 8",
+      "id": "loadScene8",
+      "command": "loadScene",
+      "parameters": {"scene": 8}
+    },
+    {
+      "name": "Load Scene 9",
+      "id": "loadScene9",
+      "command": "loadScene",
+      "parameters": {"scene": 9}
+    },
+    {
+      "name": "Load Scene 10",
+      "id": "loadScene10",
+      "command": "loadScene",
+      "parameters": {"scene": 10}
+    },
+    {
+      "name": "Save Scene 1",
+      "id": "saveScene1",
+      "command": "saveScene",
+      "parameters": {"scene": 1}
+    },
+    {
+      "name": "Save Scene 2",
+      "id": "saveScene2",
+      "command": "saveScene",
+      "parameters": {"scene": 2}
+    },
+    {
+      "name": "Save Scene 3",
+      "id": "saveScene3",
+      "command": "saveScene",
+      "parameters": {"scene": 3}
+    },
+    {
+      "name": "Save Scene 4",
+      "id": "saveScene4",
+      "command": "saveScene",
+      "parameters": {"scene": 4}
+    },
+    {
+      "name": "Save Scene 5",
+      "id": "saveScene5",
+      "command": "saveScene",
+      "parameters": {"scene": 5}
+    },
+    {
+      "name": "SPDIF 1 - Select HDMI Audio",
+      "id": "spdif1_hdmi",
+      "command": "audioSelect",
+      "parameters": {"output": 1, "source": "H"}
+    },
+    {
+      "name": "SPDIF 1 - Select ARC Audio",
+      "id": "spdif1_arc",
+      "command": "audioSelect",
+      "parameters": {"output": 1, "source": "A"}
+    },
+    {
+      "name": "SPDIF 2 - Select HDMI Audio",
+      "id": "spdif2_hdmi",
+      "command": "audioSelect",
+      "parameters": {"output": 2, "source": "H"}
+    },
+    {
+      "name": "SPDIF 2 - Select ARC Audio",
+      "id": "spdif2_arc",
+      "command": "audioSelect",
+      "parameters": {"output": 2, "source": "A"}
+    },
+    {
+      "name": "Lock Front Panel",
+      "id": "lockPanel",
+      "command": "lockPanel",
+      "parameters": {"state": 1}
+    },
+    {
+      "name": "Unlock Front Panel",
+      "id": "unlockPanel",
+      "command": "lockPanel",
+      "parameters": {"state": 0}
+    },
+    {
+      "name": "Get Status",
+      "id": "getStatus",
+      "command": "getStatus"
+    },
+    {
+      "name": "Get Version",
+      "id": "getVersion",
+      "command": "getVersion"
+    }
+  ],
+  "feedback": {
+    "OK": {
+      "pattern": "^OK$",
+      "description": "Command executed successfully"
+    },
+    "NG": {
+      "pattern": "^NG$",
+      "description": "Command failed or invalid"
+    }
+  },
+  "notes": [
+    "Default RS-232 settings: 9600 baud, 8 data bits, No parity, 1 stop bit",
+    "Commands are case insensitive",
+    "Space character (△) is required between command and parameter",
+    "Command terminator is CR+LF (0D0A)",
+    "Device responds with 'OK' for successful commands, 'NG' for errors",
+    "In standby mode, IR remote can only power on the matrix",
+    "ENTER must be pressed to execute any change of menu settings on front panel",
+    "10 scene presets can be saved and recalled",
+    "Audio source can be HDMI (H) or ARC (A) for each SPDIF output",
+    "Output 0 turns off the selected output",
+    "IR Remote ID must match matrix IR ID setting (default is 4)",
+    "Web GUI available at default IP: 192.168.0.10",
+    "TCP/IP control available on port 47011",
+    "Supports EDID management via front panel menu",
+    "Maximum 4 simultaneous web GUI connections"
+  ]
+}
