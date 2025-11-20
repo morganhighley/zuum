@@ -1,0 +1,126 @@
+{
+  "CrestronSerialDeviceApi": {
+    "GeneralInformation": {
+      "DeviceType": "Matrix Switcher",
+      "Manufacturer": "Zuum Media",
+      "BaseModel": "H10X10-4K6G",
+      "DriverVersion": "6.00.000.0026",
+      "DriverTypeEnum": 0,
+      "GUID": "8f2c4e6d-9a1b-4c7f-b8d2-3e5f6a7b8c9d"
+    },
+    "Api": {
+      "Communication": {
+        "CommunicationType": 1,
+        "Protocol": 0,
+        "DefaultPort": 47011
+      },
+      "StandardCommands": {
+        "PowerOn": {
+          "StandardCommand": 6602,
+          "Command": "POWER 01",
+          "Acknowledge": "OK",
+          "Delay": 100,
+          "WaitForResponse": false
+        },
+        "PowerOff": {
+          "StandardCommand": 6603,
+          "Command": "POWER 00",
+          "Acknowledge": "OK",
+          "Delay": 100,
+          "WaitForResponse": false
+        },
+        "RouteInputToOutput": {
+          "StandardCommand": 8000,
+          "Command": "TX!$[0] !$[1]",
+          "Acknowledge": "OK",
+          "Delay": 50,
+          "WaitForResponse": false,
+          "Parameters": [
+            {
+              "TypeName": "UserAttributeComboBox",
+              "ParameterId": "Output",
+              "Label": "Output",
+              "Persistent": false,
+              "RequiredForConnection": "None",
+              "Data": {
+                "DataType": "unsignedint",
+                "Mask": "",
+                "DefaultValue": "1",
+                "MinValue": "1",
+                "MaxValue": "10"
+              }
+            },
+            {
+              "TypeName": "UserAttributeComboBox",
+              "ParameterId": "Input",
+              "Label": "Input",
+              "Persistent": false,
+              "RequiredForConnection": "None",
+              "Data": {
+                "DataType": "unsignedint",
+                "Mask": "",
+                "DefaultValue": "1",
+                "MinValue": "1",
+                "MaxValue": "10"
+              }
+            }
+          ]
+        },
+        "SaveScene": {
+          "StandardCommand": 8001,
+          "Command": "SAVE !$[0]",
+          "Acknowledge": "OK",
+          "Delay": 100,
+          "WaitForResponse": false,
+          "Parameters": [
+            {
+              "TypeName": "UserAttributeComboBox",
+              "ParameterId": "Scene",
+              "Label": "Scene Number",
+              "Persistent": false,
+              "RequiredForConnection": "None",
+              "Data": {
+                "DataType": "unsignedint",
+                "Mask": "",
+                "DefaultValue": "1",
+                "MinValue": "1",
+                "MaxValue": "8"
+              }
+            }
+          ]
+        },
+        "LoadScene": {
+          "StandardCommand": 8002,
+          "Command": "LOAD !$[0]",
+          "Acknowledge": "OK",
+          "Delay": 100,
+          "WaitForResponse": false,
+          "Parameters": [
+            {
+              "TypeName": "UserAttributeComboBox",
+              "ParameterId": "Scene",
+              "Label": "Scene Number",
+              "Persistent": false,
+              "RequiredForConnection": "None",
+              "Data": {
+                "DataType": "unsignedint",
+                "Mask": "",
+                "DefaultValue": "1",
+                "MinValue": "1",
+                "MaxValue": "8"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "DeviceSupport": {
+      "CableBoxData": {
+        "WarmupTime": 3000,
+        "CooldownTime": 1000,
+        "IsPowerSupported": true,
+        "IsChannelSupported": false
+      }
+    }
+  }
+}
