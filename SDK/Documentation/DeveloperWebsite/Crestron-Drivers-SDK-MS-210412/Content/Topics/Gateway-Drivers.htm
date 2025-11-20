@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_TPSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Create Platform Drivers</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/TP-Global-Styles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/Stylesheets/TP-Global-Table-Styles.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" src="../../Skins/Default/Scripts/TPSkin-TopicToolbar.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.crestron.com" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="padding">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Create Platform Drivers</h1>
+                                            <p>This topic describes how to create a Crestron Driver for a platform device.  A platform driver is an entity that allows for communication with one or more paired devices. The platform driver can be a cloud-based or a physical device controlling a list of paired devices.</p>
+                                            <h2>Overview</h2>
+                                            <p>A&#160;platform driver inherits several component interfaces that define specific features. IGateway is the interface used for implementing platform driver.</p>
+                                            <p>When the application requires an instance of the paired device, it must call the <span class="codeinline">GetDeviceInstance()</span> method on the platform driver to instantiate the paired device.</p>
+                                            <p>Paired devices in platform drivers are represented as an IDeviceInformation interface, which contains metadata of the paired device. Each paired device must inherit from ABasicDriver and follow the driver creation process.</p>
+                                            <p>Refer to the following table for more information.</p>
+                                            <table style="mc-table-style: url('../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;">Property</th>
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;">Description and Use</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Id</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">A unique identifier for the device, should persist across reboots. This can be a MAC address or any other device specific identifier.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Name</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">A user friendly name for the device. Ideally, this would be a name assigned to the device by the user.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Description</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">A user friendly description of the device.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Manufacturer</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The name of the manufacturer.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Model</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The name of the device model.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">DeviceType</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The type of device should match a value from the <span class="codeinline">Crestron.RAD.Common.Enums.DeviceTypes</span> enum. If the device type is not listed in the DeviceTypes enumeration, a custom value may be used if the device is a Crestron Home Extension device driver. </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">DeviceSubType</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The subtype of the device. This field is optional and can be used to further specify the type of the device (for example, <span class="codeinline">DeviceType</span> = Appliance, <span class="codeinline">DeviceSubtype</span> = Dishwasher).</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AssemblyFileName</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The filename of the assembly containing the class for the driver, including the .dll extension.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">ClassName</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The fully qualified name of the class instance that will be instantiated for this device, including the namespace.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">SupportedInterfaces</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The collection of interfaces the device supports. This returns an <span class="codeinline">IEnumerable&lt;string&gt;</span> of interface names, including the namespace.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">UserAttributes</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">A list of user attributes that the device contains.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Platform Abstract Driver</h3>
+                                            <p>The platform abstract driver class is responsible for providing the application methods that will then provide a list of paired devices, the creation of a paired device instance, and an event to notify applications when there is a change to the list of paired devices. AGateway is the abstract class that represents platform abstract driver class.</p>
+                                            <p>The following table describes the available methods on the abstract platform driver.</p>
+                                            <table style="mc-table-style: url('../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;">Method</th>
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;">Description and Use</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">GetDevices()</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1" style="font-weight: normal;">This method is called by the applications to get list of paired devices on the platform device. </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">GetDeviceInstance&lt;T&gt;(string deviceId) </td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">This method is called by the applications to get the instance of a paired device on the platform device. <br /><br />The DeviceId is associated with paired device.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">DeviceListChanged<br />&lt;ListChangedEventArgs&lt;IDeviceInformation&gt;&gt;</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">This method is an event to notify the applications when there is a change in the list of paired devices. (Ex., a paired device is added or removed.)</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>
+                                                <br />Every platform main driver class inherits this class to have the supported functionality implemented.</p>
+                                            <p>Refer to the following code.</p>
+                                            <p class="codeboxshade">public abstract class AGateway : ABasicDriver, IGateway<br />{<br /><span class="indent">private AGatewayProtocol _gatewayProtocol;<br />protected GatewayRootObject GatewayData;<br />private bool _isDisposed;<br /><br />protected AGatewayProtocol Protocol<br />{<br /><span class="indent2">get { return _gatewayProtocol; }<br />set<br />{<br /><span class="indent">if (_gatewayProtocol != null)<br />{<br /><span class="indent2">_gatewayProtocol.DeviceListChanged -= OnDeviceListChanged;<br />_gatewayProtocol.ConnectedChanged -= ProtocolConnectedChanged;</span>}<br /><br />_gatewayProtocol = value;<br />DeviceProtocol = _gatewayProtocol;<br /><br />if (value != null)<br />{<br /><span class="indent2">_gatewayProtocol.DeviceListChanged -= OnDeviceListChanged;<br />_gatewayProtocol.DeviceListChanged += OnDeviceListChanged;<br /><br />_gatewayProtocol.ConnectedChanged -= ProtocolConnectedChanged;<br />_gatewayProtocol.ConnectedChanged += ProtocolConnectedChanged;</span>}</span>}</span>}<br /><br />#region Initialization<br /><br />public AGateway()<br />{<br /><br />}<br />#endregion Initialization<br /><br />#region ABasicDriver<br /><br />public override void ConvertJsonFileToDriverData(string jsonString)<br />{<br /><span class="indent2">GatewayData = JsonConvert.DeserializeObject&lt;GatewayRootObject&gt;(jsonString, CreateSerializerSettings());<br /><br />base.Initialize(GatewayData);</span>}<br /><br />public override CType AbstractClassType<br />{<br /><span class="indent2">get { return GetType(); }</span>}<br /><br />#endregion ABasicDriver<br /><br />#region IBasicGateway<br /><br />public event EventHandler&lt;ListChangedEventArgs&lt;IDeviceInformation&gt;&gt; DeviceListChanged;<br /><br />public IEnumerable&lt;IDeviceInformation&gt; GetDevices()<br />{<br /><span class="indent2">return _gatewayProtocol != null ? _gatewayProtocol.Devices : null;</span>}<br /><br />public T GetDeviceInstance&lt;T&gt;(string deviceId) where T : class<br />{<br /><span class="indent2">if (_gatewayProtocol == null)<br />return default(T);<br /><br />return _gatewayProtocol.GetPairedDeviceInstance&lt;T&gt;(deviceId);</span>}<br /><br />public override void Dispose()<br />{<br /><span class="indent2">if (_gatewayProtocol != null &amp;&amp; !_isDisposed)<br />{<br /><span class="indent">_isDisposed = true;<br />_gatewayProtocol.DeviceListChanged -= OnDeviceListChanged;<br />_gatewayProtocol.ConnectedChanged -= ProtocolConnectedChanged;</span>}<br />base.Dispose();</span>}<br /><br />#endregion IBasicGateway<br /><br />#region IConnection3 Members<br /><br />protected virtual void ProtocolConnectedChanged(object driver, ValueEventArgs&lt;bool&gt; e)<br />{<br /><span class="indent2">if (e != null)<br />Connected = e.Value;</span>}<br /><br />#endregion<br /><br />#region Private-Members<br /><br />protected virtual void OnDeviceListChanged(object sender, ListChangedEventArgs&lt;IDeviceInformation&gt;  deviceListChangedEventArgs)<br />{<br /><span class="indent2">if (DeviceListChanged != null)<br />DeviceListChanged(this, deviceListChangedEventArgs);</span>}<br /><br />#endregion Private-Members</span>}</p>
+                                            <h3>Platform Abstract Protocol</h3>
+                                            <p>The platform driver’s protocol class contains most of the API-specific logic, such as the creation of paired device information, the creation of paired device instances, and events to notify changes if a list of paired devices changed to the actual main platform class.</p>
+                                            <p>This class will maintain a list of paired devices that the concrete platform implementation identified. This class contains a list of methods to manage paired devices on the platform device.</p>
+                                            <p>The following table describes the available methods for this class.</p>
+                                            <table style="mc-table-style: url('../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;">Method</th>
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;">Description and Use</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AddPairedDevice(GatewayPairedDeviceInformation pairedDeviceInfo, ABasicDriver instance)</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1" style="font-weight: normal;">This method is called by the concrete platform driver main class to add a paired device to the list. This accepts GatewayPairedDeviceInformation and the actual instance of the paired device.<br /><br />This will raise a DeviceListChanged event with updated list of paired devices. </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">RemovePairedDevice(string pairedDeviceId)</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">This method is called by the concrete platform driver main class to remove a paired device from the list.<br /><br />This will raise a DeviceListChanged event with an updated list of paired devices.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">RemoveAllPairedDevices()</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">This method is called by the concrete platform driver main class to remove all paired devices from the list.<br /><br />This will raise a DeviceListChanged event with an empty list of paired devices.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">UpdatePairedDevice(string pairedDeviceId, GatewayPairedDeviceInformation newPairedDeviceInformation) </td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">This method is called by the concrete platform driver class. This method updates paired device information associated with the paired device Id on the platform device.<br /><br />This will raise a DeviceListChanged event with an empty list of paired devices. </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">DeviceListChanged<br />&lt;ListChangedEventArgs&lt;IDeviceInformation&gt;&gt;</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">This is an event to notify the main platform driver class of paired device list changes.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>
+                                                <br />Refer to the following sample code.</p>
+                                            <p class="codeboxshade">public abstract class AGatewayProtocol : ABaseDriverProtocol<br />{<br /><span class="indent">#region Events<br />public event EventHandler&lt;ValueEventArgs&lt;bool&gt;&gt; ConnectedChanged;<br />internal event EventHandler&lt;ListChangedEventArgs&lt;IDeviceInformation&gt;&gt; DeviceListChanged;<br /><br />#endregion Events<br /><br />#region Fields<br /><br />private Dictionary&lt;string, IDeviceInformation&gt; _deviceInfoList;<br />private Dictionary&lt;string, ABasicDriver&gt; _instanceList;<br /><br />private CCriticalSection _deviceListLock;<br />private CCriticalSection _userAttributesLock;<br /><br />#endregion Fields<br /><br />#region Properties<br /><br />public ReadOnlyCollection&lt;IDeviceInformation&gt; Devices<br />{<br /><span class="indent2">get<br />{<br /><span class="indent">List&lt;IDeviceInformation&gt; devices = null;<br />try<br />{<span class="indent2"><br />_deviceListLock.Enter();<br />devices = _deviceInfoList.Values.ToList();</span>}<br />catch (Exception e)<br />{<br /><span class="indent2">if (EnableLogging)<br />{<br /><span class="indent">Log(string.Format("Exception while retrieving devices collection: {0}",<br />e.Message));</span>}</span>}<br />finally<br />{<br /><span class="indent2">_deviceListLock.Leave();</span>}<br />return devices != null ? devices.AsReadOnly() : null;</span>}</span>}<br /><br />#endregion Properties<br /><br />#region ABaseDriverProtocol<br /><br />public override void Initialize(object driverData)<br />{<br /><span class="indent2">ValidateResponse = ResponseValidator;<br /><br />base.Initialize(driverData);<br />DriverLoaded = true;</span>}<br /><br />protected override void ConnectionChangedEvent(bool connection)<br />{<br /><span class="indent2">if(ConnectedChanged != null)<br />ConnectedChanged(null, new ValueEventArgs&lt;bool&gt;(connection));</span>}<br /><br />protected override void ChooseDeconstructMethod(ValidatedRxData validatedData)<br />{<br /><span class="indent2">DeConstructResponse(validatedData.Data);</span>}<br /><br />/// &lt;summary&gt;<br />/// No operations performed in base<br />/// &lt;/summary&gt;<br />/// &lt;param name="response"&gt;&lt;/param&gt;<br />protected virtual void DeConstructResponse(string response)<br />{<br /><span class="indent2">// Drivers override this to do whatever they do to do with received data<br />// Hayward would override this and get all data about system configuration, etc<br /><br />// Alternativly, they can override ChooseDeconstructMethod and using CustomCommandGroup</span>}<br /><br />#endregion ABaseDriverProtocol<br /><br />#region Protected Members<br /><br />/// &lt;summary&gt;<br />/// By default, this always returns a new instance of ValidatedRxData with Ready set to False and Data set to response<br />/// &lt;/summary&gt;<br />protected virtual ValidatedRxData ResponseValidator(string response, CommonCommandGroupType commandGroup)<br />{<br /><span class="indent2">return new ValidatedRxData(false, response);</span>}<br /><br />protected void AddPairedDevice(GatewayPairedDeviceInformation pairedDeviceInfo, ABasicDriver instance)<br />{<br /><span class="indent2">// Add Paired device logic goes here.<br />if (DeviceListChanged != null &amp;&amp; deviceInfo != null)<br />DeviceListChanged(this, new ListChangedEventArgs&lt;IDeviceInformation&gt;(ListChangedAction.Added, null, deviceInfo, -1));</span>}<br /><br />protected void RemovePairedDevice(string pairedDeviceId)<br />{<br /><br /><span class="indent2">if (DeviceListChanged != null &amp;&amp; pairedDevice != null)<br />DeviceListChanged(this, new ListChangedEventArgs&lt;IDeviceInformation&gt;(ListChangedAction.Removed, pairedDevice, null, -1));</span>}<br /><br />protected void RemoveAllPairedDevices()<br />{<br /><span class="indent2">try<br />{<br /><span class="indent">_deviceListLock.Enter();<br />_deviceInfoList.Clear();<br />_instanceList.Clear();</span>}<br />catch (Exception ex)<br />{<br /><span class="indent">Log("Exception while removing all devices. {0}" + ex.Message);</span>}<br />finally<br />{<br /><span class="indent">_deviceListLock.Leave();</span>}<br /></span>}<br /><br />protected void UpdatePairedDevice(string pairedDeviceId, GatewayPairedDeviceInformation newPairedDeviceInformation)<br />{<br /><span class="indent2">// Update Paired device logic goes here.<br />DeviceListChanged(this, new ListChangedEventArgs&lt;IDeviceInformation&gt;(ListChangedAction.Reset, oldPairedDevice, newPairedDeviceInfo, -1));</span>}<br /><br />#endregion Protected Members<br /><br />#region Public Members<br /><br />internal T GetPairedDeviceInstance&lt;T&gt;(string deviceId) where T : class<br />{<br /><span class="indent2">ABasicDriver instance;<br />if (_instanceList.TryGetValue(deviceId, out instance))<br />{<br /><span class="indent">return instance as T;</span>}<br /><br />return default(T);</span>}<br /><br />#endregion Public Members<br /></span>}</p>
+                                            <h4>Platform Paired Device Information</h4>
+                                            <p>The platform protocol class must instantiate this class for each paired device identified by the platform device and must call the appropriate method on AGatewayProtocol class to add/modify to the list of paired devices.</p>
+                                            <p>Refer to the following code.</p>
+                                            <p class="codeboxshade">public class GatewayPairedDeviceInformation<br />{<br /><br /><span class="indent">public GatewayPairedDeviceInformation(string id, string name, string description, string manufacturer, string model, string deviceType, string deviceSubtype)<br />{<br /><span class="indent2">Id = id;<br />Name = name;<br />Description = description;<br />Manufacturer = manufacturer;<br />Model = model;<br />DeviceType = deviceType;<br />DeviceSubtype = deviceSubtype;</span>}<br /><br />public string Id { get; private set; }<br />public string Name { get; private set; }<br />public string Description { get; private set; }<br />public string Manufacturer { get; private set; }<br />public string Model { get; private set; }<br />public string DeviceType { get; private set; }<br />public string DeviceSubtype { get; private set; }<br /><br /></span>}</p>
+                                            <h3>Platform Transport</h3>
+                                            <p>The platform main driver class is required to implement one of the transport interfaces, depending on the transport supported by the platform device, so that the applications know how to initialize the driver.</p>
+                                            <table style="mc-table-style: url('../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                <col style="width: 2.75in;" class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <col style="width: 2.75in;" class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;">Transport Type</th>
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;">Required Interface</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">TCP</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1" style="font-weight: normal;">ITcp</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">COM</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">ISerialComport and ISimpl</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CEC</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">ICecDevice</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Cloud</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">ICloudConnected </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>
+                                                <br />If the transport supported by the platform driver  is not listed above, then it must define a custom transport and define a way to initialize the transport by the application.</p>
+                                            <h3>Platform Driver Data</h3>
+                                            <p>A platform root object driver data class is defined to maintain driver specific data to initialize the driver. The driver developer can further inherit this class to add additional information required to initialize the driver.</p>
+                                            <p>Refer to the following code.</p>
+                                            <p class="codeboxshade">public class GatewayRootObject : BaseRootObject<br />{<br /><br />}</p>
+                                            <h3>Platform Driver JSON&#160;Data</h3>
+                                            <p>A platform driver must follow the standard JSON file format as mentioned in <a href="Create-Files.htm" class="MCXref xref">Create the Driver Files</a>. The driver device type should be set as Platform in the device information section.</p>
+                                            <h2>Write a Platform Main Driver</h2>
+                                            <p>The platform main driver will need to written by the driver developer. Developers should not override anything in this class except for if authentication is required.</p>
+                                            <p>First, create a SIMPL# library project (use a SIMPL#Pro library if the driver requires hardware access) and to add a reference to <strong>RADCommon.dll</strong>. Refer to <a href="Create-a-Project.htm" class="MCXref xref">Create the Driver Project</a> for more information.</p>
+                                            <p>Refer to the sample platform driver project below.</p>
+                                            <p>
+                                                <img src="../Resources/Images/Gateway_1.png" style="width: 400px;" />
+                                            </p>
+                                            <p>Next, create the driver class that applications will use. This class must inherit from abstract platform class (<strong>AGateway</strong>).</p>
+                                            <p>The main platform driver class must initialize the protocol class which is derived from AGatewayProtocol and the transport class which is derived from any available standard transport class or the custom transport class depending up on the transport supported by the platform device.</p>
+                                            <p>Refer to the following code.</p>
+                                            <p class="codeboxshade">public sealed class SampleGateway : AGateway, ITcp<br />{<br /><span class="indent">public void Initialize(IPAddress ipAddress, int port)<br />{<br /><span class="indent2">var transport = new SampleGatewayTransport<br />{<br /><span class="indent">EnableLogging = InternalEnableLogging,<br />CustomLogger = InternalCustomLogger,<br />EnableRxDebug = InternalEnableRxDebug,<br />EnableTxDebug = InternalEnableTxDebug</span>};<br /><br />ConnectionTransport = transport;<br /><br />Protocol = new SampleGatewayProtocol(ConnectionTransport, Id)<br />{<br /><span class="indent">EnableLogging = InternalEnableLogging,<br />CustomLogger = InternalCustomLogger</span>};<br /><br />var protocol = Protocol as SampleGatewayProtocol;<br />(ConnectionTransport as SampleGatewayTransport).Protocol = protocol;</span>}<br /><br />public override void Connect()<br />{<br /><span class="indent2">base.Connect();</span>}<br /><br />public override void Disconnect()<br />{<br /><span class="indent2">base.Disconnect();</span>}<br /></span>}</p>
+                                            <p>The platform protocol is responsible for adding, removing, and updating paired devices identified on the platform device.</p>
+                                            <p>Refer to the following code.</p>
+                                            <p class="codeboxshade">public class SampleGatewayProtocol : AGatewayProtocol<br />{<br /><span class="indent">private Dictionary&lt;string, SamplePairedDevice.Devices.SamplePairedDevice&gt; _pairedDevices =<br />new Dictionary&lt;string, SamplePairedDevice.Devices.SamplePairedDevice&gt;();<br /><br />public SampleGatewayProtocol(ISerialTransport transport, byte id) : base(transport, id)<br />{<br /><br />}<br /><br />private void AddSamplePairedDevice(SamplePairedDevice.Devices.SamplePairedDevice pairedDevice)<br />{<br /><span class="indent2">GatewayPairedDeviceInformation pairedDeviceInformation = new GatewayPairedDeviceInformation(pairedDevice.Id,<br />pairedDevice.Name, pairedDevice.Description, pairedDevice.Manufacturer, pairedDevice.Model, pairedDevice.DeviceType,<br />pairedDevice.DeviceSubtype);<br />AddPairedDevice(pairedDeviceInformation, pairedDevice);</span>}<br /><br />private void UpdateSamplePairedDevice(SamplePairedDevice.Devices.SamplePairedDevice pairedDevice)<br />{<br /><span class="indent2">if (_pairedDevices.ContainsKey(pairedDevice.Id))<br />{<br /><span class="indent">GatewayPairedDeviceInformation pairedDeviceInformation = new GatewayPairedDeviceInformation(pairedDevice.Id,<br />pairedDevice.Name, pairedDevice.Description, pairedDevice.Manufacturer, pairedDevice.Model, pairedDevice.DeviceType,<br />pairedDevice.DeviceSubtype);<br /><br />UpdatePairedDevice(pairedDevice.Id, pairedDeviceInformation);</span>}</span>}<br /><br />private void RemovePairedDevice(SamplePairedDevice.Devices.SamplePairedDevice pairedDevice)<br />{<br /><span class="indent2">if (_pairedDevices.ContainsKey(pairedDevice.Id))<br />{<br /><span class="indent">RemovePairedDevice(pairedDevice);</span>}</span>}</span>}</p>
+                                            <p>Finally, the platform driver must reference the paired device DLLs to instantiate and communicate with devices.</p>
+                                            <h3>Write the ResponseValidation Class</h3>
+                                            <p>The ResponseValidation class handles responses from the device and is responsible for parsing the data found in the response.</p>
+                                            <p>Refer to <a href="Create-Files.htm" class="MCXref xref">Create the Driver Files</a> for more information and examples.</p>
+                                            <h3>Write the Transport Class</h3>
+                                            <p>The platform transport class will handle request and responses to the device. Refer to the sample transport given below.</p>
+                                            <p class="codeboxshade">public class SampleGatewayTransport : ATransportDriver<br />{<br /><span class="indent">public SampleGatewayProtocol Protocol;<br /><br />public override void SendMethod(string message, object[] paramaters)<br />{<br /><span class="indent2">// Send commands to the device.</span>}<br /><br />public override void Start()<br />{<br /><span class="indent2">// Start communication with the device.</span>}<br /><br />public override void Stop()<br />{<br /><span class="indent2">// Stop communication with the device.</span>}</span>}</p>
+                                            <h3>Write the Paired Device Driver</h3>
+                                            <p>To write a paired device driver, first create a SIMPL# library project (use a SIMPL#Pro library if the driver requires hardware access) and add reference to <strong>RADCommon.dll</strong>. Refer to <a href="Create-a-Project.htm" class="MCXref xref">Create the Driver Project</a> for more information.</p>
+                                            <p>This project must contain the paired device main class which has all the necessary information required to instantiate the paired device.</p>
+                                            <p>Refer to the sample paired device class below.</p>
+                                            <p class="codeboxshade">public class SamplePairedDevice : ABasicDriver<br />{<br /><br /><span class="indent">public string Id { get { return "SamplePairedDevice_1";  } }<br /><br />public string Name { get { return "SamplePairedDevice"; } }<br /><br />public string Description { get { return "Device description for Sample paired device"; } }<br /><br />public string Manufacturer { get { return "Manufacturer"; } }<br /><br />public string Model { get { return "Device Model"; } }<br /><br />public string DeviceType { get { return "Device Type"; } }<br /><br />public string DeviceSubtype { get { return "Device Subtype if supported"; } }<br /><br />public SamplePairedDevice()<br />{<br /><br />}<br /><br />public override void ConvertJsonFileToDriverData(string jsonString)<br />{<br /><span class="indent2">throw new NotImplementedException();</span>}<br /><br />public override CType AbstractClassType<br />{<br /><span class="indent2">get { return GetType(); }</span>}<br /><br />public override void Connect()<br />{<br /><span class="indent2">base.Connect();</span>}<br /><br />public override void Disconnect()<br />{<br /><span class="indent2">base.Disconnect();</span>}</span>}</p>
+                                            <p>The paired device driver may or may not have a protocol class and a transport class to handle device-level information and to communicate with the device. This is dependent on how the platform device handles communication with the device.</p>
+                                            <h3>Generate a Package File</h3>
+                                            <p>Generating a package file for platform drivers follows the standard package file generation process. However, the platform driver package file must contain all the paired device libraries and shared libraries along with platform driver library files at the root level of the package file.</p>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TPSkin_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Previous page">
+                                                    <img alt="Navigate previous" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Next page">
+                                                    <img alt="Navigate next" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

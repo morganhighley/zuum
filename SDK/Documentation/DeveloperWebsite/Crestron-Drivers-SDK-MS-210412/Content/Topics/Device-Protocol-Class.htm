@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_TPSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Device Protocol Class File</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/TP-Global-Styles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" src="../../Skins/Default/Scripts/TPSkin-TopicToolbar.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.crestron.com" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="padding">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Device Protocol Class File</h1>
+                                            <p>The device protocol class file contains the implementation of the device protocol class. This class controls how commands are sent, how feedback is parsed, and polling parameters.</p>
+                                            <p>The example driver API has the following properties:</p>
+                                            <ul>
+                                                <li>All commands are sent in a packet with a header byte, the command bytes, and a delimiter byte.</li>
+                                                <ul>
+                                                    <li>Header = 0x0A</li>
+                                                    <li>Delimiter = 0x0D</li>
+                                                </ul>
+                                                <li>All feedback received will be sent in a packet with a feedback header byte, the type of feedback byte, the feedback byte(s), and a delimiter byte.</li>
+                                                <ul>
+                                                    <li>Feedback Header = 0x0B</li>
+                                                    <li>Feedback type:</li>
+                                                    <ul>
+                                                        <li>Power = 0x70</li>
+                                                        <li>Input = 0x71</li>
+                                                        <li>Volume = 0x72</li>
+                                                    </ul>
+                                                    <li>Delimiter = 0x0D</li>
+                                                </ul>
+                                            </ul>
+                                            <p class="notebox"><span class="note">NOTE:&#160;</span>Since the API contains headers, some methods will need to be overridden since these parts are not defined in the Data File Helper.</p>
+                                            <p>In this topic, the TestManufacturerTestModelProtocol.cs file will be used as an example to implement the ADisplayProtocol class.</p>
+                                            <p>To create a new device protocol class file:</p>
+                                            <ol>
+                                                <li value="1">Add a class to the project named TestManufacturerTestModelProtocol.cs.</li>
+                                                <li value="2">Define the namespace as <span class="codeinline">ExampleDriver</span>.</li>
+                                                <li value="3">Name the class <span class="codeinline">TestManufacturerTestModelProtocol</span>.</li>
+                                                <li value="4">Extend <span class="codeinline">ADisplayProtocol</span>.</li>
+                                                <li value="5">Add another class to this file within the namespace but outside of <span class="codeinline">TestManufacturerTestModelProtocol</span>, and name it <span class="codeinline">ResponseValidator</span>.</li>
+                                                <li value="6">Extend <span class="codeinline">ResponseValidation</span> with the <span class="codeinline">ResponseValidator</span> class. Then, create a constructor for this that takes an object of type <span class="codeinline">DataValidation</span>.</li>
+                                                <li value="7">Within <span class="codeinline">ValidateResponse</span>, remove any data that was not defined in the Data File Helper. Then, you can either return the new response using a base call or determine what type of feedback this is manually, whether or not it is complete, and which <span class="codeinline">DeConstruct()</span> method should be called.</li>
+                                                <p>The base class will do the following:</p>
+                                                <ul>
+                                                    <li>Checks for the ID parameter (<span class="codeinline">!$[id]</span>) within the feedback header and replace it with the ID</li>
+                                                    <li>If the main feedback header is present, strips it out of the response.</li>
+                                                    <li>Checks the packet against the Ack/Nak definitions</li>
+                                                    <li>Checks the packet against all feedback headers (power, input, volume, and so forth) and removes the one that is found from the response. It will assign <span class="codeinline">CommandGroup</span> based on this, set <span class="codeinline">Data</span> to the stripped response, and set <span class="codeinline">Ready</span> to true.</li>
+                                                </ul>
+                                                <p>This driver will need to override <span class="codeinline">ValidateResponse</span> because there is a delimiter that will need to be removed at the end of the packet.</p>
+                                                <li value="8">Within the overridden <span class="codeinline">ValidateResponse</span>, check to see if the delimiter exists:</li>
+                                                <ul>
+                                                    <li>If it doesn’t, return a new instance of <span class="codeinline">ValidatedRxData</span> with <span class="codeinline">Ready</span> set to false and the response set to an empty string.</li>
+                                                    <li>If it does, remove the delimiter from the response and return the base call.</li>
+                                                </ul>
+                                                <li value="9">Within the <span class="codeinline">TestManufacturerTestModelProtocol</span> class created in Step 3, create a constructor that takes two parameters: <span class="codeinline">ISerialTransport</span> and <span class="codeinline">byte</span>.</li>
+                                                <li value="10">Within this constructor, assign <span class="codeinline">ResponseValidation</span> with a new instance of <span class="codeinline">ResponseValidator</span> that was created in Step 6. It will require one parameter (<span class="codeinline">ValidatedData</span>).</li>
+                                                <li value="11">Define the polling sequence for Power On and Power off using an array of <span class="codeinline">StandardCommandsEnums</span>. These sequences are located within <span class="codeinline">ValidatedData</span>.</li>
+                                                <li value="12">Override <span class="codeinline">PrepareStringThenSend</span>, since the header byte and delimiter byte will be appended to each command prior to sending</li>
+                                                <p>In this example, the developer could have included this information within each command in the Data File Helper but chose to append it at run time.</p>
+                                                <li value="13">Within the overridden <span class="codeinline">PrepareStringThenSend</span>, append the header and delimiter to the command and return with a base call.</li>
+                                            </ol>
+                                            <p>There are many methods that can be overridden based on the needs of the driver. Certain drivers will need to override <span class="codeinline">SetVolume()</span> if they need to format the volume level a specific way.  The process for response validation can be done a number of ways; this example only shows one way of doing it. The currently released drivers all show several unique ways to parse a response and some example of overridden methods.</p>
+                                            <div class="notebox">
+                                                <p><span class="note">NOTES:&#160;</span>
+                                                </p>
+                                                <ul class="noteli">
+                                                    <li>When a particular packet needs to be ignored, return an instance of <span class="codeinline">ValidatedRxData</span> with the <span class="codeinline">Ignore</span> property set to true.</li>
+                                                    <li><span class="codeinline">PowerOffPollingSequence</span> will only execute Power commands</li>
+                                                </ul>
+                                            </div>
+                                            <p>The following sample code shows the implementation of the procedure above.</p>
+                                            <p class="codeboxshade">using System;<br />using Crestron.Display;<br />using Crestron.ThirdPartyCommon.Transports;<br />using Crestron.ThirdPartyCommon.StandardCommands;<br /><br />namespace ExampleDriver<br />{<br /><span class="indent">public class TestManufacturerTestModelProtocol : ADisplayProtocol<br />{<br /><span class="indent2">public TestManufacturerTestModelProtocol(ISerialTransport transport, byte ID)<br />: base(transport, ID)<br />{<br /><span class="indent3">//Assign our response validator<br />ResponseValidation = new ResponseValidator(ValidatedData);<br /><br />//Define the power on/off polling sequences<br />ValidatedData.PowerOnPollingSequence = new[] { StandardCommandsEnum.PowerPoll, StandardCommandsEnum.VolumePoll, StandardCommandsEnum.InputPoll };<br /><br />ValidatedData.PowerOffPollingSequence = new[] { StandardCommandsEnum.PowerPoll };<br /><br />//Define the polling interval (ms)<br />PollingInterval = 1000;<br />}<br /><br />protected override void PrepareStringThenSend(ADisplayProtocol.CommandSet commandSet)<br />{<br />//Append the header byte and delimiter byte to the command<br />commandSet.Command = "\u000A" + commandSet.Command + "\u000D";<br /><br />//Return the altered command<br />base.PrepareStringThenSend(commandSet);</span>}</span>}<br /><br />public class ResponseValidator : ResponseValidation<br />{<br /><span class="indent2">public const string Delimiter = "\u000D";<br /><br />public ResponseValidator(DataValidation DataValidation) : base (DataValidation)<br />{ }<br /><br />public override ValidatedRxData ValidateResponse(string response, SupportedCommandGroups commandGroup)<br />{<br /><span class="indent">ValidatedRxData validatedData = new ValidatedRxData(false, string.Empty);<br /><br />//Check for delimter<br />if (!response.Contains(Delimiter))<br />{<br /><span class="indent2">return validatedData;</span>}<br /><br />//Remove delimiter<br />response = response.Substring(response.IndexOf(Delimiter) + Delimiter.Length, response.Length - Delimiter.Length);<br /><br />//Return with base call<br />return base.ValidateResponse(response, commandGroup);</span>}</span>}</span>}</p>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TPSkin_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Previous page">
+                                                    <img alt="Navigate previous" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Next page">
+                                                    <img alt="Navigate next" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

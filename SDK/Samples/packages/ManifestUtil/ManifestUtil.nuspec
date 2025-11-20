@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>ManifestUtil</id>
+    <version>6.00.000.0025</version>
+    <title>ManifestUtil</title>
+    <authors>Crestron Electronics</authors>
+    <description>ManifestUtil.exe for Rapid Agile Drivers SDK</description>
+    <copyright>Crestron Electronics 2017</copyright>
+    <dependencies>
+      <dependency id="RADBlurayPlayer" version="0.0" />
+      <dependency id="RADCableBox" version="0.0" />
+      <dependency id="RADCommon" version="0.0" />
+      <dependency id="RADDisplay" version="0.0" />
+      <dependency id="RADSecuritySystem" version="0.0" />
+      <dependency id="RADVideoConferenceCodec" version="0.0" />
+      <dependency id="RADVideoServer" version="0.0" />
+    </dependencies>
+  </metadata>
+</package>

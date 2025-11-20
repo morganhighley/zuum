@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_TPSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Crestron Home Extension Device Test Plans</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/TP-Global-Styles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" src="../../Skins/Default/Scripts/TPSkin-TopicToolbar.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.crestron.com" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="padding">
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Crestron Home Extension Device Test Plans</h1>
+                                            <p>The following test plans will be used to test drivers for Crestron Home Extension device drivers.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h2><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open" />Configuration</a></h2></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ol>
+                                                        <li value="1">Load the driver onto the CP4-R or MC4-R, then navigate to <strong>Third Party Devices</strong> in the <strong>Pair Devices</strong> page and wait for the list to update.  Verify the device type shows, the manufacturer shows under the device type, and all supported models from the driver show under the manufacturer.</li>
+                                                        <li value="2">Add the driver to a room, and verify the <strong>Add Device</strong> dialog box appears with the appropriate connection fields (list of IR/COM ports or the IP/Hostname field).</li>
+                                                        <li value="3">Verify any additional attributes on the driver show in subsequent dialogs with the appropriate descriptions and fields.</li>
+                                                        <li value="4">Verify the driver is successfully added to the room.</li>
+                                                        <li value="5">Open the device's settings.  If any user attributes are persistent, verify they are listed in the <strong>Installer</strong> tab with the values previously entered.  Verify you can change the attribute value and reconnect to the device.  For example, if the device has a passcode, change it on the device and update it in the <strong>Installer</strong> tab, and verify the driver regains and regains control of the device.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h2><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open" />Home and Room Views</a></h2></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ol>
+                                                        <li value="1">If the device is intended to be viewed from the home screen, verify it shows there.  It should not show in the room view.  Verify the home view tile shows the correct icon, title, and the navigation arrow.  Press the tile/arrow to navigate to the device's control page.</li>
+                                                        <li value="2">If the device is supposed to show in the room view, verify it does.  Verify it shows the correct icon, title, and an ellipsis (...).</li>
+                                                        <li value="3">If the device supports a default action, verify that pressing the tile triggers that action.  Verify that pressing the ellipsis (...) navigates to the device's controls page, if supported.  If there is no default action, verify that pressing anywhere on the tile navigates to the device's controls page and there is no ellipsis.</li>
+                                                        <li value="4">Verify the controls page can be closed navigating back to the home/room view.</li>
+                                                        <li value="5">If the tile is intended to update its icon or text based on device status, change the state of the device accordingly.  Verify the tile icon/text immediately updates as intended.</li>
+                                                        <li value="6">Disconnect the device by removing its communication cable or pulling the power cord.  Verify the tile updates within 15 seconds to show the device is offline.</li>
+                                                        <li value="7">Bring the device back online.  Verify the tile updates to show the device is back online as soon as the device starts communicating again.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h2><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open" />Device Control</a></h2></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ol>
+                                                        <li value="1">Verify all of the expected device's controls show on the control page.</li>
+                                                        <li value="2">For each segmented slider used, verify the name, node labels, and values are correct.  Move the slider to each segment and verify the device immediately reacts to the change.</li>
+                                                        <li value="3">For each toggle button supported, verify the name and status show as expected.  Press the toggle button and make sure the device updates immediately, and the status in the UI updates if applicable.  Press it again and verify the device and UI immediately return to the previous state.  Press the toggle multiple times quickly, and verify the device and UI do not get out of sync.</li>
+                                                        <li value="4">For each supported status button, verify it shows the correct name and status.  Verify the button can be pressed repeatedly and the device responds immediately.  Verify the alert indicator shows when, and as long as, the expected state is met.  Verify the button becomes disabled when, and as long as, the expected state is met.  Verify the button is controllable again once the state is no longer met and the button becomes enabled.</li>
+                                                        <li value="5">For each supported toggle slider, verify the name and status are correct.  Verify the toggle can be pressed repeated and verify the device immediately reacts accordingly and does not get out of sync.  Drag the slider up and down and verify the device immediately reacts accordingly.  Rapidly drag the slider and verify the device does not get out of sync with the slider.</li>
+                                                        <li value="6">For each supported radial gauge, verify all the defined labels show as defined.  Verify changes on the device immediately update the gauge accordingly.  Verify the minimum and maximum of the gauge match the device.</li>
+                                                        <li value="7">For each supported button, verify the defined label and icon show.  Repeatedly press the button and verify the device immediately reacts accordingly.</li>
+                                                        <li value="8">If any buttons were grouped, verify they all show grouped in the UI.</li>
+                                                        <li value="9">For each supported selector button, verify the defined labels show as expected.  Press each button and verify the device immediately reacts accordingly.</li>
+                                                        <li value="10">For each supported button list, verify all the buttons show with the expected labels.  Verify when pressing each button, the device immediately reacts accordingly.  If any of the buttons show a new subpage or additional controls, verify the additional controls show and work as expected.</li>
+                                                        <li value="11">For each supported navigation pad, verify each directional control and the <strong>OK</strong> button work. A&#160;single press should result in an immediate single action on the device. Multipress at least ten times at a rate of three or more times per second and verify the device reacts accordingly the same number of times as pressed.</li>
+                                                        <li value="12">For each supported keypad, verify the numbers and any supported function buttons show.  Verify each number and function button work, immediately triggering on the device.  Press the same digits two or more times.  Verify no digits are lost and no more than the number of presses occurs on the device.</li>
+                                                        <li value="13">For each thermostat control, verify the device can be set to off, heat, cool, and auto as applicable and that the status is reflected in the UI.  Verify the setpoint can be adjusted to the min/max values.  Verify the gauge shows the correct temperature and immediately updates if the temperature changes.  Verify the units are accurate when set to Fahrenheit and Celsius.</li>
+                                                        <li value="14">For each supported text entry field, verify the defined label, guiding line and hint show.  Verify entering text shows only asterisks if set to be obscured.  Verify the keyboard or numeric keypad show if the field can take text or only numbers. Verify all defined error conditions trigger the appropriate error message.</li>
+                                                        <li value="15">For each supported check box, verify the title and description show as defined.  Verify pressing the control switches from unchecked to checked and checked to unchecked as expected.</li>
+                                                        <li value="16">For each supported confirmation dialog, verify it displays as expected when triggered.  Verify correct message is displayed.  Verify canceling does nothing.  Verify confirming immediately triggers the expected function on the device.</li>
+                                                        <li value="17">For each action selector supported, verify it shows when triggered as expected. Verify the correct title, list of actions, and a cancel option show. Verify cancel closes the selector but triggers no actions.  Verify selecting each action immediately triggers the appropriate action.</li>
+                                                        <li value="18">For each subpage, repeat the above steps and verify all the controls on each subpage work as expected.</li>
+                                                        <li value="19">Repeat all of the above steps in this section while having at least two instances of the driver in the system.  Verify both instances control the appropriate device and do not affect one another in any way.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h2><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open" />System Tests</a></h2></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ol>
+                                                        <li value="1">Simulate a power outage in the house by removing power from the processor, device, and network for at least 60 seconds, before restoring power.  Verify once the program loads, the driver reconnects to the device and all functionality is restored within 60 seconds.</li>
+                                                        <li value="2">Simulate a network outage by disconnecting all network cables from the device and processor and waiting at least 60 seconds before restoring.  Verify the device and driver reconnect and all functionality is restored within 60 seconds.</li>
+                                                        <li value="3">Leave the driver connected to the device for a minimum of 24 hours, periodically checking functionality.  After 24 hours, the driver should still be connected, all functionality should still work, and there should be no degradation in performance (functions should continue to work immediately and feedback should remain prompt and accurate).</li>
+                                                        <li value="4">Delete the driver from the system.  The driver should no longer be listed in the room or seen in the end user UIs.  No exceptions should be thrown in the err log.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TPSkin_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Previous page">
+                                                    <img alt="Navigate previous" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Next page">
+                                                    <img alt="Navigate next" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

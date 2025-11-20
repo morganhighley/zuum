@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_TPSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Create a Crestron Home Extension Driver</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/TP-Global-Styles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" src="../../Skins/Default/Scripts/TPSkin-TopicToolbar.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.crestron.com" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="padding">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Create a Crestron Home Extension Driver</h1>
+                                            <p>The topics in this section describe how to create a Crestron Home Extension driver. Creating a Crestron Home Extension driver can be broken down into 12 steps:</p>
+                                            <ol>
+                                                <li value="1">Create the UI definition file</li>
+                                                <li value="2">Create the language translation files</li>
+                                                <li value="3">Create the IncludeInPkg folder.</li>
+                                                <li value="4">Create the driver project</li>
+                                                <li value="5">Create the driver data file</li>
+                                                <li value="6">Implement AExtensionDevice</li>
+                                                <li value="7">Implement a transport interface (ITcp, ICloudConnected, and so forth)</li>
+                                                <li value="8">Implement IConnection</li>
+                                                <li value="9">Create the device definition</li>
+                                                <li value="10">Create and modify property values</li>
+                                                <li value="11">Build the driver into a PKG&#160;file</li>
+                                                <li value="12">Import the driver to Crestron Home</li>
+                                            </ol>
+                                            <h2>Create the UI&#160;Definition File</h2>
+                                            <p>Refer to <a href="UI-Files.htm#UI&#160;Defin" class="MCXref xref">UI&#160;Definition</a> for information on how to create this file.</p>
+                                            <h2>Create the Language Translation Files</h2>
+                                            <p>Refer to <a href="UI-Files.htm#Translat" class="MCXref xref">Translation Files</a> for information on how to create this file.</p>
+                                            <h2><a name="Create"></a>Create the IncludeInPkg Folder</h2>
+                                            <p>Crestron Home Extension devices require the UI definition and language translations to be included in the driver’s PKG&#160;file so that consuming applications such as Crestron Home can use them.</p>
+                                            <p>In order to include these files within the PKG file, they must be put inside a folder named <strong>IncludeInPkg</strong>, which is provided to the <strong>Manifest Utility</strong> tool along with the driver’s DLL&#160;file in order to create the pkg. Any files or folders within the <strong>IncludeInPkg</strong> folder will be included in the driver’s PKG&#160;File.</p>
+                                            <p>To create and populate the <strong>IncludeInPkg</strong> folder:</p>
+                                            <ol>
+                                                <li value="1">Create a folder named <strong>IncludeInPkg</strong>.</li>
+                                                <li value="2">Create two subfolders named <strong>UiDefinitions</strong> and <strong>Translations</strong>. These subfolder names must be entered exactly as written here.</li>
+                                                <li value="3">Place your UI definition file within the <strong>UiDefinitions</strong> folder.</li>
+                                                <li value="4">Place your translation files within the <strong>Translations</strong> folder.</li>
+                                                <li value="5">Refer to <a href="#Build" class="MCXref xref">Build the Driver</a> for including this folder in the PKG&#160;file.</li>
+                                            </ol>
+                                            <h2>Create the Driver Project</h2>
+                                            <p>Create a new SIMPL#Pro library project in Visual&#160;Studio software as described in <a href="Create-a-Project.htm" class="MCXref xref">Create the Driver Project</a>.</p>
+                                            <h2>Create the Data File</h2>
+                                            <p>The driver’s data file is a JSON-formatted file that contains information about the device and is embedded into the DLL file. Since the data file format is the same across all device types, only some of the information in a data file applies to Crestron Home Extension devices. To create a data file for your Crestron Home Extension device, modify the example given below with the details about your device.</p>
+                                            <p>The following example code contains all the information that is needed for a Crestron Home Extension device. Refer to <a href="Create-Files.htm" class="MCXref xref">Create the Driver Files</a> for more information.</p>
+                                            <p class="codeboxshade">{<br /><span class="indent">"CrestronSerialDeviceApi": {<br /><span class="indent2">"DeviceSupport": {},<br />"DeviceSupport2": [],<br />"GeneralInformation": {<br /><span class="indent">"DeviceType": "Example",<br />"Manufacturer": "Example Manufacturer",<br />"BaseModel": "Example Device",<br />"VersionDate": "2020-01-01 12:00:00.000",<br />"DriverVersion": "1.0.0",<br />"SdkVersion": "3.00.000.0001",<br />"Description": "Example Device",<br />"Guid": "38f61b7b-d607-43a7-a484-0174675fd5a1",<br />"ExtensionDeviceData": {<br /><span class="indent2">"IsExtensionDevice": true,<br />"IsMediaDevice": false,<br />"IsMediaSource": false</span>},<br />"SupportedSeries": [<br /><span class="indent2">"Example Series"</span>],<br />"SupportedModels": [<br /><span class="indent2">"Example Device"</span>]</span>},<br />"Api": {<br /><span class="indent">"Communication": {<br /><span class="indent2">"CommunicationType": 5,<br />"Protocol": -1,<br />"Baud": -1,<br />"Parity": -1,<br />"HwHandshake": -1,<br />"SwHandshake": -1,<br />"DataBits": 0,<br />"StopBits": -1,<br />"Port": 4444,<br />"EnableAutoPolling": true,<br />"EnableAutoReconnect": true,<br />"TimeBetweenCommands": 250,<br />"ResponseTimeout": 3000,<br />"WaitForResponse": false,<br />"IpProtocol": 0,<br />"IsUserAdjustable": false,<br />"Authentication": {<br /><span class="indent">"Type": "None",<br />"Required": false</span>},<br />"IsSecure": false,<br />"UserAdjustableProperties": [],<br />"DeviceId": 0</span>}</span>},<br />"UserAttributes": []</span>}</span>}</p>
+                                            <h3>Add a Data File as an Embedded Visual Studio Resource</h3>
+                                            <p>After the data file is created, it will need to be imported into the driver’s project and set as an embedded resource.</p>
+                                            <p>To add an existing JSON&#160;file to the project:</p>
+                                            <ol>
+                                                <li value="1">Right click on the project.</li>
+                                                <li value="2">Navigate to <strong>Add</strong> &gt; <strong>Existing Item</strong>.</li>
+                                                <li value="3">Select the JSON file.</li>
+                                                <li value="4">Click <strong>Add</strong>.</li>
+                                            </ol>
+                                            <p>To set the JSON file as an embedded resource, navigate to the properties of the file in Visual Studio, and for <strong>Build Action</strong>, select <strong>Embedded Resource</strong>.</p>
+                                            <h2>Implement AExtensionDevice</h2>
+                                            <p>Create a new class that implements <a href="#AExtensi" class="MCXref xref">Create a Crestron Home Extension Driver</a> and the transport interface being used.</p>
+                                            <p>The following example code uses the ICloudConnected transport interface.</p>
+                                            <p class="codeboxshade">using System;<br />using Crestron.RAD.Common.Interfaces;<br />using Crestron.RAD.DeviceTypes.ExtensionDevice;<br /><br />namespace CustomDeviceTutorial<br />{<br /><span class="indent">public class SimpleCustomDevice : AExtensionDevice, ICloudConnected<br />{<br /><span class="indent2">public SimpleCustomDevice()<br />{<br />}<br /><br />protected override IOperationResult DoCommand(string command, string[] parameters)<br />{<br /><span class="indent">throw new NotImplementedException();</span>}<br /><br />protected override IOperationResult SetDriverPropertyValue&lt;T&gt;(string propertyKey, T value)<br />{<br /><span class="indent">throw new NotImplementedException();</span>}<br /><br />protected override IOperationResult SetDriverPropertyValue&lt;T&gt;(string objectId, string propertyKey, T value)<br />{<br /><span class="indent">throw new NotImplementedException();</span>}<br /><br />public void Initialize()<br />{<br /><span class="indent">throw new NotImplementedException();</span>}</span>}</span>}</p>
+                                            <h2>Create the Device Definition</h2>
+                                            <p>The device definition is what defines all the properties and objects on the device. The constructor is an ideal place to define all the device’s properties, although the device definition can be changed at any time.</p>
+                                            <p>Refer to the following example code.</p>
+                                            <p class="codeboxshade">public SimpleCustomDevice()<br />{<br /><span class="indent">// Define standard property<br />_property = CreateProperty&lt;bool&gt;(new PropertyDefinition("Property", string.Empty, DevicePropertyType.Boolean));<br /><br />// Define property with available values<br />var availableValues = new List&lt;IPropertyAvailableValue&gt;<br />{<br /><span class="indent2">new PropertyAvailableValue&lt;string&gt;("Value1", DevicePropertyType.String, string.Empty, "Value1"),<br />new PropertyAvailableValue&lt;string&gt;("Value2", DevicePropertyType.String, string.Empty, "Value2"),<br />new PropertyAvailableValue&lt;string&gt;("Value3", DevicePropertyType.String, string.Empty, "Value3")</span>};<br />_propertyWithAvailableValues = CreateProperty&lt;string&gt;(<br />new PropertyDefinition("PropertyWithAvailableValues", string.Empty, DevicePropertyType.String, availableValues));<br /><br />// Define property with min, max, and step size<br />_propertyWithMinMax = CreateProperty&lt;int&gt;(<br />new PropertyDefinition("PropertyWithMinMax", string.Empty, DevicePropertyType.Int32, -10, 10, 2));<br /><br />// Define example object<br />_exampleObject = CreateClassDefinition("ExampleObject");<br />_exampleObject.AddProperty(new PropertyDefinition("Property1", string.Empty, DevicePropertyType.String));<br />_exampleObject.AddProperty(new PropertyDefinition("Property2", string.Empty, DevicePropertyType.Int32));<br /><br />// Define example list<br />_exampleList = CreateList(new PropertyDefinition("ExampleList", string.Empty, DevicePropertyType.ObjectList, _exampleObject));</span>}</p>
+                                            <h2>Implement Abstract Members</h2>
+                                            <p>Implement the following abstract members.</p>
+                                            <h3>Initialize</h3>
+                                            <p>The initialize method is called by the Crestron Home before attempting to use your device. Within the initialize method, set up connections to the device, initialize objects, or perform other tasks depending on your device.</p>
+                                            <p>Refer to the example code below for this implementation:</p>
+                                            <p class="codeboxshade">public void Initialize()<br />{<br /><span class="indent">// Generally in this method you would initialize anything that you need to connect to your device,<br />// but in this case since this is a fake driver we will simply initialize the class used to emulate a real device.<br />_myDevice = new DeviceEmulator();<br />_myDevice.StateChangedEvent += MyDevice_StateChangedEvent;</span>}</p>
+                                            <h3>DoCommand</h3>
+                                            <p>This method is called by Crestron Home to send a command to your device. The command and the parameters passed in are defined by your UI definition file. For this example, there are three commands:</p>
+                                            <ul>
+                                                <li><span class="codeinline">exampleCommand</span> calls a method on the device that changes the state of the device.</li>
+                                                <li><span class="codeinline">exampleCommandWithParameters</span> calls a method on the device that changes the state of the device and passes in the parameters provided by the user.</li>
+                                                <li><span class="codeinline">exampleFailedCommand</span> provides an example of a command that has failed, so an error is returned with a message for the user.</li>
+                                            </ul>
+                                            <p>Refer to the example code below for this implementation:</p>
+                                            <p class="codeboxshade">protected override IOperationResult DoCommand(string command, string[] parameters)<br />{<br /><span class="indent">switch (command)<br />{<br /><span class="indent2">case "Command":<br />Log("Command was sent to the driver");<br />break;<br />case "CommandWithParameters":<br />var param1 = parameters[0];<br />var param2 = int.Parse(parameters[1]);<br />Log(string.Format("Command with the parameters {0} and {1} was sent to the driver", param1, param2));<br />reak;<br />case "CommandError":<br />return new OperationResult(OperationResultCode.Error, "this command causes an error on purpose");<br />case "AddObject":<br />_myDevice.AddObject();<br />break;<br />case "ClearObjects":<br />_myDevice.ClearObjects();<br />break;</span>}<br /><br />return new OperationResult(OperationResultCode.Success);</span>}</p>
+                                            <h3>SetDriverPropertyValue</h3>
+                                            <p>This method is called by Crestron Home to set the value of a property on your device. There are two overflows for this method that are explained in more detail below:</p>
+                                            <ul>
+                                                <li>Properties created using the method <span class="codeinline">CreateProperty&lt;T&gt;</span> are known as “root properties”, since these properties do not have a parent. When the user changes the value of one of these properties, Crestron Home calls <span class="codeinline">SetDriverPropertyValue(propertyKey, value)</span>. The <span class="codeinline">propertyKey</span> is the unique key of the property and the <span class="codeinline">value</span> is the new value.</li>
+                                                <li>Properties that belong to object have a parent property that is of type <span class="codeinline">DevicePropertyType.Object</span>. When the user changes the value of one of these properties, Crestron Home calls <span class="codeinline">SetDriverPropertyValue(objectId, propertyKey, value)</span>. The <span class="codeinline">objectId</span> is the ID of the parent <span class="codeinline">ObjectValue</span> that contains the property and the other two arguments are the same as in the other method.</li>
+                                            </ul>
+                                            <p>For this example, there are three root properties that can be set by the user: one is a bool, one is a string with three available values, and one is an int with a min and max value.</p>
+                                            <p>Handling changes to these properties is shown in the example code below:</p>
+                                            <p class="codeboxshade">protected override IOperationResult SetDriverPropertyValue&lt;T&gt;(string propertyKey, T value)<br />{<br /><span class="indent">switch (propertyKey)<br />{<br /><span class="indent2">case "Property":<br />var propertyValue = value as bool?;<br />if (propertyValue != null)<br />_myDevice.Property = (bool)propertyValue;<br />break;<br />case "PropertyWithAvailableValues":<br />_myDevice.PropertyWithAvailableValues = value as string;<br />break;<br />case "PropertyWithMinMax":<br />var propertyMinMaxValue = value as int?;<br />if (propertyMinMaxValue != null)<br />_myDevice.PropertyWithMinMax = (int)propertyMinMaxValue;<br />break;</span>}<br /><br />return new OperationResult(OperationResultCode.Success);</span>}</p>
+                                            <p>There are also two properties that belong to an object. Handling changes to these properties is shown below:</p>
+                                            <p class="codeboxshade">protected override IOperationResult SetDriverPropertyValue&lt;T&gt;(string objectId, string propertyKey, T value)<br />{<br /><span class="indent">FakeObject objectToModify;<br />if (!_idToObject.TryGetValue(objectId, out objectToModify))<br />return new OperationResult(OperationResultCode.Error, "the object you are trying to modify does not exist");<br /><br />switch (propertyKey)<br />{<br /><span class="indent2">case "Property1":<br />_myDevice.ModifyObject(objectToModify.Id, value as string, objectToModify.Prop2);<br />break;<br />case "Property2":<br />var intValue = value as int?;<br />if (intValue != null)<br />_myDevice.ModifyObject(objectToModify.Id, objectToModify.Prop1, (int)intValue);<br />break;</span>}<br /><br />return new OperationResult(OperationResultCode.Success);</span>}</p>
+                                            <h2>Implement IConnection Members</h2>
+                                            <p>Some devices may need an active connection to be established with it, such as a TCP connection. If the device requires this, then the logic should be done in <span class="codeinline">Connect()</span>. Even if your driver does not require an active connection, you still need to set the <span class="codeinline">Connected</span> flag to true so that the device appears online in Crestron Home. If the device is always considered connected, this flag can also be set in the transport <span class="codeinline">Initialize </span>method, and <span class="codeinline">Connect()</span> does not need to be overridden.</p>
+                                            <p>For this example, establishing a connection with the device is not required, so <span class="codeinline">Connected</span> will be set to true in the <span class="codeinline">Connect()</span> method.</p>
+                                            <p><span class="codeinline">Connect()</span> is also an ideal place to sync the driver with the device once a connection to the device is made. This ensures that any data displayed on the UI is accurate and up to date.</p>
+                                            <p>Refer to the example code below for this implementaton:</p>
+                                            <p class="codeboxshade">public override void Connect()<br />{<br /><span class="indent">// Establish an active connection with the device<br /><br />// Set Connected flag to true<br />Connected = true;<br /><br />// When the device is connected we should sync all values with the device<br />// to make sure the UI has the most up to date values<br />Refresh();</span>}<br /><br />private void Refresh()<br />{<br /><span class="indent">if (_myDevice == null)<br />return;<br /><br />// Get current property values<br />_property.Value = _myDevice.Property;<br />_propertyWithAvailableValues.Value = _myDevice.PropertyWithAvailableValues;<br />_propertyWithMinMax.Value = _myDevice.PropertyWithMinMax;<br /><br />// Get current list of objects<br />_exampleList.Clear();<br />_idToObject.Clear();<br />foreach (var fakeObject in _myDevice.ListOfObjects)<br />{<br />var objectInstance = CreateObject(_exampleObject);<br />objectInstance.GetValue&lt;string&gt;("Property1").Value = fakeObject.Prop1;<br />objectInstance.GetValue&lt;int&gt;("Property2").Value = fakeObject.Prop2;<br /><br />_exampleList.AddObject(objectInstance);<br />_idToObject.Add(objectInstance.Id, fakeObject);<br />_objectIdToExtensionObject.Add(fakeObject.Id, objectInstance);<br />}<br /><br />// Call commit to send the property changes to Crestron Home<br />Commit();</span>}</p>
+                                            <h2>Modify Property Values</h2>
+                                            <p>Property values should be modified as follows:</p>
+                                            <h3>Devices without Feedback</h3>
+                                            <p>Even without feedback, property values need to be updated to show the current state. If the device does not support feedback, then property values can be updated in the <span class="codeinline">DoCommand</span> or <span class="codeinline">SetDriverPropertyValue</span> methods. This solution can work, but it is notthe most accurate way of setting property values because you are assuming the device received the command. If available, use feedback from the device to set the property values.</p>
+                                            <h3>Devices with Feedback</h3>
+                                            <p>If the device supports feedback, then the properties on the Crestron Home Extension device need to be updated to represent the current state. Properties should only be set when feedback is received from the device so that the state of the property is accurate. For this example, feedback is simulated through an event on the example device. This is used to illustrate how to update extension device property values with new data.</p>
+                                            <p>With or without feedback, after updating property values, <span class="codeinline">Commit()</span> must called in order to send the new values to Crestron Home.</p>
+                                            <p>Refer to the example code below for this implementation.</p>
+                                            <p class="codeboxshade">private void MyDevice_StateChangedEvent(object sender, StateChangeEventArgs stateChangeEventArgs)<br />{<br /><span class="indent">// Update the Extension Device properties based on feedback from the device<br />switch (stateChangeEventArgs.EventType)<br />{<br /><span class="indent2">case EventType.PropertyChanged:<br />_property.Value = (bool)stateChangeEventArgs.EventData;<br />break;<br />case EventType.PropertyWithAvailableValuesChanged:<br />_propertyWithAvailableValues.Value = (string)stateChangeEventArgs.EventData;<br />break;<br />case EventType.PropertyWithMinMaxChanged:<br />_propertyWithMinMax.Value = (int)stateChangeEventArgs.EventData;<br />break;<br />case EventType.ObjectAdded:<br />var objectAdded = (FakeObject)stateChangeEventArgs.EventData;<br /><br />var newObject = CreateObject(_exampleObject);<br />newObject.GetValue&lt;string&gt;("Property1").Value = objectAdded.Prop1;<br />newObject.GetValue&lt;int&gt;("Property2").Value = objectAdded.Prop2;<br /><br />_exampleList.AddObject(newObject);<br />_idToObject.Add(newObject.Id, objectAdded);<br />_objectIdToExtensionObject.Add(objectAdded.Id, newObject);<br />break;<br />case EventType.ObjectModified:<br />var objectModified = (FakeObject)stateChangeEventArgs.EventData;<br /><br />Object extensionObject;<br />if (_objectIdToExtensionObject.TryGetValue(objectModified.Id, out extensionObject))<br />{<br /><span class="indent">extensionObject.GetValue&lt;string&gt;("Property1").Value = objectModified.Prop1;<br />extensionObject.GetValue&lt;int&gt;("Property2").Value = objectModified.Prop2;</span>}<br />break;<br />case EventType.ListCleared:<br />_exampleList.Clear();<br />break;<br />default:<br />return;</span>}<br /><br />// Call commit to send the property changes to Crestron Home<br />Commit();</span>}</p>
+                                            <h2><a name="Build"></a>Build the Driver</h2>
+                                            <p>Once your driver code is complete, you must build it into a PKG file so that Crestron Home can consume it.</p>
+                                            <p>To build a Crestron Home Extension device PKG&#160;file:</p>
+                                            <ol>
+                                                <li value="1">Build the driver solution.</li>
+                                                <li value="2">Copy the DLL&#160;file from the output to the folder containing the <strong>Manifest Utility</strong> tool provided with the SDK. Reference the README file in this folder for additional information on this tool.</li>
+                                                <li value="3">Copy the IncludeInPkg folder to the same folder mentioned in step 2. Refer to <a href="#Create" class="MCXref xref">Create the IncludeInPkg Folder</a> for more information.</li>
+                                                <li value="4">Run the <strong>Manifest Utility</strong> tool by double clicking ManifestUtil.exe</li>
+                                            </ol>
+                                            <p>If the build is successful, a PKG file with the same name as the DLL&#160;will be created. </p>
+                                            <p class="notebox"><span class="note">NOTE: </span>Do not change the name of the PKG&#160;file. It must match the DLL file.</p>
+                                            <p>To verify the contents of a PKG file, you can unzip it using 7-Zip or similar utility.</p>
+                                            <p>For Crestron Home Extension devices, there should be at least four items in the package contents:</p>
+                                            <ul>
+                                                <li>The DLL file</li>
+                                                <li>A DAT file containing a subset of the information from the JSON&#160;file.</li>
+                                                <li>A folder named <strong>UiDefinitions</strong> containing the UI definition provided.</li>
+                                                <li>A folder named <strong>Translations</strong> containing the translation files provided.</li>
+                                            </ul>
+                                            <h2>Import the Driver to Crestron Home</h2>
+                                            <p>To import the Crestron Home Extension driver to Crestron Home, refer to <a href="CH-Testing.htm#Side" class="MCXref xref">Side Load Device Drivers</a>. Once imported, the driver should be available for selection as a third&#8209;party device in the Crestron Home Setup app.</p>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TPSkin_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Previous page">
+                                                    <img alt="Navigate previous" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Next page">
+                                                    <img alt="Navigate next" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

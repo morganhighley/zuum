@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<uidefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://prd-use-rad-assets.azurewebsites.net/ExtensionsSchemaDefinition_v1_0.xsd">
+  <version ver="1.0" />
+  <tile status="{titlestate}" icon="{demodeviceicon}" secondaryicon="{secondaryicon}" action="command:toggledevice" navigation="show:customdeviceMainPage1ID" showinhomepage="#true" showinroompage="#true"/>
+  <layouts>
+    <layout id="customdeviceMainPage1ID" title="^mainPage" isdefaultlayout="#true">
+      <controls>
+        <subheader id="subheaderSliderID" label="^subheaderSlider" />
+        <controlgroup>
+          <segmentedslider id="segmentedSliderID" label="^segmentedMainPageSliderLabel" value="{segmentedMainPageSliderValue}" />
+          <toggleslider id="toggleSliderID" label="^toggleMainPageSliderLabel" secondarylabel="^status" togglevalue="{toggleMainPageToggleValue}" slidervalue="{toggleMainPageSliderValue}" />
+        </controlgroup>
+        <raiselowerwithtext id="raiseLowerWithTextID" label="^raiseLowerWithTextLabel" value="{raiseLowerWithTextValue}" valueformat="{raiseLowerWithTextFormat}" />
+          
+        <subheader id="subheaderTogglesID" label="^subheaderToggles" />
+        <controlgroup>
+          <toggle id="toggleMainPageNoDotID" label="^toggleMainPageNoDotLabel" value="{toggleMainPageNoDotValue}" secondarylabel="{toggleMainPageNoDotSecLabel}"/>
+          <toggle id="toggleMainPageWithDotID" label="^toggleMainPageWithDotLabel" value="{toggleMainPageWithDotValue}" secondarylabel="{toggleMainPageWithDotSecLabel}" navigation="show:tooglePageID"/>          
+        </controlgroup>
+        <controlgroup>
+          <statusandbutton id="statusAndButtonMainPageID" label="^statusAndButtonMainPageLabel" buttonlabel="^statusAndButtonMainPageButtonLabel" buttonaction="command:start" status="{statusAndButtonMainPageStatus}" />
+          <statusandbutton id="statusAndButtonMainPageWithAlertID" label="^statusAndButtonMainPageWithAlertLabel" buttonlabel="^statusAndButtonMainPageButtonLabel" buttonaction="command:start" status="{statusAndButtonMainPageStatus}" statusicon="{statusAndButtonMainPageAlert}"/>
+        </controlgroup>
+        <button id="buttonMainPageNextID" label="^buttonNext" navigation="show:customdeviceChildpage1" />
+      </controls>
+    </layout>
+    <layout id="customdeviceChildpage1">
+      <controls>
+        <subheader id="subheaderButtonID" label="^subheaderButton" />
+        <controlgroup>
+          <textdisplay id="textDisplay2ButtonsID" title="^keypressedtitle" line1label="{textDisplay2ButtonsLabel}" /> <!-- This will be used to show what button was pressed-->
+          <buttongroup>
+            <button id="buttonPlusID" label="^buttonPlusLabel" icon="#icPlus" action="command:plus" />
+            <button id="buttonMinID" label="^buttonMinLabel" icon="#icMinus" action="command:minus"/>
+          </buttongroup>          
+        </controlgroup>
+        <controlgroup>
+          <textdisplay id="textDisplay4ButtonsID" title="^keypressedtitle" line1label="{textDisplay4ButtonsLabel}" /> <!-- This will be used to show what button was pressed-->
+          <buttongroup>
+            <button id="buttonLeftID" icon="#icArrowLeft" action="command:left"/>
+            <button id="buttonDownID" icon="#icArrowDown" action="command:down"/>
+            <button id="buttonUPID" icon="#icArrowUp" action="command:up"/>
+            <button id="buttonRightID" icon="#icArrowRight" action="command:right"/>
+          </buttongroup>
+        </controlgroup>
+        <controlgroup>
+          <textdisplay id="textDisplay5ButtonsID" title="^keypressedtitle" line1label="{textDisplay5ButtonsLabel}" /> <!-- This will be used to show what button was pressed-->
+          <buttongroup>
+            <button id="buttonLeft1ID" icon="#icArrowLeft" action="command:left1"/>
+            <button id="buttonDown1ID" icon="#icArrowDown" action="command:down1"/>
+            <button id="buttonSelectID" label="^selectLabel" action="command:select"/>
+            <button id="buttonUP1ID" icon="#icArrowUp" action="command:up1"/>
+            <button id="buttonRight1ID" icon="#icArrowRight" action="command:right1"/>
+          </buttongroup>          
+        </controlgroup>
+        <selectorbutton id="selectorButtonID" label="^selectorButtonLabel" value="{selectorButtonValue}" />
+        <controlgroup>
+          <textdisplay id="textDisplayListButtonID" title="^listItemPressedTitle" line1label="{textDisplayListButtonSelectedLabel}" /> <!-- This will be used to show what button was pressed-->
+          <listbutton id="listButtonID" label="^listButtonLabel" source="{listButtonSource}" itemlabel="{.Name}" action="command:listItemSelected" actionparameters="{.Name}" />
+        </controlgroup>
+        
+        <subheader id="subheaderTextID" label="^subheaderText" />
+        <controlgroup>
+          <textentry id="textEntryID" label="^textEntryLabel" value="$textEntryValue" errortext="{textEntryErrorText}" obscureinput="#false" numericinputonly="#false"/>
+          <textentry id="textEntryNumericOnlyID" label="^textEntryNumericLabel" value="$textEntryValueNumeric"  errortext="{textEntryErrorText}" obscureinput="#false" numericinputonly="#true"/>
+          <textentry id="textEntryObscureInputID" label="^textEntryObscuredLabel" value="$textEntryValueObscured"  errortext="{textEntryErrorText}"  obscureinput="#true" numericinputonly="#false"/>
+          <textdisplay id="textDisplayID" title="^textDisplayTitle" line1label="^textDisplayLabel1" line2label="^textDisplayLabel2" line3label="^textDisplayLabel3" />
+        </controlgroup>
+        <subheader id="subheaderCheckboxID" label="^subheaderCheckbox" />
+        <controlgroup>
+          <checkbox id="checkboxWOSecLabelID" label="^checkboxMainLabel" value="$checkboxWOSecValue" />
+          <checkbox id="checkboxSecLabelID" label="^checkboxWithStatusLabel" value="{checkboxValue}" secondarylabel="{checkboxSecLabel}"/>
+        </controlgroup>
+        <button id="buttonMainChild1NextID" label="^buttonNext" navigation="show:customdeviceChildpage2" />
+      </controls>
+    </layout>
+    <layout id="customdeviceChildpage2">
+      <controls>
+        <subheader id="subheaderPadsID" label="^subheaderPads" />
+        <controlgroup>
+          <textdisplay id="textDapButtonsID" title="^keypressedtitle" line1label="{textDpadButtonsLabel}" /> <!-- This will be used to show what button was pressed-->
+          <dpad id="dpadID" buttondpadup="command:dpadUp" buttondpaddown="command:dpadDown" buttondpadcenter="command:dpadCenter" buttondpadleft="command:dpadLeft" buttondpadright="command:dpadRight"/>
+        </controlgroup>
+        <controlgroup> 
+          <textdisplay id="textKeyPadButtonsID" title="^keypressedtitle" line1label="{textKeyPadButtonsLabel}" /> <!-- This will be used to show what button was pressed-->
+          <keypad id="keypadID" buttonpressaction="command:keyPressed" functionbutton1enabled="#true" functionbutton2enabled="#true" functionbutton1label="^functionButton1Label" functionbutton2label="^functionButton2Label" />
+        </controlgroup>
+        <subheader id="subheaderGuageID" label="^subheaderGauge" />
+        <radialgauge id="radialGuageID" label="^radialGuageLabel" radialvalue="{radialGuageValue}" line1label="^textDisplayLabel1" line2label="^textDisplayLabel2" line3label="^textDisplayLabel3" />
+        <thermostat id="thermostatID" title="^thermostatTitle" heatmodeenabled="{heatModeEnabled}" coolmodeenabled="{coolModeEnabled}" automodeenabled="{autoModeEnabled}" temperatureunits="{temperatureUnits}" toplefticon="#icClimateRegular" setpointauto="{setpointAuto}" setpointcool="{setpointCool}" setpointheat="{setpointHeat}" modeicon="{modeIcon}" currenttemperature="{currentTemperature}" currenttemperaturelabel="{currentTemperatureLabel}" />
+        <subheader id="subheaderAlertID" label="^subheaderAlert" />
+        <controlgroup>
+          <button id="actionSelectorButtonID" label="^actionSelectorButtonLabel" navigation="showalert:actionSelectorID"/>
+          <button id="comfirmationButtonID" label="^confirmationButtonLabel" navigation="showalert:confirmationAlertID"/>
+        </controlgroup>
+      </controls>
+    </layout>
+    <layout id="tooglePageID"> <!-- When the  ... is clicked on the toggle control this will show up-->
+        <controls>
+          <raiselowerwithtext id="raiselowerwithtextToggleID" label="^raiselowerwithtextToggleLabel" value="{raiselowerwithtextToggleValue}" valueformat="{raiseLowerWithTextFormat}" />
+        </controls>
+    </layout>
+  </layouts>
+  <alerts>
+    <actionselector id="actionSelectorID" title="^actionSelectorTitle">
+      <button id="actionSelectorButton1ID" label="^actionSelectorButton1" />
+      <button id="actionSelectorButton2ID" label="^actionSelectorButton2" />
+    </actionselector>
+    <confirmation id="confirmationAlertID" messagelabel="^confirmationAlertMessage" cancelbuttonlabel="^confirmationCancelLabel" proceedbuttonlabel="^confirmationProceedLabel" proceedaction="command:confirm" /> 
+  </alerts>
+</uidefinition>

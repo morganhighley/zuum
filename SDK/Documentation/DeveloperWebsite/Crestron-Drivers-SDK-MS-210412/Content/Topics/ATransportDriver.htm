@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_TPSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>ATransportDriver Class and Transports</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/TP-Global-Styles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/Stylesheets/TP-Global-Table-Styles.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" src="../../Skins/Default/Scripts/TPSkin-TopicToolbar.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.crestron.com" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="padding">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>ATransportDriver Class and Transports</h1>
+                                            <p>Every driver supports only one transport and defines what transport it supports using one of the several transport interfaces. The driver class is required to implement one of these interfaces. If the transport chosen requires hardware access then, ISimpl must also be defined to support the driver in SIMPL (if possible).</p>
+                                            <p>All transports are of type ATransportDriver. While ATransportDriver does provide some logic that is common to all transports such as logging, the actual operation of the driver’s transport must do the following:</p>
+                                            <p class="caption">Required Custom Implementation</p>
+                                            <table style="mc-table-style: url('../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                <col style="width: 2.75in;" class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <col style="width: 2.75in;" class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;">Function</th>
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;">Task</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">DataHandler</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Must be called when the transport receives data. The protocol class handles assignment to this and should not be done by drivers.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">ConnectionChanged</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Must be called when the transport detects a connection state change.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">IsConnected</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Must be set to true when communication with the device and false is possible when it is not.&#160;</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">SendMethod</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Must be overridden by the driver’s transport class.&#160; This method must send data to the device with no added delay.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Start</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Must be overridden to connect to the device. </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Stop</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Must be overridden to disconnect from the device. <br /><br />Since <span class="codeinline">Stop()</span> will be called by the protocol when it is disposed, this method must dispose any IDisposable classes.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Log</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">Must be called when a message needs to be logged, such as a change of states. </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>The transport should also behave asynchronously in addition to implementing the methods above.</p>
+                                            <p>All other members of ATransportDriver may not be modified, called, or used.</p>
+                                            <p>There are several prebuilt transports available for driver developers to use. The following sections describe the interfaces that define the transport of a driver and what prebuilt transport exists to support that type.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h2><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open" />ITcp</a></h2></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p class="codeboxshade">public interface ITcp : ISerial<br />{<br /><span class="indent">int Port { get; }<br />void Initialize(IPAddress ipAddress, int port);</span>}</p>
+                                                    <p>
+                                                        <br />ITcp is used by all TCP/IP drivers that require an IP address and a port. Applications are responsible for resolving hostnames to an IP address.</p>
+                                                    <p>The port value is zero by default and is set by the defined Initialize method. Applications may call <span class="codeinline">(driverObject as ITcp).Port</span> to get the default value defined in the driver’s JSON data.</p>
+                                                    <p>TcpTransport and HttpTransport are two prebuilt transports that may be used, but they are not required. TcpTransport  is designed for drivers that have a constant connection to the device. It attempts reconnection once per minute if the driver’s JSON data set <span class="codeinline">EnableAutoReconnect</span> to true.  This transport is not meant to be used by drivers that need to open a connection, send a command, and then close the connection. A custom transport would need to be programmed for these cases.</p>
+                                                    <p>HTTPS, SSL*, SSH, WSS, and other protocols must be implemented by the driver with its own custom transport class.</p>
+                                                    <h3>ITcp2</h3>
+                                                    <p><strong>ITcp2</strong> has been added to support initializing the driver with a string parameter instead of an <span class="codeinline">IPAddress</span> parameter. This string may be an IP address or hostname. However, to enable the backwards-compatibility between a new driver implementing <strong>ITcp2</strong> and a system running an older version of RADCommon.dll, <strong>ITcp2</strong> cannot be directly implemented by the driver or any class defined in the driver’s assembly. Otherwise, the system may encounter a <span class="codeinline">TypeLoadException</span> while trying to initialize the driver.</p>
+                                                    <p>To work around this limitation, a delegate-based implementation of <strong>ITcp2</strong> has been added to RADCommon.dll named <strong>Tcp2Capability</strong>. In a separate method (called within a try/catch block to catch the <span class="codeinline">TypeLoadException</span>), the driver may attempt to create an instance of <strong>Tcp2Capability</strong>, providing an Initialize method with the correct signature. It can then call <span class="codeinline">Capabilities.RegisterInterface(typeof(ITcp2), tcp2Capability)</span> where <span class="codeinline">tcp2Capability</span> is the instance of <strong>Tcp2Capability</strong> it created.</p>
+                                                    <p>Applications may then call <span class="codeinline">driver.TryGetCapability&lt;ITcp2&gt;()</span> to retrieve this interface. That method is implemented within RADCommon.dll in the driver’s base class. This new API enables some indirection so that interfaces may be implemented in other objects. It’s also what enables adding support for a new interface without breaking backwards compatibility using the scheme outlined above.</p>
+                                                    <p>To summarize, in order to implement <strong>ITcp2</strong> in a driver, the following must be observed to maintain backwards-compatibility:</p>
+                                                    <ul>
+                                                        <li>The driver must still implement <strong>ITcp</strong>.</li>
+                                                        <li>No classes within the driver assembly may implement <strong>ITcp2</strong>. This would cause a <span class="codeinline">TypeLoadException</span> when the assembly is loaded on a control system running an older version of <strong>RADCommon</strong>. This happens when the system enumerates the types available in the driver assembly.</li>
+                                                        <li>All references to <strong>Tcp2Capability</strong> and <strong>ITcp2</strong> must be contained within a method and the calling method must encapsulate it in a try/catch to catch the <span class="codeinline">TypeLoadException</span> thrown when <strong>RADCommon</strong> on the system is an older version.</li>
+                                                        <li>The <span class="codeinline">TcpTransport.Initialize(string, int)</span> overload may only be called from within code that only runs when the updated RADCommon.dll is available. The <span class="codeinline">ITcp.Initialize(IPAddress, int)</span> method may not call it.</li>
+                                                    </ul>
+                                                    <p>The following sample code show an example of a TCP/IP driver that uses the prebuilt transport and adds the <strong>Tcp2Capability</strong> for applications to initialize the driver with a hostname.</p>
+                                                    <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                        <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #969896; ">// Note: DO NOT implement ITcp2 on SamsungDmTcp</span><br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">class</span> SamsungDmTcp : ABasicVideoDisplay, ITcp<br />{<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #333333; font-weight: bold; ">SamsungDmTcp</span>()<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0086b3; font-weight: bold; ">try</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// References to Tcp2Capability must be contained within</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// another method so that we are able to catch the</span>&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// TypeLoadException that occurs when running on a system</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// with an older version of RADCommon. If the code within</span>&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// AddCapabilities is inlined here, then the</span>&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// TypeLoadException will occur before this can catch it.</span><br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #333333; font-weight: bold; ">AddCapabilities</span>();<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0086b3; font-weight: bold; ">catch</span> (TypeLoadException)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// This exception would happen if this driver was loaded</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// on a system running RADCommon without ITcp2 or</span>&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// IDeviceCapability.</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;}<br /><br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">private</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">AddCapabilities</span>()<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// Adds the Tcp2 capability to allow applications to use a</span>&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// hostname when initializing the driver.</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// The Tcp2Capability class allows us to implement the ITcp2</span>&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// interface without defining a class implementing ITcp2 in</span>&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// this assembly (which would cause a TypeLoadException when</span>&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// the application searches through the defined types to locate</span>&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// the driver).</span><br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">var</span> tcp2Capability = <span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">Tcp2Capability</span>(Initialize);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Capabilities.<span style="color: #333333; font-weight: bold; ">RegisterInterface</span>(<span style="color: #795da3; font-weight: bold; ">typeof</span>(ITcp2), tcp2Capability);<br />&#160;&#160;&#160;&#160;}<br /><br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">Initialize</span>(IPAddress ipAddress, <span style="color: #a71d5d; font-weight: bold; ">int</span> port)<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">var</span> tcpTransport = <span style="color: #795da3; font-weight: bold; ">new</span> TcpTransport<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableAutoReconnect = EnableAutoReconnect,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableLogging = InternalEnableLogging,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CustomLogger = InternalCustomLogger,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableRxDebug = InternalEnableRxDebug,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableTxDebug = InternalEnableTxDebug<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;};<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tcpTransport.<span style="color: #333333; font-weight: bold; ">Initialize</span>(ipAddress, port);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ConnectionTransport = tcpTransport;<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;DisplayProtocol = <span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">SamsungProtocol</span>(ConnectionTransport, Id)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableLogging = InternalEnableLogging,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CustomLogger = InternalCustomLogger<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;};<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;DisplayProtocol.StateChange += StateChange;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;DisplayProtocol.RxOut += SendRxOut;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;DisplayProtocol.<span style="color: #333333; font-weight: bold; ">Initialize</span>(DisplayData);<br />&#160;&#160;&#160;&#160;}<br /><br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">private</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">Initialize</span>(<span style="color: #a71d5d; ">string</span> address, <span style="color: #a71d5d; font-weight: bold; ">int</span> port)<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">var</span> tcpTransport = <span style="color: #795da3; font-weight: bold; ">new</span> TcpTransport<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableAutoReconnect = EnableAutoReconnect,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableLogging = InternalEnableLogging,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CustomLogger = InternalCustomLogger,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableRxDebug = InternalEnableRxDebug,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableTxDebug = InternalEnableTxDebug<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;};<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// Note: This overload accepting a string did not exist in</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// older versions of RADCommon.</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// It may only be called in the code implementing ITcp2 to</span>&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// ensure it is not called when older versions of RADCommon</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// are in use on the system.</span><br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tcpTransport.<span style="color: #333333; font-weight: bold; ">Initialize</span>(address, port);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ConnectionTransport = tcpTransport;<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;DisplayProtocol = <span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">SamsungProtocol</span>(ConnectionTransport, Id)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableLogging = InternalEnableLogging,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CustomLogger = InternalCustomLogger<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;};<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;DisplayProtocol.StateChange += StateChange;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;DisplayProtocol.RxOut += SendRxOut;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;DisplayProtocol.<span style="color: #333333; font-weight: bold; ">Initialize</span>(DisplayData);<br />&#160;&#160;&#160;&#160;}<br />}</code></pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h2><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open" />ISimpl</a></h2></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p class="codeboxshade">public interface ISimpl : ISerial<br />{<br /><span class="indent">iSimplTransport Initialize(Action&lt;string, object[]&gt; send);</span>}</p>
+                                                    <p>
+                                                        <br />ISimpl is required when the transport requires hardware access such as COM drivers. The driver will call the provided Send method when data needs to be sent to the device.</p>
+                                                    <p>SimplTransport must be used as the transport type when ISimpl must be implemented. It contains a method called <span class="codeinline">ReceiveData</span> that must be called when data is received. The SIMPL modules use this class for IR, CEC, and COM drivers.</p>
+                                                    <p>Some SIMPL#Pro applications may choose to use this transport so that they can handle the COM port on their own, so it is important this is implemented if the driver requires hardware access.</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h2><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open" />ISerialComport</a></h2></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p class="codeboxshade">public interface ISerialComport : ISerial<br />{<br /><span class="indent">ComPortSpec ComSpec { get; }<br />void Initialize(IComPort comPort);</span>}</p>
+                                                    <p>
+                                                        <br />ISerialComport is required by all COM drivers in SIMPL#Pro applications. The driver must also inherit and implement ISimpl.</p>
+                                                    <p>The ComSpec is defined by the driver’s JSON data and is set automatically. The COM port object passed in by Initialize should have its COM specifications set using the settings found in ComSpec if the application wants to use the default configuration.</p>
+                                                    <p>The class SerialTransport found in RADProTransports.dll must be used for this transport type by SIMPL#Pro applications.</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h2><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open" />ICecDevice</a></h2></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p class="codeboxshade">public interface ICecDevice<br />{<br /><span class="indent">void Initialize(ISerialTransport transport);<br />SimplTransport Initialize(int id, Action&lt;string, object[]&gt; send);</span>}</p>
+                                                    <p>
+                                                        <br />ICecDevice is required by all CEC drivers. Drivers have to implement both Initialize methods to support SIMPL and SIMPL#Pro.</p>
+                                                    <p>The class CecTransport, which is found in RADProTransports.dll, must be used for this transport type by SIMPL#Pro applications.</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h2><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open" />ICrestronConnected</a></h2></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p class="codeboxshade">public interface ICrestronConnected<br />{<br /><span class="indent">void Initialize(uint ipid, CrestronControlSystem controlSystem);<br /></span>}</p>
+                                                    <p>
+                                                        <br />ICrestronConnected is required by all Crestron Connected® communication drivers. This driver can only be used in SIMPL#Pro, so there is no need to define ISimpl as a secondary transport type.</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><h2><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open" />IIr</a></h2></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p class="codeboxshade">public interface IIr<br />{<br /><span class="indent">void Initialize(IIrPort port, string pathToIrFile);<br />void Initialize(IIrPort port);<br />void Initialize(string pathToIrFile);<br /></span>}</p>
+                                                    <p>
+                                                        <br />IIr is required by all IR drivers used in SIMPL#Pro.</p>
+                                                    <p>These Initialize methods support both a PKG file and an IR file. If a PKG file is given but not an IR port, then the driver will preview what it supports by using the DAT file contained in the PKG file. If the port is given, then the IR file will determine what the driver supports.</p>
+                                                    <p>The framework provides the following prebuilt IR drivers so that developers only need to create the IR file or the PKG file that contains the IR file.</p>
+                                                    <table style="mc-table-style: url('../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                        <col style="width: 2.75in;" class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                        <col style="width: 2.75in;" class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                        <thead>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;">Driver Library</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;">Function</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">IrDisplay</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Displays and projectors</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">IrCableBox</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Cable boxes</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">IrBlurayPlayer</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Blu-ray Disc Players</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">IrVideoServer</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Video Servers</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">IrAvReceiver</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">A/V&#160;Receivers</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TPSkin_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Previous page">
+                                                    <img alt="Navigate previous" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Next page">
+                                                    <img alt="Navigate next" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

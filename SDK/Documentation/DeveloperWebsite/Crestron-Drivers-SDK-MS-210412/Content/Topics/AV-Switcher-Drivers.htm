@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_TPSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Create AV Switcher Drivers</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/TP-Global-Styles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/Stylesheets/TP-Global-Table-Styles.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" src="../../Skins/Default/Scripts/TPSkin-TopicToolbar.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.crestron.com" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="padding">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Create AV Switcher Drivers</h1>
+                                            <p>This topic describes how to create a Crestron Driver for a AV&#160;switcher device.  AV switchers allow audio and video signals to be routed from input sources to displays and other similar devices.</p>
+                                            <p class="notebox"><span class="note">NOTE:&#160;</span>Version 4.<em>x</em>.<em>x</em>.<em>x</em> of the SDK&#160;framework must be used when creating AV&#160;switcher drivers. For more information on versioning, refer to <a href="SDK-Versioning.htm" class="MCXref xref">SDK Framework Versioning</a>.</p>
+                                            <h2>Overview</h2>
+                                            <p>AV switchers are represented by the interface <strong>IAudioVideoSwitcher</strong>.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #63a35c; ">namespace</span> Crestron.RAD.Common.Interfaces<br />{<br /><span style="color: #969896; "><span style="color: #969896; ">///</span> <span style="color: #969896; ">&lt;<span style="font-weight: bold; ">summary</span>&gt;</span></span><br /><span style="color: #969896; "><span style="color: #969896; ">///</span> Represents a third-party audio/video switcher device.</span><br /><span style="color: #969896; "><span style="color: #969896; ">///</span> <span style="color: #969896; ">&lt;<span style="font-weight: bold; ">/</span><span style="font-weight: bold; ">summary</span>&gt;</span></span><br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">interface</span> IAudioVideoSwitcher :<br />						IAudioVideoSwitchingCapabilities,<br />						IHardwareDiagnostics,<br />						IPower, IPower2,<br />						IBasicInformation, IBasicInformation2,<br />						ICustomCommand,<br />						ICustomCommandCollection, ICustomCommandCollection2<br />						IBasicLogger,<br />						IDisposable,<br />						IConnection, IConnection2, IConnection3,<br />						IAuthentication3<br />	{<br /><span style="color: #969896; "><span style="color: #969896; ">///</span> <span style="color: #969896; ">&lt;<span style="font-weight: bold; ">summary</span>&gt;</span></span><br /><span style="color: #969896; "><span style="color: #969896; ">///</span> A unique identifier for this switcher.</span><br /><span style="color: #969896; "><span style="color: #969896; ">///</span> <span style="color: #969896; ">&lt;<span style="font-weight: bold; ">/</span><span style="font-weight: bold; ">summary</span>&gt;</span></span><br /><span style="color: #a71d5d; ">string</span> AudioVideoSwitcherId { <span style="color: #0086b3; ">get</span>; }<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br />The framework represents every input and output on the device with the interface <strong>IAudioVideoExtender</strong>. It allows an application to tell the driver to route an input to an output.</p>
+                                            <p>Each extender object has a variable amount of AV&#160;inputs or outputs depending on its input or output type. Therefore, one extender can represent either a direct output on the switcher, such as an HDMI® port, or it could represent the last piece of equipment connected to a sync device via an HDBaseT® connection to the switcher. In the case where the last output connected to the sync is not the switcher port, the last endpoint would be the listed extender.</p>
+                                            <p>Using DM® switchers as an example, a DM output card would not be listed as the output; the listed output would be the DM&#8209;RX&#8209;200&#8209;C connected to it if detected.</p>
+                                            <p>Each extender object also implements several component interfaces to allow applications to control anything that would be specific to that input/output, such as the power state or volume level.</p>
+                                            <p>The framework relies on the driver developer to create a JSON file that defines that configuration of the switcher by either specifying the static configuration, or listing compatible extenders and handling the assignment of them at runtime if auto-detection is possible. The majority of the functions an extender performs are routed through the protocol class to allow driver developers to insert custom logic.</p>
+                                            <h2>Create the Driver Project</h2>
+                                            <p>For information on creating the driver project and files for an AV switcher driver, refer to <a href="Create-a-Driver.htm" class="MCXref xref">Create a Driver</a>.</p>
+                                            <h2>Create the JSON&#160;File</h2>
+                                            <p>The majority of the JSON file is formatted similar to other device types. The differences and feature additions are covered here. Refer to the <a href="SDK-Architecture.htm" class="MCXref xref">SDK Framework</a> for more information about the other existing nodes.</p>
+                                            <h3>StandardCommands</h3>
+                                            <p>This defines all commands that the driver can send to the device, either to control it or to request feedback. Methods such as <span class="codeinline">PowerOn()</span> will build a <span class="codeinline">CommandSe</span>t instance using the data from this dictionary.</p>
+                                            <p class="caption">AV&#160;Switcher Standard Commands</p>
+                                            <table style="mc-table-style: url('../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;">Name</th>
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;">Description and Use</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PowerOn</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Used to build command for IPower.PowerOn.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PowerOff</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Used to build command for IPower.PowerOff.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Power</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Used to build command for IPower.Power.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PowerPoll</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Used to get the current state of IPower.PowerIsOn.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AudioVideoSwitcherRoutePoll</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Used to get the current state of IAudioVideoExtender.VideoSourceExtenderId.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AudioVideoSwitcherRoute</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Used to build a command for IAudioVideoSwitchingCapabilities.RouteVideoInput() and RouteAudioInput.<br /><br />By default, <span class="codeinline">{input}</span> and <span class="codeinline">{output}</span> will be replaced with the API identifiers for the specified input/output extenders.<br /><br />By default, the framework does not support audio breakaway. Separate video and audio routes must be handled in the protocol class via overrides.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">TemperaturePoll</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Used to get the current state of IHardwareDiagnostics.CurrentTemperature.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">TemperatureUnitPoll</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">Used to get the current units of measurement for temperature feedback.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>
+                                                <br />An example of these standard commands are provided in the following sample code:</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"StandardCommands": {<br />		"PowerOn": {<br />			"Command": "POWER_ON"<br />		},<br />		"PowerOff": {<br />			"Command": "POWER_OFF"<br />		},<br />		"Power": {<br />			"Command": "POWER_TOG"<br />		},<br />		"PowerPoll": {<br />			"Command": "POWER__POLL"<br />		},<br />		"AudioVideoSwitcherRoutePoll": {<br />			"Command": "ROUTE?"<br />		},<br />		"AudioVideoSwitcherRoute": {<br />			"Command": "ROUTE_{input]_TO_{output}"<br />		},<br />		"TemperaturePoll": {<br />			"Command": "TEMP?"<br />		},<br />		"TemperatureUnitsPoll": {<br />			"Command": "TEMPUNITS?"<br />		},<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br />The value for <span class="codeinline">“Command”</span> is what is sent to the device. Driver developers can put tags in here that can be replaced at runtime within a method in the protocol class named <span class="codeinline">PrepareStringThenSend</span>.</p>
+                                            <p class="notebox"><span class="note">NOTE:&#160;</span><span class="codeinline">“{input}”</span> and <span class="codeinline">“{output}”</span> are tags that are handled by the base logic.</p>
+                                            <h3>Feedback</h3>
+                                            <p>Feedback specifies all the information the framework needs to process feedback from the device. This follows the same pattern as other device types, but it adds the ability to specify a common delimiter that the framework can process and remove before calling any <span class="codeinline">DeConstruct&lt;Feature&gt;</span> methods in the protocol class.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"Feedback": {<br />		"Header": "-&gt;",<br />		"ApiDelimiter": "\r",<br />		"CommandAckNak": {<br />			"Ack": "OK",<br />			"Nack": "NOPE"<br />		},<br />		"PowerFeedback": {<br />			"Feedback": {<br />				"On": "ON",<br />				"Off": "OFF",<br />			},<br />			"GroupHeader": "POW="<br />		},<br />		"TemperatureFeedback": {<br />			"ValueGroupHeader": "TEMP=",<br />			"UnitGroupHeader": "UNITS=",<br />			"MetricIdentifier" "METRIC",<br />			"StandardIdentifier": "STANDARD"<br />		},<br />		"RoutedExtenderFeedback": {<br />			"GroupHeader": "ROUTED="<br />		}<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br />The driver developer may have to override <span class="codeinline">ValidateResponse</span> in the protocol class if the API does not fit this model exactly. It is recommended to make the response fit the model here and rely on the base <span class="codeinline">ValidateResponse</span> call to handle the response.  This device type does not use a separate class for response validation.</p>
+                                            <p>The default logic of <span class="codeinline">ValidateResponse</span> is as follows. The format of this logic is [Header][GroupHeader][Feedback/Identifier][Delimiter].</p>
+                                            <ol>
+                                                <li value="1">Waits for the response to start with [Header].</li>
+                                                <li value="2">Wait for the response to end with [Delimiter].</li>
+                                                <li value="3">Removes both [Header] and [Delimiter] from the response.</li>
+                                                <li value="4">Cycles through all group headers and attempts to match the response to one of them. If no group headers are found, logic then cycles through all headers found in each output or input.</li>
+                                                <li value="5">Sets <span class="codeinline">ValidatedRxData.CommandGroup</span> / <span class="codeinline">SubCommandGroup</span>  to the appropriate value</li>
+                                                <li value="6">Calls the protocol class’s <span class="codeinline">ChooseDeConstructMethod</span> if this was a response for the switcher, which then switches on the command group to call the correct <span class="codeinline">DeConstruct&lt;Feature&gt;</span> method.</li>
+                                            </ol>
+                                            <h3>AudioVideoSwitcher</h3>
+                                            <p>This node contains the configuration specific to the AV switcher. It lists the inputs/outputs and if they are fixed, such as on an HDMI switcher where the inputs and outputs will always be HDMI connectors that cannot be changed at runtime.</p>
+                                            <ul>
+                                                <li>
+                                                    <p><span class="codeinline">“NullInputIdentifier”</span> is the string the framework would match when the current route response specifies no input routed to a particular output.</p>
+                                                </li>
+                                                <li>
+                                                    <p><span class="codeinline">“&lt;Feature&gt;ScalingInfo”</span> is data a developer can provide to let the framework handle scaling a percentage to/from the API’s value range. Step-size is used to increment or decrement the values.</p>
+                                                </li>
+                                            </ul>
+                                            <p>Refer to the following sample code:</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"AudioVideoSwitcher": {<br />		"AutoDetectConfiguration": false,<br />		"SupportsAudioBreakaway": false,<br />		"NullInputIdentifier": "NONE",<br />		"VolumeScalingInfo": {<br />			"MaximumDeviceLevel": 100,<br />			"MinimumDeviceLevel": 0,<br />			"DeviceStepSize": 1<br />		},<br />		BassScalingInfo": {<br />			"MaximumDeviceLevel": 10,<br />			"MinimumDeviceLevel": -10,<br />			"DeviceStepSize": 1<br />		},<br />		TrebleScalingInfo": {<br />			"MaximumDeviceLevel": 10,<br />			"MinimumDeviceLevel": -10,<br />			"DeviceStepSize": 1<br />		},<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br />Routable inputs and outputs are specified here. The framework refers to these components as <span class="codeinline">“AudioVideoExtender”</span> and <span class="codeinline">“Extender”</span>. Each extender is able to define their own standard commands and feedback handling. <span class="codeinline">AudioVideoExtender</span> implements its own component interfaces:</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">interface</span> IAudioVideoSwitcher :<br />					IAudioVideoSwitchingCapabilities,<br />					IHardwareDiagnostics,<br />					IPower, IPower2,<br />					IBasicInformation, IBasicInformation2,<br />					ICustomCommand,<br />					ICustomCommandCollection, ICustomCommandCollection2<br />					IBasicLogger,<br />					IDisposable,<br />					IConnection, IConnection2, IConnection3,<br />					IAuthentication3</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br />The driver developer will not have to implement <strong>IAudioVideoExtender</strong> on their own—a default implementation is provided as <span class="codeinline">AudioVideoExtender</span> that is built from the data in this node. A driver is not expected to create instances of these—they are automatically created when the driver initially loads the JSON.</p>
+                                            <p>Each extender will define its own set of audio and video input/outputs to represent what connectors it has available. For example, an HDMI Input card would have a one audio and video input detail with the type set to <span class="codeinline">Hdmi1</span>. The type’s index value (the <span class="codeinline">“1”</span> in <span class="codeinline">“Hdmi1”</span>) is also equal to the extender’s position in the switcher. For example, the fifth HDMI input on a switcher would have one audio and video input detail that sets type to <span class="codeinline">Hdmi5</span>. If this were an HDBaseT input, then the type would be <span class="codeinline">Input5</span>.</p>
+                                            <p class="caption">Extender Information (Used as Inputs or Outputs)</p>
+                                            <table style="mc-table-style: url('../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1" style="width: 20px;" />
+                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;">Name</th>
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1">Type</th>
+                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;">Description and Use</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">ApiIdentifier</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">String</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The string used when this extender is being specified using the API.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Id</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">String</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">A unique identifier for this input. All input/output extenders must have unique IDs.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Name</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">String</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">A friendly name of this extender based on the third-party device's labels on the physical devices</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Manufacturer</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">String</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The extender manufacturer name. In most cases this will be the same manufacturer specified by the driver, but in some cases a third&#8209;party extender could be used. </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Model</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">String</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">he extender model name. This must return null if Type is a direct input/output.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Type</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Enum</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Refer to Rrestron.RAD.Common.Enums.AudioVideoExtenderType in the SDK.<br /><br />Valid values are as follows:<br /><br />1. <strong>DirectInput</strong>: The input is directly on the device, such as an HDMI input.<br /><br />2. <strong>DirectOutput</strong>:&#160;The output is directly on the device, such as an HDMI output.<br /><br />3. <strong>IndirectInput</strong>:&#160;The input is connected to the switcher, but it is not on the switcher, such as transmitter.<br /><br />4. <strong>IndirectOutput</strong>:&#160;The output is connected to the switcher, but it is not on the switcher, such as a receiver.<br /><br />5. <strong>IndirectInputWithSwitching</strong>:&#160;An IndirectInput that also allows its local inputs/output to be switched.<br /><br />6. <strong>IndirectOutputWithSwitching</strong>: An IndirectOutput that also allows its local inputs/output to be switched. <br /></td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AutoInputDetails</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">List&lt;Object&gt;</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Contains information about an input extenders audio inputs. Null if this is an output.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AudioOutputDetials</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">List&lt;Object&gt;</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Contains information about an output extenders audio outputs. Null if this is an input.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoInputDetails</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">List&lt;Object&gt;</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Contains information about an input extenders video inputs. Null if this an output.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoOutputDetails</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">List&lt;Object&gt;</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Contains information about an output extenders video outputs. Null if this is an input.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Ports</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">List&lt;Object&gt;</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Ports that are available on this extender, such as a CEC port or COM port.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">DeviceSupport</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Dict&lt;Enum, Bool&gt;</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Features supported by this extender. This contains all <span class="codeinline">CommonFeatureSupportEnum</span> values that are specified by the component interfaces an extender implements.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">StandardCommands</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Dict&lt;Enum, Object&gt;</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Dictionary containing all standard commands keyed by <span class="codeinline">StandardCommandEnum</span>. This contains all the data the driver will send to the device.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Feedback</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Object</td>
+                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">Object that defines all supported feedback by this extender.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Examples</h3>
+                                            <p>Sample code for common AV&#160;switcher use cases is provided below.</p>
+                                            <h4>HDMI&#160;Input on a Switcher</h4>
+                                            <p>Refer to the following sample code for an HDMI&#160;input on a switcher:</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"ApiIdentifier": "INPUT#5",<br />	"Id": "input5",<br />	"Name": "Input 5",<br />	"Manufacturer": "Crestron",<br />	"Model": "FakeDriver_HDMIInputCard",<br />	"Type": "DirectInput",<br />	"AudioInputDetails": [<br />		{<br />			"type": "Hdmi5",<br />			"description": "Input 5 HDMI Audio Input",<br />			"connector": "Hdmi",<br />			"friendlyName": "Input 5"<br />		}<br />	],<br />	"VideoInputDetails": [<br />			"type": "Hdmi5",<br />			"description": "Input 5 HDMI Video Input",<br />			"connector": "Hdmi",<br />			"friendlyName": "Input 5"<br />		}<br />	]<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h4>HDBaseT&#160;Input on a Switcher</h4>
+                                            <p>Refer to the following sample code for an HDBaseT&#160;input on a switcher:</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"ApiIdentifier": "INPUT#4",<br />	"Id": "input4",<br />	"Name": "Input 4",<br />	"Manufacturer": "Crestron",<br />	"Model": "FakeDriver_HDBaseTTransmitter",<br />	"Type": "IndirectInput",<br />	"AudioInputDetails": [<br />		{<br />			"type": "Input4",<br />			"description": "Input 4 HDBaseT Audio Input",<br />			"connector": "GenericAudio",<br />			"friendlyName": "Input 4"<br />		}<br />	],<br />	"VideoInputDetails": [<br />			"type": "Input4",<br />			"description": "Input 4 HDBaseT Video Input",<br />			"connector": "GenericVideo",<br />			"friendlyName": "Input 4"<br />		}<br />	]<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h4>HDMI&#160;Output on a Switcher</h4>
+                                            <p>Refer to the following sample code for an HDMI&#160;output on a switcher:</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"ApiIdentifier": "OUTPUT#5",<br />	"Id": "output5",<br />	"Name": "Output 5",<br />	"Manufacturer": "Crestron",<br />	"Model": "FakeDriver_HDMIOutputCard",<br />	"Type": "DirectOutput",<br />	"AudioInputDetails": [<br />		{<br />			"type": "Hdmi5",<br />			"description": "Output 5 HDMI Audio Output",<br />			"connector": "Hdmi",<br />			"friendlyName": "Output 5"<br />		}<br />	],<br />	"VideoInputDetails": [<br />			"type": "Hdmi5",<br />			"description": "Output 5 HDMI Video Output",<br />			"connector": "Hdmi",<br />			"friendlyName": "Output 5"<br />		}<br />	]<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h4>HDBaseT&#160;Output on a Switcher</h4>
+                                            <p>Refer to the following sample code for an HDBaseT&#160;output on a switcher:</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"ApiIdentifier": "OUTPUT#4",<br />	"Id": "output4",<br />	"Name": "Output 4",<br />	"Manufacturer": "Crestron",<br />	"Model": "FakeDriver_HDBaseTReceiver",<br />	"Type": "IndirectOutput",<br />	"AudioInputDetails": [<br />		{<br />			"type": "Output4",<br />			"description": "Output 4 HDBaseT Audio Output",<br />			"connector": "GenericAudio",<br />			"friendlyName": "Output 4"<br />		}<br />	],<br />	"VideoInputDetails": [<br />			"type": "Output4",<br />			"description": "Output 4 HDBaseT Video Output",<br />			"connector": "GenericVideo",<br />			"friendlyName": "Output 4"<br />		}<br />	]<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h4>Port Usage</h4>
+                                            <p>Extenders can expose any physical ports on switcher devices to an application. Applications would use non-passthrough ports to link to other Crestron Drivers and to have the drivers send and receive data through the extender.</p>
+                                            <p>The JSON differs depending on the type of port exposed. Valid values for Direction are defined by <span class="codeinline">Crestron.RAD.Common.Enums.PortDirection</span>. Refer to the sample code below for each port type.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">
+                                                        <p>IR Driver Example</p>
+                                                    </div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"Type": "IR",<br />	"Direction": "Input",<br />	"Name": "IR Output 1",<br />	"Id": "output1_IrPort1",<br />	"PassThruOnly": true<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">COM Driver Example</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"Type": "COM",<br />	"Direction": "All",<br />	"Name": "COM PORT 1",<br />	"Id": "output1_ComPort1",<br />	"PassThruOnly": false,<br />	"IncomingDataFeedbackHeader": "OUTPUT1:COM1_RX=",<br />	"StandardCommands": {<br />		"SendComData" {<br />			"Command": "OUTPUT1_COM_TX={value]"<br />		}<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">CEC (HDMI) Driver Example</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"Type": "CEC",<br />	"Direction": "All",<br />	"Name": "CEC 1",<br />	"Id": "output1_CecPort1",<br />	"PassThruOnly": false,<br />	"IncomingDataFeedbackHeader": "OUTPUT1:CEC1_RX=",<br />	"StandardCommands": {<br />		"SendComData" {<br />			"Command": "OUTPUT1_CEC_TX={value]"<br />		}<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Relay Driver Example</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"Type": "Relay",<br />	"Direction": "All",<br />	"Name": "Relay 1",<br />	"Id": "output1_RelayPort1",<br />	"PassThruOnly": false,<br />	"IncomingDataFeedbackHeader": "OUTPUT1:RELAY1_STATE=",<br />	"OnStateFeedback": "ON",<br />	"OffStateFeedback": "OFF",<br />	"StandardCommands": {<br />		"RelayStatePoll" {<br />			"Command": "OUTPUT1_RELAY1_STATE?"<br />		}<br />		"SetRelayStateOn" {<br />			"Command": "OUTPUT1_RELAY1_ON"<br />		}<br />		"SetRelayStateOff" {<br />			"Command": "OUTPUT1_RELAY1_OFF"<br />		}<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Generic I/O Driver Example</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"Type": "GerericIo",<br />	"Direction": "All",<br />	"Name": "Generic IO 1",<br />	"Id": "output1_GenericIoPort1",<br />	"PassThruOnly": false,<br />	"IncomingDataFeedbackHeader": "OUTPUT1:IO1_STATE=",<br />	"OnStateFeedback": "ON",<br />	"OffStateFeedback": "OFF",<br />	"AnalogInputValueStateFeedbackHeader": "OUTPUT1:IO1_VAL="<br />	"StandardCommands": {<br />		"SetGenerIoDigitalOutputOn" {<br />			"Command": "OUTPUT1_IO1_ON"<br />		}<br />		"SetGenerIoDigitalOutputOff" {<br />			"Command": "OUTPUT1_IO1_OFF"<br />		}<br />		"GenericIoAnalogInputPoll" {<br />			"Command": "OUTPUT1_IO1_A_STATE?"<br />		}<br />		"GenericIoDigitalInputPoll" {<br />			"Command": "OUTPUT1_IO1_D_STATE?"<br />		}<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h4>Device Support</h4>
+                                            <p>The following sample code shows the following features supported by switcher devices.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"DeviceSupport": {<br />		"SupportsAudioIsClippingFeedback": true,<br />		"SupportsDcFaultStateFeedback": true,<br />		"SupportsToneControlFeedback": true,<br />		"SupportsDiscreteToneControl": true,<br />		"SupportsToggleToneControl": true,<br />		"SupportsBassFeedback": true,<br />		"SupportsTrebleFeedback": true,<br />		"SupportsChangeBass": true,<br />		"SupportsSetTreble": true,<br />		"SupportsLoudnessFeedback": true,<br />		"SupportsDiscreteLoudness": true,<br />		"SupportsToggleLoudness": true,<br />		"SupportsSetBass": true,<br />		"SupportsVolumePercentFeedback": true,<br />		"SupportsMuteFeedback": true,<br />		"SupportsDiscreteMute": true,<br />		"SupportsMute": true,<br />		"SupportsSetVolume": true,<br />		"SupportsChangeVolume": true,<br />		"SupportsPowerFeedback": true,<br />		"SupportsDiscretePower": true,<br />		"SupportsTogglePower": true,<br />		"SupportsWarmUpTime": true,<br />		"SupportsCoolDownTime": true,<br />		"SupportsSpeakerProtectFeedback": true,<br />		"SupportsDiscreteSpeakerProtect": true,<br />		"SupportsSpeakerProtectToggle": true<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h4>Standard Commands</h4>
+                                            <p>Refer to the sample code below for support standard command.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Power Commands</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"PowerOn": {<br />		"Command": "OUTPUT1_POWER_ON"<br />	},<br />	"PowerOff": {<br />		"Command": "OUTPUT1_POWER_OFF"<br />	},<br />	"Power": {<br />		"Command": "OUTPUT1_POWER_TOGGLE"<br />	},<br />	"PowerPoll": {<br />		"Command": "OUTPUT1_POWER?"<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Volume Commands</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"MuteOn": {<br />		"Command": "OUTPUT1_MUTE_ON"<br />	},<br />	"MuteOff": {<br />		"Command": "OUTPUT1_MUTE_OFF"<br />	},<br />	"Mute": {<br />		"Command": "OUTPUT1_MUTE_TOGGLE"<br />	},<br />	"MutePoll": {<br />		"Command": "OUTPUT1_MUTE?"<br />	},<br />	"VolPlus": {<br />		"Command": "OUTPUT1_VOLUP"<br />	},<br />	"VolMinus": {<br />		"Command": "OUTPUT1_VOLDOWN"<br />	},<br />	"Vol": {<br />		"Command": "OUTPUT1_VOLSET={value}"<br />	},<br />	"VolumePoll": {<br />		"Command": "OUTPUT1_VOL?"<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Treble/Bass Commands</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"ToneSetBass": {<br />		"Command": "OUTPUT1_BASSSET:{value}"<br />	},<br />	"ToneBassLevelUp": {<br />		"Command": "OUTPUT1_BASSUP"<br />	},<br />	"ToneBassLevelDown": {<br />		"Command": "OUTPUT1_BASSDOWN"<br />	},<br />	"ToneBassReset": {<br />		"Command": "OUTPUT1_BASSSET:0"<br />	},<br />	"ToneBassPoll": {<br />		"Command": "OUTPUT1_BASS?"<br />	},<br />	"ToneSetTreble": {<br />		"Command": "OUTPUT1_TREBLESET:{value}"<br />	},<br />	"ToneTrebleLevelUp": {<br />		"Command": "OUTPUT1_TREBLEUP"<br />	},<br />	"ToneTrebleLevelDown": {<br />		"Command": "OUTPUT1_TREBLEDOWN"<br />	},<br />	"ToneTrebleReset": {<br />		"Command": "OUTPUT1_TREBLESET:0"<br />	},<br />	"ToneTreblePoll": {<br />		"Command": "OUTPUT1_TREBLE?"<br />	},<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Tone Commands</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"ToneControlOn": {<br />		"Command": "OUTPUT1_TONE_ON"<br />	},<br />	"ToneControlOff": {<br />		"Command": "OUTPUT1_TONE_OFF"<br />	},<br />	"ToneControlToggle": {<br />		"Command": "OUTPUT1_TONE_TOGGLE"<br />	},<br />	"ToneStatePoll": {<br />		"Command": "OUTPUT1_TONE?"<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Loudness Commands</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"LoudnessOn": {<br />		"Command": "OUTPUT1_LOUDNESS_ON"<br />	},<br />	"LoudnessOff": {<br />		"Command": "OUTPUT1_LOUDNESS_OFF"<br />	},<br />	"LoudnessToggle": {<br />		"Command": "OUTPUT1_LOUDNESS_TOGGLE"<br />	},<br />	"LoudnessPoll": {<br />		"Command": "OUTPUT1_LOUDNESS?"<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Speaker Protection Commands</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"SpeakerProtectOn": {<br />		"Command": "OUTPUT1_SPKRPRT_ON"<br />	},<br />	"SpeakerProtectOff": {<br />		"Command": "OUTPUT1_SPKRPRT_OFF"<br />	},<br />	"SpeakerProtectToggle": {<br />		"Command": "OUTPUT1_SPKRPRT_TOGGLE"<br />	},<br />	"SpeakerProtectPoll": {<br />		"Command": "OUTPUT1_SPKRPRT?"<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Clipping Audio and DC Fault Commands</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"DcFaultStatePoll": {<br />		"Command": "OUTPUT1_DCFAULTSTATE?"<br />	},<br />	"ClippingAudioPoll": {<br />		"Command": "OUTPUT1_AUDIOCLIPPING?"<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h4>Feedback</h4>
+                                            <p>The following sample code shows the valid feedback nodes supported by the extender. These are similar to the feedback nodes of other drivers.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Power Feedback</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"PowerFeedback": {<br />		"Feedback": {<br />			"On": "ON",<br />			"Off": "OFF"<br />		}<br />	},<br />	"GroupHeader": "OUTPUT1:POW="<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Volume Feedback</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"MuteFeedback": {<br />		"Feedback": {<br />			"On": "ON",<br />			"Off": "OFF"<br />		},<br />		"GroupHeader": "OUTPUT1:MUTE="<br />	},<br />	"VolumeFeedback": {<br />		"GroupHeader: "OUTPUT1:VOL="<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Bass/Treble Feedback</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"BassFeedback": {<br />		"GroupHeader": "OUTPUT1:BASS="<br />	},<br />	"TrebleFeedback": {<br />		"GroupHeader: "OUTPUT1:TREBLE="<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Tone Control Feedback</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"ToneControlFeedback": {<br />		"Feedback": {<br />			"On": "ON",<br />			"Off": "OFF",<br />		},<br />		"GroupHeader": "OUTPUT1:TONE="<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Loudness Feedback</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"LoudnessFeedback": {<br />		"Feedback": {<br />			"On": "ON",<br />			"Off": "OFF",<br />		},<br />		"GroupHeader": "OUTPUT1:LOUDNESS="<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Speaker Protection Feedback</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"SpeakerProtectFeedback": {<br />		"Feedback": {<br />			"On": "ON",<br />			"Off": "OFF",<br />		},<br />		"GroupHeader": "OUTPUT1:SPKRPRT="<br />	}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">Audio Clipping and DC Fault State Feedback</div>
+                                                    <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>{<br />	"DcFaultStateFeedback": {<br />		"Feedback": {<br />			"None": "NONE"<br />			"OverCurrent": "OC",<br />			"OverTemperature": "OT",<br />			"HighDcOffset": "HCO",<br />			"UnderVoltage": "UV",<br />			"OverVoltage": "OV",<br />		},<br />		"GroupHeader": "OUTPUT1:DCFAULTSTATE="<br />	},<br />	"AudioIsClippingFeedback" {<br />		"Feedback": {<br />			"On": "ON",<br />			"Off": "OFF",<br />		},<br />		GroupHeader": "OUTPUT1:AUDIOCLIPPING="<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h4>Create the Main&#160;Driver Class</h4>
+                                            <p>If you are creating an IP driver, then the class will appear as follows. The protocol class is defined in the next CS file. The transport can be a custom transport; refer to <a href="ATransportDriver.htm" class="MCXref xref">ATransportDriver Class and Transports</a> for more information on custom transports.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #63a35c; ">namespace</span> AudioVideoSwitcher_Crestron_FakeDriverModel_IP<br />{<br />&#160;&#160;&#160;&#160;<span style="color: #63a35c; ">using</span> Crestron.SimplSharp;<br />&#160;&#160;&#160;&#160;<span style="color: #63a35c; ">using</span> Crestron.RAD.Common.Interfaces;<br />&#160;&#160;&#160;&#160;<span style="color: #63a35c; ">using</span> Crestron.RAD.Common.Transports;<br />&#160;&#160;&#160;&#160;<span style="color: #63a35c; ">using</span> Crestron.RAD.DeviceTypes.AudioVideoSwitcher;<br /><br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">class</span> FakeAudioVideoSwitcherIp : AAudioVideoSwitcher, ITcp<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">Initialize</span>(IPAddress ipAddress, <span style="color: #a71d5d; font-weight: bold; ">int</span> port)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">var</span> tcpTransport = <span style="color: #795da3; font-weight: bold; ">new</span> TcpTransport<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableAutoReconnect = EnableAutoReconnect,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableLogging = InternalEnableLogging,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CustomLogger = InternalCustomLogger,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableRxDebug = InternalEnableRxDebug,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableTxDebug = InternalEnableTxDebug<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;};<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;tcpTransport.<span style="color: #333333; font-weight: bold; ">Initialize</span>(ipAddress, port);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ConnectionTransport = tcpTransport;<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AudioVideoSwitcherProtocol =&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">FakeAudioVideoSwitcherProtocol</span>(ConnectionTransport, Id)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableLogging = InternalEnableLogging,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CustomLogger = InternalCustomLogger<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;};<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AudioVideoSwitcherProtocol.RxOut += SendRxOut;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AudioVideoSwitcherProtocol.<span style="color: #333333; font-weight: bold; ">Initialize</span>(AudioVideoSwitcherData);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;}<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br />If the driver is a COM&#160;driver, then the class appears as follows:</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #63a35c; ">namespace</span> AudioVideoSwitcher_Crestron_FakeDriverModel_Serial<br />{<br />&#160;&#160;&#160;&#160;<span style="color: #63a35c; ">using</span> Crestron.SimplSharp;<br />&#160;&#160;&#160;&#160;<span style="color: #63a35c; ">using</span> Crestron.RAD.Common.Interfaces;<br />&#160;&#160;&#160;&#160;<span style="color: #63a35c; ">using</span> Crestron.RAD.Common.Transports;<br />&#160;&#160;&#160;&#160;<span style="color: #63a35c; ">using</span> Crestron.RAD.DeviceTypes.AudioVideoSwitcher;<br />&#160;&#160;&#160;&#160;<span style="color: #63a35c; ">using</span> Crestron.RAD.ProTransports;<br /><br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">class</span> FakeAudioVideoSwitcherSerial :&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AAudioVideoSwitcher, ISerialComport, ISimpl<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">Initialize</span>(IComPort comPort)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ConnectionTransport = <span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">CommonSerialComport</span>(comPort)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableLogging = InternalEnableLogging,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CustomLogger = InternalCustomLogger,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableRxDebug = InternalEnableRxDebug,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableTxDebug = InternalEnableTxDebug<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;};<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AudioVideoSwitcherProtocol =&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">FakeAudioVideoSwitcherProtocol</span>(ConnectionTransport, Id)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;EnableLogging = InternalEnableLogging,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CustomLogger = InternalCustomLogger<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;};<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AudioVideoSwitcherProtocol.RxOut += SendRxOut;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AudioVideoSwitcherProtocol.<span style="color: #333333; font-weight: bold; ">Initialize</span>(AudioVideoSwitcherData);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">public</span> SimplTransport <span style="color: #333333; font-weight: bold; ">Initialize</span>(Action&lt;<span style="color: #a71d5d; ">string</span>, <span style="color: #a71d5d; ">object</span>[]&gt; send)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">var</span> _transport = <span style="color: #795da3; font-weight: bold; ">new</span> SimplTransport { Send = send };<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ConnectionTransport = _transport;<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AudioVideoSwitcherProtocol =&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">FakeAudioVideoSwitcherProtocol</span>(ConnectionTransport, Id);<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AudioVideoSwitcherProtocol.RxOut += SendRxOut;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AudioVideoSwitcherProtocol.<span style="color: #333333; font-weight: bold; ">Initialize</span>(AudioVideoSwitcherData);<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">return</span> _transport;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;}<br />}<br /></code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h2>Make the Driver Protocol Class</h2>
+                                            <p>The driver protocol class is where is  all feedback is processed and commands are made and sent to the transport. This is where developers can override many methods to handle feedback or commands differently.</p>
+                                            <p>View <strong>AAudioVideoSwitcherProtocol</strong> in an object browser to see all available methods to override.</p>
+                                            <p>An empty protocol class that relies completely on JSON is shown in the sample code below.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #63a35c; ">namespace</span> AudioVideoSwitcher_Crestron_FakeDriverModel_Serial<br />{<br />&#160;&#160;&#160;&#160;<span style="color: #63a35c; ">using</span> Crestron.RAD.Common.Transports;<br />&#160;&#160;&#160;&#160;<span style="color: #63a35c; ">using</span> Crestron.RAD.DeviceTypes.AudioVideoSwitcher;<br /><br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">class</span> FakeAudioVideoSwitcherProtocol : AAudioVideoSwitcherProtocol<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #333333; font-weight: bold; ">FakeAudioVideoSwitcherProtocol</span>(ISerialTransport transport, <span style="color: #a71d5d; font-weight: bold; ">byte</span> id)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: <span style="font-weight: bold; ">base</span>(transport, id)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{ }<br />&#160;&#160;&#160;&#160;}<br />}<br /></code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br />By default, the framework does not handle routed feedback. If the driver will support feedback about the current routes, then it must override <span class="codeinline">DeConstructSwitcherRoute</span>. There are some methods added to <strong>AAudioVideoSwitcherProtocol</strong> that will aid developers in getting extenders.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">
+                                                    </div>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>&#160;<span style="color: #a71d5d; font-weight: bold; ">protected</span> <span style="color: #795da3; ">override</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">DeConstructSwitcherRoute</span>(<span style="color: #a71d5d; ">string</span> response)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// Receiving: ROUTED=OUTPUT#1:INPUT#1</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">//&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ROUTED=&lt;output ID&gt;:&lt;input ID&gt;</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">//&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ROUTED= is stripped out of response before this is called.</span>&#160;<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">var</span> routePath = response.<span style="color: #333333; font-weight: bold; ">Split</span>(<span style="color: #df5000; ">':'</span>);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AudioVideoExtender inputExtender = <span style="font-weight: bold; ">null</span>;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AudioVideoExtender outputExtender = <span style="font-weight: bold; ">null</span>;<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// We can get the extender objects here using the API identifier set</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// in the embedded file.</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// We can also get the extender objects by their unique ID using GetExtenderById</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;outputExtender = <span style="color: #333333; font-weight: bold; ">GetExtenderByApiIdentifier</span>(routePath[<span style="color: #df5000; ">0</span>]);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;inputExtender = routePath.Length &gt; <span style="color: #df5000; ">1</span> ? <span style="color: #333333; font-weight: bold; ">GetExtenderByApiIdentifier</span>(routePath[<span style="color: #df5000; ">1</span>]) : <span style="font-weight: bold; ">null</span>;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// Figured out which input is routed to the specified output</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// Now update the output extender with the current source routed to it</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// The framework will figure out if this was a real change or not if it is not done here.</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">if</span> (outputExtender != <span style="font-weight: bold; ">null</span>)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;outputExtender.VideoSourceExtenderId = inputExtender == <span style="font-weight: bold; ">null</span> ?&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-weight: bold; ">null</span> : inputExtender.Id;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /></code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br />Some devices may send multiple messages in one burst to the transport. These can be split into individual messages by overriding <span class="codeinline">DataHandler</span>, which is the method called by the transport that will enqueue the response in an internal response queue.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #795da3; ">override</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">DataHandler</span>(<span style="color: #a71d5d; ">string</span> rx)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// Route poll responses come in a large chunk and need to be processed seperatly.</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// Add them to the response queue and keep the delimiter</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">var</span> delimiterIndex = rx.<span style="color: #333333; font-weight: bold; ">IndexOf</span>(<span style="color: #df5000; ">'\r'</span>);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">if</span> (delimiterIndex &gt; <span style="color: #df5000; ">0</span> &amp;&amp;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rx.<span style="color: #333333; font-weight: bold; ">IndexOf</span>(<span style="color: #df5000; ">'\r'</span>, delimiterIndex + <span style="color: #df5000; ">1</span>) &gt; <span style="color: #df5000; ">0</span>)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">var</span> splitRx = rx.<span style="color: #333333; font-weight: bold; ">Split</span>(<span style="color: #df5000; ">'\r'</span>);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">for</span> (<span style="color: #a71d5d; font-weight: bold; ">int</span> i = <span style="color: #df5000; ">0</span>; i &lt; splitRx.Length; i++)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-weight: bold; ">base</span>.<span style="color: #333333; font-weight: bold; ">DataHandler</span>(splitRx[i] + <span style="color: #df5000; ">'\r'</span>);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">else</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-weight: bold; ">base</span>.<span style="color: #333333; font-weight: bold; ">DataHandler</span>(rx);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /></code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br />Some drivers may need to add a checksum or a delimiter to commands being sent to the device. Delimiters can be defined on each command in the JSON file, or they can all be handled with one override.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">protected</span> <span style="color: #795da3; ">override</span> <span style="color: #a71d5d; font-weight: bold; ">bool</span> <span style="color: #333333; font-weight: bold; ">PrepareStringThenSend</span>(CommandSet commandSet)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">if</span> (!commandSet.CommandPrepared)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;commandSet.Command = <span style="color: #a71d5d; ">string</span>.<span style="color: #333333; font-weight: bold; ">Format</span>(<span style="color: #df5000; ">"{0}\x0D"</span>, commandSet.Command);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;commandSet.CommandPrepared = <span style="color: #0086b3; font-weight: bold; ">true</span>;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">return</span> <span style="font-weight: bold; ">base</span>.<span style="color: #333333; font-weight: bold; ">PrepareStringThenSend</span>(commandSet);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /></code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br /><span class="codeinline">DeConstructExtender&lt;Feature&gt;</span> methods can be overridden for the main AV switcher if other actions need to be performed when that feature changes states.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">
+                                                    </div>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #a71d5d; font-weight: bold; ">protected</span> <span style="color: #795da3; ">override</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">DeConstructSwitcherPower</span>(<span style="color: #a71d5d; ">string</span> response)<br />&#160;&#160;	&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;	&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// Device reports three states: On, Off, and Standby</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;	&#160;<span style="color: #969896; ">// Treat standby as Off</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;	&#160;<span style="color: #a71d5d; font-weight: bold; ">if</span> (response.<span style="color: #333333; font-weight: bold; ">Equals</span>(<span style="color: #df5000; ">"standby"</span>, StringComparison.CurrentCultureIgnoreCase))<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;	&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;	&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// In JSON, PowerOn feedback is set to "On"</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;	&#160;&#160;&#160;&#160;&#160;&#160;&#160;response = <span style="color: #df5000; ">"On"</span>;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;	&#160;&#160;	}<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;	&#160;&#160;&#160;&#160;<span style="font-weight: bold; ">base</span>.<span style="color: #333333; font-weight: bold; ">DeConstructSwitcherPower</span>(response);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;	&#160;&#160;}<br /></code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br /><span class="codeinline">DeConstructExtender&lt;Feature&gt;</span> methods for extenders can also be overwritten.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">
+                                                    </div>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">protected</span> <span style="color: #795da3; ">override</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">DeConstructExtenderClippingAudio</span>(AudioVideoExtender extender, <span style="color: #a71d5d; ">string</span> response)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// Device response can be unknown while JSON only specifies on/off.</span>&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #969896; ">// Treat unknown as off</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">if</span> (response.<span style="color: #333333; font-weight: bold; ">Equals</span>(<span style="color: #df5000; ">"unknown"</span>, StringComparison.CurrentCultureIgnoreCase))<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;response = <span style="color: #df5000; ">"Off"</span>;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-weight: bold; ">base</span>.<span style="color: #333333; font-weight: bold; ">DeConstructExtenderClippingAudio</span>(extender, response);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /></code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <br />An example of overriding a <span class="codeinline">DeConstructExtender&lt;Feature&gt;</span> and not calling the base is shown below. The setters for all public properties that are defined by <strong>IAudioVideoExtender</strong> will throw the appropriate events if set to a different state. This example shows what the base method does by default so this override would not be needed.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">protected</span> <span style="color: #795da3; ">override</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">DeConstructExtenderPower</span>(AudioVideoExtender extender, <span style="color: #a71d5d; ">string</span> response)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">if</span> (response.<span style="color: #333333; font-weight: bold; ">Equals</span>(<span style="color: #df5000; ">"on"</span>, StringComparison.CurrentCultureIgnoreCase))<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;extender.PowerIsOn = <span style="color: #0086b3; font-weight: bold; ">true</span>;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">else</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;extender.PowerIsOn = <span style="color: #0086b3; font-weight: bold; ">false</span>;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /></code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TPSkin_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Previous page">
+                                                    <img alt="Navigate previous" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Next page">
+                                                    <img alt="Navigate next" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

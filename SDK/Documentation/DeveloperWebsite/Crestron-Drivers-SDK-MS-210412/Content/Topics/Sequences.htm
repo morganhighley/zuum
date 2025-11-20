@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_TPSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Use Crestron Home Extension Drivers in Sequences</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/TP-Global-Styles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" src="../../Skins/Default/Scripts/TPSkin-TopicToolbar.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.crestron.com" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="padding">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Use Crestron Home Extension Drivers in Sequences</h1>
+                                            <p>When the <strong>Sequences</strong> menu is selected in the Crestron Home UI, navigating into a room will show all available devices and entities that are available to be programmed within the room. Crestron Home Extension devices can now be added as programmable devices.</p>
+                                            <p>Crestron Home Extension devices will be displayed in a room like non-extension devices:&#160;They are sorted by device type/name and, when selected, will have operations associated with them that can be added as a step to a sequence.</p>
+                                            <p>Below is a screen shot of a Crestron Home Extension device in a room and its operations.</p>
+                                            <p class="caption">Sample Crestron Home Extension&#160;Device in a Room</p>
+                                            <p class="caption">
+                                                <img src="../Resources/Images/Sequence1.jpg" />
+                                            </p>
+                                            <p>The name associated with the Crestron Home Extension device is the same name used while adding the device in the <strong>Pair Devices</strong> page.  The icon used will be dependent on the Crestron Home Extension device type.</p>
+                                            <p>Selecting the device will show all operations that are available for programming.  Operations available for programming will be controlled via declarative attributes in the Crestron Home Extension device driver code.</p>
+                                            <h2>Attributes</h2>
+                                            <p>The following attributes are used to control the Crestron Home Extension device operations that are available for programming.</p>
+                                            <h3>ProgrammableOperationAttribute</h3>
+                                            <p>To get a method or property for a Crestron Home Extension device to appear as an operation in sequences automatically, the method or property should be decorated with the <span class="codeinline">ProgrammableOperationAttribute</span>. Refer to the following sample code.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">
+                                                    </div>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">class</span> DoorLock<br />{<br />&#160;&#160;&#160;&#160;[ProgrammableOperation]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span>()<br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;<br />&#160;&#160;&#160;&#160;<br />	}<br /><br />&#160;&#160;&#160;&#160;[ProgrammableOperation]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; font-weight: bold; ">int</span> SetDoorId { <span style="color: #0086b3; ">get</span>; <span style="color: #0086b3; ">set</span>; }<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>This attribute can be applied to methods or properties regardless of scope (public, private, internal, and so forth).</p>
+                                            <p>The name of the method or property will be used by default as the operation name in sequences.  In the example below, the “LockDoor” and “SetDoorId” operation names in sequences match the method names in the Crestron Home Extension driver code above.</p>
+                                            <p class="caption">Operation Names for Sequences</p>
+                                            <p>
+                                                <img src="../Resources/Images/Sequence2.png" style="width: 350px;" />
+                                            </p>
+                                            <p>To control the operation name, the display name parameter can be used.  The code below shows the operation name in sequences as “Lock Door” (refer to <a href="#Localiza" class="MCXref xref">Localization</a> for more information on localizing operation names) even though the method name “LockInteriorDoor” was used.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">
+                                                    </div>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockInteriorDoor</span>()<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>This name is reflected in the <strong>Sequences</strong> menu.</p>
+                                            <p class="caption">Sequence Menu - Display Name Parameter</p>
+                                            <p>
+                                                <img src="../Resources/Images/Sequence3.png" style="width: 350px;" />
+                                            </p>
+                                            <p>Methods that take parameters can also be decorated with the <span class="codeinline">ProgrammableOperationAttribute</span>.  By default, a parameter dialog will appear in sequences automatically to allow the user to input the parameters specified.  The UI controls used for this input are dependent on the data type of each parameter (text box for strings, checkbox for Booleans, and so forth).</p>
+                                            <p class="notebox"><span class="note">NOTE:&#160;</span>At this time, only primitive (int, bool, and so forth) data types are supported.</p>
+                                            <p>The code below shows a method taking a parameter and the parameter dialog that will be displayed automatically when this operation is added to a sequence.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">
+                                                    </div>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span>(<span style="color: #a71d5d; font-weight: bold; ">int</span> time)<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>This information is reflected in the image shown below.</p>
+                                            <p class="caption">Method Taking Parameter UI&#160;Example</p>
+                                            <p class="caption">
+                                                <img src="../Resources/Images/Sequence4.jpg" style="width: 500px;" />
+                                            </p>
+                                            <p>By default, the label used for a parameter is the parameter name specified in the method.  To control the parameter name, use the <span class="codeinline">DisplayAttribute</span>.</p>
+                                            <p>Once the operation is added to a sequence, parameters entered will be shown in the sequence step automatically.</p>
+                                            <p class="caption">Parameters Added to Sequence Step UI&#160;Example</p>
+                                            <p>
+                                                <img src="../Resources/Images/Sequence5.png" style="width: 700px;" />
+                                            </p>
+                                            <h3>DisplayAttriute</h3>
+                                            <p>The <span class="codeinline">DisplayAttribute</span> is used to control the text of the label used while gathering user input for a parameter. Refer to the sample code below.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> ([<span style="color: #333333; font-weight: bold; ">Display</span>(<span style="color: #df5000; ">"Seconds"</span>)] <span style="color: #a71d5d; font-weight: bold; ">int</span> time)<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The following image shows that the label in the UI&#160;is updated to "Seconds" as indicated by the <span class="codeinline">DisplayAttribute</span>.</p>
+                                            <p class="caption">DisplayAttribute UI&#160;Example</p>
+                                            <p class="caption">
+                                                <img src="../Resources/Images/Sequence6.jpg" style="width: 500px;" />
+                                            </p>
+                                            <h3>UnitAttribute</h3>
+                                            <p>The <span class="codeinline">UnitAttribute</span> is used to display a unit next to the parameter label.  Multiple attributes can be applied to a single parameter. Refer to the sample code below.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">
+                                                    </div>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> (<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Display</span>(<span style="color: #df5000; ">"Time"</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Unit</span>(Unit.Seconds)]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">int</span> time)<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The following image shows that the seconds unit ("s") is displayed next to the label as indicated by the <span class="codeinline">UnitAttribute</span>.</p>
+                                            <p class="caption">UnitAttribute UI&#160;Example</p>
+                                            <p class="caption">
+                                                <img src="../Resources/Images/Sequences_1A.jpg" style="width: 500px;" />
+                                            </p>
+                                            <p>The following units are supported:</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">
+                                                    </div>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; font-weight: bold; ">enum</span> Unit<br />{<br />	None,<br />	Celsius,<br />	Fahrenheit,<br />	Percentage,<br />	Millivolts,<br />	PartsPerMillion,<br />	GramsPerLitter,<br />	pH,<br />	Hours,<br />	Minutes,<br />	Seconds,<br />	Milliseconds,<br />	Years,<br />	Months,<br />	Days<br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h3>DefaultAttribute</h3>
+                                            <p>The <span class="codeinline">DefaultAttribute</span> is used to control the default value of a parameter when the parameter dialog is displayed. The data types int, double, string, and bool can be entered as a default value. Refer to the sample code below.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> (<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Display</span>(<span style="color: #df5000; ">"Time"</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Unit</span>(Unit.Seconds)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Default</span>(<span style="color: #df5000; ">5</span>)]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">int</span> time)<br />{<br /><br /><br />}<br /><br />[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> (<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Display</span>(<span style="color: #df5000; ">"Time"</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Unit</span>(Unit.Seconds)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Default</span>(<span style="color: #df5000; ">5.1</span>)]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">double</span> time)<br />{<br /><br /><br />}<br /><br />[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> (<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Display</span>(<span style="color: #df5000; ">"Time"</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Unit</span>(Unit.Seconds)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Default</span>(<span style="color: #df5000; ">5</span>)]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">string</span> time)<br />{<br /><br /><br />}<br /><br />[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> (<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Display</span>(<span style="color: #df5000; ">"Allow to Unlock"</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Unit</span>(Unit.Seconds)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Default</span>(<span style="color: #0086b3; font-weight: bold; ">true</span>)]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">bool</span> allowToUnlock)<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The following image shows the default value of a parameter as indicated by the <span class="codeinline">DefaultAttribute</span> when the parameter dialog is displayed.</p>
+                                            <p class="caption">DefaultAttribute UI&#160;Example</p>
+                                            <p class="caption">
+                                                <img src="../Resources/Images/Sequence7.jpg" style="width: 500px;" />
+                                            </p>
+                                            <p>The <span class="codeinline">DefaultAttribute</span> also allows a developer to pass in <span class="codeinline">true</span> or <span class="codeinline">false</span> to a <span class="codeinline">readOnly</span> parameter, which indicates whether the parameter dialog should display UI controls for the given parameter.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> (<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Display</span>(<span style="color: #df5000; ">"Time"</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Unit</span>(Unit.Seconds)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Default</span>(<span style="color: #df5000; ">5</span>, <span style="color: #0086b3; font-weight: bold; ">true</span>)]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">int</span> time)<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>If <span class="codeinline">true</span> is passed into the <span class="codeinline">readOnly</span> parameter, then UI controls will not be provided for the given parameter.  If the method does not have any more parameters that are not marked as read only, the parameter dialog for the operation will not be displayed at all for the given operation.</p>
+                                            <p>The read-only value (with the value specified in the attribute) will be used during execution of the operation.</p>
+                                            <h3>MinAttribute</h3>
+                                            <p>The <span class="codeinline">MinAttribute</span> should be used to set a minimum value for a parameter.  Data types of type int and double can be entered as a minimum value. Refer to the following sample code.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">
+                                                    </div>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> (<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Display</span>(<span style="color: #df5000; ">"Time"</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Unit</span>(Unit.Seconds)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Default</span>(<span style="color: #df5000; ">5</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Min</span>(<span style="color: #df5000; ">1</span>)]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">int</span> time)<br />{<br /><br /><br />}<br /><br />[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> (<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Display</span>(<span style="color: #df5000; ">"Time"</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Unit</span>(Unit.Seconds)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Default</span>(<span style="color: #df5000; ">5.1</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Min</span>(<span style="color: #df5000; ">1.1</span>)]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">double</span> time)<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>If a value is entered in the parameter dialog for a parameter that is less than the minimum value specified, a validation error will occur automatically in sequences as shown in the image below.</p>
+                                            <p class="caption">MinAttribute UI&#160;Example - Validation Error</p>
+                                            <p class="caption">
+                                                <img src="../Resources/Images/Sequence8.jpg" style="width: 500px;" />
+                                            </p>
+                                            <p>Select the alert icon to receive details about the alert.</p>
+                                            <p class="caption">MinAttribute UI&#160;Example - Alert Message</p>
+                                            <p class="caption">
+                                                <img src="../Resources/Images/Sequence9.png" style="width: 500px;" />
+                                            </p>
+                                            <h3>MaxAttribute</h3>
+                                            <p>The <span class="codeinline">MaxAttribute</span> is used to set a maximum value for a parameter.  Data types of type int and double can be entered as a maximum value. Refer to the sample code below.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> (<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Display</span>(<span style="color: #df5000; ">"Time"</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Unit</span>(Unit.Seconds)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Default</span>(<span style="color: #df5000; ">5</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Min</span>(<span style="color: #df5000; ">1</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Max</span>(<span style="color: #df5000; ">10</span>)]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">int</span> time)<br />{<br /><br /><br />}<br /><br />[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> (<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Display</span>(<span style="color: #df5000; ">"Time"</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Unit</span>(Unit.Seconds)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Default</span>(<span style="color: #df5000; ">5.1</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Min</span>(<span style="color: #df5000; ">1.1</span>)]<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Max</span>(<span style="color: #df5000; ">10.1</span>)]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">double</span> time)<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>If a value is entered in the parameter dialog for a parameter that is higher than the maximum value specified, a validation error will occur automatically in sequences as shown in the image below.</p>
+                                            <p class="caption">MaxAttribute UI&#160;Example - Validation Error</p>
+                                            <p class="caption">
+                                                <img src="../Resources/Images/Sequence10.jpg" style="width: 500px;" />
+                                            </p>
+                                            <p>Select the alert icon to receive details about the alert.</p>
+                                            <p class="caption">MaxAttribute UI&#160;Example - Alert Message</p>
+                                            <p class="caption">
+                                                <img src="../Resources/Images/Sequence11.png" style="width: 500px;" />
+                                            </p>
+                                            <h3><a name="Availabl"></a>AvailableValuesAttribute</h3>
+                                            <p>The <span class="codeinline">AvailableValuesAttribute</span> should be used when a list of well&#8209;defined values is known at compile time for a parameter.  Values of type int, double, and string can be entered at once. Refer to the sample code below.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> ([<span style="color: #333333; font-weight: bold; ">AvailableValues</span>(<span style="color: #df5000; ">1</span>, <span style="color: #df5000; ">2</span>, <span style="color: #df5000; ">3</span>)] <span style="color: #a71d5d; font-weight: bold; ">int</span> id)<br />{<br /><br /><br />}<br /><br />[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> ([<span style="color: #333333; font-weight: bold; ">AvailableValues</span>(<span style="color: #df5000; ">1.1</span>, <span style="color: #df5000; ">2.1</span>, <span style="color: #df5000; ">3.1</span>)] <span style="color: #a71d5d; font-weight: bold; ">double</span> id)<br />{<br /><br /><br />}<br /><br />[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> ([<span style="color: #333333; font-weight: bold; ">AvailableValues</span>(<span style="color: #df5000; ">"1"</span>, <span style="color: #df5000; ">"2"</span>, <span style="color: #df5000; ">"3"</span>, <span style="color: #df5000; ">"4"</span>)] <span style="color: #a71d5d; ">string</span> id)<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>If there are no other parameters in the method specified, the operation will be displayed with a folder icon indicating that there are child elements for the operation.</p>
+                                            <p class="caption">Sequence Menu - Operation with Child Elements</p>
+                                            <p>
+                                                <img src="../Resources/Images/Sequence12.png" style="width: 350px;" />
+                                            </p>
+                                            <p>When the operation is selected, the list of available values given in the attribute will be displayed.</p>
+                                            <p class="caption">Sequence Menu - Available Child Operations</p>
+                                            <p>
+                                                <img src="../Resources/Images/Sequence13.png" style="width: 350px;" />
+                                            </p>
+                                            <p>Selecting an available value will add the operation to the sequence as shown in the image below.  When the sequence is executed, the available value chosen will be used while executing the operation.</p>
+                                            <p class="caption">Child Operations Added to Sequence UI&#160;Example</p>
+                                            <p>
+                                                <img src="../Resources/Images/Sequence14.png" style="width: 700px;" />
+                                            </p>
+                                            <p>Editing the step will result in the below parameter dialog.</p>
+                                            <p class="caption">Editing Child Operation UI</p>
+                                            <p class="caption">
+                                                <img src="../Resources/Images/Sequence15.jpg" style="width: 500px;" />
+                                            </p>
+                                            <p>Use the drop-down menu to display all the available values given in the attribute and to select a different value.</p>
+                                            <p class="caption">Editing Child Operation UI - Values Drop-Down Menu</p>
+                                            <p class="caption">
+                                                <img src="../Resources/Images/Sequence16.jpg" style="width: 500px;" />
+                                            </p>
+                                            <h3><a name="DynamicA"></a>DynamicAvailableValuesAttribute</h3>
+                                            <p>The <span class="codeinline">DynamicAvailableValuesAttribute</span> is used when a list of well&#8209;defined values is needed for a parameter, but it is not known at compile time. </p>
+                                            <p>At runtime, when the operation is selected, a method or property on the Crestron Home Extension device associated with the operation will be called for the parameter’s available values.  The <span class="codeinline">typeName</span> string passed in should be the type of the object that will be called and the <span class="codeinline">operationName</span> passed in should be the method or property name on the object to call.  The return type of the method or property should be an <strong>IEnumerable</strong> and match the parameter’s data type.</p>
+                                            <p>Refer to the sample code below.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">
+                                                    </div>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #a71d5d; font-weight: bold; ">public</span> list&lt;<span style="color: #a71d5d; font-weight: bold; ">int</span>&gt; LockIds {<span style="color: #0086b3; ">get</span>; }<br /><br />[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span>([<span style="color: #333333; font-weight: bold; ">DynamicAvailableValues</span>(<span style="color: #0086b3; font-weight: bold; ">nameof</span>(DoorLock), <span style="color: #0086b3; font-weight: bold; ">nameof</span>(LockIds), OperationType.Property)] <span style="color: #a71d5d; font-weight: bold; ">int</span> id)<br />{<br /><br /><br />}<br /><br /><span style="color: #a71d5d; font-weight: bold; ">public</span> list&lt;<span style="color: #a71d5d; font-weight: bold; ">int</span>&gt; <span style="color: #333333; font-weight: bold; ">GetLockIds</span>()<br />{<br />&#160;&#160;&#160;&#160;<span style="color: #969896; ">// Business logic to return lock ids goes here.</span><br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">return</span> <span style="color: #795da3; font-weight: bold; ">new</span> List&lt;<span style="color: #a71d5d; font-weight: bold; ">int</span>&gt;();<br />}<br /><br /><br />[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoorWithId</span>([<span style="color: #333333; font-weight: bold; ">DynamicAvailableValues</span>(<span style="color: #0086b3; font-weight: bold; ">nameof</span>(DoorLock), <span style="color: #0086b3; font-weight: bold; ">nameof</span>(GetLockIds), OperationType.Method)] <span style="color: #a71d5d; font-weight: bold; ">int</span> id)<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The type of object and operation to call does not have to be at the root object.  An optional path from the root object using dot notation <em>n</em> levels deep can also be specified. </p>
+                                            <p>In the example below, the current object has a <span class="codeinline">Device</span> property and the object returned  has a <span class="codeinline">Registry</span> property.  The <span class="codeinline">Registry</span> object is of type <strong>ILockRegistry</strong>, so the <span class="codeinline">GetLockIds</span> method will be called on the <strong>ILockRegistry</strong> object for available values.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoorWithId</span> (<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">DynamicAvailableValues</span>(<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0086b3; font-weight: bold; ">nameof</span>(ILockRegistry),<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0086b3; font-weight: bold; ">nameof</span>(GetLockIds),<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;OperationType.Method,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #df5000; ">"Device.Registry"</span>)]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">int</span> id)<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>Once the available values are retrieved, the same workflow described in <a href="#Availabl" class="MCXref xref">AvailableValuesAttribute</a> applies here.</p>
+                                            <h3>IsSupportedAttribute</h3>
+                                            <p>The <span class="codeinline">IsSupportedAttribute</span> is used when an operation in sequences should only exist under certain business conditions. </p>
+                                            <p>For example, if the same type of door lock device is used to represent different kinds of door lock models, and on certain types of door lock models the unlock operation is not supported, the unlock operation should be decorated with the <span class="codeinline">IsSupportedAttribute</span>.</p>
+                                            <p>Refer to the sample code below.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; font-weight: bold; ">bool</span> <span style="color: #333333; font-weight: bold; ">GetIsUnlockSupported</span>()<br />{<br />&#160;&#160;&#160;&#160;<span style="color: #969896; ">// Business logic on whether or not unlock is supported goes here.</span><br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; ">return</span> <span style="color: #0086b3; font-weight: bold; ">true</span>;<br />}<br /><br /><br />[ProgrammableOperation]<br />[<span style="color: #333333; font-weight: bold; ">IsSupported</span>(<span style="color: #0086b3; font-weight: bold; ">nameof</span>(DoorLock), <span style="color: #0086b3; font-weight: bold; ">nameof</span>(GetIsUnlockSupported), OperationType.Method)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">Unlock</span>()<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The same semantics of <span class="codeinline">typeName</span>, <span class="codeinline">operationName</span>, and an optional path property apply here as they did in <a href="#DynamicA" class="MCXref xref">DynamicAvailableValuesAttribute</a>.</p>
+                                            <p> Before the operation is displayed in sequences, the method or property specified in the <span class="codeinline">IsSupportedAttribute</span> will be called.  If the operation is not supported (the method or property called returns false), the operation will not be displayed in sequences.</p>
+                                            <h3><a name="Localiza"></a>Localization</h3>
+                                            <p>All strings in the attributes above can be localized by prepending the string with a “^” symbol.  This is consistent with other strings that are localized in Crestron Home Extension devices (UiDefinition.xml).  Refer to the sample code below.</p>
+                                            <div class="codeboxshade">
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetCaption">
+                                                    </div>
+                                                    <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">ProgrammableOperation</span>(<span style="color: #df5000; ">"^Lock Door"</span>)]<br /><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span> (<br />&#160;&#160;&#160;&#160;[<span style="color: #333333; font-weight: bold; ">Display</span>(<span style="color: #df5000; ">"^Seconds"</span>)]<br />&#160;&#160;&#160;&#160;<span style="color: #a71d5d; font-weight: bold; ">int</span> time)<br />{<br /><br /><br />}</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>When sequences encounter a string that needs to be localized, the Crestron Home Extension device will be queried (IRadExtensionDevice.GetTranslations method will be called) for the translation string at runtime, and the localized string will be displayed for the applicable item.  If the localized string is not found, the string will be displayed as is with the “^” symbol as shown in the image below.</p>
+                                            <p class="caption">Localized String Not Found UI&#160;Example</p>
+                                            <p>
+                                                <img src="../Resources/Images/Sequence17.png" style="width: 700px;" />
+                                            </p>
+                                            <h1>Package Generation</h1>
+                                            <p>The above attributes and programming will be included in the PKG file when the Manifest Utility is ran against the compiled driver’s DLL file.  Be sure to pass in the full path of the DLL when running ManifestUtil.</p>
+                                            <p>For more information on generating the Crestron Home Extension driver package, refer to <a href="Extension-Drivers.htm#Build" class="MCXref xref">Build the Driver</a>.</p>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TPSkin_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Previous page">
+                                                    <img alt="Navigate previous" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Next page">
+                                                    <img alt="Navigate next" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

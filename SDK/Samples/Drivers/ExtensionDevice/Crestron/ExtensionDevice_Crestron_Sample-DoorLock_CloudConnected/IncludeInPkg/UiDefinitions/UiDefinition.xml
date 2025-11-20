@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<uidefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://prd-use-rad-assets.azurewebsites.net/ExtensionsSchemaDefinition_v1_0.xsd">
+    <version ver="1.0"/>
+
+    <tile icon="{LockStateIcon}" secondaryicon="{BatteryIcon}" status="{LockState}" action="command:ToggleLock" navigation="show:MainPage" showinhomepage="#false" showinroompage="#true"/>
+
+    <layouts>
+        
+        <layout id="MainPage">
+            <controls>
+                <!-- Battery status -->
+                <textdisplay id="BatteryStatus" title="^BatteryLabel" line1label="^Percent|{BatteryPercent}"/>
+
+                <!-- Lock and unlock button -->
+                <controlgroup>
+                    <button id="LockButton" label="^LockLabel" action="command:Lock"/>
+                    <button id="UnlockButton" label="^UnlockLabel" action="command:Unlock"/>
+                </controlgroup>
+
+                <!-- Settings button -->
+                <button id="SettingsButton" label="^SettingsLabel" navigation="show:SettingsPage" icon="#icSettings"/>
+
+                <!-- Activity feed button -->
+                <listbutton id="ActivityFeedButton" label="^ActivityFeedLabel" source="{ActivityFeed}" itemlabel="{.Summary}" navigation="show:ActivityDetailsPage" navigationparameters="{.}"/>
+            </controls>
+        </layout>
+
+        <layout id="SettingsPage" title="^SettingsLabel">
+            <controls>
+                <!-- Auto lock settings -->
+                <controlgroup>
+                    <toggle id="AutoLockToggle" label="^AutoLockLabel" value="{AutoLock}"/>
+                    <textentry id="AutoLockTimeEntry" label="^AutoLockTimeSecLabel" value="{AutoLockTime}" errortext="{AutoLockTimeError}" numericinputonly="#true" enabled="{AutoLock}"/>
+                </controlgroup>
+
+                <!-- User list button and add user button -->
+                <controlgroup>
+                    <listbutton id="UserListButton" label="^UserListLabel" source="{UserList}" itemlabel="{.Name}" navigation="show:UserSettingsPage" navigationparameters="{.}"/>
+                    <button id="AddUserNavigationButton" label="^AddUserLabel" navigation="show:AddUserPage"/>
+                </controlgroup>
+            </controls>
+        </layout>
+
+        <layout id="UserSettingsPage" inputparameters="$User" title="$User.Name" subtitle="^UserSettingsLabel">
+            <controls>
+                <!-- User settings -->
+                <controlgroup>
+                    <textentry id="UserNameEntry" label="^UserNameLabel" value="$User.Name"/>
+                    <textentry id="UserPinEntry" label="^UserPinLabel" value="$User.Pin" errortext="{UserPinError}" numericinputonly="#true" obscureinput="#true"/>
+                    <toggle id="UserEnabledToggle" label="^UserEnabledLabel" value="$User.Enabled"/>
+                    <selectorbutton id="UserPermissionSelector" label="^PermissionLevelLabel" value="$User.PermissionLevel"/>
+                </controlgroup>
+                
+                <!-- Delete user button -->
+                <button id="DeleteUserButton" label="^DeleteUserLabel" navigation="showalert:DeleteUserConfirmation" navigationparameters="$User.Id"/>
+            </controls>
+        </layout>
+
+        <layout id="AddUserPage" title="^AddUserPageTitle">
+            <controls>
+                <!-- Add user details -->
+                <controlgroup>
+                    <textentry id="AddUserNameEntry" label="^UserNameLabel" value="$Name"/>
+                    <textentry id="AddUserPinEntry" label="^UserPinLabel" value="$Pin" errortext="{UserPinError}" numericinputonly="#true"/>
+                </controlgroup>
+
+                <!-- Add user button -->
+                <button id="AddUserButton" label="^AddUserLabel" action="command:AddUser" navigation="back" actionparameters="$Name, $Pin"/>
+            </controls>
+        </layout>
+
+        <layout id="ActivityDetailsPage" inputparameters="$Activity" title="^ActivityDetailsLabel">
+            <controls>
+                <!-- Lock activity details -->
+                <controlgroup>
+                    <textdisplay id="PerformedBy" title="^PerformedByLabel" line1label="$Activity.UserName"/>
+                    <textdisplay id="Action" title="^ActionLabel" line1label="$Activity.EventType"/>
+                    <textdisplay id="Time" title="^TimeLabel" line1label="$Activity.Time"/>
+                </controlgroup>
+            </controls>
+        </layout>
+
+    </layouts>
+
+    <alerts>
+
+        <!-- Delete user confirmation -->
+        <confirmation
+            id="DeleteUserConfirmation"
+            inputparameters="$UserId"
+            messagelabel="^DeleteUserConfirmationLabel"
+            cancelbuttonlabel="^CancelLabel"
+            proceedbuttonlabel="^YesLabel"
+            proceedaction="command:DeleteUser"
+            actionparameters="$UserId"
+            navigation="back"/>
+
+    </alerts>
+    
+</uidefinition>

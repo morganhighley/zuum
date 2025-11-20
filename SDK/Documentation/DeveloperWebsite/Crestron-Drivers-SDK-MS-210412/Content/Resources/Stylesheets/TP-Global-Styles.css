@@ -1,0 +1,2484 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+@font-face 
+{
+	font-family: 'MarkPro';
+	src: url('../Fonts/MarkPro.ttf') format('truetype'), url('../Fonts/MarkPro.otf') format('opentype'), url('../Fonts/MarkPro.woff') format('woff');
+}
+
+@font-face 
+{
+	font-family: 'Mark Pro Heavy';
+	src: url('../Fonts/MarkPro-Heavy.ttf') format('truetype');
+}
+
+@font-face 
+{
+	font-family: 'MarkPro-Bold';
+	src: url('../Fonts/MarkPro-Bold.otf') format('opentype');
+}
+
+@font-face 
+{
+	font-family: 'MarkPro-Book';
+	src: url('../Fonts/MarkPro-Book.otf') format('opentype');
+}
+
+@font-face 
+{
+	font-family: 'MarkPro-Medium';
+	src: url('../Fonts/MarkPro-Medium.otf') format('opentype');
+}
+
+@font-face 
+{
+	font-family: 'Crestron AV';
+	src: url('../Fonts/Crestron AV.ttf') format('truetype');
+}
+
+@font-face 
+{
+	font-family: 'Crestron Simple Icons';
+	src: url('../Fonts/Crestron Simple Icons.ttf') format('truetype');
+}
+
+body
+{
+	font-family: MarkPro;
+	font-size: 11pt;
+	/* The following two lines are "commented out" because Flare covers left and right margins in the skin. */
+	/*margin-left: 10%;*/
+	/*margin-right: 10%;*/
+	scroll-behavior: smooth;
+}
+
+/* css variables for heading colors */
+/* color-1 is Crestron Blue, color-2 is Crestron Teal */
+
+:root
+{
+	--color-1: #003c71;
+	--color-2: #0083ad;
+}
+
+a:link
+{
+	color: #0083ad;
+}
+
+.dropdown-content a:hover
+{
+	background-color: #ffffff;
+	color: #003c71;
+}
+
+/***************************************************************************************************************************/
+/**** Start topnav for Quick Start *****/
+/***************************************************************************************************************************/
+
+.topnav
+{
+	background-color: #f1f1f1;
+	overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav a
+{
+	background-color: #f1f1f1;
+	color: #003c71;
+	display: block;
+	float: left;
+	font-size: 10pt;
+	padding: 4px 16px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 10pt;
+}
+
+/* Add an active class to highlight the current page */
+
+.active
+{
+	background-color: #ffffff;
+	color: #003c71;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon
+{
+	display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+
+.dropdown
+{
+	float: left;
+	overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav [More]*/
+
+.dropdown .dropbtn
+{
+	background-color: inherit;
+	border: none;
+	color: #003c71;
+	font-family: inherit;
+	font-size: 10pt;
+	margin: 0;
+	outline: none;
+	padding: 4px 16px;
+}
+
+/* Style the dropdown content (hidden by default) [on mouseover]*/
+
+.dropdown-content
+{
+	background-color: #ffffff;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	display: none;
+	font-color: #003c71;
+	min-width: 160px;
+	position: absolute;
+	z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+
+.dropdown-content a
+{
+	color: #003c71;
+	display: block;
+	float: none;
+	padding: 12px 16px;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* Make background white on topnav links and the dropdown button on hover */
+
+.topnav a:hover,
+.dropdown:hover .dropbtn
+{
+	background-color: #ffffff;
+	color: #003c71;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+
+.dropdown:hover .dropdown-content
+{
+	display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that opens and closes the topnav (.icon) */
+
+@media screen and (max-width: 600px)
+{
+	.topnav a:not(:first-child),
+	.dropdown .dropbtn
+	{
+		display: none;
+	}
+
+	.topnav a.icon
+	{
+		display: block;
+		float: right;
+	}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 600px)
+{
+	.topnav.responsive
+	{
+		position: relative;
+	}
+
+	.topnav.responsive a.icon
+	{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a
+	{
+		display: block;
+		float: none;
+		text-align: left;
+	}
+
+	.topnav.responsive .dropdown
+	{
+		float: none;
+	}
+
+	.topnav.responsive .dropdown-content
+	{
+		position: relative;
+	}
+
+	.topnav.responsive .dropdown .dropbtn
+	{
+		display: block;
+		text-align: left;
+		width: 100%;
+	}
+}
+
+/***************************************************************************************************************************/
+/**** End topnav for Quick Start *****/
+/***************************************************************************************************************************/
+
+div.GlossaryPageDefinition
+{
+	
+}
+
+div.GlossaryPageHeading
+{
+	
+}
+
+div.GlossaryPageTerm
+{
+	
+}
+
+div.TopicContent
+{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 25px;
+}
+
+h1
+{
+	color: #003c71;
+	font-size: 18pt;
+	font-weight: normal;
+	margin-bottom: 8px;
+	margin-top: 30px;
+	padding-bottom: 10px;
+}
+
+h2
+{
+	color: #003c71;
+	font-size: 16pt;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 20px;
+}
+
+h3
+{
+	color: #003c71;
+	font-size: 15pt;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 18px;
+}
+
+h4
+{
+	color: #003c71;
+	font-size: 14pt;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 18px;
+}
+
+h5
+{
+	color: #003c71;
+	font-size: 13pt;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 14px;
+}
+
+h6
+{
+	color: #003c71;
+	font-size: 12pt;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 14px;
+}
+
+li
+{
+	column-break-inside: avoid;
+	margin-bottom: 6px;
+	margin-top: 6px;
+	/*orphans: 2;*/
+	page-break-inside: avoid;
+	/*widows: 2;*/
+}
+
+ol ol
+{
+	list-style-type: lower-alpha;
+}
+
+ol ol ol
+{
+	list-style-type: lower-roman;
+}
+
+ul ul
+{
+	list-style-type: circle;
+}
+
+ul ul ul
+{
+	list-style-type: square;
+}
+
+tr
+{
+	column-break-inside: avoid;
+	page-break-inside: avoid;
+}
+
+MadCap|breadcrumbsProxy
+{
+	background-color: #f9f9f9;
+	border-bottom-style: none;
+	font-size: 0.9em;
+	mc-breadcrumbs-divider: ' / ';
+	mc-breadcrumbs-prefix: ' ';
+}
+
+/* Change default close and open dropdown icons to up and down arrows */
+
+MadCap|dropDown
+{
+	mc-closed-image: url('../Images/Template-Images/Dropdown-Arrow-Down.png');
+	mc-open-image: url('../Images/Template-Images/Dropdown-Arrow-Up.png');
+}
+
+MadCap|dropDownHotspot
+{
+	color: #003c71;
+}
+
+MadCap|glossaryProxy
+{
+	
+}
+
+MadCap|indexProxy
+{
+	
+}
+
+MadCap|tocProxy
+{
+	
+}
+
+span.mc-variable
+{
+	
+}
+
+MadCap|xref
+{
+	color: #0083ad;
+	font-weight: normal;
+	mc-format: '{para}';
+	text-decoration: none;
+}
+
+MadCap|xref:hover
+{
+	color: #003c71;
+}
+
+p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+p.EmptyPageText
+{
+	
+}
+
+p.FrameFooterText
+{
+	
+}
+
+p.IndexHeading
+{
+	
+}
+
+p.ManualTitle1
+{
+	
+}
+
+p.ManualTitle2
+{
+	
+}
+
+p.ManualVersionNumber
+{
+	
+}
+
+p.TOC3
+{
+	margin-left: 20pt;
+}
+
+/* Start padding for breadcrumbs, logo, and search */
+
+div.breadcrumbs
+{
+	padding: 8px;
+}
+
+div.logo-wrapper
+{
+	padding-left: 10px;
+}
+
+div.nav-search-wrapper
+{
+	padding: 0 30px;
+}
+
+/* End padding for breadcrumbs, logo, and search */
+
+div.clearfix::after
+{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/* Shading behind legal text on front cover 2 */
+
+div.fineprintshading
+{
+	background-color: #f9f9f9;
+	padding: 5px;
+}
+
+div.padding
+{
+	padding: 10px;
+}
+
+div.floatingbox1
+{
+	display: inline-block;
+	height: 204px;
+	margin: 20px;
+	width: 320px;
+}
+
+div.floatingbox2
+{
+	display: inline-block;
+	height: 334px;
+	margin: 20px;
+	width: 220px;
+}
+
+footer
+{
+	font-size: 0.8em;
+}
+
+img.absolute
+{
+	position: absolute;
+}
+
+img.floatleft
+{
+	float: left;
+}
+
+img.floatright
+{
+	float: right;
+}
+
+/* Indent image in list */
+
+img.indent
+{
+	margin-left: 50px;
+}
+
+/* Added line-height to correct p.firstletter line spacing in pdf. */
+/* Most browsers default to line-height of 110-120%. */
+
+p.first-letter::first-letter
+{
+	color: #003c71;
+	/*float: left;*/
+	font-size: 200%;
+	line-height: 70%;
+}
+
+.backpageleft
+{
+	font-size: 9pt;
+	line-height: 120%;
+	text-align: left;
+}
+
+.backpageright
+{
+	font-size: 9pt;
+	line-height: 120%;
+	text-align: right;
+}
+
+/* Set barcode size to 1" x 0.25" */
+
+.barcode
+{
+	height: 0.25in;
+	width: 1in;
+}
+
+/* Toolbar buttons */
+
+.buttons
+{
+	background-color: #003c71;
+	border-radius: 5px;
+	bottom: 10px;
+	padding: 5px 5px 5px 8px;
+	position: fixed;
+	right: 10px;
+	z-index: 1001;
+}
+
+.caption
+{
+	column-break-after: avoid;
+	font-size: 0.9em;
+	font-weight: bold;
+	page-break-after: avoid;
+}
+
+.center
+{
+	text-align: center;
+}
+
+/* Code (plain, no margin or padding) */
+
+.code
+{
+	display: block;
+	font-family: 'Courier New';
+}
+
+/* Code box (for SDK) */
+
+.codebox
+{
+	border: solid 1px #000000;
+	display: block;
+	font-family: 'Courier New';
+	margin: 8px 0px;
+	padding: 5px;
+}
+
+/* Code box auto-sizes to fit text */
+
+.codeboxflex
+{
+	border: solid 1px #000000;
+	display: inline-flex;
+	font-family: 'Courier New';
+	margin: 8px 0px;
+	padding: 5px;
+}
+
+/* Code box auto-sizes to fit text - shaded, borderless */
+
+.codeboxflexshade
+{
+	background-color: #f1f1f1;
+	display: inline-flex;
+	font-family: 'Courier New';
+	margin: 8px 0px;
+	padding: 5px;
+}
+
+/* Code box - shaded, borderless */
+
+.codeboxshade
+{
+	background-color: #f1f1f1;
+	display: block;
+	font-family: 'Courier New';
+	margin: 8px 0px;
+	padding: 5px;
+}
+
+/* Code inline with text (plain, no margin or padding) */
+
+.codeinline
+{
+	display: inline;
+	font-family: 'Courier New';
+}
+
+/* Code without box but padded (for SDK) */
+
+.codepad
+{
+	display: block;
+	font-family: 'Courier New';
+	margin: 8px 0px;
+	padding: 3px;
+}
+
+.colbreak
+{
+	column-break-before: always;
+}
+
+/* Most browsers default to line-height of 110-120%. */
+
+.covercompany
+{
+	color: #0083ad;
+	font-size: 10pt;
+	line-height: 60%;
+	text-align: right;
+}
+
+.coverdesc
+{
+	color: #003c71;
+	font-size: 22pt;
+	margin-bottom: 48px;
+	text-align: right;
+}
+
+.coverdoctype
+{
+	clear: right;
+	color: #0083ad;
+	font-size: 18pt;
+	line-height: 60%;
+	text-align: right;
+}
+
+.covermodels
+{
+	color: #000000;
+	float: right;
+	font-size: 18pt;
+	margin-right: 48px;
+}
+
+.crestron-av
+{
+	font-family: 'Crestron AV';
+}
+
+.crestron-simple-icons
+{
+	font-family: 'Crestron Simple Icons';
+}
+
+.fineprint
+{
+	font-size: 9pt;
+	margin: 0px;
+}
+
+/* ==== Start custom responsive layout row style (div class) for the Home page. ==== */
+
+.flexcontainer1
+{
+	align-content: space-around;
+	background-color: #f9f9f9;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px 0px;
+}
+
+.flexcontainer2
+{
+	align-content: space-around;
+	background-color: #f9f9f9;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px 0px;
+}
+
+.flexcontainer3
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: center;
+	background-color: #f9f9f9;
+	padding: 20px 0px;
+}
+
+.flexcontainer4
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: center;
+	background-color: #f9f9f9;
+	padding: 20px 0px;
+}
+
+.flexcontainer1 > div
+{
+	width: 22%;
+	height: 100px;
+	vertical-align: middle;
+	margin: 10px 200px;
+	padding: 10px;
+	text-align: center;
+	font-size: 12pt;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+.flexcontainer2 > div
+{
+	width: 22%;
+	height: 100px;
+	vertical-align: middle;
+	margin: 10px 60px;
+	padding: 10px;
+	text-align: center;
+	font-size: 12pt;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+.flexcontainer3 > div
+{
+	width: 22%;
+	height: 100px;
+	vertical-align: middle;
+	margin: 10px 20px;
+	padding: 10px;
+	text-align: center;
+	font-size: 12pt;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+.flexcontainer4 > div
+{
+	width: 22%;
+	height: 100px;
+	vertical-align: middle;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	font-size: 12pt;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+/* The following must remain, even with no properties cited. */
+
+.flexcontainer1 div:a
+{
+	
+}
+
+.flexcontainer2 div:a
+{
+	
+}
+
+.flexcontainer3 div:a
+{
+	
+}
+
+.flexcontainer4 div:a
+{
+	
+}
+
+/* Hovering over link divs will apply the following properties. */
+
+.flexcontainer1 div:hover
+{
+	box-shadow: 10px 10px 10px #bcc9c5;
+	transition: all 1s cubic-bezier(.25,.8,.25,1);
+}
+
+.flexcontainer2 div:hover
+{
+	box-shadow: 10px 10px 10px #bcc9c5;
+	transition: all 1s cubic-bezier(.25,.8,.25,1);
+}
+
+.flexcontainer3 div:hover
+{
+	box-shadow: 10px 10px 10px #bcc9c5;
+	transition: all 1s cubic-bezier(.25,.8,.25,1);
+}
+
+.flexcontainer4 div:hover
+{
+	box-shadow: 10px 10px 10px #bcc9c5;
+	transition: all 1s cubic-bezier(.25,.8,.25,1);
+}
+
+/* Link text in Crestron Teal with no underline */
+
+.flextext
+{
+	color: #0083ad;
+	text-decoration: none;
+}
+
+/* Hovering over link text will change color to Crestron Blue. */
+
+.flextext:hover
+{
+	color: #003c71;
+}
+
+/* Created with SortName QS topic header in mind, but can be used anywhere. font-size# can be used to change fontsize of variables or layout element (TP-Global controlled). */
+
+.font-size16
+{
+	font-size: 16pt;
+}
+
+.font-size17
+{
+	font-size: 17pt;
+}
+
+.font-size18
+{
+	font-size: 18pt;
+}
+
+.font-size19
+{
+	font-size: 19pt;
+}
+
+.font-size20
+{
+	font-size: 20pt;
+}
+
+.font-size21
+{
+	font-size: 21pt;
+}
+
+.font-size22
+{
+	font-size: 22pt;
+}
+
+/* ==== End custom responsive layout row style (div class) for the Home page. ==== */
+
+.footerleft
+{
+	color: #003c71;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-align: left;
+}
+
+.footerright
+{
+	color: #003c71;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-align: right;
+}
+
+.footnote
+{
+	font-size: 0.8em;
+}
+
+/* Style horizontal rule under h1 headings */
+
+.h1line
+{
+	border-top: 1px solid #003c71;
+	margin-bottom: 25px;
+	margin-top: -20px;
+}
+
+.highlight
+{
+	background-color: #ffff00;
+}
+
+/* Vertically center icons that are in-line with text */
+
+.imginline
+{
+	margin-bottom: -4px;
+	max-height: 18px;
+}
+
+.indent
+{
+	display: block;
+	margin-left: 24px;
+}
+
+.indent2
+{
+	display: block;
+	margin-left: 48px;
+}
+
+.indent3
+{
+	display: block;
+	margin-left: 72px;
+}
+
+.intheboxbox
+{
+	background-color: #f1f1f1;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding: 10px 10px 12px 10px;
+}
+
+.keepwithnext
+{
+	column-break-after: avoid;
+	page-break-after: avoid;
+}
+
+/*.linkheight
+{
+	vertical-align: -2.5px;
+}*/
+
+/*.MCPopupFullImage
+{
+    max-width: 500px !important;
+    max-height: auto !important;
+}*/
+
+.nobreak,
+div.nobreak
+{
+	column-break-inside: avoid;
+	page-break-inside: avoid;
+}
+
+.nobreakkeepnext,
+div.nobreakkeepnext
+{
+	column-break-before: auto;
+	column-break-inside: avoid;
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	page-break-before: auto;
+}
+
+.note
+{
+	color: #0083ad;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.notebox,
+div.notebox
+{
+	background-color: #f1f1f1;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	margin-left: -10px;
+	padding: 10px 10px 7px 10px;
+}
+
+.pageonetitle
+{
+	color: #003c71;
+	font-size: 24pt;
+	line-height: 110%;
+	margin-left: 0in;
+	text-align: left;
+}
+
+/* Set QR code size to 57px square */
+
+.qrcode57
+{
+	height: 57px;
+	width: 57px;
+}
+
+/* Style section heading icons in Quick Start */
+
+.qsicon
+{
+	height: auto;
+	width: 48px;
+}
+
+/* Style image size for Quick Start (1-column width for 4-7/8 in. Illustrator artboard) */
+
+.qsimg
+{
+	height: auto;
+	width: 468px;
+}
+
+/* Style wide image size for Quick Start (2-column width for 10 in. Illustrator artboard) */
+
+.qsimgwide
+{
+	height: auto;
+	width: 960px;
+}
+
+/* Style the logo (if used) in Quick Start header */
+
+.qslogo
+{
+	align-items: center;
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+/* Style "Quick Start" in Quick Start header */
+
+.qsqs
+{
+	color: #cccccc;
+	font-family: 'Mark Pro Heavy';
+	font-size: 24pt;
+}
+
+.samepage
+{
+	column-break-before: avoid;
+	page-break-before: avoid;
+}
+
+/* For list items within table cells to prevent items from being too far right */
+
+.tableli
+{
+	line-height: 100%;
+	margin-left: -0.26in;
+	padding-top: 2px;
+}
+
+.underline
+{
+	text-decoration: underline;
+}
+
+/* Enlarge for Line Description on Product Information header*/
+
+.varlinedesc
+{
+	font-size: 11pt;
+}
+
+/* Bold and enlarge to 12pt for Sortname on Product Information header*/
+
+.varsortname12
+{
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+/* Bold and enlarge to 14pt for Sortname on Product Information header*/
+
+.varsortname14
+{
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+/* Bold company name variable on back page of booklet */
+
+.varstrong
+{
+	font-weight: bold;
+}
+
+.white
+{
+	color: white;
+}
+
+/*@media print=(pdf)==================================================================================*/
+
+@media print
+{
+	body
+	{
+		font-size: 10pt;
+		margin: 0;
+		mc-hyphenate: never;
+	}
+
+	div.GlossaryPageDefinition
+	{
+		font-size: 9pt;
+	}
+
+	div.GlossaryPageHeading
+	{
+		border-bottom-color: #bed230;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		color: #bed230;
+		font-size: 11pt;
+	}
+
+	div.GlossaryPageTerm
+	{
+		color: #bed230;
+		font-size: 10pt;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	h1
+	{
+		color: #003c71;
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		padding: 0;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		font-size: 32pt;
+		font-weight: normal;
+		font-family: MarkPro-Bold;
+		margin: 1em 0em 0.3em;
+	}
+
+	/* Autonumber appendices */
+
+	h1.appendix
+	{
+		mc-auto-number-format: 'CH:Appendix {chapnum}: ';
+	}
+
+	h1.contents
+	{
+		color: #003c71;
+		font-size: 22pt;
+		font-weight: bold;
+		margin-bottom: 20px;
+		mc-heading-level: 0;
+		padding: 0;
+	}
+
+	h2
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		font-weight: normal;
+		font-family: MarkPro-Bold;
+		font-size: 24pt;
+		margin: 1em 0em 0.3em;
+	}
+
+	/* Added margin-top to change default 16px to 20 px */
+
+	h3
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 18pt;
+		mc-heading-level: 3;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		font-family: MarkPro-Medium;
+		font-weight: normal;
+		margin: 1em 0em 0.3em;
+	}
+
+	h4
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		mc-heading-level: 0;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		font-size: 14pt;
+		font-weight: normal;
+		margin: 0.8em 0em 0.3em;
+		font-family: MarkPro-Book;
+	}
+
+	h5
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		mc-heading-level: 0;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		font-family: MarkPro-Book;
+		font-size: 12pt;
+		font-weight: normal;
+		margin: 0.6 em 0em 0.3em;
+	}
+
+	h6
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		mc-heading-level: 0;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		font-family: MarkPro-Book;
+		font-size: 10pt;
+		font-weight: normal;
+		margin: 0.6em 0em 0.3em;
+	}
+
+	MadCap|glossaryProxy
+	{
+		border-top: none;
+	}
+
+	MadCap|indexProxy
+	{
+		border-top: none;
+	}
+
+	MadCap|tocProxy
+	{
+		border-top: none;
+		margin-right: 0.25in;
+	}
+
+	MadCap|xref
+	{
+		color: #0083ad;
+		font-weight: normal;
+		mc-format: '{para} ({pageref})';
+		text-decoration: none;
+	}
+
+	/* The following was empty. Added line-height to get line spacing closer together. */
+
+	p
+	{
+		line-height: normal;
+		margin: 0pt 0pt 8pt;
+	}
+
+	p.EmptyPageText
+	{
+		font-size: 10pt;
+		font-weight: bold;
+	}
+
+	p.FrameFooterText
+	{
+		font-size: 24pt;
+	}
+
+	p.IndexHeading
+	{
+		font-size: 11pt;
+		padding-top: 16px;
+		text-align: left;
+	}
+
+	p.ManualTitle1
+	{
+		font-size: 9pt;
+		margin-bottom: 0;
+		margin-top: 2.00in;
+		text-align: center;
+	}
+
+	p.ManualTitle2
+	{
+		color: #bed230;
+		font-size: 22pt;
+		line-height: 0;
+		margin-bottom: 0;
+		margin-top: 0;
+		text-align: center;
+	}
+
+	p.ManualVersionNumber
+	{
+		color: #b3b3b3;
+		font-size: 12pt;
+		margin-top: 12pt;
+		text-align: center;
+	}
+
+	/* margin-top was 6 px, margin-bottom was 12 px */
+
+	p.TOC1
+	{
+		font-size: 12pt;
+		font-weight: bold;
+		margin-bottom: 3px;
+		margin-top: 12px;
+	}
+
+	/* margin-top was set from 2 to 0 px, margin-bottom was set from 2 to 0 px --- and back*/
+
+	p.TOC2
+	{
+		font-size: 10pt;
+		font-weight: normal;
+		margin-bottom: 2px;
+		margin-left: 10pt;
+		margin-top: 2px;
+	}
+
+	p.TOC3
+	{
+		font-size: 10pt;
+		margin-bottom: 2px;
+		margin-top: 2px;
+	}
+
+	/* Code box auto-sizes to fit text */
+
+	.codeboxflex
+	{
+		border: solid 1px #000000;
+		display: inline-flex;
+		font-family: 'Courier New';
+		margin: 8px 0px 8px 0px;
+		padding: 5px;
+	}
+
+	/* Code box auto-sizes to fit text - shaded, borderless */
+
+	.codeboxflexshade
+	{
+		background-color: #f1f1f1;
+		display: inline-flex;
+		font-family: 'Courier New';
+		margin: 8px 0px 8px 0px;
+		padding: 5px;
+	}
+
+	.codeboxshade
+	{
+		display: block;
+		background-color: #f1f1f1;
+		font-family: 'Courier New';
+		margin: 8px 0px 8px 0px;
+		padding: 5px;
+	}
+
+	.fineprint
+	{
+		font-size: 8pt;
+		margin: 0px;
+	}
+
+	/* Style horizontal rule under h1 headings */
+
+	.h1line
+	{
+		border-top: 1px solid #003c71;
+		margin-bottom: 25px;
+		margin-top: -27px;
+	}
+
+	/* Prevent heading level from appearing in booklet TOC */
+
+	.hideintoc
+	{
+		mc-heading-level: 0;
+	}
+
+	.notebox
+	{
+		background-color: #f1f1f1;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		margin-left: -10px;
+		padding: 10px 10px 5px 10px;
+	}
+
+	.title
+	{
+		color: #003c71;
+		font-size: 24pt;
+		text-align: right;
+	}
+
+	li
+	{
+		
+	}
+}
+
+/*@media printword====================================================================================*/
+
+@media printword
+{
+	body
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 10pt;
+		margin: 0;
+		mc-hyphenate: never;
+	}
+
+	div.GlossaryPageDefinition
+	{
+		font-size: 9pt;
+	}
+
+	div.GlossaryPageHeading
+	{
+		border-bottom-color: #bed230;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		color: #bed230;
+		font-size: 11pt;
+	}
+
+	div.GlossaryPageTerm
+	{
+		color: #bed230;
+		font-size: 10pt;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	h1
+	{
+		color: #003c71;
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 18pt;
+		margin-bottom: 20px;
+		padding: 0;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	/* Autonumber appendices */
+
+	h1.appendix
+	{
+		mc-auto-number-format: 'CH:Appendix {chapnum}: ';
+	}
+
+	h1.contents
+	{
+		color: #003c71;
+		font-size: 18pt;
+		margin-bottom: 20px;
+		mc-heading-level: 0;
+		padding: 0;
+	}
+
+	h2
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 16pt;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	/* Added margin-top to change default 16px to 20 px */
+
+	h3
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 14pt;
+		margin-top: 20px;
+		mc-heading-level: 3;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h4
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 13pt;
+		mc-heading-level: 0;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h5
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 12pt;
+		mc-heading-level: 0;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h6
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 11pt;
+		mc-heading-level: 0;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	MadCap|glossaryProxy
+	{
+		border-top: none;
+	}
+
+	MadCap|indexProxy
+	{
+		border-top: none;
+	}
+
+	MadCap|tocProxy
+	{
+		border-top: none;
+		margin-right: 0.25in;
+	}
+
+	MadCap|xref
+	{
+		color: #0083ad;
+		font-weight: normal;
+		mc-format: '{para} ({pageref})';
+		text-decoration: none;
+	}
+
+	/* The following was empty. Added line-height to get pdf line spacing closer together. */
+
+	p
+	{
+		line-height: normal;
+	}
+
+	p.EmptyPageText
+	{
+		font-size: 10pt;
+		font-weight: bold;
+	}
+
+	p.FrameFooterText
+	{
+		font-size: 24pt;
+	}
+
+	p.IndexHeading
+	{
+		font-size: 11pt;
+		padding-top: 16px;
+		text-align: left;
+	}
+
+	p.ManualTitle1
+	{
+		font-size: 9pt;
+		margin-bottom: 0;
+		margin-top: 2.00in;
+		text-align: center;
+	}
+
+	p.ManualTitle2
+	{
+		color: #bed230;
+		font-size: 22pt;
+		line-height: 0;
+		margin-bottom: 0;
+		margin-top: 0;
+		text-align: center;
+	}
+
+	p.ManualVersionNumber
+	{
+		color: #b3b3b3;
+		font-size: 12pt;
+		margin-top: 12pt;
+		text-align: center;
+	}
+
+	/* margin-top was 6 px, margin-bottom was 12 px */
+
+	p.TOC1
+	{
+		font-size: 12pt;
+		font-weight: bold;
+		margin-bottom: 3px;
+		margin-top: 12px;
+	}
+
+	/* margin-top was set from 2 to 0 px, margin-bottom was set from 2 to 0 px --- and back*/
+
+	p.TOC2
+	{
+		font-size: 10pt;
+		font-weight: normal;
+		margin-bottom: 2px;
+		margin-left: 10pt;
+		margin-top: 2px;
+	}
+
+	p.TOC3
+	{
+		font-size: 10pt;
+		margin-bottom: 2px;
+		margin-top: 2px;
+	}
+
+	.caption
+	{
+		column-break-after: avoid;
+		font-size: 9pt;
+		font-weight: bold;
+		page-break-after: avoid;
+	}
+
+	/* Code box auto-sizes to fit text */
+
+	.codeboxflex
+	{
+		border: solid 1px #000000;
+		display: inline-flex;
+		font-family: 'Courier New';
+		margin: 8px 0px 8px 0.5in;
+		padding: 5px;
+	}
+
+	/* Code box auto-sizes to fit text - shaded, borderless */
+
+	.codeboxflexshade
+	{
+		background-color: #f1f1f1;
+		display: inline-flex;
+		font-family: 'Courier New';
+		margin: 8px 0px 8px 0.5in;
+		padding: 5px;
+	}
+
+	.codeboxshade
+	{
+		display: block;
+		background-color: #f1f1f1;
+		font-family: 'Courier New';
+		margin: 8px 0px 8px 0.5in;
+		padding: 5px;
+	}
+
+	.fineprint
+	{
+		font-size: 8pt;
+		margin: 0px;
+	}
+
+	/* Style horizontal rule under h1 headings */
+
+	.h1line
+	{
+		border-top: 1px solid #003c71;
+		margin-bottom: 25px;
+		margin-top: -27px;
+	}
+
+	/* Prevent heading level from appearing in booklet TOC */
+
+	.hideintoc
+	{
+		mc-heading-level: 0;
+	}
+
+	.notebox
+	{
+		background-color: #f1f1f1;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		margin-left: -10px;
+		padding: 10px 10px 5px 10px;
+	}
+
+	.title
+	{
+		color: #003c71;
+		font-size: 24pt;
+		text-align: right;
+	}
+}
+
+/*@media tablet=======================================================================================*/
+
+@media only screen and (max-width: 1279px)
+{
+	/* Padding for breadcrumbs, logo, hamburger and search on tablet devices*/
+
+	div.breadcrumbs
+	{
+		padding: 8px;
+	}
+
+	div.logo-wrapper
+	{
+		padding-left: 10px;
+	}
+
+	div.middle.title-bar-section.outer-row.clearfix
+	{
+		padding-right: 24px;
+	}
+
+	div.nav-search-wrapper
+	{
+		padding: 0 10px;
+	}
+
+	.qsimg
+	{
+		height: auto;
+		width: 100%;
+	}
+
+	.qsimgwide
+	{
+		height: auto;
+		width: 100%;
+	}
+}
+
+/*@media mobile=======================================================================================*/
+
+@media only screen and (max-width: 767px)
+{
+	/* Padding for breadcrumbs, logo, hamburger and search on mobile devices*/
+
+	div.breadcrumbs
+	{
+		padding: 8px;
+	}
+
+	div.logo-wrapper
+	{
+		padding-left: 18px;
+	}
+
+	div.middle.title-bar-section.outer-row.clearfix
+	{
+		padding-right: 24px;
+	}
+
+	div.nav-search-wrapper
+	{
+		padding: 0 18px;
+	}
+
+	/* Single row of wider tiles on home page for mobile devices */
+
+	.flexcontainer1 > div
+	{
+		width: 70%;
+		margin: 10px;
+	}
+
+	.flexcontainer2 > div
+	{
+		width: 70%;
+		margin: 10px;
+	}
+
+	.flexcontainer3 > div
+	{
+		width: 70%;
+		margin: 10px;
+	}
+
+	.flexcontainer4 > div
+	{
+		width: 70%;
+		margin: 10px;
+	}
+
+	.qsimg
+	{
+		height: auto;
+		width: 100%;
+	}
+
+	.qsimgwide
+	{
+		height: auto;
+		width: 100%;
+	}
+}
+
+/*@media product-information ==============================================================================*/
+
+@media product-information
+{
+	/* Show links in black */
+
+	a:link
+	{
+		color: #000000;
+	}
+
+	body
+	{
+		/*font-family: Arial, Helvetica, sans-serif;*/
+		font-size: 7pt;
+		margin-left: 0;
+		margin-top: 0;
+		mc-hyphenate: never;
+	}
+
+	ol
+	{
+		margin-left: 16px;
+	}
+
+	ul
+	{
+		margin-left: 13px;
+	}
+
+	.compheader
+	{
+		font-size: 9pt;
+		font-weight: bold;
+		margin-top: 14px;
+	}
+
+	.fineprint
+	{
+		font-size: 7pt;
+	}
+
+	/* For "Getting Started" header in first column - workaround for a Flare issue */
+
+	.nomargin
+	{
+		margin: 0;
+	}
+}
+
+/*@media quickstarthtml=====================================================================================*/
+
+@media quickstarthtml
+{
+	h1
+	{
+		font-size: 16pt;
+		font-weight: bold;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-bottom: 0;
+		text-align: left;
+		vertical-align: bottom;
+	}
+
+	h2
+	{
+		font-size: 14pt;
+		font-weight: bold;
+	}
+
+	h3
+	{
+		font-size: 12pt;
+		font-weight: bold;
+		margin-bottom: 4px;
+		margin-top: 8px;
+	}
+
+	li
+	{
+		margin-left: -24px;
+	}
+
+	/* Style Line Description at start of Quick Start */
+
+	.linedesc
+	{
+		color: #0083ad;
+		font-size: 14pt;
+		font-weight: bold;
+		margin-bottom: 8px;
+		padding-bottom: 10px;
+	}
+
+	/* Style Sortname in Quick Start header */
+
+	.title
+	{
+		color: #0083ad;
+		font-size: 20pt;
+		font-weight: bold;
+		/*margin-bottom: 8px;*/
+		margin-top: 30px;
+		/*padding-bottom: 10px;*/
+	}
+}
+
+/*@media quickstartpdf======================================================================================*/
+
+@media quickstartpdf
+{
+	body
+	{
+		font-size: 10pt;
+		margin: 0;
+		mc-hyphenate: never;
+	}
+
+	h1
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 16pt;
+		font-weight: bold;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-bottom: 0;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		text-align: left;
+		vertical-align: bottom;
+	}
+
+	h2
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 14pt;
+		font-weight: bold;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h3
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 12pt;
+		font-weight: bold;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h4
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 12pt;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h5
+	{
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		font-weight: normal;
+		font-size: 11pt;
+	}
+
+	li
+	{
+		margin-left: -20px;
+	}
+
+	.fineprint
+	{
+		font-size: 8pt;
+		margin: 0px;
+	}
+
+	/* Style Line Description at start of Quick Start */
+
+	.linedesc
+	{
+		color: #0083ad;
+		font-size: 14pt;
+		font-weight: bold;
+		margin-bottom: 8px;
+		padding-bottom: 10px;
+		padding-top: 0;
+	}
+
+	.notebox
+	{
+		background-color: #f1f1f1;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		margin-left: -10px;
+		padding: 10px 10px 5px 10px;
+	}
+
+	/* Style Sortname in Quick Start header */
+
+	.title
+	{
+		color: #0083ad;
+		font-weight: bold;
+		font-size: 20pt;
+	}
+
+	h6
+	{
+		font-size: 10pt;
+		text-decoration: none;
+	}
+}
+
+/*@media specpdf======================================================================================*/
+
+@media specpdf
+{
+	body
+	{
+		font-size: 9pt;
+		margin: 0;
+		mc-hyphenate: never;
+	}
+
+	h1
+	{
+		color: #0083ad;
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 12pt;
+		font-weight: bold;
+		margin-bottom: -5px;
+		padding-bottom: 0px;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h2
+	{
+		border-bottom: solid 1px #000000;
+		color: #0083ad;
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 10pt;
+		font-weight: bold;
+		margin-top: 15px;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h3
+	{
+		color: #0083ad;
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 9.5pt;
+		font-weight: bold;
+		margin-top: 15px;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h4
+	{
+		color: #000000;
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 9pt;
+		font-weight: bold;
+		margin-top: 10px;
+		padding-bottom: -4px;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h5
+	{
+		color: #000000;
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 8pt;
+		font-weight: bold;
+		margin-top: 10px;
+		padding-bottom: -4px;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	ol
+	{
+		margin-left: 24px;
+	}
+
+	ul
+	{
+		margin-left: 24px;
+	}
+
+	span.mc-variable
+	{
+		vertical-align: inherit;
+	}
+
+	/* Override default superscript properties - Footnotes in pdf output were same size as p text */
+
+	sup
+	{
+		font-size: 6pt;
+		vertical-align: super;
+	}
+
+	.features
+	{
+		color: #0083ad;
+		font-style: italic;
+		margin-left: 0.15in;
+	}
+
+	.fineprint
+	{
+		font-size: 7pt;
+	}
+
+	.fineprint ol
+	{
+		margin-left: 24px;
+	}
+
+	.fineprint ul
+	{
+		margin-left: 24px;
+	}
+
+	.linedesc10
+	{
+		color: #ffffff;
+		font-size: 10pt;
+		/*padding: 12px 0px 0px 24px;*/
+	}
+
+	.linedesc11
+	{
+		color: #ffffff;
+		font-size: 11pt;
+		/*padding: 12px 0px 0px 24px;*/
+	}
+
+	.linedesc12
+	{
+		color: #ffffff;
+		font-size: 12pt;
+		/*padding: 12px 0px 0px 24px;*/
+	}
+
+	.linedesc13
+	{
+		color: #ffffff;
+		font-size: 13pt;
+		/*padding: 12px 0px 0px 24px;*/
+	}
+
+	.linedesc14
+	{
+		color: #ffffff;
+		font-size: 14pt;
+		/*padding: 12px 0px 0px 24px;*/
+	}
+
+	.linedesc15
+	{
+		color: #ffffff;
+		font-size: 15pt;
+		/*padding: 12px 0px 0px 24px;*/
+	}
+
+	.linedesc16
+	{
+		color: #ffffff;
+		font-size: 16pt;
+		/*padding: 12px 0px 0px 24px;*/
+	}
+
+	.linedesc17
+	{
+		color: #ffffff;
+		font-size: 17pt;
+		/*padding: 12px 0px 0px 24px;*/
+	}
+
+	.linedesc18
+	{
+		color: #ffffff;
+		font-size: 18pt;
+		/*padding: 12px 0px 0px 24px;*/
+	}
+
+	.linedesc19
+	{
+		color: #ffffff;
+		font-size: 19pt;
+		/*padding: 12px 0px 0px 24px;*/
+	}
+
+	.linedesc20
+	{
+		color: #ffffff;
+		font-size: 20pt;
+		/*padding: 12px 0px 0px 24px;*/
+	}
+
+	/* Left-align bulleted items in Overview section of spec pdf output */
+
+	.overviewli
+	{
+		margin-left: -0.15in;
+	}
+
+	.productSpecTDHead
+	{
+		border-bottom: solid 1px #000000;
+		color: #0083ad;
+		column-break-after: avoid;
+		font-size: 10pt;
+		font-weight: bold;
+		padding-top: 15px;
+		page-break-after: avoid;
+	}
+
+	/* Use productSpecTDHeadCol class instead of productSpecTDHead when colbreak is applied to tr. This avoids extra padding at top of new column. */
+
+	.productSpecTDHeadCol
+	{
+		border-bottom: solid 1px #000000;
+		color: #0083ad;
+		column-break-after: avoid;
+		font-size: 10pt;
+		font-weight: bold;
+		padding-top: 0px;
+		page-break-after: avoid;
+	}
+
+	.productSpecTDNameOdd
+	{
+		font-size: 9pt;
+		font-weight: bold;
+		mc-hyphenate: never;
+		padding-top: 4px;
+		padding-right: 10px;
+		vertical-align: top;
+	}
+
+	.productSpecTDValueOdd
+	{
+		font-size: 9pt;
+		mc-hyphenate: never;
+		padding-top: 4px;
+		vertical-align: top;
+	}
+
+	.sortname20
+	{
+		color: #ffffff;
+		font-size: 20pt;
+		font-weight: bold;
+		margin: 10px 36px 0px 24px;
+	}
+
+	.sortname21
+	{
+		color: #ffffff;
+		font-size: 21pt;
+		font-weight: bold;
+		margin: 10px 36px 0px 24px;
+	}
+
+	.sortname22
+	{
+		color: #ffffff;
+		font-size: 22pt;
+		font-weight: bold;
+		margin: 10px 36px 0px 24px;
+	}
+
+	/* Align top item in column with other column (when less padding is needed) */
+
+	.top
+	{
+		margin-top: -20px;
+	}
+
+	/* Top-align Overview (when there is no photo or feature list) */
+
+	.topoverview
+	{
+		margin-top: -10px;
+	}
+
+	MadCap|conditionalText
+	{
+		vertical-align: inherit;
+	}
+
+	strong
+	{
+		
+	}
+}
+
+/*@media specword=====================================================================================*/
+
+@media specword
+{
+	body
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9pt;
+		mc-hyphenate: never;
+	}
+
+	h1
+	{
+		color: #000000;
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 9pt;
+		font-weight: bold;
+		margin: 8px 0px;
+		padding: 0px;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h2
+	{
+		border-bottom: solid 1px #000000;
+		color: #000000;
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 9pt;
+		font-weight: bold;
+		margin: 8px 0px;
+		padding: 0px;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h3
+	{
+		color: #000000;
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 9pt;
+		font-weight: bold;
+		margin: 8px 0px;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h4
+	{
+		color: #000000;
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 9pt;
+		font-weight: bold;
+		margin: 8px 0px;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	h5
+	{
+		color: #000000;
+		column-break-after: avoid;
+		column-break-inside: avoid;
+		font-size: 9pt;
+		font-weight: bold;
+		margin: 8px 0px;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	ol
+	{
+		margin-left: 24px;
+	}
+
+	ul
+	{
+		margin-left: 24px;
+	}
+
+	/* Override default superscript properties - Footnotes in Word output were too tiny */
+
+	sup
+	{
+		font-size: 10pt;
+		vertical-align: super;
+	}
+
+	.fineprint
+	{
+		font-size: 9pt;
+	}
+}
+
+p.UL924-head
+{
+	font-size: 18pt;
+	font-weight: bold;
+}
+
