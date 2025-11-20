@@ -1,0 +1,247 @@
+{
+  "CrestronSerialDeviceApi": {
+    "DeviceSupport": {
+      "SupportsRouting": true,
+      "SupportsDiscretePower": true,
+      "SupportsPowerFeedback": true,
+      "SupportsFeedback": true
+    },
+    "GeneralInformation": {
+      "DeviceType": "Matrix Switcher",
+      "Manufacturer": "Zuum Media",
+      "BaseModel": "H10X10-4K6G",
+      "VersionDate": "2025-11-20 12:00:00.000",
+      "DriverVersion": "6.00.000.0026",
+      "SdkVersion": "6.00.000.0026",
+      "Description": "4K60Hz 10x10 HDMI Matrix Switcher with Audio Extraction. Supports up to 4K@60Hz 4:4:4, HDCP 2.2, HDR10, Dolby Vision, HLG. Features 2 S/PDIF outputs for audio extraction, 10 scene presets, and front panel/IR/RS-232/TCP/IP control.",
+      "Guid": "A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D",
+      "SupportedSeries": [],
+      "SupportedModels": ["H10X10-4K6G"]
+    },
+    "Api": {
+      "Communication": {
+        "CommunicationType": 0,
+        "Protocol": 0,
+        "Baud": 256,
+        "Parity": 0,
+        "HwHandshake": 0,
+        "SwHandshake": 0,
+        "DataBits": 8,
+        "StopBits": 1,
+        "Port": 0,
+        "EnableAutoPolling": true,
+        "EnableAutoReconnect": false,
+        "TimeBetweenCommands": 100,
+        "ResponseTimeout": 3000,
+        "WaitForResponse": true,
+        "IpProtocol": 0,
+        "IsUserAdjustable": false,
+        "Authentication": {
+          "Type": "None",
+          "Required": false
+        },
+        "IsSecure": false,
+        "UserAdjustableProperties": [],
+        "DeviceId": 0
+      },
+      "PowerWaitPeriod": {
+        "UseLocalWarmupTimer": false,
+        "WarmUpTime": 0,
+        "UseLocalCooldownTimer": false,
+        "CoolDownTime": 0
+      },
+      "StandardCommands": {
+        "PowerOn": {
+          "StandardCommand": 6602,
+          "Command": "POWER 01",
+          "Parameters": []
+        },
+        "PowerOff": {
+          "StandardCommand": 6601,
+          "Command": "POWER 00",
+          "Parameters": []
+        },
+        "RouteInputToOutput": {
+          "StandardCommand": 8000,
+          "Command": "TX!$[0] !$[1]",
+          "Parameters": [
+            {
+              "Type": 1,
+              "PadCharacter": "0",
+              "PadDirection": 0,
+              "Id": "0",
+              "Max": 10,
+              "Min": 1,
+              "StaticDataWidth": 2
+            },
+            {
+              "Type": 1,
+              "PadCharacter": "0",
+              "PadDirection": 0,
+              "Id": "1",
+              "Max": 10,
+              "Min": 0,
+              "StaticDataWidth": 2
+            }
+          ]
+        },
+        "GetStatus": {
+          "StandardCommand": 9000,
+          "Command": "STATUS",
+          "Parameters": []
+        }
+      },
+      "CustomCommands": [
+        {
+          "Name": "SaveScene",
+          "Command": "SAVE !$[0]",
+          "Parameters": [
+            {
+              "Type": 1,
+              "PadCharacter": " ",
+              "PadDirection": 0,
+              "Id": "0",
+              "Max": 10,
+              "Min": 1,
+              "StaticDataWidth": 1
+            }
+          ]
+        },
+        {
+          "Name": "LoadScene",
+          "Command": "LOAD !$[0]",
+          "Parameters": [
+            {
+              "Type": 1,
+              "PadCharacter": " ",
+              "PadDirection": 0,
+              "Id": "0",
+              "Max": 10,
+              "Min": 1,
+              "StaticDataWidth": 1
+            }
+          ]
+        },
+        {
+          "Name": "SelectAudioSource",
+          "Command": "AUDIO!$[0] !$[1]",
+          "Parameters": [
+            {
+              "Type": 1,
+              "PadCharacter": "0",
+              "PadDirection": 0,
+              "Id": "0",
+              "Max": 2,
+              "Min": 1,
+              "StaticDataWidth": 2
+            },
+            {
+              "Type": 0,
+              "Id": "1",
+              "Values": ["H", "A"]
+            }
+          ]
+        },
+        {
+          "Name": "LockPanel",
+          "Command": "LOCK !$[0]",
+          "Parameters": [
+            {
+              "Type": 1,
+              "PadCharacter": " ",
+              "PadDirection": 0,
+              "Id": "0",
+              "Max": 1,
+              "Min": 0,
+              "StaticDataWidth": 1
+            }
+          ]
+        },
+        {
+          "Name": "SetIRID",
+          "Command": "IRID !$[0]",
+          "Parameters": [
+            {
+              "Type": 1,
+              "PadCharacter": " ",
+              "PadDirection": 0,
+              "Id": "0",
+              "Max": 9,
+              "Min": 0,
+              "StaticDataWidth": 1
+            }
+          ]
+        },
+        {
+          "Name": "GetVersion",
+          "Command": "VERSION",
+          "Parameters": []
+        }
+      ],
+      "Feedback": {
+        "Header": "",
+        "PowerFeedback": {
+          "Feedback": {},
+          "GroupHeader": ""
+        },
+        "CommandAckNak": {
+          "Ack": "OK",
+          "Nak": "NG"
+        }
+      },
+      "AudioInOut": {
+        "Inputs": [
+          {"Id": 1, "Name": "HDMI Input 1"},
+          {"Id": 2, "Name": "HDMI Input 2"},
+          {"Id": 3, "Name": "HDMI Input 3"},
+          {"Id": 4, "Name": "HDMI Input 4"},
+          {"Id": 5, "Name": "HDMI Input 5"},
+          {"Id": 6, "Name": "HDMI Input 6"},
+          {"Id": 7, "Name": "HDMI Input 7"},
+          {"Id": 8, "Name": "HDMI Input 8"},
+          {"Id": 9, "Name": "HDMI Input 9"},
+          {"Id": 10, "Name": "HDMI Input 10"}
+        ],
+        "Outputs": [
+          {"Id": 1, "Name": "HDMI Output 1"},
+          {"Id": 2, "Name": "HDMI Output 2"},
+          {"Id": 3, "Name": "HDMI Output 3"},
+          {"Id": 4, "Name": "HDMI Output 4"},
+          {"Id": 5, "Name": "HDMI Output 5"},
+          {"Id": 6, "Name": "HDMI Output 6"},
+          {"Id": 7, "Name": "HDMI Output 7"},
+          {"Id": 8, "Name": "HDMI Output 8"},
+          {"Id": 9, "Name": "HDMI Output 9"},
+          {"Id": 10, "Name": "HDMI Output 10"}
+        ]
+      },
+      "VideoInOut": {
+        "Inputs": [
+          {"Id": 1, "Name": "HDMI Input 1"},
+          {"Id": 2, "Name": "HDMI Input 2"},
+          {"Id": 3, "Name": "HDMI Input 3"},
+          {"Id": 4, "Name": "HDMI Input 4"},
+          {"Id": 5, "Name": "HDMI Input 5"},
+          {"Id": 6, "Name": "HDMI Input 6"},
+          {"Id": 7, "Name": "HDMI Input 7"},
+          {"Id": 8, "Name": "HDMI Input 8"},
+          {"Id": 9, "Name": "HDMI Input 9"},
+          {"Id": 10, "Name": "HDMI Input 10"}
+        ],
+        "Outputs": [
+          {"Id": 1, "Name": "HDMI Output 1"},
+          {"Id": 2, "Name": "HDMI Output 2"},
+          {"Id": 3, "Name": "HDMI Output 3"},
+          {"Id": 4, "Name": "HDMI Output 4"},
+          {"Id": 5, "Name": "HDMI Output 5"},
+          {"Id": 6, "Name": "HDMI Output 6"},
+          {"Id": 7, "Name": "HDMI Output 7"},
+          {"Id": 8, "Name": "HDMI Output 8"},
+          {"Id": 9, "Name": "HDMI Output 9"},
+          {"Id": 10, "Name": "HDMI Output 10"}
+        ]
+      }
+    },
+    "UserAttributes": []
+  }
+}
