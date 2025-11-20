@@ -1,181 +1,210 @@
-# Visual Studio Compatibility Guide for Crestron Drivers
+# Visual Studio 2019/2022 Compatibility for Crestron Home Drivers
 
-## The Issue
+## Overview
 
-You're seeing this error when trying to open the .csproj files in Visual Studio 2022:
+The Zuum H10X10-4K6G Matrix Switcher drivers have been configured for **Visual Studio 2019 or later** using the modern **.NET Framework Class Library** project format, as required for **Crestron Home and 4-Series processors**.
 
-```
-Unsupported
-This version of Visual Studio is unable to open the following projects.
-The project types may not be installed or this version of Visual Studio may not support them.
-```
+## Project Format
 
-**Root Cause:** Crestron drivers for embedded processors (including Crestron Home 4-Series) use **.NET Compact Framework 3.5** targeting **Windows CE**. This project type was deprecated and **removed from Visual Studio after VS 2013**.
+According to [official Crestron SDK documentation](https://www.crestron.com):
 
-## Why This Format?
+> "If your development target is for a residential application or includes 4-Series™ control systems, you can use Visual Studio® 2019 or Visual Studio 2008 software."
 
-- Crestron's embedded processors run a custom Windows CE-based operating system
-- The Rapid Application Development (RAD) Framework requires .NET Compact Framework
-- All official Crestron SDK sample drivers use this same format
-- The project files include these specific GUIDs that VS 2022 doesn't recognize:
-  - `{0B4745B0-194B-4BB6-8E21-E9057CA92500}` - Smart Device Project
-  - `{4D628B5B-2FBC-4AA6-8C16-197242AEB884}` - Windows CE
-  - `{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}` - C#
+### VS 2019+ Requirements
 
-## Solutions
+The project files use:
+- **Project Type:** .NET Framework Class Library
+- **Framework Version:** .NET Framework 4.7.2
+- **Build Tools:** MSBuild (standard .NET build process)
+- **Required Workload:** .NET desktop development
 
-### Solution 1: Install Visual Studio 2008 (Officially Supported)
+## Setup Instructions
 
-The Crestron SDK samples explicitly target **Visual Studio 2008**, which has full support for Smart Device projects.
+### 1. Install Visual Studio 2019 or 2022
 
-**Steps:**
-1. Download Visual Studio 2008 Professional (or find your existing installation media)
-2. Install alongside your existing VS 2022 (they can coexist)
-3. Open the .csproj files in VS 2008
-4. Build and package normally
+1. Download from: https://visualstudio.microsoft.com/downloads/
+2. During installation, select the **".NET desktop development"** workload
+3. Complete the installation
 
-**Pros:**
-- Officially supported by Crestron
-- Full IDE experience (IntelliSense, debugging, etc.)
-- No compatibility issues
+### 2. Install Crestron SDK
 
-**Cons:**
-- VS 2008 is old and may be hard to obtain
-- Limited modern C# language features
+Ensure the Crestron SDK is installed at:
+- `C:\ProgramData\Crestron\SDK\`
 
-### Solution 2: Use Visual Studio 2013 with Update 5
+This provides required DLLs:
+- SimplSharpCustomAttributesInterface.dll
+- SimplSharpHelperInterface.dll
+- SimplSharpReflectionInterface.dll
 
-VS 2013 was the **last version** to support .NET Compact Framework.
+### 3. Verify SDK Libraries
 
-**Steps:**
-1. Install Visual Studio 2013 Update 5
-2. Install ".NET Compact Framework" tooling from VS installer
-3. Open and build projects normally
+Ensure the following files exist in `SDK/Libraries/`:
+- RADCommon.dll
+- RADCableBox.dll
+- RADProTransports.dll
+- Crestron.DeviceDrivers.API.dll
 
-**Pros:**
-- More modern than VS 2008
-- Still supports Compact Framework
-- Easier to find than VS 2008
+## Opening the Projects
 
-**Cons:**
-- Still an older IDE
-- May require special licensing
+### In Visual Studio 2019/2022
 
-### Solution 3: Build from Command Line (Recommended Workaround)
+1. Open Visual Studio
+2. File → Open → Project/Solution
+3. Navigate to the project folder and select the `.csproj` file:
+   - `MatrixSwitcher_ZuumMedia_H10X10-4K6G_Serial.csproj` OR
+   - `MatrixSwitcher_ZuumMedia_H10X10-4K6G_IP.csproj`
+4. The project should load successfully
 
-You can build the drivers using **MSBuild** directly without opening them in Visual Studio IDE.
+### Expected Behavior
 
-**Steps:**
-1. Use the provided `build_drivers.cmd` script
-2. Run from Windows Command Prompt:
-   ```cmd
-   build_drivers.cmd
-   ```
+✅ **Should work:** Visual Studio 2019, 2022
+✅ **Target Platform:** Crestron Home, 4-Series processors
+✅ **Build Output:** .NET Framework 4.7.2 DLL
+✅ **Packaging:** ManifestUtil creates .pkg files
 
-The script will:
-- Locate MSBuild (from your VS 2022 installation)
-- Build both Serial and IP drivers
-- Package them using ManifestUtil
-- Create .pkg files ready for deployment
+## Building the Drivers
 
-**Pros:**
-- Works with your existing VS 2022 installation
-- No need to install old Visual Studio versions
-- Automated build process
-- Can be integrated into CI/CD
+### Option 1: Build in Visual Studio (Recommended)
 
-**Cons:**
-- No IDE experience for editing/debugging
-- Must edit .cs files in VS Code or another editor
-- Cannot use Visual Studio's project management features
+1. Open the .csproj file in Visual Studio
+2. Select **Release** configuration
+3. Build → Build Solution (or press Ctrl+Shift+B)
+4. Output will be in `bin\Release\`
 
-**Alternative: Edit in VS Code + Build with Script**
-- Edit C# files in Visual Studio Code (with C# extension)
-- Use the build script to compile
-- Best of both worlds for many developers
+### Option 2: Build from Command Line
 
-### Solution 4: Contact Crestron for Updated SDK
-
-Crestron may have updated build tools or project formats for modern Visual Studio.
-
-**Steps:**
-1. Contact Crestron Developer Support
-2. Ask if there's a VSIX extension for VS 2022
-3. Check if newer SDK versions support modern project formats
-
-## Recommended Approach
-
-For immediate development:
-1. **Edit code** in Visual Studio Code with C# extension
-2. **Build** using the `build_drivers.cmd` script
-3. **Test** on actual Crestron Home processors or with XPanel
-
-For long-term development:
-1. Install **Visual Studio 2013 Update 5** for full IDE support
-2. Use for both editing and building
-3. Keep VS 2022 for other modern .NET projects
-
-## Build Output Locations
-
-After building (via any method), your driver packages will be at:
-
-- **Serial Driver:** `MatrixSwitcher_ZuumMedia_H10X10-4K6G_Serial/bin/Release/MatrixSwitcher_ZuumMedia_H10X10-4K6G_Serial.pkg`
-- **IP Driver:** `MatrixSwitcher_ZuumMedia_H10X10-4K6G_IP/bin/Release/MatrixSwitcher_ZuumMedia_H10X10-4K6G_IP.pkg`
-
-## Testing the Build Script
-
-To verify the command-line build works:
+Use the provided `build_drivers.cmd` script:
 
 ```cmd
 cd C:\Users\Premier Visions\Desktop\zuum
 build_drivers.cmd
 ```
 
-If successful, you'll see:
-```
-Build Complete!
-Output files:
-  - MatrixSwitcher_ZuumMedia_H10X10-4K6G_Serial\bin\Release\MatrixSwitcher_ZuumMedia_H10X10-4K6G_Serial.pkg
-  - MatrixSwitcher_ZuumMedia_H10X10-4K6G_IP\bin\Release\MatrixSwitcher_ZuumMedia_H10X10-4K6G_IP.pkg
-```
+The script will:
+- Build both Serial and IP drivers
+- Package them using ManifestUtil
+- Create .pkg files for deployment
 
-## Common Build Issues
+### Option 3: MSBuild Directly
 
-### Issue: "MSBuild not found"
-**Solution:** Update the `MSBUILD_PATH` in `build_drivers.cmd` to match your VS installation path.
-
-### Issue: "SDK DLLs not found"
-**Solution:** Ensure the `SDK/Libraries/` folder contains:
-- RADCommon.dll
-- RADCableBox.dll
-- RADProTransports.dll
-- Crestron.DeviceDrivers.API.dll
-
-### Issue: "SimplSharp DLLs not found"
-**Solution:** Ensure Crestron SDK is installed at:
-- `C:\ProgramData\Crestron\SDK\`
-
-## Project File Structure
-
-Both drivers use this structure:
-```
-MatrixSwitcher_ZuumMedia_H10X10-4K6G_[Serial|IP]/
-├── *.csproj                          # VS 2008 format project file
-├── H10X10MatrixSwitcher*.cs          # Main driver class
-├── H10X10MatrixSwitcherProtocol.cs   # Protocol handler (shared)
-├── H10X10ResponseValidator.cs        # Response validator (shared)
-├── H10X10MatrixSwitcher*.json        # JSON manifest (embedded resource)
-└── Properties/
-    └── AssemblyInfo.cs               # Assembly metadata
+```cmd
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\MSBuild.exe" ^
+  MatrixSwitcher_ZuumMedia_H10X10-4K6G_Serial\MatrixSwitcher_ZuumMedia_H10X10-4K6G_Serial.csproj ^
+  /p:Configuration=Release /t:Rebuild
 ```
 
-## Additional Resources
+## Project Structure
 
-- **Crestron Developer Network:** https://developer.crestron.com
-- **SDK Documentation:** `SDK/Documentation/SDKDocs/`
-- **Sample Drivers:** `SDK/Samples/Drivers/`
-- **Driver Best Practices:** Check the HTML files provided in the repository
+Both drivers use modern .NET Framework project format:
+
+```xml
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <!-- References to Crestron SDK libraries -->
+  <!-- Source files -->
+</Project>
+```
+
+Key differences from older VS 2008 format:
+- ❌ No Windows CE ProjectTypeGuids
+- ❌ No Compact Framework
+- ✅ Standard .NET Framework 4.7.2
+- ✅ Modern MSBuild targets
+- ✅ Compatible with VS 2019/2022
+
+## Packaging Drivers
+
+After building, package the DLLs using ManifestUtil:
+
+### Serial Driver
+```cmd
+SDK\ManifestUtil\ManifestUtil.exe ^
+  MatrixSwitcher_ZuumMedia_H10X10-4K6G_Serial\bin\Release\MatrixSwitcher_ZuumMedia_H10X10-4K6G_Serial.dll
+```
+
+### IP Driver
+```cmd
+SDK\ManifestUtil\ManifestUtil.exe ^
+  MatrixSwitcher_ZuumMedia_H10X10-4K6G_IP\bin\Release\MatrixSwitcher_ZuumMedia_H10X10-4K6G_IP.dll
+```
+
+Output .pkg files will be created in the same directory.
+
+## Deployment
+
+The packaged .pkg files can be deployed to:
+- **Crestron Home** (residential applications)
+- **4-Series processors** (MC4, CP4, CP4N, etc.)
+
+### Deployment Methods
+
+1. **Crestron Home App:**
+   - Upload .pkg files through Crestron Home configuration
+   - Add device to the system
+
+2. **Crestron Toolbox:**
+   - Connect to the processor
+   - Upload driver .pkg files
+   - Configure device in SIMPL or Crestron Home
+
+## Troubleshooting
+
+### Issue: "Could not find SDK DLLs"
+
+**Solution:** Verify that:
+1. SDK folder exists at the correct location
+2. All required DLLs are present in `SDK/Libraries/`
+3. SimplSharp DLLs exist in `C:\ProgramData\Crestron\SDK\`
+
+### Issue: "Project failed to load"
+
+**Solution:**
+1. Ensure you have the ".NET desktop development" workload installed
+2. Restart Visual Studio
+3. Try opening the project again
+
+### Issue: "ManifestUtil fails"
+
+**Solution:**
+1. Ensure the DLL was built successfully
+2. Check that the embedded JSON manifest file is present
+3. Verify ManifestUtil.exe is in `SDK/ManifestUtil/`
+
+## NuGet Packages (Optional)
+
+For enhanced compatibility, you can also add Crestron NuGet packages:
+- Crestron.SimplSharp.SDK.Library
+- Crestron.SimplSharp.SDK.ProgramLibrary
+
+These are optional as the local DLL references should work.
+
+## Version Compatibility
+
+| Visual Studio | .NET Framework | Crestron Target | Status |
+|--------------|----------------|-----------------|--------|
+| VS 2022      | 4.7.2+         | 4-Series/Home  | ✅ Supported |
+| VS 2019      | 4.7.2+         | 4-Series/Home  | ✅ Supported |
+| VS 2017      | 4.7.2+         | 4-Series/Home  | ⚠️ May work |
+| VS 2013      | 3.5 CF         | 3-Series       | Legacy only |
+| VS 2008      | 3.5 CF         | 3-Series       | Legacy only |
+
+**Note:** VS 2008 format (Compact Framework) is for 3-Series **commercial** applications only. For Crestron Home and 4-Series residential applications, use VS 2019+ with .NET Framework 4.7.2.
+
+## Official Crestron Documentation
+
+For more information, refer to the official Crestron SDK documentation:
+- **System Requirements:** `SDK/Documentation/DeveloperWebsite/.../System-Requirements.htm`
+- **Installation and Setup:** `SDK/Documentation/DeveloperWebsite/.../Install-Setup.htm`
+- **Create a Project:** `SDK/Documentation/DeveloperWebsite/.../Create-a-Project.htm`
 
 ## Summary
 
-The .csproj files are **correctly formatted** for Crestron driver development. The issue is purely a Visual Studio version compatibility problem. Use the build script as a workaround, or install VS 2008/2013 for full IDE support.
+✅ **Projects are now configured for VS 2019/2022**
+✅ **Modern .NET Framework 4.7.2 format**
+✅ **Compatible with Crestron Home and 4-Series**
+✅ **Can be opened and built in Visual Studio 2019, 2022, or via command line**
+
+The drivers should now open successfully in your Visual Studio 2022 installation!
