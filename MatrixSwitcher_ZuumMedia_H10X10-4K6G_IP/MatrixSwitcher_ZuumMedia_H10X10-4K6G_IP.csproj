@@ -13,7 +13,7 @@
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup>
-    <CrestronSdkRoot Condition="Exists('$(ProgramData)\\Crestron\\SDK\\Libraries')">$(ProgramData)\Crestron\SDK</CrestronSdkRoot>
+    <CrestronSdkRoot Condition="Exists('$(ProgramData)\Crestron\SDK\Libraries')">$(ProgramData)\Crestron\SDK</CrestronSdkRoot>
     <CrestronSdkRoot Condition=" '$(CrestronSdkRoot)' == '' ">..\SDK</CrestronSdkRoot>
     <CrestronSdkLibrariesPath>$(CrestronSdkRoot)\Libraries</CrestronSdkLibrariesPath>
   </PropertyGroup>
@@ -38,23 +38,23 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="SimplSharpCustomAttributesInterface">
-      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpCustomAttributesInterface.dll')">$(ProgramData)\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
-      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpCustomAttributesInterface.dll')">$(CrestronSdkRoot)\SimplSharpCustomAttributesInterface.dll</HintPath>
+      <HintPath Condition="Exists('$(ProgramData)\Crestron\SDK\SimplSharpCustomAttributesInterface.dll')">$(ProgramData)\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+      <HintPath Condition="!Exists('$(ProgramData)\Crestron\SDK\SimplSharpCustomAttributesInterface.dll')">$(CrestronSdkRoot)\SimplSharpCustomAttributesInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="SimplSharpHelperInterface">
-      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpHelperInterface.dll')">$(ProgramData)\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
-      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpHelperInterface.dll')">$(CrestronSdkRoot)\SimplSharpHelperInterface.dll</HintPath>
+      <HintPath Condition="Exists('$(ProgramData)\Crestron\SDK\SimplSharpHelperInterface.dll')">$(ProgramData)\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+      <HintPath Condition="!Exists('$(ProgramData)\Crestron\SDK\SimplSharpHelperInterface.dll')">$(CrestronSdkRoot)\SimplSharpHelperInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="SimplSharpReflectionInterface">
-      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpReflectionInterface.dll')">$(ProgramData)\Crestron\SDK\SimplSharpReflectionInterface.dll</HintPath>
-      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpReflectionInterface.dll')">$(CrestronSdkRoot)\SimplSharpReflectionInterface.dll</HintPath>
+      <HintPath Condition="Exists('$(ProgramData)\Crestron\SDK\SimplSharpReflectionInterface.dll')">$(ProgramData)\Crestron\SDK\SimplSharpReflectionInterface.dll</HintPath>
+      <HintPath Condition="!Exists('$(ProgramData)\Crestron\SDK\SimplSharpReflectionInterface.dll')">$(CrestronSdkRoot)\SimplSharpReflectionInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Crestron.SimplSharp">
-      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\Crestron.SimplSharp.dll')">$(ProgramData)\Crestron\SDK\Crestron.SimplSharp.dll</HintPath>
-      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\Crestron.SimplSharp.dll')">$(CrestronSdkRoot)\Crestron.SimplSharp.dll</HintPath>
+      <HintPath Condition="Exists('$(ProgramData)\Crestron\SDK\Crestron.SimplSharp.dll')">$(ProgramData)\Crestron\SDK\Crestron.SimplSharp.dll</HintPath>
+      <HintPath Condition="!Exists('$(ProgramData)\Crestron\SDK\Crestron.SimplSharp.dll')">$(CrestronSdkRoot)\Crestron.SimplSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RADCommon">
@@ -81,4 +81,5 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
+
 
