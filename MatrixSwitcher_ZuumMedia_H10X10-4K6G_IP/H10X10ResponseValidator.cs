@@ -4,6 +4,7 @@ namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
     using Crestron.RAD.Common.BasicDriver;
     using Crestron.RAD.Common.Enums;
     using Crestron.RAD.Common.Transports;
+    using Crestron.RAD.DeviceTypes.CableBox;
     using Crestron.SimplSharp;
 
     /// <summary>
