@@ -11,8 +11,6 @@ namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
     {
         #region ITcp Members
 
-        public new int Port { get; private set; }
-
         public void Initialize(IPAddress ipAddress, int port)
         {
             Port = port;
