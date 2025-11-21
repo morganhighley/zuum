@@ -3,8 +3,8 @@
   <Import Project="$(MSBuildExtensionsPath)\\$(MSBuildToolsVersion)\\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\\$(MSBuildToolsVersion)\\Microsoft.Common.props')" />
 
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Configuration Condition="'$(Configuration)'==''">Release</Configuration>
+    <Platform Condition="'$(Platform)'==''">AnyCPU</Platform>
     <ProjectGuid>{A7B8C9D0-1E2F-3A4B-5C6D-7E8F9A0B1C2D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -16,11 +16,11 @@
 
   <PropertyGroup>
     <CrestronSdkRoot Condition="Exists('$(ProgramData)\\Crestron\\SDK\\Libraries')">$(ProgramData)\\Crestron\\SDK</CrestronSdkRoot>
-    <CrestronSdkRoot Condition=" '$(CrestronSdkRoot)' == '' ">..\\SDK</CrestronSdkRoot>
+      <CrestronSdkRoot Condition="'$(CrestronSdkRoot)'==''">..\\SDK</CrestronSdkRoot>
     <CrestronSdkLibrariesPath>$(CrestronSdkRoot)\\Libraries</CrestronSdkLibrariesPath>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -30,7 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\\Release\\</OutputPath>
