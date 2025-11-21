@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\\$(MSBuildToolsVersion)\\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\\$(MSBuildToolsVersion)\\Microsoft.Common.props')" />
+
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <ProjectGuid>{A7B8C9D0-1E2F-3A4B-5C6D-7E8F9A0B1C2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia</RootNamespace>
+    <AssemblyName>MatrixSwitcher_ZuumMedia_H10X10-4K6G_IP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CrestronSdkRoot Condition="Exists('$(ProgramData)\\Crestron\\SDK\\Libraries')">$(ProgramData)\\Crestron\\SDK</CrestronSdkRoot>
+    <CrestronSdkRoot Condition="'$(CrestronSdkRoot)' == ''">..\\SDK</CrestronSdkRoot>
+    <CrestronSdkLibrariesPath>$(CrestronSdkRoot)\\Libraries</CrestronSdkLibrariesPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\\Debug\\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\\Release\\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="SimplSharpCustomAttributesInterface">
+      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpCustomAttributesInterface.dll')">$(ProgramData)\\Crestron\\SDK\\SimplSharpCustomAttributesInterface.dll</HintPath>
+      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpCustomAttributesInterface.dll')">$(CrestronSdkRoot)\\SimplSharpCustomAttributesInterface.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimplSharpHelperInterface">
+      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpHelperInterface.dll')">$(ProgramData)\\Crestron\\SDK\\SimplSharpHelperInterface.dll</HintPath>
+      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpHelperInterface.dll')">$(CrestronSdkRoot)\\SimplSharpHelperInterface.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimplSharpReflectionInterface">
+      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpReflectionInterface.dll')">$(ProgramData)\\Crestron\\SDK\\SimplSharpReflectionInterface.dll</HintPath>
+      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpReflectionInterface.dll')">$(CrestronSdkRoot)\\SimplSharpReflectionInterface.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Crestron.SimplSharp">
+      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\Crestron.SimplSharp.dll')">$(ProgramData)\\Crestron\\SDK\\Crestron.SimplSharp.dll</HintPath>
+      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\Crestron.SimplSharp.dll')">$(CrestronSdkRoot)\\Crestron.SimplSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RADCommon">
+      <HintPath Condition="Exists('$(CrestronSdkLibrariesPath)\\RADCommon.dll')">$(CrestronSdkLibrariesPath)\\RADCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="RADCableBox">
+      <HintPath Condition="Exists('$(CrestronSdkLibrariesPath)\\RADCableBox.dll')">$(CrestronSdkLibrariesPath)\\RADCableBox.dll</HintPath>
+    </Reference>
+    <Reference Include="RADProTransports">
+      <HintPath Condition="Exists('$(CrestronSdkLibrariesPath)\\RADProTransports.dll')">$(CrestronSdkLibrariesPath)\\RADProTransports.dll</HintPath>
+    </Reference>
+    <Reference Include="Crestron.DeviceDrivers.API">
+      <HintPath Condition="Exists('$(CrestronSdkLibrariesPath)\\Crestron.DeviceDrivers.API.dll')">$(CrestronSdkLibrariesPath)\\Crestron.DeviceDrivers.API.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="H10X10MatrixSwitcherProtocol.cs" />
+    <Compile Include="H10X10MatrixSwitcherIP.cs" />
+    <Compile Include="H10X10ResponseValidator.cs" />
+    <Compile Include="Properties\\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="H10X10MatrixSwitcher_IP.json" />
+  </ItemGroup>
+
+  <Import Project="$(MSBuildToolsPath)\\Microsoft.CSharp.targets" />
+</Project>

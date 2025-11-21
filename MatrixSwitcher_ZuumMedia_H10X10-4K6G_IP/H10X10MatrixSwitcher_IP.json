@@ -1,0 +1,158 @@
+{
+  "CrestronTcpDeviceApi": {
+    "DeviceSupport": {
+      "SupportsRouting": true,
+      "SupportsDiscretePower": true,
+      "SupportsPowerFeedback": true,
+      "SupportsFeedback": true,
+      "CableBoxData": {
+        "WarmupTime": 3000,
+        "CooldownTime": 1000,
+        "IsPowerSupported": true,
+        "IsChannelSupported": false
+      }
+    },
+    "GeneralInformation": {
+      "DeviceType": "Matrix Switcher",
+      "Manufacturer": "Zuum Media",
+      "BaseModel": "H10X10-4K6G",
+      "VersionDate": "2025-11-20 12:00:00.000",
+      "DriverVersion": "6.00.000.0026",
+      "SdkVersion": "6.00.000.0025",
+      "Description": "4K60Hz 10x10 HDMI Matrix Switcher with Audio Extraction. Supports up to 4K@60Hz 4:4:4, HDCP 2.2, HDR10, Dolby Vision, HLG. Features 2 S/PDIF outputs for audio extraction, 10 scene presets, and front panel/IR/RS-232/TCP/IP control.",
+      "Guid": "8f2c4e6d-9a1b-4c7f-b8d2-3e5f6a7b8c9d",
+      "SupportedSeries": [
+        "4-Series"
+      ],
+      "SupportedModels": [
+        "H10X10-4K6G"
+      ]
+    },
+    "Api": {
+      "Communication": {
+        "CommunicationType": 1,
+        "Protocol": 0,
+        "Port": 47011,
+        "EnableAutoPolling": true,
+        "EnableAutoReconnect": true,
+        "TimeBetweenCommands": 100,
+        "ResponseTimeout": 3000,
+        "WaitForResponse": true,
+        "IpProtocol": 0,
+        "IsUserAdjustable": true,
+        "Authentication": {
+          "Type": "None",
+          "Required": false
+        },
+        "IsSecure": false,
+        "UserAdjustableProperties": [],
+        "DeviceId": 0
+      },
+      "PowerWaitPeriod": {
+        "UseLocalWarmupTimer": false,
+        "WarmUpTime": 0,
+        "UseLocalCooldownTimer": false,
+        "CoolDownTime": 0
+      },
+      "StandardCommands": {
+        "PowerOn": {
+          "StandardCommand": 6602,
+          "Command": "POWER 01",
+          "Acknowledge": "OK",
+          "Delay": 100,
+          "WaitForResponse": false
+        },
+        "PowerOff": {
+          "StandardCommand": 6603,
+          "Command": "POWER 00",
+          "Acknowledge": "OK",
+          "Delay": 100,
+          "WaitForResponse": false
+        },
+        "RouteInputToOutput": {
+          "StandardCommand": 8000,
+          "Command": "TX!$[0] !$[1]",
+          "Acknowledge": "OK",
+          "Delay": 50,
+          "WaitForResponse": false,
+          "Parameters": [
+            {
+              "TypeName": "UserAttributeComboBox",
+              "ParameterId": "Output",
+              "Label": "Output",
+              "Persistent": false,
+              "RequiredForConnection": "None",
+              "Data": {
+                "DataType": "unsignedint",
+                "Mask": "",
+                "DefaultValue": "1",
+                "MinValue": "1",
+                "MaxValue": "10"
+              }
+            },
+            {
+              "TypeName": "UserAttributeComboBox",
+              "ParameterId": "Input",
+              "Label": "Input",
+              "Persistent": false,
+              "RequiredForConnection": "None",
+              "Data": {
+                "DataType": "unsignedint",
+                "Mask": "",
+                "DefaultValue": "1",
+                "MinValue": "1",
+                "MaxValue": "10"
+              }
+            }
+          ]
+        },
+        "SaveScene": {
+          "StandardCommand": 8001,
+          "Command": "SAVE !$[0]",
+          "Acknowledge": "OK",
+          "Delay": 100,
+          "WaitForResponse": false,
+          "Parameters": [
+            {
+              "TypeName": "UserAttributeComboBox",
+              "ParameterId": "Scene",
+              "Label": "Scene Number",
+              "Persistent": false,
+              "RequiredForConnection": "None",
+              "Data": {
+                "DataType": "unsignedint",
+                "Mask": "",
+                "DefaultValue": "1",
+                "MinValue": "1",
+                "MaxValue": "8"
+              }
+            }
+          ]
+        },
+        "LoadScene": {
+          "StandardCommand": 8002,
+          "Command": "LOAD !$[0]",
+          "Acknowledge": "OK",
+          "Delay": 100,
+          "WaitForResponse": false,
+          "Parameters": [
+            {
+              "TypeName": "UserAttributeComboBox",
+              "ParameterId": "Scene",
+              "Label": "Scene Number",
+              "Persistent": false,
+              "RequiredForConnection": "None",
+              "Data": {
+                "DataType": "unsignedint",
+                "Mask": "",
+                "DefaultValue": "1",
+                "MinValue": "1",
+                "MaxValue": "8"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
