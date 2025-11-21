@@ -1,10 +1,10 @@
 using System;
-using System.Net;
 using Crestron.RAD.Common.BasicDriver;
 using Crestron.RAD.Common.Interfaces;
 using Crestron.RAD.Common.Transports;
 using Crestron.RAD.DeviceTypes.CableBox;
 using Crestron.SimplSharp;
+using IPAddress = Crestron.SimplSharp.IPAddress;
 
 namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
 {
@@ -12,8 +12,12 @@ namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
     {
         #region ITcp Members
 
-        public void Initialize(System.Net.IPAddress ipAddress, int port)
+        public int Port { get; private set; }
+
+        public void Initialize(IPAddress ipAddress, int port)
         {
+            Port = port;
+
             var tcpTransport = new TcpTransport
             {
                 EnableAutoReconnect = true,
@@ -42,12 +46,29 @@ namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
 
         #region ISimpl Members
 
-        /// <summary>
-        /// SIMPL+ initialization
-        /// </summary>
-        public ushort EnableSimpl()
+        public ISimplTransport Initialize(Action<string, object[]> send)
         {
-            return 1;
+            var simplTransport = new SimplTransport(send)
+            {
+                EnableLogging = InternalEnableLogging,
+                CustomLogger = InternalCustomLogger,
+                EnableRxDebug = InternalEnableRxDebug,
+                EnableTxDebug = InternalEnableTxDebug
+            };
+
+            ConnectionTransport = simplTransport;
+
+            CableBoxProtocol = new H10X10MatrixSwitcherProtocol(ConnectionTransport, Id)
+            {
+                EnableLogging = InternalEnableLogging,
+                CustomLogger = InternalCustomLogger
+            };
+
+            CableBoxProtocol.StateChange += StateChange;
+            CableBoxProtocol.RxOut += SendRxOut;
+            CableBoxProtocol.Initialize(CableBoxData);
+
+            return simplTransport;
         }
 
         #endregion
