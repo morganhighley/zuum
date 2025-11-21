@@ -3,6 +3,7 @@ namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
     using Crestron.RAD.Common;
     using Crestron.RAD.Common.BasicDriver;
     using Crestron.RAD.Common.Enums;
+    using Crestron.RAD.Common.Transports;
     using Crestron.SimplSharp;
 
     /// <summary>
