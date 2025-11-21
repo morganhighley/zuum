@@ -46,7 +46,7 @@ namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
 
         #region ISimpl Members
 
-        public ISimplTransport Initialize(Action<string, object[]> send)
+        public SimplTransport Initialize(Action<string, object[]> send)
         {
             var simplTransport = new SimplTransport(send)
             {
