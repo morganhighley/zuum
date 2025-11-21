@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A7B8C9D0-1E2F-3A4B-5C6D-7E8F9A0B1C2D}</ProjectGuid>
-    <OutputType>Library</OutputType>
+  <PropertyGroup>␊
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>␊
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>␊
+    <ProjectGuid>{A7B8C9D0-1E2F-3A4B-5C6D-7E8F9A0B1C2D}</ProjectGuid>␊
+    <OutputType>Library</OutputType>␊
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia</RootNamespace>
     <AssemblyName>MatrixSwitcher_ZuumMedia_H10X10-4K6G_IP</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup>
+    <CrestronSdkRoot Condition="Exists('$(ProgramData)\\Crestron\\SDK\\Libraries')">$(ProgramData)\Crestron\SDK</CrestronSdkRoot>
+    <CrestronSdkRoot Condition=" '$(CrestronSdkRoot)' == '' ">..\SDK</CrestronSdkRoot>
+    <CrestronSdkLibrariesPath>$(CrestronSdkRoot)\Libraries</CrestronSdkLibrariesPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,25 +38,36 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="SimplSharpCustomAttributesInterface">
-      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpCustomAttributesInterface.dll</HintPath>
+      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpCustomAttributesInterface.dll')">$(ProgramData)\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpCustomAttributesInterface.dll')">$(CrestronSdkRoot)\SimplSharpCustomAttributesInterface.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="SimplSharpHelperInterface">
-      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpHelperInterface.dll</HintPath>
+      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpHelperInterface.dll')">$(ProgramData)\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpHelperInterface.dll')">$(CrestronSdkRoot)\SimplSharpHelperInterface.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="SimplSharpReflectionInterface">
-      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpReflectionInterface.dll</HintPath>
+      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpReflectionInterface.dll')">$(ProgramData)\Crestron\SDK\SimplSharpReflectionInterface.dll</HintPath>
+      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpReflectionInterface.dll')">$(CrestronSdkRoot)\SimplSharpReflectionInterface.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Crestron.SimplSharp">
+      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\Crestron.SimplSharp.dll')">$(ProgramData)\Crestron\SDK\Crestron.SimplSharp.dll</HintPath>
+      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\Crestron.SimplSharp.dll')">$(CrestronSdkRoot)\Crestron.SimplSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="RADCommon">
-      <HintPath>..\SDK\Libraries\RADCommon.dll</HintPath>
+      <HintPath Condition="Exists('$(CrestronSdkLibrariesPath)\\RADCommon.dll')">$(CrestronSdkLibrariesPath)\RADCommon.dll</HintPath>
     </Reference>
     <Reference Include="RADCableBox">
-      <HintPath>..\SDK\Libraries\RADCableBox.dll</HintPath>
+      <HintPath Condition="Exists('$(CrestronSdkLibrariesPath)\\RADCableBox.dll')">$(CrestronSdkLibrariesPath)\RADCableBox.dll</HintPath>
     </Reference>
     <Reference Include="RADProTransports">
-      <HintPath>..\SDK\Libraries\RADProTransports.dll</HintPath>
+      <HintPath Condition="Exists('$(CrestronSdkLibrariesPath)\\RADProTransports.dll')">$(CrestronSdkLibrariesPath)\RADProTransports.dll</HintPath>
     </Reference>
     <Reference Include="Crestron.DeviceDrivers.API">
-      <HintPath>..\SDK\Libraries\Crestron.DeviceDrivers.API.dll</HintPath>
+      <HintPath Condition="Exists('$(CrestronSdkLibrariesPath)\\Crestron.DeviceDrivers.API.dll')">$(CrestronSdkLibrariesPath)\Crestron.DeviceDrivers.API.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -65,3 +81,4 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
+
