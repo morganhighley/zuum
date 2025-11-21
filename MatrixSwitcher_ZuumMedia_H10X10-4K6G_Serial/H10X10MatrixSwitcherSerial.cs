@@ -11,7 +11,7 @@ namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
     /// Zuum Media H10X10-4K6G 10x10 HDMI Matrix Switcher Driver
     /// Supports RS-232 serial communication at 9600 baud, 8-N-1
     /// </summary>
-    public class H10X10MatrixSwitcherSerial : ACableBox, ISerialComport, ISimpl
+    public class H10X10MatrixSwitcherSerial : ABasicCableBox, ISerialComport, ISimpl
     {
         #region Fields
 
