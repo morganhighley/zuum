@@ -32,6 +32,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="Crestron.SimplSharp">
+      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\Crestron.SimplSharp.dll</HintPath>
+    </Reference>
     <Reference Include="SimplSharpCustomAttributesInterface">
       <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpCustomAttributesInterface.dll</HintPath>
     </Reference>
