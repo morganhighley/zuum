@@ -42,10 +42,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="Crestron.SimplSharp">
-      <HintPath>$(CrestronSdkRoot)\Crestron.SimplSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="SimplSharpCustomAttributesInterface">
       <HintPath>$(CrestronSdkRoot)\SimplSharpCustomAttributesInterface.dll</HintPath>
       <Private>False</Private>
