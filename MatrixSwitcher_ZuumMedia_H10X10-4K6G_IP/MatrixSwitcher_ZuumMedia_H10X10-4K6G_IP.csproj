@@ -16,6 +16,7 @@
 
   <PropertyGroup>
     <CrestronSdkRoot Condition="Exists('$(ProgramData)\\Crestron\\SDK\\Libraries')">$(ProgramData)\\Crestron\\SDK</CrestronSdkRoot>
+    <CrestronSdkRoot Condition="'$(CrestronSdkRoot)' == '' AND Exists('C:\\Users\\Premier Visions\\source\\repos\\YukonPDDispatch\\packages\\Crestron.SimplSharp.SDK.Library.2.21.171\\lib\\net6.0')">C:\\Users\\Premier Visions\\source\\repos\\YukonPDDispatch\\packages\\Crestron.SimplSharp.SDK.Library.2.21.171\\lib\\net6.0</CrestronSdkRoot>
     <CrestronSdkRoot Condition="'$(CrestronSdkRoot)' == ''">..\\SDK</CrestronSdkRoot>
     <CrestronSdkLibrariesPath>$(CrestronSdkRoot)\\Libraries</CrestronSdkLibrariesPath>
   </PropertyGroup>
@@ -44,23 +45,19 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
     <Reference Include="SimplSharpCustomAttributesInterface">
-      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpCustomAttributesInterface.dll')">$(ProgramData)\\Crestron\\SDK\\SimplSharpCustomAttributesInterface.dll</HintPath>
-      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpCustomAttributesInterface.dll')">$(CrestronSdkRoot)\\SimplSharpCustomAttributesInterface.dll</HintPath>
+      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpCustomAttributesInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="SimplSharpHelperInterface">
-      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpHelperInterface.dll')">$(ProgramData)\\Crestron\\SDK\\SimplSharpHelperInterface.dll</HintPath>
-      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpHelperInterface.dll')">$(CrestronSdkRoot)\\SimplSharpHelperInterface.dll</HintPath>
+      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpHelperInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="SimplSharpReflectionInterface">
-      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpReflectionInterface.dll')">$(ProgramData)\\Crestron\\SDK\\SimplSharpReflectionInterface.dll</HintPath>
-      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\SimplSharpReflectionInterface.dll')">$(CrestronSdkRoot)\\SimplSharpReflectionInterface.dll</HintPath>
+      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpReflectionInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Crestron.SimplSharp">
-      <HintPath Condition="Exists('$(ProgramData)\\Crestron\\SDK\\Crestron.SimplSharp.dll')">$(ProgramData)\\Crestron\\SDK\\Crestron.SimplSharp.dll</HintPath>
-      <HintPath Condition="!Exists('$(ProgramData)\\Crestron\\SDK\\Crestron.SimplSharp.dll')">$(CrestronSdkRoot)\\Crestron.SimplSharp.dll</HintPath>
+      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\Crestron.SimplSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RADCommon">
