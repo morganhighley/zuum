@@ -1,5 +1,4 @@
 using System;
-using Crestron.RAD.Common.BasicDriver;
 using Crestron.RAD.Common.Interfaces;
 using Crestron.RAD.Common.Transports;
 using Crestron.RAD.DeviceTypes.CableBox;
@@ -8,7 +7,7 @@ using IPAddress = Crestron.SimplSharp.IPAddress;
 
 namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
 {
-    public class H10X10MatrixSwitcherIP : ACableBox, ITcp, ISimpl
+    public class H10X10MatrixSwitcherIP : ABasicCableBox, ITcp, ISimpl
     {
         #region ITcp Members
 
