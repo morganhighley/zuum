@@ -16,7 +16,6 @@
 
   <PropertyGroup>
     <CrestronSdkRoot Condition="Exists('$(ProgramData)\\Crestron\\SDK\\Libraries')">$(ProgramData)\\Crestron\\SDK</CrestronSdkRoot>
-    <CrestronSdkRoot Condition="'$(CrestronSdkRoot)' == '' AND Exists('C:\\Users\\Premier Visions\\source\\repos\\YukonPDDispatch\\packages\\Crestron.SimplSharp.SDK.Library.2.21.171\\lib\\net6.0')">C:\\Users\\Premier Visions\\source\\repos\\YukonPDDispatch\\packages\\Crestron.SimplSharp.SDK.Library.2.21.171\\lib\\net6.0</CrestronSdkRoot>
     <CrestronSdkRoot Condition="'$(CrestronSdkRoot)' == ''">..\\SDK</CrestronSdkRoot>
     <CrestronSdkLibrariesPath>$(CrestronSdkRoot)\\Libraries</CrestronSdkLibrariesPath>
   </PropertyGroup>
@@ -61,16 +60,16 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RADCommon">
-      <HintPath Condition="Exists('$(CrestronSdkLibrariesPath)\\RADCommon.dll')">$(CrestronSdkLibrariesPath)\\RADCommon.dll</HintPath>
+      <HintPath>..\SDK\Libraries\RADCommon.dll</HintPath>
     </Reference>
     <Reference Include="RADCableBox">
-      <HintPath Condition="Exists('$(CrestronSdkLibrariesPath)\\RADCableBox.dll')">$(CrestronSdkLibrariesPath)\\RADCableBox.dll</HintPath>
+      <HintPath>..\SDK\Libraries\RADCableBox.dll</HintPath>
     </Reference>
     <Reference Include="RADProTransports">
-      <HintPath Condition="Exists('$(CrestronSdkLibrariesPath)\\RADProTransports.dll')">$(CrestronSdkLibrariesPath)\\RADProTransports.dll</HintPath>
+      <HintPath>..\SDK\Libraries\RADProTransports.dll</HintPath>
     </Reference>
     <Reference Include="Crestron.DeviceDrivers.API">
-      <HintPath Condition="Exists('$(CrestronSdkLibrariesPath)\\Crestron.DeviceDrivers.API.dll')">$(CrestronSdkLibrariesPath)\\Crestron.DeviceDrivers.API.dll</HintPath>
+      <HintPath>..\SDK\Libraries\Crestron.DeviceDrivers.API.dll</HintPath>
     </Reference>
   </ItemGroup>
 
