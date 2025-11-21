@@ -43,32 +43,32 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Crestron.SimplSharp">
-      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\Crestron.SimplSharp.dll</HintPath>
+      <HintPath>$(CrestronSdkRoot)\Crestron.SimplSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="SimplSharpCustomAttributesInterface">
-      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpCustomAttributesInterface.dll</HintPath>
+      <HintPath>$(CrestronSdkRoot)\SimplSharpCustomAttributesInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="SimplSharpHelperInterface">
-      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpHelperInterface.dll</HintPath>
+      <HintPath>$(CrestronSdkRoot)\SimplSharpHelperInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="SimplSharpReflectionInterface">
-      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpReflectionInterface.dll</HintPath>
+      <HintPath>$(CrestronSdkRoot)\SimplSharpReflectionInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RADCommon">
-      <HintPath>..\SDK\Libraries\RADCommon.dll</HintPath>
+      <HintPath>$(CrestronSdkLibrariesPath)\RADCommon.dll</HintPath>
     </Reference>
     <Reference Include="RADCableBox">
-      <HintPath>..\SDK\Libraries\RADCableBox.dll</HintPath>
+      <HintPath>$(CrestronSdkLibrariesPath)\RADCableBox.dll</HintPath>
     </Reference>
     <Reference Include="RADProTransports">
-      <HintPath>..\SDK\Libraries\RADProTransports.dll</HintPath>
+      <HintPath>$(CrestronSdkLibrariesPath)\RADProTransports.dll</HintPath>
     </Reference>
     <Reference Include="Crestron.DeviceDrivers.API">
-      <HintPath>..\SDK\Libraries\Crestron.DeviceDrivers.API.dll</HintPath>
+      <HintPath>$(CrestronSdkLibrariesPath)\Crestron.DeviceDrivers.API.dll</HintPath>
     </Reference>
   </ItemGroup>
 
