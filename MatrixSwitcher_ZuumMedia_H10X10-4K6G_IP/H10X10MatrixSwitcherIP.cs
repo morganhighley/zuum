@@ -1,4 +1,5 @@
 using System;
+using System.Net;
 using Crestron.RAD.Common.BasicDriver;
 using Crestron.RAD.Common.Interfaces;
 using Crestron.RAD.Common.Transports;
@@ -52,3 +53,4 @@ namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
         #endregion
     }
 }
+
