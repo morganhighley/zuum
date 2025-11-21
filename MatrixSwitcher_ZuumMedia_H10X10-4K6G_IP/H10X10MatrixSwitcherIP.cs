@@ -12,7 +12,7 @@ namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
     {
         #region ITcp Members
 
-        public void Initialize(IPAddress ipAddress, int port)
+        public void Initialize(System.Net.IPAddress ipAddress, int port)
         {
             var tcpTransport = new TcpTransport
             {
