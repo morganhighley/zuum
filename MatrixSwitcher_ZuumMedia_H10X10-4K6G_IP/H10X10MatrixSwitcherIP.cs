@@ -13,19 +13,16 @@ namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
 
         public void Initialize(IPAddress ipAddress, int port)
         {
-            Port = port;
-
             var tcpTransport = new TcpTransport
             {
                 EnableAutoReconnect = true,
                 EnableLogging = InternalEnableLogging,
                 CustomLogger = InternalCustomLogger,
                 EnableRxDebug = InternalEnableRxDebug,
-                EnableTxDebug = InternalEnableTxDebug,
-                Host = ipAddress.ToString(),
-                Port = (ushort)port
+                EnableTxDebug = InternalEnableTxDebug
             };
 
+            tcpTransport.Initialize(ipAddress, port);
             ConnectionTransport = tcpTransport;
 
             CableBoxProtocol = new H10X10MatrixSwitcherProtocol(ConnectionTransport, Id)
@@ -45,8 +42,9 @@ namespace Crestron.RAD.Drivers.MatrixSwitchers.ZuumMedia
 
         public SimplTransport Initialize(Action<string, object[]> send)
         {
-            var simplTransport = new SimplTransport(send)
+            var simplTransport = new SimplTransport
             {
+                Send = send,
                 EnableLogging = InternalEnableLogging,
                 CustomLogger = InternalCustomLogger,
                 EnableRxDebug = InternalEnableRxDebug,
