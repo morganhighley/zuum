@@ -42,21 +42,24 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Net" />
-    <Reference Include="SimplSharpCustomAttributesInterface">
-      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpCustomAttributesInterface.dll</HintPath>
+    <Reference Include="Crestron.SimplSharp, Version=2.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net472\Crestron.SimplSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="SimplSharpHelperInterface">
-      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpHelperInterface.dll</HintPath>
+    <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net472\SimplSharpCustomAttributesInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="SimplSharpReflectionInterface">
-      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\SimplSharpReflectionInterface.dll</HintPath>
+    <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net472\SimplSharpHelperInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Crestron.SimplSharp">
-      <HintPath>C:\Users\Premier Visions\source\repos\YukonPDDispatch\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net6.0\Crestron.SimplSharp.dll</HintPath>
+    <Reference Include="SimplSharpReflectionInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Crestron.SimplSharp.SDK.Library.2.21.171\lib\net472\SimplSharpReflectionInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RADCommon">
@@ -82,6 +85,10 @@
 
   <ItemGroup>
     <EmbeddedResource Include="H10X10MatrixSwitcher_IP.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\\Microsoft.CSharp.targets" />
