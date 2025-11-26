@@ -1,0 +1,500 @@
+<!DOCTYPE html><html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_TPSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="Driver SDK V2 (Entity Model)|Create a Driver" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false"><head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml">
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon.png"><title>Crestron Home Programming</title>
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../Resources/Stylesheets/TP-Global-Styles.css" rel="stylesheet" type="text/css">
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon.png">
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        </script>
+    <meta class="foundation-mq"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../../Data/Breakpoints.js" src="../../../../Data/Breakpoints.js?t=638967327468757339"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../../Data/Language.js" src="../../../../Data/Language.js?t=638967327468757339"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../../Data/Tocs/TP_TOC.js" src="../../../../Data/Tocs/TP_TOC.js?t=638967327468757339"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../../Data/Tocs/TP_TOC_Chunk0.js" src="../../../../Data/Tocs/TP_TOC_Chunk0.js?t=638967327468757339"></script></head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="mbtrvi-off-canvas" data-position="right" data-mc-ignore="true" aria-hidden="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="7xjmob-accordion-menu" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-chunk="Data/Toc.xml">
+                    <li class="tree-node tree-node-leaf" data-mc-id="0"><a href="../../../../Content/Topics/Home.htm">Crestron® Drivers SDK</a></li><li class="tree-node tree-node-leaf" data-mc-id="1"><a href="../../../../Content/Topics/Whats-New/Whats-New.htm">What's New?</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="2"><a href="../../../../Content/Topics/Overview/Overview.htm" aria-expanded="false" role="button">Overview<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="3"><a href="../../../../Content/Topics/Quick-Start/Quick-Start-Install.htm" aria-expanded="false" role="button">Quick Start<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="4"><a href="../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm" aria-expanded="false" role="button">Driver SDK V1 (RAD Framework)<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="5"><a href="../../../../Content/Topics/Driver-SDK-V2/Driver-SDK-V2.htm" aria-expanded="true" role="button" aria-controls="submenu68f5002e-d670-4347-84ed-b56464e85833">Driver SDK V2 (Entity Model)<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a><ul class="vertical menu is-accordion-submenu nested" id="submenu68f5002e-d670-4347-84ed-b56464e85833"><li class="tree-node tree-node-leaf" data-mc-id="11"><a href="../../../../Content/Topics/Driver-SDK-V2/Driver-SDK-V2.htm">Driver SDK V2 (Entity Model)</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="12"><a href="../../../../Content/Topics/Driver-SDK-V2/SDK-Framework/SDK-Framework-V2.htm" aria-expanded="false" role="button">SDK Framework<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="13"><a href="../../../../Content/Topics/Driver-SDK-V2/API-Reference/Entity-Model-API-Reference.htm" aria-expanded="false" role="button">Entity Model API Reference<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="14"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Create-a-Driver-V2.htm" aria-expanded="true" role="button" aria-controls="submenu258f6a07-940f-4bc4-85d4-80674f798ba7">Create a Driver<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a><ul class="vertical menu is-accordion-submenu nested" id="submenu258f6a07-940f-4bc4-85d4-80674f798ba7"><li class="tree-node tree-node-leaf" data-mc-id="15"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Create-a-Driver-V2.htm">Create a Driver</a></li><li class="tree-node tree-node-leaf" data-mc-id="16"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Create-a-Project-V2.htm">Create a Project</a></li><li class="tree-node tree-node-leaf" data-mc-id="17"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Create-Required-Components.htm">Create Required Components</a></li><li class="tree-node tree-node-leaf" data-mc-id="18"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Add-a-Configuration.htm">Add and Define Configuration Items</a></li><li class="tree-node tree-node-leaf" data-mc-id="19"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Add-Commands-and-Properties.htm">Add Commands and Properties</a></li><li class="tree-node tree-node-leaf" data-mc-id="20"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Add-Extension-Support.htm">Add Extension Support</a></li><li class="tree-node tree-node-leaf tree-node-selected" data-mc-id="21"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Crestron-Home-Sequences.htm" aria-expanded="true" aria-current="true" class="selected">Crestron Home Programming</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="22"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Device-Types/Device-Types-V2.htm" aria-expanded="false" role="button">Device Types<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li></ul></li></ul></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="6"><a href="../../../../Content/Topics/Best-Practices/Best-Practices.htm" aria-expanded="false" role="button">Best Practices<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="7"><a href="../../../../Content/Topics/Test-a-Driver/Test-a-Driver.htm" aria-expanded="false" role="button">Test a Driver<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="8"><a href="../../../../Content/Topics/Submit-a-Driver/Submit-a-Driver.htm" aria-expanded="false" role="button">Submit a Driver<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node tree-node-leaf" data-mc-id="9"><a href="../../../../Content/Topics/Resources/Resources.htm">Resources</a></li><li class="tree-node tree-node-leaf" data-mc-id="10"><a href="../../../../Content/Topics/Support/Support.htm">Support</a></li></ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container sticky-container" style="min-height: 70px;">
+                        <nav class="title-bar tab-bar sticky" aria-label="Main navigation and search" data-sticky="91wfhv-sticky" data-options="marginTop:0" style="width: 100%; max-width: 1280px;" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true" data-resize="82g88q-sticky" data-events="resize"><a class="skip-to-content fluid-skip showOnFocus" href="#mc-main-content">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator"><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas" aria-controls="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.crestron.com/"><img src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Logo" class="invisible-label"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True" data-mc-chunk="Data/Toc.xml">
+                                        
+                                    <li data-mc-id="0"><a href="../../../../Content/Topics/Home.htm">Crestron® Drivers SDK</a></li><li data-mc-id="1"><a href="../../../../Content/Topics/Whats-New/Whats-New.htm">What's New?</a></li><li data-mc-id="2" class="has-children"><a href="../../../../Content/Topics/Overview/Overview.htm" aria-expanded="false" role="button">Overview</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Overview" aria-haspopup="true">»</button></li><li data-mc-id="3" class="has-children"><a href="../../../../Content/Topics/Quick-Start/Quick-Start-Install.htm" aria-expanded="false" role="button">Quick Start</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Quick Start" aria-haspopup="true">»</button></li><li data-mc-id="4" class="has-children"><a href="../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm" aria-expanded="false" role="button">Driver SDK V1 (RAD Framework)</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Driver SDK V1 (RAD Framework)" aria-haspopup="true">»</button></li><li data-mc-id="5" class="has-children"><a href="../../../../Content/Topics/Driver-SDK-V2/Driver-SDK-V2.htm" aria-expanded="false" role="button">Driver SDK V2 (Entity Model)</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Driver SDK V2 (Entity Model)" aria-haspopup="true">»</button></li><li data-mc-id="6" class="has-children"><a href="../../../../Content/Topics/Best-Practices/Best-Practices.htm" aria-expanded="false" role="button">Best Practices</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Best Practices" aria-haspopup="true">»</button></li><li data-mc-id="7" class="has-children"><a href="../../../../Content/Topics/Test-a-Driver/Test-a-Driver.htm" aria-expanded="false" role="button">Test a Driver</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Test a Driver" aria-haspopup="true">»</button></li><li data-mc-id="8" class="has-children"><a href="../../../../Content/Topics/Submit-a-Driver/Submit-a-Driver.htm" aria-expanded="false" role="button">Submit a Driver</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Submit a Driver" aria-haspopup="true">»</button></li><li data-mc-id="9"><a href="../../../../Content/Topics/Resources/Resources.htm">Resources</a></li><li data-mc-id="10"><a href="../../../../Content/Topics/Support/Support.htm">Support</a></li></ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator"><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search">
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="2d5u6b-accordion-menu" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True" data-mc-chunk="Data/Toc.xml">
+                                    <li class="tree-node tree-node-leaf" data-mc-id="0"><a href="../../../../Content/Topics/Home.htm">Crestron® Drivers SDK</a></li><li class="tree-node tree-node-leaf" data-mc-id="1"><a href="../../../../Content/Topics/Whats-New/Whats-New.htm">What's New?</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="2"><a href="../../../../Content/Topics/Overview/Overview.htm" aria-expanded="false">Overview<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Overview</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="3"><a href="../../../../Content/Topics/Quick-Start/Quick-Start-Install.htm" aria-expanded="false">Quick Start<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Quick Start</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="4"><a href="../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm" aria-expanded="false">Driver SDK V1 (RAD Framework)<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Driver SDK V1 (RAD Framework)</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="5"><a href="../../../../Content/Topics/Driver-SDK-V2/Driver-SDK-V2.htm" aria-expanded="true">Driver SDK V2 (Entity Model)<span class="submenu-toggle-container" role="button" tabindex="0" aria-controls="submenu1387e28b-0bdf-4e6f-a584-fe4e407b4119"><span class="submenu-toggle"></span><span class="invisible-label">Driver SDK V2 (Entity Model)</span></span></a><ul class="vertical menu accordion-menu is-accordion-submenu nested" id="submenu1387e28b-0bdf-4e6f-a584-fe4e407b4119"><li class="tree-node is-accordion-submenu-parent" data-mc-id="11"><a href="../../../../Content/Topics/Driver-SDK-V2/SDK-Framework/SDK-Framework-V2.htm" aria-expanded="false">SDK Framework<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">SDK Framework</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="12"><a href="../../../../Content/Topics/Driver-SDK-V2/API-Reference/Entity-Model-API-Reference.htm" aria-expanded="false">Entity Model API Reference<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Entity Model API Reference</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="13"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Create-a-Driver-V2.htm" aria-expanded="true">Create a Driver<span class="submenu-toggle-container" role="button" tabindex="0" aria-controls="submenu4bb14d88-2605-4353-9bc4-c1323d18fb5d"><span class="submenu-toggle"></span><span class="invisible-label">Create a Driver</span></span></a><ul class="vertical menu accordion-menu is-accordion-submenu nested" id="submenu4bb14d88-2605-4353-9bc4-c1323d18fb5d"><li class="tree-node tree-node-leaf" data-mc-id="14"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Create-a-Project-V2.htm">Create a Project</a></li><li class="tree-node tree-node-leaf" data-mc-id="15"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Create-Required-Components.htm">Create Required Components</a></li><li class="tree-node tree-node-leaf" data-mc-id="16"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Add-a-Configuration.htm">Add and Define Configuration Items</a></li><li class="tree-node tree-node-leaf" data-mc-id="17"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Add-Commands-and-Properties.htm">Add Commands and Properties</a></li><li class="tree-node tree-node-leaf" data-mc-id="18"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Add-Extension-Support.htm">Add Extension Support</a></li><li class="tree-node tree-node-leaf tree-node-selected" data-mc-id="19"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Crestron-Home-Sequences.htm" aria-expanded="true" aria-current="true" class="selected">Crestron Home Programming</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="20"><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Device-Types/Device-Types-V2.htm" aria-expanded="false">Device Types<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Device Types</span></span></a></li></ul></li></ul></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="6"><a href="../../../../Content/Topics/Best-Practices/Best-Practices.htm" aria-expanded="false">Best Practices<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Best Practices</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="7"><a href="../../../../Content/Topics/Test-a-Driver/Test-a-Driver.htm" aria-expanded="false">Test a Driver<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Test a Driver</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="8"><a href="../../../../Content/Topics/Submit-a-Driver/Submit-a-Driver.htm" aria-expanded="false">Submit a Driver<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Submit a Driver</span></span></a></li><li class="tree-node tree-node-leaf" data-mc-id="9"><a href="../../../../Content/Topics/Resources/Resources.htm">Resources</a></li><li class="tree-node tree-node-leaf" data-mc-id="10"><a href="../../../../Content/Topics/Support/Support.htm">Support</a></li></ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True" class="height-container" style="min-height: calc(-86.1px + 100vh);">
+                                    <div style="pading-left: 10px; padding-right: 10px;">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True" data-mc-chunk="Data/Toc.xml"><span class="MCBreadcrumbsPrefix"> </span>
+                                            <a href="../../../../Content/Topics/Driver-SDK-V2/Driver-SDK-V2.htm" class="MCBreadcrumbsLink">Driver SDK V2 (Entity Model)</a><span class="MCBreadcrumbsDivider"> / </span><a href="../../../../Content/Topics/Driver-SDK-V2/Create-a-Driver/Create-a-Driver-V2.htm" class="MCBreadcrumbsLink">Create a Driver</a><span class="MCBreadcrumbsDivider"> / </span><span class="MCBreadcrumbsSelf">Crestron Home Programming</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-container">
+                                        <div class="content">
+                                            <div class="topic">
+                                                <div role="main" id="mc-main-content">
+                                                    <h1 id="CrestronHomeProgramming" data-magellan-target="CrestronHomeProgramming">Crestron Home Programming</h1>
+                                                    <p>Defining custom commands, properties, and events for use in sequences is done the same way as standard ones defined by Crestron, such as <strong> light:isOn</strong>.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE:&nbsp;</span>Custom items should not have a <strong>namespace:</strong>. For example, use <strong>lightIsOn</strong> instead of <strong>light:isOn</strong>. This ensures no conflict with any future‑defined standard items.</p>
+                                                    </div>
+                                                    <p>When the <strong>Sequences</strong> menu is selected in the Crestron Home UI, navigating into a room will show all available devices and entities that are available to be programmed within the room. Crestron Home devices can now be added as programmable devices. Any commands, events, and properties tagged as <strong>Programmable</strong> will be displayed in a room other devices. They are sorted by device type/name and, when selected, will have operations associated with them that can be added as a step to a sequence.</p>
+                                                    <p>Below is a screen shot of a Crestron Home device in a room and its operations.</p>
+                                                    <p class="caption">Sample Crestron Home Device in a Room</p>
+                                                    <p class="caption">
+                                                        <img src="../../../Resources/Images/Sequence1.jpg" title="Sample Crestron Home Extension&nbsp;Device in a Room" alt="Sample Crestron Home Extension&nbsp;Device in a Room">
+                                                        
+                                                    </p>
+                                                    <p>The name associated with the Crestron Home device is the same name used while adding the device in the <strong>Pair Devices</strong> page.  The icon used will be dependent on the device type in the driver’s JSON file, or the <strong>crestron:uxCategory</strong> of the device if it is a child of a platform.</p>
+                                                    <p>Selecting the device will show all operations that are available for programming.  Operations available for programming will be controlled via declarative metadata in the device’s reported <strong>DriverControllerDefinition</strong>.</p>
+                                                    <p>The sections that follow describe the commands, properties, and events that can be used for Crestron Home programming.</p>
+                                                    <h2 id="Commands" data-magellan-target="Commands">Commands</h2>
+                                                    <p>The following command attributes are used to control the Crestron Home device operations that are available for programming. It is also possible to declare these operations programmatically by providing the appropriate metadata when constructing the command.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE:&nbsp;</span>As a best practice, driver commands should be made available to Crestron Home programming even if the device is offline with the control system.</p>
+                                                    </div>
+                                                    <h3 id="EntityCommandMetadataAttribute" data-magellan-target="EntityCommandMetadataAttribute">EntityCommandMetadataAttribute</h3>
+                                                    <p>To get a device command to appear as an operation in sequences automatically, the method should be decorated with <strong>EntityCommandMetadataAttribute(Programmable = true)</strong>. Refer to the following sample code.</p>
+                                                    <div>
+                                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                            <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">class</span> DoorLock&nbsp;<br>{&nbsp;<br>    [EntityCommand]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]&nbsp;<br>    <span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span>()&nbsp;<br>    {&nbsp;<br>    &nbsp;<br>    &nbsp;<br>    }&nbsp;<br>}&nbsp;</code></pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>This attribute can be applied to methods regardless of scope (public, private, internal, and so forth).</p>
+                                                    <p>The name of the method will be used by default as the operation name in sequences.</p>
+                                                    <p>To control the operation name, the <strong>FriendlyName</strong> parameter can be used. The code below shows the operation name in sequences as "Lock Door" even though the method name “lockInteriorDoor” was used.</p>
+                                                    <div>
+                                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                            <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">EntityCommand</span>(FriendlyName = <span style="color: #df5000; ">"Lock Door"</span>)]&nbsp;<br>[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]&nbsp;<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockInteriorDoor</span>()&nbsp;<br>{&nbsp;<br>&nbsp;<br>&nbsp;<br>}&nbsp;</code></pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>This name is reflected in the <strong>Sequences</strong> menu.</p>
+                                                    <p class="caption">Sequence Menu - FriendlyName Parameter</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/Sequence3.png" style="width: 350px;" title="Sequence Menu - FriendlyName Parameter" alt="Sequence Menu - FriendlyName Parameter">
+                                                        
+                                                    </p>
+                                                    <p>Methods that take parameters can also be marked programmable. By default, a parameter dialog will appear in sequences automatically to allow the user to input the parameters specified. The UI controls used for this input are dependent on the data type of each parameter (text box for strings, checkbox for Booleans, and so forth).</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE:&nbsp;</span>At this time, only primitive (int, bool, and so forth) data types are supported.</p>
+                                                    </div>
+                                                    <p>The code below shows a method taking a parameter and the parameter dialog that will be displayed automatically when this operation is added to a sequence.</p>
+                                                    <div>
+                                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                            <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">EntityCommand</span>(FriendlyName = <span style="color: #df5000; ">"Lock Door"</span>)]<br>[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]<br><br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span>(<span style="color: #a71d5d; font-weight: bold; ">int</span> time)<br>{<br><br><br>}</code></pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>This information is reflected in the image shown below.</p>
+                                                    <p class="caption">Command Taking Parameter UI&nbsp;Example</p>
+                                                    <p class="caption">
+                                                        <img src="../../../Resources/Images/Sequence4.jpg" style="width: 500px;" title="Command Taking Parameter UI&nbsp;Example" alt="Command Taking Parameter UI&nbsp;Example">
+                                                        
+                                                    </p>
+                                                    <p>By default, the label used for a parameter is the parameter name specified in the method. To control the parameter name, use the <strong>FriendlyName</strong> parameter of <strong>EntityParameterAttribute</strong>.</p>
+                                                    <p>Once the operation is added to a sequence, parameters entered will be shown in the sequence step automatically.</p>
+                                                    <p class="caption">Parameters Added to Sequence Step UI&nbsp;Example</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/Sequence5.png" style="width: 700px;" title="Parameters Added to Sequence Step UI&nbsp;Example" alt="Parameters Added to Sequence Step UI&nbsp;Example">
+                                                        
+                                                    </p>
+                                                    <h3 id="FriendlyName" data-magellan-target="FriendlyName">FriendlyName</h3>
+                                                    <p>The <strong>FriendlyName</strong> parameter of <strong>EntityParameterAttribute</strong> is used to control the text of the label used while gathering user input for a parameter. Both the command name and the parameter name can be specified via a translation key independently of one another. Refer to the sample code below. </p>
+                                                    <div>
+                                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                            <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">EntityCommand</span>(FriendlyName = <span style="color: #df5000; ">"Lock Door"</span>)]<br>[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color: #333333; font-weight: bold; ">EntityParameter</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FriendlyName = <span style="color: #df5000; ">"Seconds"</span>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;)]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a71d5d; font-weight: bold; ">int</span> time&nbsp;<br>)&nbsp;<br>{&nbsp;<br><br>}&nbsp;<br><br><br>[<span style="color: #333333; font-weight: bold; ">EntityCommand</span>(FriendlyName = <span style="color: #df5000; ">"Lock Door 2"</span>, NameLocalizationKey = <span style="color: #df5000; ">"lockDoor2"</span>)]<br>[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor2</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color: #333333; font-weight: bold; ">EntityParameter</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FriendlyName = <span style="color: #df5000; ">"Seconds"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NameLocalizationKey = <span style="color: #df5000; ">"lockDoor2_time"</span>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;)]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a71d5d; font-weight: bold; ">int</span> time&nbsp;<br>)&nbsp;<br>{&nbsp;<br><br>}&nbsp;</code></pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>The following image shows that the label in the UI&nbsp;is updated to "Seconds" as indicated by the <strong>FriendlyName</strong>.</p>
+                                                    <p class="caption">FriendlyName UI&nbsp;Example</p>
+                                                    <p class="caption">
+                                                        <img src="../../../Resources/Images/Sequence6.jpg" style="width: 500px;" title="FriendlyName UI&nbsp;Example" alt="FriendlyName UI&nbsp;Example">
+                                                        
+                                                    </p>
+                                                    <h3 id="Units" data-magellan-target="Units">Units</h3>
+                                                    <p>The <strong>Units</strong> value is used to display a unit next to the parameter label. The following unit strings are preferred values defined by Crestron. Use these specific strings if they apply. For example, use “Milliseconds” and not "ms".</p>
+                                                    <ul>
+                                                        <li>Celsius</li>
+                                                        <li>Fahrenheit</li>
+                                                        <li>Percentage</li>
+                                                        <li>Millivolts</li>
+                                                        <li>PartsPerMillion</li>
+                                                        <li>GramsPerLiter</li>
+                                                        <li>pH</li>
+                                                        <li>Hours</li>
+                                                        <li>Minutes</li>
+                                                        <li>Seconds</li>
+                                                        <li>Milliseconds</li>
+                                                        <li>Years</li>
+                                                        <li>Months</li>
+                                                        <li>Days</li>
+                                                    </ul>
+                                                    <p>Refer to the sample code below.</p>
+                                                    <div>
+                                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                            <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">EntityCommand</span>(FriendlyName = <span style="color: #df5000; ">"Lock Door"</span>)]<br>[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color: #333333; font-weight: bold; ">EntityParameter</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FriendlyName = <span style="color: #df5000; ">"Time"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Units = <span style="color: #df5000; ">"Seconds"</span>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;)]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a71d5d; font-weight: bold; ">int</span> time&nbsp;<br>)&nbsp;<br>{&nbsp;<br><br>}&nbsp;</code></pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>The following image shows that the seconds unit ("s") is displayed next to the label as indicated by <strong>Units</strong>.</p>
+                                                    <p class="caption">Parameter Units UI&nbsp;Example</p>
+                                                    <p class="caption">
+                                                        <img src="../../../Resources/Images/Sequences_1A.jpg" style="width: 500px;" title="Parameter Units UI&nbsp;Example" alt="Parameter Units UI&nbsp;Example">
+                                                        
+                                                    </p>
+                                                    <h3 id="DefaultValue" data-magellan-target="DefaultValue">DefaultValue</h3>
+                                                    <p>The <strong>DefaultValue</strong> is used to control the default value of a parameter when the parameter dialog is displayed. The data types int, double, string, and bool can be entered as a default value. Refer to the sample code below.</p>
+                                                    <div>
+                                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                            <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">EntityCommand</span>(FriendlyName = <span style="color: #df5000; ">"Lock Door"</span>)]<br>[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color: #333333; font-weight: bold; ">EntityParameter</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FriendlyName = <span style="color: #df5000; ">"Time"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Units = <span style="color: #df5000; ">"Seconds"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DefaultValue = <span style="color: #df5000; ">5</span>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;)]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a71d5d; font-weight: bold; ">int</span> time&nbsp;<br>)<br>{&nbsp;<br><br>}</code></pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>The following image shows the default value of a parameter as indicated by <strong>DefaultValue</strong> when the parameter dialog is displayed.</p>
+                                                    <p class="caption">DefaultAttribute UI&nbsp;Example</p>
+                                                    <p class="caption">
+                                                        <img src="../../../Resources/Images/Sequence7.jpg" style="width: 500px;" title="DefaultAttribute UI&nbsp;Example" alt="DefaultAttribute UI&nbsp;Example">
+                                                        
+                                                    </p>
+                                                    <h3 id="RangeMinimum" data-magellan-target="RangeMinimum">RangeMinimum</h3>
+                                                    <p><strong>RangeMinimum</strong> should be used to set a minimum value for a parameter.  Data types of type int and double can be entered as a minimum value. Refer to the following sample code.</p>
+                                                    <div>
+                                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                            <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">EntityCommand</span>(FriendlyName = <span style="color: #df5000; ">"Lock Door"</span>)]<br>[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color: #333333; font-weight: bold; ">EntityParameter</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FriendlyName = <span style="color: #df5000; ">"Time"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Units = <span style="color: #df5000; ">"Seconds"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DefaultValue = <span style="color: #df5000; ">5</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RangeMinimum = <span style="color: #df5000; ">1</span>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;)]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a71d5d; font-weight: bold; ">int</span> time&nbsp;<br>)<br>{&nbsp;<br><br>}&nbsp;</code></pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>If a value is entered in the parameter dialog for a parameter that is less than the minimum value specified, a validation error will occur automatically in sequences as shown in the image below.</p>
+                                                    <p class="caption">RangeMinimum UI&nbsp;Example - Validation Error</p>
+                                                    <p class="caption">
+                                                        <img src="../../../Resources/Images/Sequence8.jpg" style="width: 500px;" title="RangeMinimum UI&nbsp;Example - Validation Error" alt="RangeMinimum UI&nbsp;Example - Validation Error">
+                                                        
+                                                    </p>
+                                                    <p>Select the alert icon to receive details about the alert.</p>
+                                                    <p class="caption">RangeMinimum UI&nbsp;Example - Alert Message</p>
+                                                    <p class="caption">
+                                                        <img src="../../../Resources/Images/Sequence9.png" style="width: 500px;" title="RangeMinimum UI&nbsp;Example - Alert Message" alt="RangeMinimum UI&nbsp;Example - Alert Message">
+                                                        
+                                                    </p>
+                                                    <h3 id="RangeMaximum" data-magellan-target="RangeMaximum">RangeMaximum</h3>
+                                                    <p><strong>RangeMaximum</strong> is used to set a maximum value for a parameter.  Data types of type int and double can be entered as a maximum value. Refer to the sample code below.</p>
+                                                    <div>
+                                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                            <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">EntityCommand</span>(FriendlyName = <span style="color: #df5000; ">"Lock Door"</span>)]<br>[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color: #333333; font-weight: bold; ">EntityParameter</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FriendlyName = <span style="color: #df5000; ">"Time"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Units = <span style="color: #df5000; ">"Seconds"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DefaultValue = <span style="color: #df5000; ">5</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RangeMinimum = <span style="color: #df5000; ">1</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RangeMaximum = <span style="color: #df5000; ">10</span>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;)]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a71d5d; font-weight: bold; ">int</span> time&nbsp;<br>)&nbsp;<br>{&nbsp;<br><br>}&nbsp;</code></pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>If a value is entered in the parameter dialog for a parameter that is higher than the maximum value specified, a validation error will occur automatically in sequences as shown in the image below.</p>
+                                                    <p class="caption">RangeMaximum UI&nbsp;Example - Validation Error</p>
+                                                    <p class="caption">
+                                                        <img src="../../../Resources/Images/Sequence10.jpg" style="width: 500px;" title="RangeMaximum UI&nbsp;Example - Validation Error" alt="RangeMaximum UI&nbsp;Example - Validation Error">
+                                                        
+                                                    </p>
+                                                    <p>Select the alert icon to receive details about the alert.</p>
+                                                    <p class="caption">RangeMaximum UI&nbsp;Example - Alert Message</p>
+                                                    <p class="caption">
+                                                        <img src="../../../Resources/Images/Sequence11.png" style="width: 500px;" title="RangeMaximum UI&nbsp;Example - Alert Message" alt="RangeMaximum UI&nbsp;Example - Alert Message">
+                                                        
+                                                    </p>
+                                                    <h3 id="AvailableValues" data-magellan-target="AvailableValues"><a name="Availabl"></a>AvailableValues</h3>
+                                                    <p><strong>AvailableValues</strong> should be used when a list of well‑defined values is known at compile time for a parameter.  Values are entered as strings, even when the parameter is an integer or a double. The friendly name and localization key for the values may also optionally be specified. If present, that will be used in place of the raw value in the UI. If these values are specified, the number of values must match the number of names and/or localization keys.</p>
+                                                    <div>
+                                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                            <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">EntityCommand</span>(FriendlyName = <span style="color: #df5000; ">"Lock Door"</span>)]<br>[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color: #333333; font-weight: bold; ">EntityParameter</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FriendlyName = <span style="color: #df5000; ">"Time"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Units = <span style="color: #df5000; ">"Seconds"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AvailableValues = <span style="color: #795da3; font-weight: bold; ">new</span> [] { <span style="color: #df5000; ">"1"</span>, <span style="color: #df5000; ">"2"</span>, <span style="color: #df5000; ">"3"</span> }&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;)]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a71d5d; font-weight: bold; ">int</span> id&nbsp;<br>)&nbsp;<br>{&nbsp;<br><br>}&nbsp;<br><br>[<span style="color: #333333; font-weight: bold; ">EntityCommand</span>(FriendlyName = <span style="color: #df5000; ">"Lock Another Door"</span>)]<br>[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockAnotherDoor</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color: #333333; font-weight: bold; ">EntityParameter</span>(&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FriendlyName = <span style="color: #df5000; ">"Time"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Units = <span style="color: #df5000; ">"Seconds"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AvailableValues = <span style="color: #795da3; font-weight: bold; ">new</span> [] { <span style="color: #df5000; ">"1"</span>, <span style="color: #df5000; ">"2"</span>, <span style="color: #df5000; ">"3"</span> },&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AvailableValuesLabels = <span style="color: #795da3; font-weight: bold; ">new</span> [] { <span style="color: #df5000; ">"One"</span>, <span style="color: #df5000; ">"Two"</span>, <span style="color: #df5000; ">"Three"</span> },<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AvailableValuesLocalizationKeys = <span style="color: #795da3; font-weight: bold; ">new</span> [] { <span style="color: #df5000; ">"LockId_1"</span>, <span style="color: #df5000; ">"LockId_2"</span>, <span style="color: #df5000; ">"LockId_3"</span> }&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;)]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a71d5d; font-weight: bold; ">int</span> id&nbsp;<br>)&nbsp;<br>{&nbsp;<br><br>}</code></pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>If there are no other parameters in the method specified, the operation will be displayed with a folder icon indicating that there are child elements for the operation.</p>
+                                                    <p class="caption">Sequence Menu - Operation with Child Elements</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/Sequence12.png" style="width: 350px;" title="Sequence Menu - Operation with Child Elements" alt="Sequence Menu - Operation with Child Elements">
+                                                        
+                                                    </p>
+                                                    <p>When the operation is selected, the list of available values given in the attribute will be displayed.</p>
+                                                    <p class="caption">Sequence Menu - Available Child Operations</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/Sequence13.png" style="width: 350px;" title="Sequence Menu - Available Child Operations" alt="Sequence Menu - Available Child Operations">
+                                                        
+                                                    </p>
+                                                    <p>Selecting an available value will add the operation to the sequence as shown in the image below.  When the sequence is executed, the available value chosen will be used while executing the operation.</p>
+                                                    <p class="caption">Child Operations Added to Sequence UI&nbsp;Example</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/Sequence14.png" style="width: 700px;" title="Child Operations Added to Sequence UI&nbsp;Example" alt="Child Operations Added to Sequence UI&nbsp;Example">
+                                                        
+                                                    </p>
+                                                    <p>Editing the step will result in the below parameter dialog.</p>
+                                                    <p class="caption">Editing Child Operation UI</p>
+                                                    <p class="caption">
+                                                        <img src="../../../Resources/Images/Sequence15.jpg" style="width: 500px;" title="Editing Child Operation UI" alt="Editing Child Operation UI">
+                                                        
+                                                    </p>
+                                                    <p>Use the drop-down menu to display all the available values given in the attribute and to select a different value.</p>
+                                                    <p class="caption">Editing Child Operation UI - Values Drop-Down Menu</p>
+                                                    <p class="caption">
+                                                        <img src="../../../Resources/Images/Sequence16.jpg" style="width: 500px;" title="Editing Child Operation UI - Values Drop-Down Menu" alt="Editing Child Operation UI - Values Drop-Down Menu">
+                                                        
+                                                    </p>
+                                                    <h3 id="AvailableValuesProperty" data-magellan-target="AvailableValuesProperty"><a name="DynamicA"></a>AvailableValuesProperty</h3>
+                                                    <p>The <strong>AvailableValuesProperty</strong> is used when a list of well‑defined values is needed for a parameter, but it is not known at compile time. </p>
+                                                    <p>At runtime, when the operation is selected, a device property value will be used for the parameter’s available values. That parameter must be an array of available values.parameter’s data type.</p>
+                                                    <p>Refer to the sample code below.</p>
+                                                    <div>
+                                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                            <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">EntityCommand</span>(FriendlyName = <span style="color: #df5000; ">"Lock Door"</span>)] <br>[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)] &nbsp;<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">LockDoor</span>( &nbsp;<br>    [<span style="color: #333333; font-weight: bold; ">EntityParameter</span>( &nbsp;<br>        FriendlyName = <span style="color: #df5000; ">"Time"</span>, &nbsp;<br>        Units = <span style="color: #df5000; ">"Seconds"</span>, &nbsp;<br>        AvailableValuesProperty = <span style="color: #df5000; ">"lockDoorIds"</span> &nbsp;<br>    )] &nbsp;<br>    <span style="color: #a71d5d; font-weight: bold; ">int</span> id &nbsp;<br>) &nbsp;<br>{ &nbsp;<br>&nbsp;<br>} &nbsp;<br>&nbsp;<br>[<span style="color: #333333; font-weight: bold; ">EntityProperty</span>(Id = <span style="color: #df5000; ">"lockDoorIds"</span>)] &nbsp;<br><br>[<span style="color: #333333; font-weight: bold; ">EntityCommandMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)] &nbsp;<br><span style="color: #a71d5d; font-weight: bold; ">public</span> DriverEntityAvailableValue[] LockDoorIds &nbsp;<br>{ &nbsp;<br>    <span style="color: #0086b3; ">get</span> &nbsp;<br>    { &nbsp;<br>        <span style="color: #a71d5d; ">return</span> <span style="color: #795da3; font-weight: bold; ">new</span>[] &nbsp;<br>        { &nbsp;<br>            <span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">DriverEntityAvailableValue</span>(<span style="color: #df5000; ">"1"</span>, <span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">DriverEntityLocalizedString</span>(<span style="color: #df5000; ">"One"</span>, <span style="color: #df5000; ">"LockId_1"</span>), <span style="color: #0086b3; font-weight: bold; ">false</span>), &nbsp;<br>            <span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">DriverEntityAvailableValue</span>(<span style="color: #df5000; ">"2"</span>, <span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">DriverEntityLocalizedString</span>(<span style="color: #df5000; ">"Two"</span>, <span style="color: #df5000; ">"LockId_2"</span>), <span style="color: #0086b3; font-weight: bold; ">false</span>), &nbsp;<br>            <span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">DriverEntityAvailableValue</span>(<span style="color: #df5000; ">"3"</span>, <span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">DriverEntityLocalizedString</span>(<span style="color: #df5000; ">"Three"</span>, <span style="color: #df5000; ">"LockId_3"</span>), <span style="color: #0086b3; font-weight: bold; ">false</span>), &nbsp;<br>        }; &nbsp;<br>    } &nbsp;<br>} &nbsp;</code></pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>Once the available values are retrieved, the same workflow described in <a href="#Availabl" class="MCXref xref">AvailableValues</a> applies here.</p>
+                                                    <h2 id="Properties" data-magellan-target="Properties">Properties</h2>
+                                                    <p>The following property attribute is used to control the Crestron Home device operations that are available for programming. It is also possible to declare these operations programmatically by providing the appropriate metadata when constructing the property.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE:&nbsp;</span>Properties are compatible with Crestron Home version 4.03 (and higher) only.</p>
+                                                    </div>
+                                                    <h3 id="EntityPropertyMetadataAttribute" data-magellan-target="EntityPropertyMetadataAttribute">EntityPropertyMetadataAttribute</h3>
+                                                    <p>To get a device property to appear automatically as a change event in sequences  and as a value in conditionals, the property should be decorated with <strong>EntityPropertyMetadataAttribute(Programmable = true)</strong> in addition to the standard <strong>EntityPropertyAttribute</strong> definition.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE:&nbsp;</span>The <strong>EntityPropertyAttribute</strong> contains many of the same properties as <strong>EntityParameterAttribute</strong>, which will work the same as with parameters.</p>
+                                                    </div>
+                                                    <p>Refer to the sample code below.</p>
+                                                    <div>
+                                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                            <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">EntityProperty</span>(FriendlyName = <span style="color: #df5000; ">"Percent Property"</span>, Units = <span style="color: #df5000; ">"Percentage"</span>,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;RangeMinimum = <span style="color: #df5000; ">1</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;RangeMaximum = <span style="color: #df5000; ">100</span>)]<br>[<span style="color: #333333; font-weight: bold; ">EntityPropertyMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #a71d5d; font-weight: bold; ">int</span> PercentProperty<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0086b3; ">get</span> =&gt; _percentProperty;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0086b3; ">set</span><br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a71d5d; font-weight: bold; ">if</span> (_percentProperty == <span style="font-weight: bold; ">value</span>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a71d5d; ">return</span>;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_percentProperty = <span style="font-weight: bold; ">value</span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #333333; font-weight: bold; ">NotifyPropertyChanged</span>(<span style="color: #df5000; ">"percentProperty"</span>, <span style="color: #795da3; font-weight: bold; ">new</span> <span style="color: #333333; font-weight: bold; ">DriverEntityValue</span>(_percentProperty));<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}&nbsp;<br></code></pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>The property will now be available in conditions.</p>
+                                                    <p class="caption">Example Property in Conditions</p>
+                                                    <p class="caption">
+                                                        <img src="../../../Resources/Images/Property-1.png" style="width: 500px;" title="Example Property in Conditions" alt="Example Property in Conditions">
+                                                        
+                                                    </p>
+                                                    <p>Additionally, an event is created when this value changes, which can be used to trigger other sequences.</p>
+                                                    <p class="caption">Actions &amp; Events Menu (With Property Changing Event)</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/Property-2.png" style="width: 350px;" title="Actions &amp; Events Menu (With Property Changing Event)" alt="Actions &amp; Events Menu (With Property Changing Event)" class="border">
+                                                        
+                                                    </p>
+                                                    <p>The <strong>EntityPropertyMetadataAttribute</strong> can be applied to properties regardless of scope (public, private, internal, and so forth). The name of the property will be used by default as the value name in sequences if <strong>FriendlyName</strong> is not provided.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE: </span>At this time, only primitive (bool, string, double, and integer types except ulong) data types are supported.</p>
+                                                    </div>
+                                                    <h2 id="Events" data-magellan-target="Events">Events</h2>
+                                                    <p>All Crestron Home driver devices with events are displayed on the <strong>Actions &amp; Events</strong> page for the room alongside other types of programmable devices and are ordered alphabetically by device name.   The manufacturer name of the device is also displayed.</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/Events1.png" style="width: 550px;" class="border" title="Actions &amp; Events Menu" alt="Actions &amp; Events Menu">
+                                                        
+                                                    </p>
+                                                    <p>If a Crestron Home device does not have any events, it will not appear in this list.  Selecting the device will display all available events that can be programmed.</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/Events2.png" style="width: 550px;" title="Programmable Events" alt="Programmable Events" class="border">
+                                                        
+                                                    </p>
+                                                    <p>The <strong>Sequence</strong> mode is available for programming use.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE:</span> A future release of Crestron Home will provide the ability to program other modes such as <strong>Scene</strong> and <strong>Quick Actions</strong>.</p>
+                                                    </div>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/Events3.png" style="width: 550px;" class="border" title="Sequence Mode" alt="Sequence Mode">
+                                                        
+                                                    </p>
+                                                    <p>Once the <strong>Sequence</strong> mode is chosen, a user experience is provided similar to other areas in the application.</p>
+                                                    <p>If a device is deleted or the room in which the device is deleted, all programming associated with the device’s events will be deleted.</p>
+                                                    <h3 id="ProgrammingMetadata" data-magellan-target="ProgrammingMetadata">Programming Metadata</h3>
+                                                    <p>The following programming metadata is provided for Crestron Home device events.</p>
+                                                    <h4>EntityEventAttribute</h4>
+                                                    <p>To have an event for a device appear on the <strong>Actions &amp; Events</strong> page automatically, the event should set the <strong>Programmable</strong> flag on the event metadata via <strong>EntityEventAttribute</strong>. Friendly Name and Localization Key, while encouraged, are both optional. If not specified, the name of the event will be used.</p>
+                                                    <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                        <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">EntityEvent</span>(Id = <span style="color: #df5000; ">"locked"</span>, FriendlyName = <span style="color: #df5000; ">"Door Locked"</span>, NameLocalizationKey = <span style="color: #df5000; ">"Event_Locked"</span>)]&nbsp;<br>[<span style="color: #333333; font-weight: bold; ">EntityEventMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]&nbsp;<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #795da3; ">event</span> EventHandler Locked;&nbsp;<br><br>[<span style="color: #333333; font-weight: bold; ">EntityEvent</span>(Id = <span style="color: #df5000; ">"unlocked"</span>)]&nbsp;<br>[<span style="color: #333333; font-weight: bold; ">EntityEventMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>)]&nbsp;<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #795da3; ">event</span> EventHandler Unlocked;&nbsp;</code></pre>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/Events4.png" style="width: 550px;" class="border" title="Available Events" alt="Available Events">
+                                                        
+                                                    </p>
+                                                    <h4>TriggeredBy</h4>
+                                                    <p>Sequences that are triggered from events increase the chances of creating loops in the system. For example, the <strong>Locked</strong> event can be programmed to unlock a door lock and then the <strong>Unlocked</strong>  event can be programmed to lock the same door lock.</p>
+                                                    <p>To help reduce the risk of loops, warning messages will be displayed as applicable when operations are added to a sequence that target the same device as the event being programmed.  These warning messages will be driven by the operation names specified in the <strong>TriggeredBy</strong> list.</p>
+                                                    <p>Refer to the following sample code.</p>
+                                                    <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                        <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>[<span style="color: #333333; font-weight: bold; ">EntityEvent</span>(Id = <span style="color: #df5000; ">"locked"</span>, FriendlyName = <span style="color: #df5000; ">"Locked"</span>)]&nbsp;<br>[<span style="color: #333333; font-weight: bold; ">EntityEventMetadata</span>(Programmable = <span style="color: #0086b3; font-weight: bold; ">true</span>, TriggeredByCommands = <span style="color: #795da3; font-weight: bold; ">new</span> [] { <span style="color: #df5000; ">"lock"</span>, <span style="color: #df5000; ">"lockWithTimeout"</span> })]<br><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #795da3; ">event</span> EventHandler Locked;&nbsp;</code></pre>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <br>In the code above, the <strong>TriggeredBy</strong> array is specifying that the <strong>locked</strong> event is triggered by the <strong>lock</strong> and <strong>lockWithTimeout</strong> operations.  If the <strong>lock</strong> or <strong>lockWithTimeout</strong> operations are added to the <strong>Locked</strong> event sequence, the following warning message will be displayed.</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/Events7.png" style="width: 550px;" title="TriggeredBy Warning" alt="TriggeredBy Warning" class="border">
+                                                        
+                                                    </p>
+                                                    <p>If <strong>Yes</strong> is selected, the operation will still be added to the sequence.  If <strong>No</strong> is selected, the operation will not be added.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE: </span>This loop detection will only occur for the current event sequence being programmed.  Warnings will not be displayed if other combinations of event/sequences are programmed that cause similar loops.</p>
+                                                    </div>
+                                                    <h2 id="DynamicFeatureSupport" data-magellan-target="DynamicFeatureSupport">Dynamic Feature Support</h2>
+                                                    <p>Drivers may choose to dynamically add or remove support for commands, properties, and events, including those which are exposed to sequences. This is primarily intended to happen at configuration time since removing a command later may break programming that the user has configured. However, it is possible to change feature support at any time.</p>
+                                                    <p>For information on dynamically adding or removing a feature, refer to <a href="Add-Commands-and-Properties.htm" class="MCXref xref">Add Commands and Properties</a>.</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="fineprint">
+                                                    <div class="tipbox">
+                                                        <p>Have feedback on this document?&nbsp;Contact <a href="mailto:docfeedback@crestron.com?subject=Documentation Feedback">docfeedback@crestron.com</a>.</p>
+                                                    </div>
+                                                    <p>©<span class="mc-variable TP-Variables.Year variable">2025</span> Crestron Electronics, Inc.</p>
+                                                    <p>All brand names, product names and trademarks are the property of their respective owners. Certain trademarks, registered trademarks, and trade names may be used to refer to either the entities claiming the marks and names or their products. Crestron disclaims any proprietary interest in the marks and names of others. Crestron is not responsible for errors in typography or photography. Specifications are subject to change without notice.</p>
+                                                    <p><a target="_blank" href="https://www.crestron.com/en-us/legal/patents">Patents</a>&nbsp;| <a target="_blank" href="https://www.crestron.com/en-us/legal">Legal</a>&nbsp;| <a target="_blank" href="https://www.crestron.com/crestroneuropeterms">Crestron&nbsp;Europe&nbsp;Terms</a>&nbsp;| <a target="_blank" href="https://www.crestron.com/legal/privacy-policy">Privacy&nbsp;Policy</a>&nbsp;| <a target="_blank" href="https://www.crestron.com/legal/website-terms-of-use">Terms&nbsp;of&nbsp;Use</a>&nbsp;| <a target="_blank" href="https://community.crestron.com/">Support</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu" id="side-menu-proxy-container">
+                                            <div data-sticky-container="" id="e8HGpko9Tk6qHky3_gxlxg" class="sticky-container" style="min-height: 324px;">
+                                                <div class="sticky-menu sticky" style="width: 100%; margin-top: 0px; max-width: 300px;" data-top-anchor="e8HGpko9Tk6qHky3_gxlxg:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 1280px)" data-scroll-container-on="only screen and (min-width: 1280px)" data-resize="ouddmg-sticky" data-events="resize" data-sticky="9acl93-sticky">
+                                                    <ul data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_TPSkin_Menu mc-component" data-resize="nlacsc-magellan" data-scroll="nlacsc-magellan" id="nlacsc-magellan" data-events="resize" data-magellan="17ja5v-magellan">
+                                                        <li class="tree-node"><a href="#CrestronHomeProgramming" class="selected">Crestron Home Programming</a>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#Commands">Commands</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#EntityCommandMetadataAttribute">EntityCommandMetadataAttribute</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#FriendlyName">FriendlyName</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#Units">Units</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#DefaultValue">DefaultValue</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#RangeMinimum">RangeMinimum</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#RangeMaximum">RangeMaximum</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#AvailableValues">AvailableValues</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#AvailableValuesProperty">AvailableValuesProperty</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Properties">Properties</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#EntityPropertyMetadataAttribute">EntityPropertyMetadataAttribute</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Events">Events</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#ProgrammingMetadata">Programming Metadata</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#DynamicFeatureSupport">Dynamic Feature Support</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script src="../../../Resources/js/Hide-Menu.js">
+                                    </script>
+                                    <script src="../../../Resources/js/DiscoToggle.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                <div class="js-off-canvas-exit"></div></div>
+            </div>
+        </div>
+    
+</body></html>

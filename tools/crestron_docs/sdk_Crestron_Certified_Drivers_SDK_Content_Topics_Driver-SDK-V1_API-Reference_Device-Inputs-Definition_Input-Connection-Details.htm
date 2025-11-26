@@ -1,0 +1,410 @@
+<!DOCTYPE html><html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_TPSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../../../" data-mc-has-content-body="True" data-mc-toc-path="Driver SDK V1 (RAD Framework)|[%=System.LinkedHeader%]|[%=System.LinkedHeader%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false"><head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="msapplication-config" content="../../../../../Skins/Favicons/browserconfig.xml">
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon.png"><title>Input Connector Details | Crestron® Drivers Developer Microsite</title>
+        <link href="../../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Resources/Stylesheets/TP-Global-Styles.css" rel="stylesheet" type="text/css">
+        <link href="../../../../Resources/Stylesheets/TP-Global-Table-Styles.css" rel="stylesheet" data-mc-stylesheet-type="table">
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon.png">
+        <script src="../../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        </script>
+    <meta class="foundation-mq"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../../../Data/Breakpoints.js" src="../../../../../Data/Breakpoints.js?t=638967327468757339"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../../../Data/Language.js" src="../../../../../Data/Language.js?t=638967327468757339"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../../../Data/Tocs/TP_TOC.js" src="../../../../../Data/Tocs/TP_TOC.js?t=638967327468757339"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../../../Data/Tocs/TP_TOC_Chunk0.js" src="../../../../../Data/Tocs/TP_TOC_Chunk0.js?t=638967327468757339"></script></head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="rddun1-off-canvas" data-position="right" data-mc-ignore="true" aria-hidden="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="p0zxz5-accordion-menu" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-chunk="Data/Toc.xml">
+                    <li class="tree-node tree-node-leaf" data-mc-id="0"><a href="../../../../../Content/Topics/Home.htm">Crestron® Drivers SDK</a></li><li class="tree-node tree-node-leaf" data-mc-id="1"><a href="../../../../../Content/Topics/Whats-New/Whats-New.htm">What's New?</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="2"><a href="../../../../../Content/Topics/Overview/Overview.htm" aria-expanded="false" role="button">Overview<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="3"><a href="../../../../../Content/Topics/Quick-Start/Quick-Start-Install.htm" aria-expanded="false" role="button">Quick Start<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="4"><a href="../../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm" aria-expanded="true" role="button" aria-controls="submenu2edf4dc6-ece6-4005-9035-1dd8c3252d02">Driver SDK V1 (RAD Framework)<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a><ul class="vertical menu is-accordion-submenu nested" id="submenu2edf4dc6-ece6-4005-9035-1dd8c3252d02"><li class="tree-node tree-node-leaf" data-mc-id="11"><a href="../../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm">Driver SDK V1 (RAD Framework)</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="12"><a href="../../../../../Content/Topics/Driver-SDK-V1/SDK-Framework/SDK-Architecture.htm" aria-expanded="false" role="button">SDK Framework<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="13"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/API-Reference.htm" aria-expanded="true" role="button" aria-controls="submenu5581b5a4-689b-4780-9317-41ae2ac3b89f">API Reference<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a><ul class="vertical menu is-accordion-submenu nested" id="submenu5581b5a4-689b-4780-9317-41ae2ac3b89f"><li class="tree-node tree-node-leaf" data-mc-id="15"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/API-Reference.htm">API Reference</a></li><li class="tree-node tree-node-leaf" data-mc-id="16"><a target="_blank" href="https://sdkcon78221.crestron.com/downloads/CrestronCertifiedDriversAPI/index.html">C#&nbsp;API&nbsp;Reference</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="17"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Type-Abstract-Classes/Device-Type-Abstract.htm" aria-expanded="false" role="button">Device Type Abstract Classes<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="18"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Driver-JSON-Schema/Driver-JSON-Schema.htm" aria-expanded="false" role="button">Driver JSON Schema<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="19"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Device-Inputs-Definition.htm" aria-expanded="true" role="button" aria-controls="submenu2531692b-ee7e-4cf0-9177-956f0910d7c3">Device Inputs Definition<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a><ul class="vertical menu is-accordion-submenu nested" id="submenu2531692b-ee7e-4cf0-9177-956f0910d7c3"><li class="tree-node tree-node-leaf" data-mc-id="21"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Device-Inputs-Definition.htm">Device Inputs Definition</a></li><li class="tree-node tree-node-leaf" data-mc-id="22"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Audio-Video-Connections.htm">Audio/Video Connections</a></li><li class="tree-node tree-node-leaf" data-mc-id="23"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Input-Connector.htm">Input Connections</a></li><li class="tree-node tree-node-leaf tree-node-selected" data-mc-id="24"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Input-Connection-Details.htm" aria-expanded="true" aria-current="true" class="selected">Input Connector Details</a></li><li class="tree-node tree-node-leaf" data-mc-id="25"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Standard-Commands.htm">Standard Commands</a></li><li class="tree-node tree-node-leaf" data-mc-id="26"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/AV-Receivers.htm">A/V Receivers</a></li><li class="tree-node tree-node-leaf" data-mc-id="27"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Receiver-Outputs.htm">Receiver Outputs</a></li></ul></li><li class="tree-node tree-node-leaf" data-mc-id="20"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Outputs-Definition/Device-Outputs-Definitions.htm">Device Outputs Definition</a></li></ul></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="14"><a href="../../../../../Content/Topics/Driver-SDK-V1/Create-a-Driver/Create-a-Driver.htm" aria-expanded="false" role="button">Create a Driver<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li></ul></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="5"><a href="../../../../../Content/Topics/Driver-SDK-V2/Driver-SDK-V2.htm" aria-expanded="false" role="button">Driver SDK V2 (Entity Model)<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="6"><a href="../../../../../Content/Topics/Best-Practices/Best-Practices.htm" aria-expanded="false" role="button">Best Practices<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="7"><a href="../../../../../Content/Topics/Test-a-Driver/Test-a-Driver.htm" aria-expanded="false" role="button">Test a Driver<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="8"><a href="../../../../../Content/Topics/Submit-a-Driver/Submit-a-Driver.htm" aria-expanded="false" role="button">Submit a Driver<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node tree-node-leaf" data-mc-id="9"><a href="../../../../../Content/Topics/Resources/Resources.htm">Resources</a></li><li class="tree-node tree-node-leaf" data-mc-id="10"><a href="../../../../../Content/Topics/Support/Support.htm">Support</a></li></ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container sticky-container" style="min-height: 70px;">
+                        <nav class="title-bar tab-bar sticky" aria-label="Main navigation and search" data-sticky="3ixmo4-sticky" data-options="marginTop:0" style="width: 100%; max-width: 1280px;" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true" data-resize="1ybup3-sticky" data-events="resize"><a class="skip-to-content fluid-skip showOnFocus" href="#mc-main-content">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator"><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas" aria-controls="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.crestron.com/"><img src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Logo" class="invisible-label"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True" data-mc-chunk="Data/Toc.xml">
+                                        
+                                    <li data-mc-id="0"><a href="../../../../../Content/Topics/Home.htm">Crestron® Drivers SDK</a></li><li data-mc-id="1"><a href="../../../../../Content/Topics/Whats-New/Whats-New.htm">What's New?</a></li><li data-mc-id="2" class="has-children"><a href="../../../../../Content/Topics/Overview/Overview.htm" aria-expanded="false" role="button">Overview</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Overview" aria-haspopup="true">»</button></li><li data-mc-id="3" class="has-children"><a href="../../../../../Content/Topics/Quick-Start/Quick-Start-Install.htm" aria-expanded="false" role="button">Quick Start</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Quick Start" aria-haspopup="true">»</button></li><li data-mc-id="4" class="has-children"><a href="../../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm" aria-expanded="false" role="button">Driver SDK V1 (RAD Framework)</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Driver SDK V1 (RAD Framework)" aria-haspopup="true">»</button></li><li data-mc-id="5" class="has-children"><a href="../../../../../Content/Topics/Driver-SDK-V2/Driver-SDK-V2.htm" aria-expanded="false" role="button">Driver SDK V2 (Entity Model)</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Driver SDK V2 (Entity Model)" aria-haspopup="true">»</button></li><li data-mc-id="6" class="has-children"><a href="../../../../../Content/Topics/Best-Practices/Best-Practices.htm" aria-expanded="false" role="button">Best Practices</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Best Practices" aria-haspopup="true">»</button></li><li data-mc-id="7" class="has-children"><a href="../../../../../Content/Topics/Test-a-Driver/Test-a-Driver.htm" aria-expanded="false" role="button">Test a Driver</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Test a Driver" aria-haspopup="true">»</button></li><li data-mc-id="8" class="has-children"><a href="../../../../../Content/Topics/Submit-a-Driver/Submit-a-Driver.htm" aria-expanded="false" role="button">Submit a Driver</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Submit a Driver" aria-haspopup="true">»</button></li><li data-mc-id="9"><a href="../../../../../Content/Topics/Resources/Resources.htm">Resources</a></li><li data-mc-id="10"><a href="../../../../../Content/Topics/Support/Support.htm">Support</a></li></ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator"><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search">
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="qnc5qx-accordion-menu" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True" data-mc-chunk="Data/Toc.xml">
+                                    <li class="tree-node tree-node-leaf" data-mc-id="0"><a href="../../../../../Content/Topics/Home.htm">Crestron® Drivers SDK</a></li><li class="tree-node tree-node-leaf" data-mc-id="1"><a href="../../../../../Content/Topics/Whats-New/Whats-New.htm">What's New?</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="2"><a href="../../../../../Content/Topics/Overview/Overview.htm" aria-expanded="false">Overview<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Overview</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="3"><a href="../../../../../Content/Topics/Quick-Start/Quick-Start-Install.htm" aria-expanded="false">Quick Start<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Quick Start</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="4"><a href="../../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm" aria-expanded="true">Driver SDK V1 (RAD Framework)<span class="submenu-toggle-container" role="button" tabindex="0" aria-controls="submenu77ad449f-30d4-427f-bf47-11145305a423"><span class="submenu-toggle"></span><span class="invisible-label">Driver SDK V1 (RAD Framework)</span></span></a><ul class="vertical menu accordion-menu is-accordion-submenu nested" id="submenu77ad449f-30d4-427f-bf47-11145305a423"><li class="tree-node is-accordion-submenu-parent" data-mc-id="11"><a href="../../../../../Content/Topics/Driver-SDK-V1/SDK-Framework/SDK-Architecture.htm" aria-expanded="false">SDK Framework<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">SDK Framework</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="12"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/API-Reference.htm" aria-expanded="true">API Reference<span class="submenu-toggle-container" role="button" tabindex="0" aria-controls="submenu26c32589-f451-486e-b9c9-4991dae1bdb0"><span class="submenu-toggle"></span><span class="invisible-label">API Reference</span></span></a><ul class="vertical menu accordion-menu is-accordion-submenu nested" id="submenu26c32589-f451-486e-b9c9-4991dae1bdb0"><li class="tree-node tree-node-leaf" data-mc-id="14"><a target="_blank" href="https://sdkcon78221.crestron.com/downloads/CrestronCertifiedDriversAPI/index.html">C#&nbsp;API&nbsp;Reference</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="15"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Type-Abstract-Classes/Device-Type-Abstract.htm" aria-expanded="false">Device Type Abstract Classes<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Device Type Abstract Classes</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="16"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Driver-JSON-Schema/Driver-JSON-Schema.htm" aria-expanded="false">Driver JSON Schema<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Driver JSON Schema</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="17"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Device-Inputs-Definition.htm" aria-expanded="true">Device Inputs Definition<span class="submenu-toggle-container" role="button" tabindex="0" aria-controls="submenu226f847d-1d22-403b-8be9-675e5ea1c8c0"><span class="submenu-toggle"></span><span class="invisible-label">Device Inputs Definition</span></span></a><ul class="vertical menu accordion-menu is-accordion-submenu nested" id="submenu226f847d-1d22-403b-8be9-675e5ea1c8c0"><li class="tree-node tree-node-leaf" data-mc-id="19"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Audio-Video-Connections.htm">Audio/Video Connections</a></li><li class="tree-node tree-node-leaf" data-mc-id="20"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Input-Connector.htm">Input Connections</a></li><li class="tree-node tree-node-leaf tree-node-selected" data-mc-id="21"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Input-Connection-Details.htm" aria-expanded="true" aria-current="true" class="selected">Input Connector Details</a></li><li class="tree-node tree-node-leaf" data-mc-id="22"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Standard-Commands.htm">Standard Commands</a></li><li class="tree-node tree-node-leaf" data-mc-id="23"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/AV-Receivers.htm">A/V Receivers</a></li><li class="tree-node tree-node-leaf" data-mc-id="24"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Receiver-Outputs.htm">Receiver Outputs</a></li></ul></li><li class="tree-node tree-node-leaf" data-mc-id="18"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Outputs-Definition/Device-Outputs-Definitions.htm">Device Outputs Definition</a></li></ul></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="13"><a href="../../../../../Content/Topics/Driver-SDK-V1/Create-a-Driver/Create-a-Driver.htm" aria-expanded="false">Create a Driver<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Create a Driver</span></span></a></li></ul></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="5"><a href="../../../../../Content/Topics/Driver-SDK-V2/Driver-SDK-V2.htm" aria-expanded="false">Driver SDK V2 (Entity Model)<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Driver SDK V2 (Entity Model)</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="6"><a href="../../../../../Content/Topics/Best-Practices/Best-Practices.htm" aria-expanded="false">Best Practices<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Best Practices</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="7"><a href="../../../../../Content/Topics/Test-a-Driver/Test-a-Driver.htm" aria-expanded="false">Test a Driver<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Test a Driver</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="8"><a href="../../../../../Content/Topics/Submit-a-Driver/Submit-a-Driver.htm" aria-expanded="false">Submit a Driver<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Submit a Driver</span></span></a></li><li class="tree-node tree-node-leaf" data-mc-id="9"><a href="../../../../../Content/Topics/Resources/Resources.htm">Resources</a></li><li class="tree-node tree-node-leaf" data-mc-id="10"><a href="../../../../../Content/Topics/Support/Support.htm">Support</a></li></ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True" class="height-container" style="min-height: calc(-86.1px + 100vh);">
+                                    <div style="pading-left: 10px; padding-right: 10px;">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True" data-mc-chunk="Data/Toc.xml"><span class="MCBreadcrumbsPrefix"> </span>
+                                            <a href="../../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm" class="MCBreadcrumbsLink">Driver SDK V1 (RAD Framework)</a><span class="MCBreadcrumbsDivider"> / </span><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/API-Reference.htm" class="MCBreadcrumbsLink">API Reference</a><span class="MCBreadcrumbsDivider"> / </span><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Device-Inputs-Definition.htm" class="MCBreadcrumbsLink">Device Inputs Definition</a><span class="MCBreadcrumbsDivider"> / </span><span class="MCBreadcrumbsSelf">Input Connector Details</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-container">
+                                        <div class="content">
+                                            <div class="topic">
+                                                <div role="main" id="mc-main-content">
+                                                    <h1 id="InputConnectorDetails" data-magellan-target="InputConnectorDetails">Input Connector Details</h1>
+                                                    <p>The following sections describe the input connectors that are supported within Crestron Home® OS.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE:&nbsp;</span>For information on implementing supported input connectors within A/V&nbsp;switcher device drivers, refer to <a href="../../Create-a-Driver/Device-Types/AV-Switcher/AV-Switcher-Drivers.htm#Create" class="MCXref xref">Create the JSON&nbsp;File</a></p>
+                                                    </div>
+                                                    <h2 id="VideoInputConnectors" data-magellan-target="VideoInputConnectors">Video Input Connectors</h2>
+                                                    <p>The following table defines the various video inputs that are supported within Crestron Home.</p>
+                                                    <table style="width: 50%;mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                        <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        
+                                                        </colgroup><thead>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: center;" scope="col">Connector Image</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Name</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Format</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">VideoConnections Enum</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">VideoConnectionTypes Enum</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Return Type</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">
+                                                                    <img src="../../../../Resources/Images/AV1.png" style="height: 25px;" title="Component Image" alt="Component Image">
+                                                                    
+                                                                </td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Component</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Video Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnections.Component1<br>VideoConnections.Component2<br>VideoConnections.Component3<br>VideoConnections.Component4<br>VideoConnections.Component5<br>VideoConnections.Component6<br>VideoConnections.Component7<br>VideoConnections.Component8<br>VideoConnections.Component9<br>VideoConnections.Component10</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnectionTypes.Component</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">ComponentVideo</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">
+                                                                    <img src="../../../../Resources/Images/AV2.png" style="height: 25px;" title="Composite Image" alt="Composite Image">
+                                                                    
+                                                                </td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Composite</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Video Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnections.Composite1<br>VideoConnections.Composite2<br>VideoConnections.Composite3<br>VideoConnections.Composite4<br>VideoConnections.Composite5<br>VideoConnections.Composite6<br>VideoConnections.Composite7<br>VideoConnections.Composite8<br>VideoConnections.Composite9<br>VideoConnections.Composite10</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnectionTypes.Composite</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">CompositeVideo</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">
+                                                                    <img src="../../../../Resources/Images/AV8.png" style="height: 25px;" title="DisplayPort Image" alt="DisplayPort Image">
+                                                                    
+                                                                </td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">DisplayPort</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio/Video*</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnections.DisplayPort1<br>VideoConnections.DisplayPort2<br>VideoConnections.DisplayPort3<br>VideoConnections.DisplayPort4<br>VideoConnections.DisplayPort5<br>VideoConnections.DisplayPort6<br>VideoConnections.DisplayPort7<br>VideoConnections.DisplayPort8<br>VideoConnections.DisplayPort9<br>VideoConnections.DisplayPort10</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnectionTypes.DisplayPort</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">DisplayPort</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">
+                                                                    <img src="../../../../Resources/Images/AV5.png" style="height: 25px;" title="DVI Image" alt="DVI Image">
+                                                                    
+                                                                </td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">DVI</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio/Video*</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnections.Dvi1<br>VideoConnections.Dvi2<br>VideoConnections.Dvi3<br>VideoConnections.Dvi4<br>VideoConnections.Dvi5<br>VideoConnections.Dvi6<br>VideoConnections.Dvi7<br>VideoConnections.Dvi8<br>VideoConnections.Dvi9<br>VideoConnections.Dvi10</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnectionTypes.Dvi</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">DVI</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">
+                                                                    <img src="../../../../Resources/Images/AV7.png" style="height: 25px;" title="HDMI Image" alt="HDMI Image">
+                                                                    
+                                                                </td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">HDMI</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio/Video*</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnections.Hdmi1<br>VideoConnections.Hdmi2<br>VideoConnections.Hdmi3<br>VideoConnections.Hdmi4<br>VideoConnections.Hdmi5<br>VideoConnections.Hdmi6<br>VideoConnections.Hdmi7<br>VideoConnections.Hdmi8<br>VideoConnections.Hdmi9<br>VideoConnections.Hdmi10</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnectionTypes.Hdmi</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">HDMI</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">
+                                                                    <img src="../../../../Resources/Images/AV6.png" style="height: 25px;" title="VGA Image" alt="VGA Image">
+                                                                    
+                                                                </td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VGA</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Video Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnections.Vga1<br>VideoConnections.Vga2<br>VideoConnections.Vga3<br>VideoConnections.Vga4<br>VideoConnections.Vga5<br>VideoConnections.Vga6<br>VideoConnections.Vga7<br>VideoConnections.Vga8<br>VideoConnections.Vga9<br>VideoConnections.Vga10</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">N/A</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">VGA</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">&nbsp;</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Input</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Video Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnections.Input1<br>VideoConnections.Input2<br>VideoConnections.Input3<br>VideoConnections.Input4<br>VideoConnections.Input5<br>VideoConnections.Input6<br>VideoConnections.Input7<br>VideoConnections.Input8<br>VideoConnections.Input9<br>VideoConnections.Input10<br>VideoConnections.Input11<br>VideoConnections.Input12<br>VideoConnections.Input13<br>VideoConnections.Input14<br>VideoConnections.Input15</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnectionTypes.Component<br>VideoConnectionTypes.Composite<br>VideoConnectionTypes.DisplayPort<br>VideoConnectionTypes.Dvi<br>VideoConnectionTypes.Hdmi<br>VideoConnectionTypes.SVideo<br>VideoConnectionTypes.Stream</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">ComponentVideo<br>CompositeVideo<br>DisplayPort<br>Dvi<br>HDMI<br>SVideo<br>Stream</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">&nbsp;</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Aux</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Video Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnections.Aux1<br>VideoConnections.Aux2</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" rowspan="6">VideoConnectionTypes.Component<br>VideoConnectionTypes.Composite<br>VideoConnectionTypes.DisplayPort<br>VideoConnectionTypes.Dvi<br>VideoConnectionTypes.Hdmi<br>VideoConnectionTypes.SVideo</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1" rowspan="6">ComponentVideo<br>CompositeVideo<br>DisplayPort<br>Dvi<br>HDMI<br>SVideo</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">&nbsp;</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Antenna</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Video Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnections.Antenna1<br>VideoConnections.Antenna2</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">&nbsp;</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">DVD</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Video Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnections.Dvd1</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">&nbsp;</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">TV</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Video Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnections.Tv1</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">&nbsp;</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">SAT</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Video Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoConnections.Sat1</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1" style="text-align: center;">&nbsp;</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">DSS</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Video Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">VideoConnections.Dss1</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="footnote">*&nbsp;Video devices that do not carry an audio output or include speakers will need to be specified as video only.</p>
+                                                    <h2 id="AudioInputConnectors" data-magellan-target="AudioInputConnectors">Audio Input Connectors</h2>
+                                                    <p>The following table defines the various audio inputs that are supported within Crestron Home.</p>
+                                                    <table style="width: 50%;mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                        <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        
+                                                        </colgroup><thead>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: center;" scope="col">Connector Image</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Name</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Format</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">AudioConnections Enum</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">AudioConnectionTypes Enum</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Return Type</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">
+                                                                    <img src="../../../../Resources/Images/AV14_1.png" style="height: 25px;" title="AnalogAudio Image" alt="AnalogAudio Image">
+                                                                    
+                                                                    <br>
+                                                                    <br>
+                                                                    <img src="../../../../Resources/Images/AV14_2.png" style="height: 50px;" title="AnalogAudio Image" alt="AnalogAudio Image">
+                                                                    
+                                                                </td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AnalogAudio</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AudioConnections.AnalogAudio1<br>AudioConnections.AnalogAudio2<br>AudioConnections.AnalogAudio3<br>AudioConnections.AnalogAudio4<br>AudioConnections.AnalogAudio5<br>AudioConnections.AnalogAudio6<br>AudioConnections.AnalogAudio7<br>AudioConnections.AnalogAudio8<br>AudioConnections.AnalogAudio9<br>AudioConnections.AnalogAudio10</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">N/A</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">AnalogAudio</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">
+                                                                    <img src="../../../../Resources/Images/AV13.png" style="height: 25px;" title="Coax Image" alt="Coax Image">
+                                                                    
+                                                                </td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Coax</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AudioConnections.Coax1<br>AudioConnections.Coax2<br>AudioConnections.Coax3<br>AudioConnections.Coax4<br>AudioConnections.Coax5<br>AudioConnections.Coax6<br>AudioConnections.Coax7<br>AudioConnections.Coax8<br>AudioConnections.Coax9<br>AudioConnections.Coax10</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">N/A</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">CoaxAudio</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">
+                                                                    <img src="../../../../Resources/Images/AV12.png" style="height: 30px;" title="Optical Image" alt="Optical Image">
+                                                                    
+                                                                </td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Optical</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AudioConnections.Optical1<br>AudioConnections.Optical2<br>AudioConnections.Optical3<br>AudioConnections.Optical4<br>AudioConnections.Optical5<br>AudioConnections.Optical6<br>AudioConnections.Optical7<br>AudioConnections.Optical8<br>AudioConnections.Optical9<br>AudioConnections.Optical10</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AudioConnectionTypes.Optical</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">OpticalAudio</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">&nbsp;</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Cd</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AudioConnections.Cd1</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" rowspan="4">AudioConnectionTypes.Analog<br>AudioConnectionTypes.Coax<br>AudioConnectionTypes.Optical<br>AudioConnectionTypes.GenericAudio<br>AudioConnectionTypes.Stream</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1" rowspan="4">AnalogAudio<br>CoaxAudio<br>OpticalAudio<br>GenericAudio<br>Stream</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">&nbsp;</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Phono</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AudioConnections.Phono1</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1" style="text-align: center;">&nbsp;</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Aux</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AudioConnections.Aux1<br>AudioConnections.Aux2</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1" style="text-align: center;">&nbsp;</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Input</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Audio Only</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">AudioConnections.Input1<br>AudioConnections.Input2<br>AudioConnections.Input3<br>AudioConnections.Input4<br>AudioConnections.Input5<br>AudioConnections.Input6<br>AudioConnections.Input7<br>AudioConnections.Input8<br>AudioConnections.Input9<br>AudioConnections.Input10<br>AudioConnections.Input11<br>AudioConnections.Input12<br>AudioConnections.Input13<br>AudioConnections.Input14<br>AudioConnections.Input15</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p>&nbsp;</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE:&nbsp;</span>The following <strong>AudioConnection</strong> enums are not supported:&nbsp;<strong>AudioConnections.Ipod1</strong>, <strong>AudioConnections.MediaPlayer1</strong>, <strong>AudioConnections.Tuner1</strong>.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="fineprint">
+                                                    <div class="tipbox">
+                                                        <p>Have feedback on this document?&nbsp;Contact <a href="mailto:docfeedback@crestron.com?subject=Documentation Feedback">docfeedback@crestron.com</a>.</p>
+                                                    </div>
+                                                    <p>©<span class="mc-variable TP-Variables.Year variable">2025</span> Crestron Electronics, Inc.</p>
+                                                    <p>All brand names, product names and trademarks are the property of their respective owners. Certain trademarks, registered trademarks, and trade names may be used to refer to either the entities claiming the marks and names or their products. Crestron disclaims any proprietary interest in the marks and names of others. Crestron is not responsible for errors in typography or photography. Specifications are subject to change without notice.</p>
+                                                    <p><a target="_blank" href="https://www.crestron.com/en-us/legal/patents">Patents</a>&nbsp;| <a target="_blank" href="https://www.crestron.com/en-us/legal">Legal</a>&nbsp;| <a target="_blank" href="https://www.crestron.com/crestroneuropeterms">Crestron&nbsp;Europe&nbsp;Terms</a>&nbsp;| <a target="_blank" href="https://www.crestron.com/legal/privacy-policy">Privacy&nbsp;Policy</a>&nbsp;| <a target="_blank" href="https://www.crestron.com/legal/website-terms-of-use">Terms&nbsp;of&nbsp;Use</a>&nbsp;| <a target="_blank" href="https://community.crestron.com/">Support</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu" id="side-menu-proxy-container">
+                                            <div data-sticky-container="" id="3zN1ZD1x-UK2DVVsGczO5g" class="sticky-container" style="min-height: 80px;">
+                                                <div class="sticky-menu sticky" style="width: 100%; margin-top: 0px; max-width: 300px;" data-top-anchor="3zN1ZD1x-UK2DVVsGczO5g:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 1280px)" data-scroll-container-on="only screen and (min-width: 1280px)" data-resize="zl15qc-sticky" data-events="resize" data-sticky="wdkzrx-sticky">
+                                                    <ul data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_TPSkin_Menu mc-component" data-resize="q5fz3m-magellan" data-scroll="q5fz3m-magellan" id="q5fz3m-magellan" data-events="resize" data-magellan="v0ndhh-magellan">
+                                                        <li class="tree-node"><a href="#InputConnectorDetails" class="selected">Input Connector Details</a>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#VideoInputConnectors">Video Input Connectors</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#AudioInputConnectors">Audio Input Connectors</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script src="../../../../Resources/js/Hide-Menu.js">
+                                    </script>
+                                    <script src="../../../../Resources/js/DiscoToggle.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                <div class="js-off-canvas-exit"></div></div>
+            </div>
+        </div>
+    
+</body></html>

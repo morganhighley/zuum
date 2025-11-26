@@ -1,0 +1,1203 @@
+<!DOCTYPE html><html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_TPSkin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../../../" data-mc-has-content-body="True" data-mc-toc-path="Driver SDK V1 (RAD Framework)|[%=System.LinkedHeader%]|[%=System.LinkedHeader%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false"><head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="msapplication-config" content="../../../../../Skins/Favicons/browserconfig.xml">
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon.png"><title>A&lt;DeviceType&gt;Protocol Class | Crestron® Drivers Developer Microsite</title>
+        <link href="../../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="../../../../Resources/Stylesheets/TP-Global-Styles.css" rel="stylesheet" type="text/css">
+        <link href="../../../../Resources/Stylesheets/TP-Global-Table-Styles.css" rel="stylesheet" data-mc-stylesheet-type="table">
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon.png">
+        <script src="../../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        </script>
+    <meta class="foundation-mq"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../../../Data/Breakpoints.js" src="../../../../../Data/Breakpoints.js?t=638967327468757339"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../../../Data/Language.js" src="../../../../../Data/Language.js?t=638967327468757339"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../../../Data/Tocs/TP_TOC.js" src="../../../../../Data/Tocs/TP_TOC.js?t=638967327468757339"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../../../Data/Tocs/TP_TOC_Chunk0.js" src="../../../../../Data/Tocs/TP_TOC_Chunk0.js?t=638967327468757339"></script></head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="complementary" id="offCanvas" data-off-canvas="gy9c49-off-canvas" data-position="right" data-mc-ignore="true" aria-hidden="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="7uanzt-accordion-menu" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-chunk="Data/Toc.xml">
+                    <li class="tree-node tree-node-leaf" data-mc-id="0"><a href="../../../../../Content/Topics/Home.htm">Crestron® Drivers SDK</a></li><li class="tree-node tree-node-leaf" data-mc-id="1"><a href="../../../../../Content/Topics/Whats-New/Whats-New.htm">What's New?</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="2"><a href="../../../../../Content/Topics/Overview/Overview.htm" aria-expanded="false" role="button">Overview<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="3"><a href="../../../../../Content/Topics/Quick-Start/Quick-Start-Install.htm" aria-expanded="false" role="button">Quick Start<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="4"><a href="../../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm" aria-expanded="true" role="button" aria-controls="submenu169895de-60d7-4e8f-b3f6-9e666fbe1def">Driver SDK V1 (RAD Framework)<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a><ul class="vertical menu is-accordion-submenu nested" id="submenu169895de-60d7-4e8f-b3f6-9e666fbe1def"><li class="tree-node tree-node-leaf" data-mc-id="11"><a href="../../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm">Driver SDK V1 (RAD Framework)</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="12"><a href="../../../../../Content/Topics/Driver-SDK-V1/SDK-Framework/SDK-Architecture.htm" aria-expanded="false" role="button">SDK Framework<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="13"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/API-Reference.htm" aria-expanded="true" role="button" aria-controls="submenufcc5b029-98c1-4fea-b440-2608b72776cd">API Reference<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a><ul class="vertical menu is-accordion-submenu nested" id="submenufcc5b029-98c1-4fea-b440-2608b72776cd"><li class="tree-node tree-node-leaf" data-mc-id="15"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/API-Reference.htm">API Reference</a></li><li class="tree-node tree-node-leaf" data-mc-id="16"><a target="_blank" href="https://sdkcon78221.crestron.com/downloads/CrestronCertifiedDriversAPI/index.html">C#&nbsp;API&nbsp;Reference</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="17"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Type-Abstract-Classes/Device-Type-Abstract.htm" aria-expanded="true" role="button" aria-controls="submenuf775ada9-8273-48a8-889d-e5f25b3bbb67">Device Type Abstract Classes<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a><ul class="vertical menu is-accordion-submenu nested" id="submenuf775ada9-8273-48a8-889d-e5f25b3bbb67"><li class="tree-node tree-node-leaf" data-mc-id="21"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Type-Abstract-Classes/Device-Type-Abstract.htm">Device Type Abstract Classes</a></li><li class="tree-node tree-node-leaf" data-mc-id="22"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Type-Abstract-Classes/ABasicDeviceType.htm">ABasic&lt;DeviceType&gt; Class</a></li><li class="tree-node tree-node-leaf" data-mc-id="23"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Type-Abstract-Classes/ATransportDriver.htm">ATransportDriver Class and Transports</a></li><li class="tree-node tree-node-leaf tree-node-selected" data-mc-id="24"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Type-Abstract-Classes/ADeviceTypeProtocol.htm" aria-expanded="true" aria-current="true" class="selected">A&lt;DeviceType&gt;Protocol Class</a></li></ul></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="18"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Driver-JSON-Schema/Driver-JSON-Schema.htm" aria-expanded="false" role="button">Driver JSON Schema<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="19"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Device-Inputs-Definition.htm" aria-expanded="false" role="button">Device Inputs Definition<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node tree-node-leaf" data-mc-id="20"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Outputs-Definition/Device-Outputs-Definitions.htm">Device Outputs Definition</a></li></ul></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="14"><a href="../../../../../Content/Topics/Driver-SDK-V1/Create-a-Driver/Create-a-Driver.htm" aria-expanded="false" role="button">Create a Driver<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li></ul></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="5"><a href="../../../../../Content/Topics/Driver-SDK-V2/Driver-SDK-V2.htm" aria-expanded="false" role="button">Driver SDK V2 (Entity Model)<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="6"><a href="../../../../../Content/Topics/Best-Practices/Best-Practices.htm" aria-expanded="false" role="button">Best Practices<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="7"><a href="../../../../../Content/Topics/Test-a-Driver/Test-a-Driver.htm" aria-expanded="false" role="button">Test a Driver<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="8"><a href="../../../../../Content/Topics/Submit-a-Driver/Submit-a-Driver.htm" aria-expanded="false" role="button">Submit a Driver<span class="submenu-toggle-container"><span class="submenu-toggle"></span></span></a></li><li class="tree-node tree-node-leaf" data-mc-id="9"><a href="../../../../../Content/Topics/Resources/Resources.htm">Resources</a></li><li class="tree-node tree-node-leaf" data-mc-id="10"><a href="../../../../../Content/Topics/Support/Support.htm">Support</a></li></ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container sticky-container" style="min-height: 70px;">
+                        <nav class="title-bar tab-bar sticky" aria-label="Main navigation and search" data-sticky="5z94hd-sticky" data-options="marginTop:0" style="width: 100%; max-width: 1280px;" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true" data-resize="pdv0c9-sticky" data-events="resize"><a class="skip-to-content fluid-skip showOnFocus" href="#mc-main-content">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator"><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas" aria-controls="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="http://www.crestron.com/"><img src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Logo" class="invisible-label"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True" data-mc-chunk="Data/Toc.xml">
+                                        
+                                    <li data-mc-id="0"><a href="../../../../../Content/Topics/Home.htm">Crestron® Drivers SDK</a></li><li data-mc-id="1"><a href="../../../../../Content/Topics/Whats-New/Whats-New.htm">What's New?</a></li><li data-mc-id="2" class="has-children"><a href="../../../../../Content/Topics/Overview/Overview.htm" aria-expanded="false" role="button">Overview</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Overview" aria-haspopup="true">»</button></li><li data-mc-id="3" class="has-children"><a href="../../../../../Content/Topics/Quick-Start/Quick-Start-Install.htm" aria-expanded="false" role="button">Quick Start</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Quick Start" aria-haspopup="true">»</button></li><li data-mc-id="4" class="has-children"><a href="../../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm" aria-expanded="false" role="button">Driver SDK V1 (RAD Framework)</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Driver SDK V1 (RAD Framework)" aria-haspopup="true">»</button></li><li data-mc-id="5" class="has-children"><a href="../../../../../Content/Topics/Driver-SDK-V2/Driver-SDK-V2.htm" aria-expanded="false" role="button">Driver SDK V2 (Entity Model)</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Driver SDK V2 (Entity Model)" aria-haspopup="true">»</button></li><li data-mc-id="6" class="has-children"><a href="../../../../../Content/Topics/Best-Practices/Best-Practices.htm" aria-expanded="false" role="button">Best Practices</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Best Practices" aria-haspopup="true">»</button></li><li data-mc-id="7" class="has-children"><a href="../../../../../Content/Topics/Test-a-Driver/Test-a-Driver.htm" aria-expanded="false" role="button">Test a Driver</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Test a Driver" aria-haspopup="true">»</button></li><li data-mc-id="8" class="has-children"><a href="../../../../../Content/Topics/Submit-a-Driver/Submit-a-Driver.htm" aria-expanded="false" role="button">Submit a Driver</a><button class="topnav-expand showOnFocus topnav-expand-toplevel" aria-label="Submit a Driver" aria-haspopup="true">»</button></li><li data-mc-id="9"><a href="../../../../../Content/Topics/Resources/Resources.htm">Resources</a></li><li data-mc-id="10"><a href="../../../../../Content/Topics/Support/Support.htm">Support</a></li></ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator"><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search">
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="0sdhd9-accordion-menu" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expanded-event="down.zf.accordionMenu up.zf.accordionMenu" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True" data-mc-chunk="Data/Toc.xml">
+                                    <li class="tree-node tree-node-leaf" data-mc-id="0"><a href="../../../../../Content/Topics/Home.htm">Crestron® Drivers SDK</a></li><li class="tree-node tree-node-leaf" data-mc-id="1"><a href="../../../../../Content/Topics/Whats-New/Whats-New.htm">What's New?</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="2"><a href="../../../../../Content/Topics/Overview/Overview.htm" aria-expanded="false">Overview<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Overview</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="3"><a href="../../../../../Content/Topics/Quick-Start/Quick-Start-Install.htm" aria-expanded="false">Quick Start<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Quick Start</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="4"><a href="../../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm" aria-expanded="true">Driver SDK V1 (RAD Framework)<span class="submenu-toggle-container" role="button" tabindex="0" aria-controls="submenu1ced5191-cc1c-40c5-82f6-a195e5057809"><span class="submenu-toggle"></span><span class="invisible-label">Driver SDK V1 (RAD Framework)</span></span></a><ul class="vertical menu accordion-menu is-accordion-submenu nested" id="submenu1ced5191-cc1c-40c5-82f6-a195e5057809"><li class="tree-node is-accordion-submenu-parent" data-mc-id="11"><a href="../../../../../Content/Topics/Driver-SDK-V1/SDK-Framework/SDK-Architecture.htm" aria-expanded="false">SDK Framework<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">SDK Framework</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="12"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/API-Reference.htm" aria-expanded="true">API Reference<span class="submenu-toggle-container" role="button" tabindex="0" aria-controls="submenuddd11f12-df3f-4ebd-9157-ae6c0aeeef98"><span class="submenu-toggle"></span><span class="invisible-label">API Reference</span></span></a><ul class="vertical menu accordion-menu is-accordion-submenu nested" id="submenuddd11f12-df3f-4ebd-9157-ae6c0aeeef98"><li class="tree-node tree-node-leaf" data-mc-id="14"><a target="_blank" href="https://sdkcon78221.crestron.com/downloads/CrestronCertifiedDriversAPI/index.html">C#&nbsp;API&nbsp;Reference</a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="15"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Type-Abstract-Classes/Device-Type-Abstract.htm" aria-expanded="true">Device Type Abstract Classes<span class="submenu-toggle-container" role="button" tabindex="0" aria-controls="submenuf6230602-f87f-4f57-b4c8-d64e93540221"><span class="submenu-toggle"></span><span class="invisible-label">Device Type Abstract Classes</span></span></a><ul class="vertical menu accordion-menu is-accordion-submenu nested" id="submenuf6230602-f87f-4f57-b4c8-d64e93540221"><li class="tree-node tree-node-leaf" data-mc-id="19"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Type-Abstract-Classes/ABasicDeviceType.htm">ABasic&lt;DeviceType&gt; Class</a></li><li class="tree-node tree-node-leaf" data-mc-id="20"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Type-Abstract-Classes/ATransportDriver.htm">ATransportDriver Class and Transports</a></li><li class="tree-node tree-node-leaf tree-node-selected" data-mc-id="21"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Type-Abstract-Classes/ADeviceTypeProtocol.htm" aria-expanded="true" aria-current="true" class="selected">A&lt;DeviceType&gt;Protocol Class</a></li></ul></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="16"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Driver-JSON-Schema/Driver-JSON-Schema.htm" aria-expanded="false">Driver JSON Schema<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Driver JSON Schema</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="17"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Inputs-Definition/Device-Inputs-Definition.htm" aria-expanded="false">Device Inputs Definition<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Device Inputs Definition</span></span></a></li><li class="tree-node tree-node-leaf" data-mc-id="18"><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Outputs-Definition/Device-Outputs-Definitions.htm">Device Outputs Definition</a></li></ul></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="13"><a href="../../../../../Content/Topics/Driver-SDK-V1/Create-a-Driver/Create-a-Driver.htm" aria-expanded="false">Create a Driver<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Create a Driver</span></span></a></li></ul></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="5"><a href="../../../../../Content/Topics/Driver-SDK-V2/Driver-SDK-V2.htm" aria-expanded="false">Driver SDK V2 (Entity Model)<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Driver SDK V2 (Entity Model)</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="6"><a href="../../../../../Content/Topics/Best-Practices/Best-Practices.htm" aria-expanded="false">Best Practices<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Best Practices</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="7"><a href="../../../../../Content/Topics/Test-a-Driver/Test-a-Driver.htm" aria-expanded="false">Test a Driver<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Test a Driver</span></span></a></li><li class="tree-node is-accordion-submenu-parent" data-mc-id="8"><a href="../../../../../Content/Topics/Submit-a-Driver/Submit-a-Driver.htm" aria-expanded="false">Submit a Driver<span class="submenu-toggle-container" role="button" tabindex="0"><span class="submenu-toggle"></span><span class="invisible-label">Submit a Driver</span></span></a></li><li class="tree-node tree-node-leaf" data-mc-id="9"><a href="../../../../../Content/Topics/Resources/Resources.htm">Resources</a></li><li class="tree-node tree-node-leaf" data-mc-id="10"><a href="../../../../../Content/Topics/Support/Support.htm">Support</a></li></ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True" class="height-container" style="min-height: calc(-86.1px + 100vh);">
+                                    <div style="pading-left: 10px; padding-right: 10px;">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True" data-mc-chunk="Data/Toc.xml"><span class="MCBreadcrumbsPrefix"> </span>
+                                            <a href="../../../../../Content/Topics/Driver-SDK-V1/Driver-SDK-V1.htm" class="MCBreadcrumbsLink">Driver SDK V1 (RAD Framework)</a><span class="MCBreadcrumbsDivider"> / </span><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/API-Reference.htm" class="MCBreadcrumbsLink">API Reference</a><span class="MCBreadcrumbsDivider"> / </span><a href="../../../../../Content/Topics/Driver-SDK-V1/API-Reference/Device-Type-Abstract-Classes/Device-Type-Abstract.htm" class="MCBreadcrumbsLink">Device Type Abstract Classes</a><span class="MCBreadcrumbsDivider"> / </span><span class="MCBreadcrumbsSelf">A&lt;DeviceType&gt;Protocol Class</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-container">
+                                        <div class="content">
+                                            <div class="topic">
+                                                <div role="main" id="mc-main-content">
+                                                    <h1 id="ADeviceTypeProtocolClass" data-magellan-target="ADeviceTypeProtocolClass">A&lt;DeviceType&gt;Protocol Class</h1>
+                                                    <p>Every abstract device type class includes a reference to an abstract protocol class. These abstract classes inherit from <strong>ABaseDeviceProtocol</strong> that handles the common logic shared between all the device type protocols. The driver’s protocol class must implement this class.</p>
+                                                    <p>This class is responsible for the following:</p>
+                                                    <ul>
+                                                        <li>Supplying needed methods for handling specific API constraints.</li>
+                                                        <li>Providing virtual methods that implement the device type interface which build and send the appropriate commands. The structure <strong>CommandSet</strong> is used for these.</li>
+                                                        <li>Managing custom commands, user attributes, and authentication</li>
+                                                        <li>Handling validated data from the Response Validation class. The structure <strong>ValidatedRxData</strong> is used for this.</li>
+                                                        <li>Handling the driver-defined polling sequence.</li>
+                                                        <li>Command pacing when sending data to the transport class.</li>
+                                                    </ul>
+                                                    <p>By default, all commands are built based on the driver JSON data. The majority of virtual methods in the protocol class have the same names as the component interfaces’ methods. Drivers may override these methods to build commands manually.</p>
+                                                    <p>Every driver written is required to implement the correct protocol class:</p>
+                                                    <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                        <colgroup><col style="width: 2.75in;" class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        <col style="width: 2.75in;" class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        </colgroup><thead>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Device Type</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Abstract Class</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Display/Projector</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">ADisplayProtocol</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Cable Box</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">ACableBoxProtocol</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Blu-ray Disc Player</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">ABlurayPlayerProtocol</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Video Server</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">AVideoServerProtocol</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">A/V Receiver</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">AReceiverProtocol</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p>
+                                                        <br>There are several additional methods for the abstract protocol classes that are described in the following sections.</p>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown" data-mc-state="closed"><span class="MCDropDownHead dropDownHead"><h2 id="OverrideMethods" data-magellan-target="OverrideMethods"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open">Override Methods</a></h2></span>
+                                                        <div class="MCDropDownBody dropDownBody" id="mc-dropdown-bodyf7c57489-2031-4d9f-b0be-17ed57f9ff88" style="display: none;">
+                                                            <p>Apart from the component interface methods, there also other methods that can be overridden if the default functionality is not desired due to API constraints. Any methods not listed may not be overridden.</p>
+                                                            <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                                <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                </colgroup><thead>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Method</th>
+                                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Description and Use</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Dispose</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The implementation of <strong>IDisposable</strong>. Call the base after complete.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">ConnectionChanged </td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Invoked when the connection state changes. Call the base after complete.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">MessageTimedOut</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Invoked when a message is considered timed out. Only polling messages can time out. </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">ChooseDeconstructMethod</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Invoked when the validated data from Response Validation is marked as ready. Base may only be called if the driver did not do anything with the validated data.<br><br>The default implementation of this method is a switch statement on the command group of the <strong>ValidatedRxData</strong>, and calls the appropriate Deconstruct&lt;Feature&gt; method in the protocol code.  </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Deconstruct&lt;Feature&gt;</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Invoked  by the base implementation of <strong>ChooseDeconstructMethod</strong>.<br><br>The default implementations of these methods attempt to compare the data within the <strong>ValidatedRxData</strong> object to feedback data within the driver JSON data to match it to a particular response. It will then update feedback internally, call Log with the new state, and call <strong>FireEvent</strong> with the correct event type.<br><br>An example of this is a <strong>PowerPoll</strong> response where Data is “\x01” and the command group is “Power”. <strong>DeconstructPower</strong> sets <strong>PowerIsOn</strong> to true in the protocol and calls <span class="codeinline">FireEvent(DisplayStateObjects.Power)</span>.<br><br>Drivers that override these must call the base with a value that matches the feedback definitions in the driver JSON.&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Poll</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Invoked at the rate defined by <strong>PollingInterval</strong> in the driver JSON data if polling is enabled. There is no base implementation. Drivers may use this to send their own custom polling commands that are not considered standard polling commands.<br><br>If the desired poll command is already a standard polling command, set <span class="codeinline">CommandSet.StandardCommand</span> to <span class="codeinline">NotAStandardCommand</span>.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PrepareStringThenSend</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Invoked directly before a command is inserted into an internal sending queue. Drivers can append any common data needed to their commands here. Call the base after complete.<br><br>This should return the base call which will set <strong>CommandPrepared</strong> to true on the <strong>CommandSet</strong>. This prevents the command from being prepared again. <br><br>If the driver needs to send the command immediately, it may call <span class="codeinline">Transport.Send(…)</span> and should return true to prevent the base class from sending the command. </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">SetUserAttribute</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">Invoked when the user sets a user attribute. Drivers should override this if they defined any user attributes and handle the data here. There is no base implementation.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown" data-mc-state="closed"><span class="MCDropDownHead dropDownHead"><h2 id="CallableMethods" data-magellan-target="CallableMethods"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open">Callable Methods</a></h2></span>
+                                                        <div class="MCDropDownBody dropDownBody" id="mc-dropdown-body7e8d138f-d2d7-4004-823a-07dbb199fcb4" style="display: none;">
+                                                            <p>The following methods can be called. Any methods not listed may not be used.</p>
+                                                            <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                                <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                </colgroup><thead>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Method</th>
+                                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Description and Use</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">SendCommand</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Sends the specified <strong>CommandSet</strong> through the base sending logic. This will ultimately call <strong>PrepareStringThenSend</strong>.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Log</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Logs a message through the driver’s error log system. Drivers should check the property “EnableLogging” before calling this method. </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">BuildCommand</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Builds a command based on the specified <strong>StandardCommandsEnum</strong> use data in the driver JSON data.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">FireEvent</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">Sends an event to the main driver class that will then be sent to applications if there was a state change.&nbsp;  </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown" data-mc-state="closed"><span class="MCDropDownHead dropDownHead"><h2 id="UsableProperties" data-magellan-target="UsableProperties"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open">Usable Properties</a></h2></span>
+                                                        <div class="MCDropDownBody dropDownBody" id="mc-dropdown-body75572d05-15eb-4373-8f6b-b20df652d28b" style="display: none;">
+                                                            <p>The following methods can be called. Any methods not listed may not be used.</p>
+                                                            <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                                <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                </colgroup><thead>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Method</th>
+                                                                        <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Description and Use</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">IsConnected</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">This value is set by the protocol when connections/disconnections occur.  <br><br>Drivers must throw a connection event when this value is changed.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PowerIsOn</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The value is set by the protocol when a power state is received from the device. <br><br>Drivers must throw a power event this value is changed. By default, <strong>DeconstructPower</strong> will set this value and throw the power event.<br></td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">WarmingUp</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">This value is set internally when a Power command is sent with the callback <span class="codeinline">WarmUp()</span>. An internal timer keeps track of the warmup period (defined in the driver’s JSON data) and will set this value to false once warm up is complete.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CoolingDown</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Behaves the same as <strong>WarmingUp</strong> except with cool down functionality.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">TimeBetweenCommands </td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Specifies how long to stagger commands being sent to the transport.<br><br>This value may not be lower than 250 ms. If it is lower, then the framework will use 250 ms.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PollingEnabled</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">This value is initially set by the value found in the driver’s JSON data: <span class="codeinline">CrestronSerialDeviceApi.Api.Communication. 
+EnableAutoPolling</span><br><br>This value may be changed at runtime to enable or disable polling.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">WaitForResponse</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">This value is initially set by the value found in the driver’s JSON data: <span class="codeinline">CrestronSerialDeviceApi.Api.Communication. 
+WaitForResponse</span><br><br>This value must be set to true only if the driver’s responses do not have unique headers. An example of this is when polled for power ,the device responds with “On” or “Off,” but the response does not indicate what is on or off.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PendingRequest </td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">This is set to the <strong>CommandSet</strong> that was last sent to the transport. <br><br>When <strong>WaitForResponse</strong> is true, this may be used to determine the last sent command. The driver may not set this value. </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PollingInterval</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The number of milliseconds to wait before starting to send the current polling sequence to the device.<br><br>This value is 4000 ms by default.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PowerOnPollingSequence</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">A  set of standard commands considered as polling commands that should be set to the device at the interval of <strong>PollingInterval</strong> when <strong>PowerIsOn</strong> is true.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PowerOffPollingSequence</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">A  set of standard commands considered polling commands that should be set to the device at the interval of <strong>PollingInterval</strong> when <strong>PowerIsOn</strong> is false.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">EnableLogging</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Only applications should set this value. Determines if any logging is possible. </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">EnableTxDebug</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Only applications should set this value. Determines if TX debugging should occur. </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">EnableRxDebug</td>
+                                                                        <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">Only applications should set this value. Determines if RX debugging should occur. </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown" data-mc-state="closed"><span class="MCDropDownHead dropDownHead"><h2 id="EventsandStateChanges" data-magellan-target="EventsandStateChanges"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open">Events and State Changes</a></h2></span>
+                                                        <div class="MCDropDownBody dropDownBody" id="mc-dropdown-bodyed682209-ff37-4acc-a426-ae0a0609af98" style="display: none;">
+                                                            <p>The abstract protocol class handles the majority of all events sent to applications. The main driver class only sends events to applications if there was a value change.</p>
+                                                            <p>Driver may fire events to update feedback values available in the main class for applications. All events are thrown by each <strong>Deconstruct&lt;Feature&gt; </strong>method.</p>
+                                                            <p>Each of the following tables list available events based on the device types. Certain events are handled internally so drivers should only throw events that specify parameters as shown in the following tables.</p>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown" data-mc-state="closed"><span class="MCDropDownHead dropDownHead"><h3 id="Display" data-magellan-target="Display"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open">Display</a></h3></span>
+                                                                <div class="MCDropDownBody dropDownBody" id="mc-dropdown-body68865143-b034-46bf-a0d0-3aca0d254071" style="display: none;">
+                                                                    <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                                        <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        </colgroup><thead>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Event</th>
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Parameters</th>
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Values Changed</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Power</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.Display.Power</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">WarmingUp, CoolingDown, or PowerIsOn</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Input</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.Display.Power</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">IInputIs, VideoInputSource, or AudioInputSource </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.Display.Audio </td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Muted or VolumePercent</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Connection</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.Display.Connection</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">IsConnected</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">LampHours</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.Display.Projector</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">LampHours</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">EnergyStar</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.Display.EnergyStar</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">EnergyStarIsOn </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoMute</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.Display.VideoMute</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">VideoMuteIsOn</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Volume</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Audio event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">VolumePercent </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Mute</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Audio event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Muted</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Authentication</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Boolean value, where true is authenticated</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">IsAuthenticated</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AudioInput</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Input event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">AudioInputSource</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoInput</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Input event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">VideoInputSource</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">WarmingUp</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">WarmingUp</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">WarmedUp</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">WarmingUp</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CoolingDown</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CooledDown</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PoweredOn</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">PowerIsOn</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PoweredOff</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">PowerIsOn</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">ActiveMediaService</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">ID (string) of media service that is active</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">ActiveMediaService</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">ActiveMediaServicePlaybackState</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">MediaServiceStates (enum) </td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">ActiveMediaService.State</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Channel</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Crestron.RAD.DeviceTypes.Display. Channel</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">ChannelIs</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown" data-mc-state="closed"><span class="MCDropDownHead dropDownHead"><h3 id="CableBox" data-magellan-target="CableBox"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open">Cable Box</a></h3></span>
+                                                                <div class="MCDropDownBody dropDownBody" id="mc-dropdown-body2726ad0e-4ee0-4af5-8ba7-3eea5481d672" style="display: none;">
+                                                                    <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                                        <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        </colgroup><thead>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Event</th>
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Parameters</th>
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Values Changed</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Power</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.CableBox.Power </td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">PowerIsOn, WarmingUp, or CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Channel</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.CableBox.Channel </td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Channelis</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.CableBox.Audio  </td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Muted or VolumePercent</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Connection</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.CableBox.Connection</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">IsConnected</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">EnergyStar</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.CableBox.EnergyStar</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">EnergyStarIsOn </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Volume</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Audio event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">VolumePercent </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Mute</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Audio event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Muted</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Authentication</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Boolean value, where true is authenticated</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">IsAuthenticated</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">WarmingUp</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">WarmingUp</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">WarmedUp</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">WarmingUp</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CoolingDown</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CooledDown</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PoweredOn</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">PowerIsOn</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">PoweredOff</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">PowerIsOn</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown" data-mc-state="closed"><span class="MCDropDownHead dropDownHead"><h3 id="BlurayDiscPlayer" data-magellan-target="BlurayDiscPlayer"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open">Blu-ray Disc Player</a></h3></span>
+                                                                <div class="MCDropDownBody dropDownBody" id="mc-dropdown-bodyc5af2fd1-7b21-457d-ba78-37e5cac1fd65" style="display: none;">
+                                                                    <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                                        <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        </colgroup><thead>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Event</th>
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Parameters</th>
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Values Changed</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Power</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.BlurayPlayer.Power </td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">PowerIsOn, WarmingUp, or CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PlaybackStatus</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.BlurayPlayer.Playback </td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Channelis</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">MediaInfo</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.BlurayPlayer.MediaInfoFeedback </td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">ChapterFeedback, TrackFeedback, TrackElapsedTime, TotalRemainingTime ChapterElapsedTime, ChapterRemainingTime, TotalElapsedTime, or TotalRemainingTime </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Connection</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.BlurayPlayer.Connection</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">IsConnected</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">EnergyStar</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.BlurayPlayer.EnergyStar</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">EnergyStarIsOn </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Authentication</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Boolean value, where true is authenticated</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">IsAuthenticated</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">WarmingUp</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">WarmingUp</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">WarmedUp</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">WarmingUp</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CoolingDown</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CooledDown</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PoweredOn</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">PowerIsOn</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">PoweredOff</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">PowerIsOn</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown" data-mc-state="closed"><span class="MCDropDownHead dropDownHead"><h3 id="AVReceiver" data-magellan-target="AVReceiver"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open">A/V&nbsp;Receiver</a></h3></span>
+                                                                <div class="MCDropDownBody dropDownBody" id="mc-dropdown-body96725937-c8d4-4501-9ba9-b3188ef50481" style="display: none;">
+                                                                    <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                                        <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        </colgroup><thead>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Event</th>
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Parameters</th>
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Values Changed</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Power</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.RADAVReceiver.Power </td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">PowerIsOn, WarmingUp, or CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Input</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.RADAVReceiver.Input</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">VideoInputSource</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.RADAVReceiver.Audio </td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">TreblePercentIs, 
+
+BassPercentIs, TrebleDbIs, BassDbIs,  
+
+LoudnessIsOn, or ToneControlIsOn  </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Connection</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.RADAVReceiver.Connection</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">IsConnected</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Volume</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.RADAVReceiver.Volume</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">VolumePercent</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Mute</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Volume event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Muted</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Tuner</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.RADAVReceiver.Connection</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Tuner</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Surround</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes. RADAVReceiver.SurroundMode</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">SurroundMode</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Authentication</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Boolean value, where true is authenticated</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">IsAuthenticated</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">AudioInput</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes. RADAVReceiver.AudioInput</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">AudioInputs</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">VideoInput</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Input event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">VideoInputSource</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">WarmingUp</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">WarmingUp</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">WarmedUp</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">WarmingUp</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CoolingDown</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CooledDown</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PoweredOn</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">PowerIsOn</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">PoweredOff</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">PowerIsOn</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown" data-mc-state="closed"><span class="MCDropDownHead dropDownHead"><h3 id="VideoServer" data-magellan-target="VideoServer"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open">Video Server</a></h3></span>
+                                                                <div class="MCDropDownBody dropDownBody" id="mc-dropdown-bodyf72dbfc6-f676-46dd-8359-c70d8d8cbae3" style="display: none;">
+                                                                    <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                                        <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                                        </colgroup><thead>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Event</th>
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Parameters</th>
+                                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Values Changed</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Power</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.VideoServer.Power </td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">PowerIsOn, WarmingUp, or CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Connection</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Crestron.RAD.DeviceTypes.VideoServer.Connection</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">IsConnected</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Authentication</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Boolean value, where true is authenticated</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">IsAuthenticated</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">WarmingUp</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">WarmingUp</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">WarmedUp</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">WarmingUp</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CoolingDown</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CooledDown</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">CoolingDown</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PoweredOn</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">PowerIsOn</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">PoweredOff</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Handled internally with the Power event</td>
+                                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">PowerIsOn</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h2 id="SendingCommands" data-magellan-target="SendingCommands">Sending Commands</h2>
+                                                    <p>The protocol class is responsible for formatting and sending commands to the transport class. These commands can be sent either as a <strong>CommandSet</strong> object or as a custom command.</p>
+                                                    <p>The framework has a built-in internal sending queue where all commands sent will be added to the queue. This queue is maintained once every 250 ms, and it will remove commands that cannot be sent due to certain device states. There is a method to skip this queue and send the data at any rate detailed in <a href="#Send" class="MCXref xref">Send Directly to the Transport Class</a>.</p>
+                                                    <p>The following table explains what is sent by each command and where it is sent.</p>
+                                                    <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                        <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        </colgroup><thead>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Command</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Behavior</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Power Poll</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Always sent</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Power On/Off</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Sent when the device is not warming up or cooling down.  
+
+ 
+<br><br>If a <strong>PowerOn</strong> command enters the queue while the device is cooling down, then the command remains in the queue until the device finishes cooling down. It will be sent after cooling down is complete.  
+The same applies to <strong>PowerOff</strong> with reverse conditions. 
+
+ 
+
+<br><br>PowerOn/Off will automatically reenter the queue up to three times if feedback from the device does not match the desired state. </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Audio/Video Input</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Sent when device is not warming up, not cooling down, is connected, and is powered on. 
+
+ 
+
+<br><br>If this command enters the queue while warming up, then it will remain in the queue until the device is done warming up. It will be sent after warming up is complete. In other conditions where the command cannot be sent, it is removed from the queue.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">All other commands</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">Will not be sent unless the device is powered on, connected, and not warming up or cooling down.  
+
+ 
+
+When the command cannot be sent due to the conditions at the time then it will be removed from the queue. </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p>
+                                                        <br>There are three ways to send a command:</p>
+                                                    <ul>
+                                                        <li>Calling the method <span class="codeinline">SendCommand(CommandSet commandSet)</span> with a populated <strong>CommandSet</strong> object.</li>
+                                                        <p>This will result in the command being added to an internal sending queue.</p>
+                                                        <li>Calling the method <span class="codeinline">SendCustomCommandByName(string)</span>, where the name matches on of the defined custom commands in the following class in the driver JSON data: <span class="codeinline">CrestronSerialDeviceApi.Api.CustomCommands</span>.</li>
+                                                        <p>This will result in the command being added to an internal sending queue.</p>
+                                                        <li>Calling the method <span class="codeinline">Transport.Send(string, object[])</span>, where the string is the data that needs to be transmitted and the object array may be used by a custom transport. No prebuilt transports use the second parameter.</li>
+                                                        <p>This will result in the command being sent immediately to the transport and skipping the queue. This is useful when the driver needs to send a message to the device immediately or when a nonstandard command should not be considered a custom command for use by applications.</p>
+                                                    </ul>
+                                                    <h3 id="CommandSetClass" data-magellan-target="CommandSetClass">CommandSet Class</h3>
+                                                    <p>The class <strong>CommandSet</strong> represents a command that will be sent to the transport.</p>
+                                                    <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                        <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        </colgroup><thead>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Property</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Description and Use</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CommandName</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The friendly name of the command.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">StandardCommand</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The <strong>StandardCommandsEnum</strong> value that matches this command’s function.<br><br>The value “NotAStandardCommand” must be used when the command is not a standard command.<br></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CommandPriority</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The priority of the command to determine when it has to be sent.<br></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CallBack</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The action that should be invoked once the command exits the sending queue and is sent to the device.&nbsp;<br><br>A usage example is <strong>PowerOn</strong> needs to start a warm up sequence when it is sent to the transport, so the callback will be set to the method <strong>WarmUp</strong>. </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Command</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The string that should be sent to the device. </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CommandGroup</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The command group that contains this command.<br><br>An example of this would be the <strong>PowerOn</strong> command, which would belong to the command group <strong>Power</strong>. </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">IsPollingCommand</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Outputs true if the specified StandardCommand property is a polling command.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CommandPrepared</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Specifies if the command is prepared and ready to be sent to the device without any more modifications.<br><br>The base implementation of <strong>PrepareStringThenSend</strong> will set this value to true before sending it to the internal sending queue. </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Parameters</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">The parameters for the command, which are provided in the next table below.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p>These commands are built by all the component interface methods located in this abstract class. The general pattern they use to build these commands is as follows:</p>
+                                                    <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                        <div style="mc-code-lang: CSharp;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #a71d5d; font-weight: bold; ">public</span> <span style="color: #795da3; ">virtual</span> <span style="color: #a71d5d; ">void</span> <span style="color: #333333; font-weight: bold; ">MuteOn</span>()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;CommandSet command = <span style="color: #333333; font-weight: bold; ">BuildCommand</span>(StandardCommandsEnum.MuteOn, CommonCommandGroupType.Mute, CommandPriority.Normal, <span style="color: #df5000; ">"Mute On"</span>);<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #a71d5d; font-weight: bold; ">if</span> (command != <span style="font-weight: bold; ">null</span>)<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #333333; font-weight: bold; ">SendCommand</span>(command);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}</code></pre>
+                                                        </div>
+                                                    </div>
+                                                    <p>The method <strong>BuildCommand</strong> will retrieve the command string (yellow) found in the driver JSON data based on the <strong>StandardCommandsEnum</strong> value (green). The property <strong>StandardCommand</strong> needs to be the value of the <strong>StandardCommandsEnum</strong> defined.</p>
+                                                    <p>In this example, <span class="codeinline">StandardCommandsEnum.MuteOn</span> is equal to 4602.</p>
+                                                    <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                        <div style="mc-code-lang: XML;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>"MuteOn": {<br>&nbsp;&nbsp;&nbsp;&nbsp;"StandardCommand": 4602,<br>&nbsp;&nbsp;&nbsp;&nbsp;"Command": "\\u0000\\u0003\\u0002\\u0001",<br>&nbsp;&nbsp;&nbsp;&nbsp;"Parameters": []<br>},</code></pre>
+                                                        </div>
+                                                    </div>
+                                                    <p>Parameters for the commands are defined as follows:</p>
+                                                    <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                        <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        </colgroup><thead>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Property</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Description and Use</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Id</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The ID of the parameter. This should match the string in “!$[ParameterId]” where Id would be “ParameterId”.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Max</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The maximum value of the parameter.<br></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Min</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The minimum value of the parameter.<br></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Type</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The type of conversion to use when sending this parameter to the device:&nbsp;<br><br>0: Send as string with no modifications<br><br>1:&nbsp;Convert from ASCII to Hex equivalent. “10” would become “0x31 0x30”.<br><br>2:&nbsp;Convert from decimal value to hex equivalent. “10” would become 0x0A&nbsp;.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">StaticDataWidth</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The total number of characters the parameter should be padded to. Padding will not be done if the parameter exceeds this value.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">PadCharacter</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The character to use in padding.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">PadDirection</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">The direction used to pad the parameter.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p>
+                                                        <br>Parameters are denoted in commands in JSON format using the “!$[ParameterId]” tag. An example of this is <span class="codeinline">!$[volumeLevel]</span>, where <span class="codeinline">volumeLevel</span> is the parameter ID. By default, parameters are used in the framework for the parameter “id” and for volume commands. They can be implemented by a driver and replaced within <strong>PrepareStringThenSend</strong>. Parameters are not required to be used; drivers may define their own syntax for parameters within commands as long as they handle them.</p>
+                                                    <h3 id="CustomCommands" data-magellan-target="CustomCommands">Custom Commands</h3>
+                                                    <p>Custom commands are defined by the component interface <strong>ICustomCommandCollection</strong> and the abstract device type classes implement this interface. A driver developer may not override any methods that are part of this interface.</p>
+                                                    <p><strong>ICustomCommandCollection</strong> allows driver developers to add custom commands for applications to use. This is useful when there is a manufacturer‑specific command that is not considered a standard command by the framework that applications should be able to use. An example of a custom command that must be provided to applications would be “XFinity”, since it is not a standard command but it is a proprietary command frequently seen on a cable TV provider’s remote.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTES:</span>
+                                                        </p>
+                                                        <ul class="noteli">
+                                                            <li>Any commands added to this collection will be visible to applications, so internal API calls should not be added as custom commands.</li>
+                                                            <li>All custom commands are stored in the driver JSON data and is explained in <a href="../Driver-JSON-Schema/Driver-JSON-Schema.htm" class="MCXref xref">Driver JSON Schema</a>.</li>
+                                                            <li>While it is possible to add custom commands dynamically after a driver is initialized, it is best practice to include this data in the driver JSON data so that it is available before the driver is instantiated by an application.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h3 id="SendDirectlytotheTransportClass" data-magellan-target="SendDirectlytotheTransportClass"><a name="Send"></a>Send Directly to the Transport Class</h3>
+                                                    <p>Data can also be sent to the device by calling the Send method on the transport class. This process will skip the internal sending queue and the transport will send the data immediately to the device.</p>
+                                                    <p>This is useful when drivers need to send custom configuration to the device, such as setting the device to use the COM port for control, or when authenticating with the device. A driver developer would not expose either of those commands to applications using custom commands, so the developer has the option of sending them this way. Examples of both of these use cases and some others are shown in <a href="../../Create-a-Driver/Create-a-Driver.htm" class="MCXref xref">Create a Driver</a>.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE:&nbsp;</span>Using this method should be limited, since it will skip the internal sending queue. Most devices do not support processing commands faster than roughly 100–250 ms per message, so sending too many commands this way may cause the device to react unpredictably.</p>
+                                                    </div>
+                                                    <h3 id="PollingCommands" data-magellan-target="PollingCommands">Polling Commands</h3>
+                                                    <p>Polling commands can be added to the properties <strong>PowerOnPollingSequence</strong> and <strong>PowerOffPollingSequence</strong>.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE:&nbsp;</span>The <strong>PowerOffPollingSequence</strong> only allows <strong>PowerPoll</strong> to be added.</p>
+                                                    </div>
+                                                    <p>Commands specified in these properties will remain in the queue forever. They will have the lowest priority and they will be sent once every <strong>PollingInterval</strong>. Polling commands sent at run time using <strong>SendCommand </strong>will not be enqueued if there already is a polling command with the same standard command in the queue.</p>
+                                                    <p>Drivers may override the method <strong>Poll()</strong>, which has no logic in the default implementation. This method is called once every polling cycle and the driver can send any polling commands here that are not part of the polling sequence.</p>
+                                                    <h2 id="ValidatedRxData" data-magellan-target="ValidatedRxData">ValidatedRxData</h2>
+                                                    <p>The class <strong>ValidatedRxData</strong> defines data that has been validated completely or partially by the driver’s <strong>Response Validation</strong> class. This class is used by the protocol class and will be used by a driver developer. Refer to <a href="#Response" class="MCXref xref">Response Handling</a> for an explanation of how this is used by the framework.</p>
+                                                    <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                        <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        </colgroup><thead>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Property</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Description and Use</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Ready</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Specifies if the response has been fully received and is ready to be parsed by the protocol class.<br><br>Once a message is processed that was marked as Ready, the internal RX buffer will clear itself.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Ignore</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Specifies if the response should be ignored and the internal RX buffer should be cleared.<br></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Data</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The data received from the device.&nbsp;<br><br>This should not be the entire message from the device, only the relevant part of the response. For example, if this was a response to <strong>PowerPoll</strong>, the <strong>CommandGroup</strong> would be set to Power and the Data contents would be “\x01” if the driver JSON data defined Power On feedback as “\x01”.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">CommandGroup</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The command group that contains the data.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">CustomCommandGroup</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">If there are nonstandard responses that need to be handled by the driver internally, the driver’s response validation class may set this to a unique value and override <strong>ChooseDeconstructMethod</strong> in their protocol class to handle the response. <br><br>The framework does not reference this value.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <h2 id="ResponseHandling" data-magellan-target="ResponseHandling"><a name="Response"></a>Response Handling</h2>
+                                                    <p>When the transport class receives data, it will call the method <strong>DataHandler</strong> within the protocol class. <strong>DataHandler</strong> adds the received response into an internal blocking queue. The driver may not override this method. Received data is removed from the queue when not blocked and will do the following:</p>
+                                                    <ol>
+                                                        <li value="1">Invoke <span class="codeinline">RxOut</span> (defined in <strong>IBasicLogger</strong>) with the received bytes.</li>
+                                                        <li value="2">Append the received bytes to a string buffer.</li>
+                                                        <li value="3">Call to <span class="codeinline">ResponseValidation.ValidateResponse</span> with the string buffer contents and the last command group that was sent.</li>
+                                                        <li value="4">Exceptions thrown by the drivers implementation of <strong>ValidateResponse</strong> will be caught, logged, and the RX buffer will be cleared.</li>
+                                                        <li value="5">The connection state will be updated to true and a Connection event will be made if the current state is disconnected.</li>
+                                                        <li value="6">If the returned validated data should be ignored, the RX buffer will be cleared and this method will end here.</li>
+                                                        <li value="7">If the returned validated data is not ready or Data is empty, then an internal counter will be incremented to keep track of partial or unrecognized responses and the method will end here. This will clear once the data is ready and not empty.</li>
+                                                        <li value="8">The last command group value will be set to the command group of the validated data if it is not unknown. Otherwise, if <strong>WaitForResponse</strong> is true, then the  command group of the validated data will be assigned to the last command group.</li>
+                                                        <li value="9">If this was a response to a pending polling command, then it will be marked as having received a response preventing it from timing out.</li>
+                                                        <li value="10"><strong>ChooseDeconstructMethod</strong> is now called with the validated data object.</li>
+                                                    </ol>
+                                                    <h2 id="UserAttributes" data-magellan-target="UserAttributes">User Attributes</h2>
+                                                    <p>User attributes are provided for getting device-specific data to the driver and for relaying any setup messages required for getting the device to work with the driver.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE:&nbsp;</span>These must be defined in the driver’s JSON data: <span class="codeinline">CrestronSerialDeviceApi.UserAttributes</span>.</p>
+                                                    </div>
+                                                    <p>The driver’s protocol class must override the appropriate <strong>SetUserAttribute</strong> methods to use the values supplied by the application. There is no default implementation in the protocol class. The main class will send all received values to the protocol using the <strong>SetUserAttribute</strong> method. These values are stored internally and then sent to the protocol when it is instantiated If the protocol does not exist when the applications calls these methods.</p>
+                                                    <p>An attribute is defined as follows:</p>
+                                                    <table style="mc-table-style: url('../../../../Resources/Stylesheets/TP-Global-Table-Styles.css');" class="TableStyle-TP-Global-Table-Styles" cellspacing="0">
+                                                        <colgroup><col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        <col class="TableStyle-TP-Global-Table-Styles-Column-Column1">
+                                                        </colgroup><thead>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Head-Header1">
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadE-Column1-Header1" style="text-align: left;" scope="col">Property</th>
+                                                                <th class="TableStyle-TP-Global-Table-Styles-HeadD-Column1-Header1" style="text-align: left;" scope="col">Description and Use</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">TypeName</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Specifies the type of user attribute. <br><br>The following types are allowed: DeviceId, OnScreenId, MessageBox, and Custom.<br><br><strong>DeviceId</strong> should be used when an ID is required for communication with the device. For example, the NEC display API requires an ID value in all commands sent to the device, and this ID comes from the configuration screen on the display.<br><br><strong>OnScreenId</strong> must be used when a value is available on the device that is required for communication with the device. For example, the LG® 1018 API requires a passcode to be generated and provided to the driver for communication.<br><br><strong>MessageBox</strong> must be used to relay messages to users using an application. For example, if a driver requires a certain setting to be set before communication is possible then this type would be used and the description would describe the necessary steps.<br><br><strong>Custom</strong> must be used for all other user attribute types. For example, this would be used for MAC address of the device if <span class="codeinline">WakeOnLAN</span> is supported and there is no other way to turn the device on. <br></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">ParameterId</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">The ID used by applications when making a call to <span class="codeinline">SetUserAttribute()</span>.<br></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Label</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">A  friendly name for the user attribute.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Description</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">A  description of the user attribute.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Persistent</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Specifies whether the attribute is considered nonchanging, such as the serial number of a device. <br><br>Persistent values must be stored by the application.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">RequiredForConnection</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Specifies if the connection state relies on this attribute being sent.&nbsp;<br><br>One of the following values must be used: None, Before, or After.<br><br><strong>None</strong>&nbsp;specifies that the attribute is not required for communication.<br><br><strong>Before</strong> specifies that the attribute is required before a connection is possible<br><br><strong>After</strong> specifies that the attribute is required after connecting to the device.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Data</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Represents information about the type of value that is needed for the user attribute.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Data.DataType</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Specifies the data type of the attribute.<br><br>This must have one of the following values:&nbsp;String, Number, Boolean, or Hex.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyE-Column1-Body1">Data.Mask</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyD-Column1-Body1">Not used.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-TP-Global-Table-Styles-Body-Body1">
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyB-Column1-Body1">Data.DefaultVaule</td>
+                                                                <td class="TableStyle-TP-Global-Table-Styles-BodyA-Column1-Body1">The default value this attribute will use, if any. </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <h2 id="Authentication" data-magellan-target="Authentication"><a name="Authenti"></a>Authentication</h2>
+                                                    <p>Some devices will require a username and/or a password before allowing the driver to have full control of the device.</p>
+                                                    <div class="notebox">
+                                                        <p><span class="note">NOTE:&nbsp;</span>Authentication details are stored within the driver’s JSON data: <span class="codeinline">CrestronSerialDeviceApi.Api.Communication.Authentication</span></p>
+                                                    </div>
+                                                    <p>Drivers that require authentication need to support <strong>IAuthentication</strong> and <strong>IAuthentication2</strong>.</p>
+                                                    <ul>
+                                                        <li><strong>IAuthentication</strong> supports usernames and passwords using <strong>CrestronDataStore</strong>.</li>
+                                                        <li><strong>IAuthentication2</strong> supports them using two methods: <strong>OverrideUsername</strong> and <strong>OverridePassword</strong>.</li>
+                                                    </ul>
+                                                    <p>Drivers should first use the username/password found in <strong>CrestronDataStore</strong> if they exist. If they do not exist, then the driver must use the values provided to the driver using <strong>OverrideUsername</strong> and <strong>OverridePassword</strong>.</p>
+                                                    <p>When a driver authenticates with a device, the driver needs to throw an <strong>Authentication</strong> event.</p>
+                                                    <p>Drivers are not responsible for storing any data in <strong>CrestronDataStore</strong>, but they are responsible for retrieving data found in it if a key is provided by the application.</p>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown" data-mc-state="closed"><span class="MCDropDownHead dropDownHead"><h3 id="IAuthentication" data-magellan-target="IAuthentication"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open">IAuthentication</a></h3></span>
+                                                        <div class="MCDropDownBody dropDownBody" id="mc-dropdown-body4712924e-c679-4813-a181-fdc4e34944a2" style="display: none;">
+                                                            <p>To support this interface, the driver’s abstract class needs to override the methods <strong>UsernameKey</strong> and <strong>PasswordKey</strong> and pass these values to the driver’s protocol implementation. Applications will call these methods with the key that corresponds to a value they inserted in the <strong>CrestronDataStore</strong>. Drivers should attempt to use the key to retrieve the username/password from <strong>CrestronDataStore</strong>.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown" data-mc-state="closed"><span class="MCDropDownHead dropDownHead"><h3 id="IAuthentication2" data-magellan-target="IAuthentication2"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="10" width="16" alt="Closed" data-mc-alt2="Open">IAuthentication2</a></h3></span>
+                                                        <div class="MCDropDownBody dropDownBody" id="mc-dropdown-body91b3f6bf-d0f9-432e-b6fc-0a684cc466b9" style="display: none;">
+                                                            <p>To support this interface, the driver’s abstract class needs to override the methods <strong>OverrideUsername</strong> and <strong>OverridePassword</strong> and pass these values to the driver’s protocol implementation.</p>
+                                                        </div>
+                                                    </div>
+                                                    <h2 id="OneWaySerialDrivers" data-magellan-target="OneWaySerialDrivers">One-Way Serial Drivers</h2>
+                                                    <p>The framework supports one-way serial drivers. All command-sending logic will check if the driver supports power feedback before checking <strong>PowerIsOn</strong>.</p>
+                                                    <p>Older versions of the framework did not have this logic implemented, so drivers should set <strong>PowerIsOn</strong> to true within their protocol’s constructor if the device provides no power feedback</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="fineprint">
+                                                    <div class="tipbox">
+                                                        <p>Have feedback on this document?&nbsp;Contact <a href="mailto:docfeedback@crestron.com?subject=Documentation Feedback">docfeedback@crestron.com</a>.</p>
+                                                    </div>
+                                                    <p>©<span class="mc-variable TP-Variables.Year variable">2025</span> Crestron Electronics, Inc.</p>
+                                                    <p>All brand names, product names and trademarks are the property of their respective owners. Certain trademarks, registered trademarks, and trade names may be used to refer to either the entities claiming the marks and names or their products. Crestron disclaims any proprietary interest in the marks and names of others. Crestron is not responsible for errors in typography or photography. Specifications are subject to change without notice.</p>
+                                                    <p><a target="_blank" href="https://www.crestron.com/en-us/legal/patents">Patents</a>&nbsp;| <a target="_blank" href="https://www.crestron.com/en-us/legal">Legal</a>&nbsp;| <a target="_blank" href="https://www.crestron.com/crestroneuropeterms">Crestron&nbsp;Europe&nbsp;Terms</a>&nbsp;| <a target="_blank" href="https://www.crestron.com/legal/privacy-policy">Privacy&nbsp;Policy</a>&nbsp;| <a target="_blank" href="https://www.crestron.com/legal/website-terms-of-use">Terms&nbsp;of&nbsp;Use</a>&nbsp;| <a target="_blank" href="https://community.crestron.com/">Support</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu" id="side-menu-proxy-container">
+                                            <div data-sticky-container="" id="jkHq-Ep4YE258yLtS_TF7A" class="sticky-container" style="min-height: 490px;">
+                                                <div class="sticky-menu sticky" style="width: 100%; margin-top: 0px; max-width: 300px;" data-top-anchor="jkHq-Ep4YE258yLtS_TF7A:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 1280px)" data-scroll-container-on="only screen and (min-width: 1280px)" data-resize="94g27s-sticky" data-events="resize" data-sticky="in801w-sticky">
+                                                    <ul data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_TPSkin_Menu mc-component" data-resize="ni2xcf-magellan" data-scroll="ni2xcf-magellan" id="ni2xcf-magellan" data-events="resize" data-magellan="ekethu-magellan">
+                                                        <li class="tree-node"><a href="#ADeviceTypeProtocolClass" class="selected">A&lt;DeviceType&gt;Protocol Class</a>
+                                                            <ul>
+                                                                <li class="tree-node"><a href="#OverrideMethods">Override Methods</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#CallableMethods">Callable Methods</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#UsableProperties">Usable Properties</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#EventsandStateChanges">Events and State Changes</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#Display" class="">Display</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#CableBox">Cable Box</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#BlurayDiscPlayer">Blu-ray Disc Player</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#AVReceiver">A/V&nbsp;Receiver</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#VideoServer">Video Server</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#SendingCommands">Sending Commands</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#CommandSetClass">CommandSet Class</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#CustomCommands">Custom Commands</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#SendDirectlytotheTransportClass">Send Directly to the Transport Class</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#PollingCommands">Polling Commands</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#ValidatedRxData">ValidatedRxData</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#ResponseHandling">Response Handling</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#UserAttributes">User Attributes</a>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#Authentication">Authentication</a>
+                                                                    <ul>
+                                                                        <li class="tree-node"><a href="#IAuthentication">IAuthentication</a>
+                                                                        </li>
+                                                                        <li class="tree-node"><a href="#IAuthentication2">IAuthentication2</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="tree-node"><a href="#OneWaySerialDrivers">One-Way Serial Drivers</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script src="../../../../Resources/js/Hide-Menu.js">
+                                    </script>
+                                    <script src="../../../../Resources/js/DiscoToggle.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                <div class="js-off-canvas-exit"></div></div>
+            </div>
+        </div>
+    
+</body></html>
