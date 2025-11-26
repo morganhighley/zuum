@@ -1,0 +1,635 @@
+{
+  "CrestronTcpDeviceApi": {
+    "DeviceSupport": {
+      "SupportsDiscretePower": true,
+      "SupportsPowerFeedback": true
+    },
+    "GeneralInformation": {
+      "DeviceType": "AV Switcher",
+      "Manufacturer": "Zuum Media",
+      "BaseModel": "H10X10-4K6G",
+      "VersionDate": "2025-11-26 12:00:00.000",
+      "DriverVersion": "1.00.000.0001",
+      "SdkVersion": "6.00.000.0025",
+      "Description": "4K60Hz 10x10 HDMI Matrix Switcher with Audio Extraction. Supports up to 4K@60Hz 4:4:4, HDCP 2.2, HDR10, Dolby Vision, HLG. Features 2 S/PDIF outputs for audio extraction, 10 scene presets, and front panel/IR/RS-232/TCP/IP control.",
+      "Guid": "c5d8e2f1-7a3b-4c9d-8e6f-1a2b3c4d5e6f",
+      "SupportedSeries": [
+        "4-Series"
+      ],
+      "SupportedModels": [
+        "H10X10-4K6G"
+      ]
+    },
+    "Api": {
+      "Communication": {
+        "CommunicationType": 1,
+        "Protocol": 0,
+        "Port": 47011,
+        "EnableAutoPolling": true,
+        "EnableAutoReconnect": true,
+        "TimeBetweenCommands": 100,
+        "ResponseTimeout": 3000,
+        "WaitForResponse": true,
+        "IpProtocol": 0,
+        "IsUserAdjustable": true,
+        "Authentication": {
+          "Type": "None",
+          "Required": false
+        },
+        "IsSecure": false,
+        "UserAdjustableProperties": [],
+        "DeviceId": 0
+      },
+      "PowerWaitPeriod": {
+        "UseLocalWarmupTimer": true,
+        "WarmUpTime": 3000,
+        "UseLocalCooldownTimer": true,
+        "CoolDownTime": 1000
+      },
+      "StandardCommands": {
+        "PowerOn": {
+          "Command": "POWER 01",
+          "Acknowledge": "OK"
+        },
+        "PowerOff": {
+          "Command": "POWER 00",
+          "Acknowledge": "OK"
+        },
+        "PowerPoll": {
+          "Command": "STATUS"
+        },
+        "AudioVideoSwitcherRoute": {
+          "Command": "TX{output} {input}",
+          "Acknowledge": "OK"
+        },
+        "AudioVideoSwitcherRoutePoll": {
+          "Command": "STATUS"
+        }
+      },
+      "CustomCommands": [
+        {
+          "Name": "SaveScene",
+          "Command": "SAVE {scene}",
+          "Acknowledge": "OK",
+          "Parameters": [
+            {
+              "TypeName": "UserAttributeComboBox",
+              "ParameterId": "scene",
+              "Label": "Scene Number",
+              "Data": {
+                "DataType": "unsignedint",
+                "DefaultValue": "1",
+                "MinValue": "1",
+                "MaxValue": "8"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "LoadScene",
+          "Command": "LOAD {scene}",
+          "Acknowledge": "OK",
+          "Parameters": [
+            {
+              "TypeName": "UserAttributeComboBox",
+              "ParameterId": "scene",
+              "Label": "Scene Number",
+              "Data": {
+                "DataType": "unsignedint",
+                "DefaultValue": "1",
+                "MinValue": "1",
+                "MaxValue": "8"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "LockPanel",
+          "Command": "LOCK {state}",
+          "Acknowledge": "OK",
+          "Parameters": [
+            {
+              "TypeName": "UserAttributeComboBox",
+              "ParameterId": "state",
+              "Label": "Lock State",
+              "Data": {
+                "DataType": "unsignedint",
+                "DefaultValue": "0",
+                "MinValue": "0",
+                "MaxValue": "1"
+              }
+            }
+          ]
+        }
+      ],
+      "Feedback": {
+        "Header": "",
+        "ApiDelimiter": "\r\n",
+        "CommandAckNak": {
+          "Ack": "OK",
+          "Nack": "NG"
+        },
+        "PowerFeedback": {
+          "Feedback": {
+            "On": "ON",
+            "Off": "OFF"
+          },
+          "GroupHeader": "POWER="
+        },
+        "RoutedExtenderFeedback": {
+          "GroupHeader": "OUT"
+        }
+      },
+      "AudioVideoSwitcher": {
+        "AutoDetectConfiguration": false,
+        "SupportsAudioBreakaway": false,
+        "NullInputIdentifier": "0",
+        "Inputs": [
+          {
+            "ApiIdentifier": "1",
+            "Id": "input1",
+            "Name": "HDMI Input 1",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectInput",
+            "AudioInputDetails": [
+              {
+                "Type": "Hdmi1",
+                "Description": "HDMI Input 1 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 1"
+              }
+            ],
+            "VideoInputDetails": [
+              {
+                "Type": "Hdmi1",
+                "Description": "HDMI Input 1 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 1"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "2",
+            "Id": "input2",
+            "Name": "HDMI Input 2",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectInput",
+            "AudioInputDetails": [
+              {
+                "Type": "Hdmi2",
+                "Description": "HDMI Input 2 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 2"
+              }
+            ],
+            "VideoInputDetails": [
+              {
+                "Type": "Hdmi2",
+                "Description": "HDMI Input 2 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 2"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "3",
+            "Id": "input3",
+            "Name": "HDMI Input 3",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectInput",
+            "AudioInputDetails": [
+              {
+                "Type": "Hdmi3",
+                "Description": "HDMI Input 3 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 3"
+              }
+            ],
+            "VideoInputDetails": [
+              {
+                "Type": "Hdmi3",
+                "Description": "HDMI Input 3 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 3"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "4",
+            "Id": "input4",
+            "Name": "HDMI Input 4",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectInput",
+            "AudioInputDetails": [
+              {
+                "Type": "Hdmi4",
+                "Description": "HDMI Input 4 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 4"
+              }
+            ],
+            "VideoInputDetails": [
+              {
+                "Type": "Hdmi4",
+                "Description": "HDMI Input 4 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 4"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "5",
+            "Id": "input5",
+            "Name": "HDMI Input 5",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectInput",
+            "AudioInputDetails": [
+              {
+                "Type": "Hdmi5",
+                "Description": "HDMI Input 5 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 5"
+              }
+            ],
+            "VideoInputDetails": [
+              {
+                "Type": "Hdmi5",
+                "Description": "HDMI Input 5 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 5"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "6",
+            "Id": "input6",
+            "Name": "HDMI Input 6",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectInput",
+            "AudioInputDetails": [
+              {
+                "Type": "Hdmi6",
+                "Description": "HDMI Input 6 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 6"
+              }
+            ],
+            "VideoInputDetails": [
+              {
+                "Type": "Hdmi6",
+                "Description": "HDMI Input 6 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 6"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "7",
+            "Id": "input7",
+            "Name": "HDMI Input 7",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectInput",
+            "AudioInputDetails": [
+              {
+                "Type": "Hdmi7",
+                "Description": "HDMI Input 7 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 7"
+              }
+            ],
+            "VideoInputDetails": [
+              {
+                "Type": "Hdmi7",
+                "Description": "HDMI Input 7 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 7"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "8",
+            "Id": "input8",
+            "Name": "HDMI Input 8",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectInput",
+            "AudioInputDetails": [
+              {
+                "Type": "Hdmi8",
+                "Description": "HDMI Input 8 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 8"
+              }
+            ],
+            "VideoInputDetails": [
+              {
+                "Type": "Hdmi8",
+                "Description": "HDMI Input 8 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 8"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "9",
+            "Id": "input9",
+            "Name": "HDMI Input 9",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectInput",
+            "AudioInputDetails": [
+              {
+                "Type": "Hdmi9",
+                "Description": "HDMI Input 9 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 9"
+              }
+            ],
+            "VideoInputDetails": [
+              {
+                "Type": "Hdmi9",
+                "Description": "HDMI Input 9 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 9"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "10",
+            "Id": "input10",
+            "Name": "HDMI Input 10",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectInput",
+            "AudioInputDetails": [
+              {
+                "Type": "Hdmi10",
+                "Description": "HDMI Input 10 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 10"
+              }
+            ],
+            "VideoInputDetails": [
+              {
+                "Type": "Hdmi10",
+                "Description": "HDMI Input 10 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Input 10"
+              }
+            ]
+          }
+        ],
+        "Outputs": [
+          {
+            "ApiIdentifier": "1",
+            "Id": "output1",
+            "Name": "HDMI Output 1",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectOutput",
+            "AudioOutputDetails": [
+              {
+                "Type": "Hdmi1",
+                "Description": "HDMI Output 1 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 1"
+              }
+            ],
+            "VideoOutputDetails": [
+              {
+                "Type": "Hdmi1",
+                "Description": "HDMI Output 1 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 1"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "2",
+            "Id": "output2",
+            "Name": "HDMI Output 2",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectOutput",
+            "AudioOutputDetails": [
+              {
+                "Type": "Hdmi2",
+                "Description": "HDMI Output 2 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 2"
+              }
+            ],
+            "VideoOutputDetails": [
+              {
+                "Type": "Hdmi2",
+                "Description": "HDMI Output 2 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 2"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "3",
+            "Id": "output3",
+            "Name": "HDMI Output 3",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectOutput",
+            "AudioOutputDetails": [
+              {
+                "Type": "Hdmi3",
+                "Description": "HDMI Output 3 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 3"
+              }
+            ],
+            "VideoOutputDetails": [
+              {
+                "Type": "Hdmi3",
+                "Description": "HDMI Output 3 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 3"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "4",
+            "Id": "output4",
+            "Name": "HDMI Output 4",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectOutput",
+            "AudioOutputDetails": [
+              {
+                "Type": "Hdmi4",
+                "Description": "HDMI Output 4 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 4"
+              }
+            ],
+            "VideoOutputDetails": [
+              {
+                "Type": "Hdmi4",
+                "Description": "HDMI Output 4 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 4"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "5",
+            "Id": "output5",
+            "Name": "HDMI Output 5",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectOutput",
+            "AudioOutputDetails": [
+              {
+                "Type": "Hdmi5",
+                "Description": "HDMI Output 5 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 5"
+              }
+            ],
+            "VideoOutputDetails": [
+              {
+                "Type": "Hdmi5",
+                "Description": "HDMI Output 5 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 5"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "6",
+            "Id": "output6",
+            "Name": "HDMI Output 6",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectOutput",
+            "AudioOutputDetails": [
+              {
+                "Type": "Hdmi6",
+                "Description": "HDMI Output 6 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 6"
+              }
+            ],
+            "VideoOutputDetails": [
+              {
+                "Type": "Hdmi6",
+                "Description": "HDMI Output 6 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 6"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "7",
+            "Id": "output7",
+            "Name": "HDMI Output 7",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectOutput",
+            "AudioOutputDetails": [
+              {
+                "Type": "Hdmi7",
+                "Description": "HDMI Output 7 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 7"
+              }
+            ],
+            "VideoOutputDetails": [
+              {
+                "Type": "Hdmi7",
+                "Description": "HDMI Output 7 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 7"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "8",
+            "Id": "output8",
+            "Name": "HDMI Output 8",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectOutput",
+            "AudioOutputDetails": [
+              {
+                "Type": "Hdmi8",
+                "Description": "HDMI Output 8 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 8"
+              }
+            ],
+            "VideoOutputDetails": [
+              {
+                "Type": "Hdmi8",
+                "Description": "HDMI Output 8 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 8"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "9",
+            "Id": "output9",
+            "Name": "HDMI Output 9",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectOutput",
+            "AudioOutputDetails": [
+              {
+                "Type": "Hdmi9",
+                "Description": "HDMI Output 9 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 9"
+              }
+            ],
+            "VideoOutputDetails": [
+              {
+                "Type": "Hdmi9",
+                "Description": "HDMI Output 9 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 9"
+              }
+            ]
+          },
+          {
+            "ApiIdentifier": "10",
+            "Id": "output10",
+            "Name": "HDMI Output 10",
+            "Manufacturer": "Zuum Media",
+            "Model": null,
+            "Type": "DirectOutput",
+            "AudioOutputDetails": [
+              {
+                "Type": "Hdmi10",
+                "Description": "HDMI Output 10 Audio",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 10"
+              }
+            ],
+            "VideoOutputDetails": [
+              {
+                "Type": "Hdmi10",
+                "Description": "HDMI Output 10 Video",
+                "Connector": "Hdmi",
+                "FriendlyName": "Output 10"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "UserAttributes": []
+  }
+}
