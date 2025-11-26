@@ -11,7 +11,7 @@
       "DriverVersion": "1.00.000.0001",
       "SdkVersion": "6.00.000",
       "Description": "4K60Hz 10x10 HDMI Matrix Switcher with Audio Extraction",
-      "Guid": "00000000-0000-0000-0000-000000000000",
+      "Guid": "dd8321ef-1198-4f3d-b040-5bb18fcbe70b",
       "SupportedSeries": ["4-Series"],
       "SupportedModels": ["H10X10-4K6G"],
       "Developer": {
@@ -25,16 +25,30 @@
     },
     "Api": {
       "Communication": {
-        "BaudRate": 9600,
+        "CommunicationType": 0,
+        "Protocol": 0,
+        "Baud": 9600,
+        "Parity": 0,
+        "HwHandshake": 0,
+        "SwHandshake": 0,
         "DataBits": 8,
         "StopBits": 1,
-        "Parity": "None",
-        "HardwareHandshake": "None",
-        "SoftwareHandshake": "None",
-        "Delimiter": "\r\n",
+        "Port": 0,
+        "EnableAutoPolling": true,
+        "EnableAutoReconnect": true,
+        "TimeBetweenCommands": 100,
+        "TimeBetweenCommandsOverride": 100,
+        "ResponseTimeout": 2000,
+        "WaitForResponse": false,
+        "IpProtocol": 0,
+        "IsUserAdjustable": false,
         "Authentication": {
-          "Type": "None"
-        }
+          "Type": "None",
+          "Required": false
+        },
+        "IsSecure": false,
+        "UserAdjustableProperties": null,
+        "DeviceId": 0
       },
       "PowerWaitPeriod": {
         "WarmUpPeriod": 3000,
