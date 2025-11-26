@@ -101,16 +101,18 @@
         }
       },
       "Feedback": {
-        "FeedbackCommands": [
-          {
-            "Key": "PowerOn",
-            "Regex": "POWER\\s*01"
-          },
-          {
-            "Key": "PowerOff",
-            "Regex": "POWER\\s*00"
+        "Header": "",
+        "CommandAckNak": {
+          "Ack": "",
+          "Nak": ""
+        },
+        "PowerFeedback": {
+          "GroupHeader": "POWER",
+          "Feedback": {
+            "On": "01",
+            "Off": "00"
           }
-        ]
+        }
       },
       "AudioVideoSwitcher": {
         "AutoDetectConfiguration": false,
