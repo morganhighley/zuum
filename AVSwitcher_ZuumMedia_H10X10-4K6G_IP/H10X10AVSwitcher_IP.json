@@ -154,18 +154,18 @@
             "Type": "DirectInput",
             "AudioInputDetails": [
               {
-                "Type": "Hdmi1",
-                "Description": "HDMI Input 1 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 1"
+                "type": "Hdmi1",
+                "description": "HDMI Input 1 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Input 1"
               }
             ],
             "VideoInputDetails": [
               {
-                "Type": "Hdmi1",
-                "Description": "HDMI Input 1 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 1"
+                "type": "Hdmi1",
+                "description": "HDMI Input 1 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Input 1"
               }
             ]
           },
@@ -178,18 +178,18 @@
             "Type": "DirectInput",
             "AudioInputDetails": [
               {
-                "Type": "Hdmi2",
-                "Description": "HDMI Input 2 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 2"
+                "type": "Hdmi2",
+                "description": "HDMI Input 2 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Input 2"
               }
             ],
             "VideoInputDetails": [
               {
-                "Type": "Hdmi2",
-                "Description": "HDMI Input 2 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 2"
+                "type": "Hdmi2",
+                "description": "HDMI Input 2 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Input 2"
               }
             ]
           },
@@ -202,18 +202,18 @@
             "Type": "DirectInput",
             "AudioInputDetails": [
               {
-                "Type": "Hdmi3",
-                "Description": "HDMI Input 3 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 3"
+                "type": "Hdmi3",
+                "description": "HDMI Input 3 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Input 3"
               }
             ],
             "VideoInputDetails": [
               {
-                "Type": "Hdmi3",
-                "Description": "HDMI Input 3 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 3"
+                "type": "Hdmi3",
+                "description": "HDMI Input 3 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Input 3"
               }
             ]
           },
@@ -226,18 +226,18 @@
             "Type": "DirectInput",
             "AudioInputDetails": [
               {
-                "Type": "Hdmi4",
-                "Description": "HDMI Input 4 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 4"
+                "type": "Hdmi4",
+                "description": "HDMI Input 4 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Input 4"
               }
             ],
             "VideoInputDetails": [
               {
-                "Type": "Hdmi4",
-                "Description": "HDMI Input 4 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 4"
+                "type": "Hdmi4",
+                "description": "HDMI Input 4 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Input 4"
               }
             ]
           },
@@ -250,18 +250,18 @@
             "Type": "DirectInput",
             "AudioInputDetails": [
               {
-                "Type": "Hdmi5",
-                "Description": "HDMI Input 5 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 5"
+                "type": "Hdmi5",
+                "description": "HDMI Input 5 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Input 5"
               }
             ],
             "VideoInputDetails": [
               {
-                "Type": "Hdmi5",
-                "Description": "HDMI Input 5 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 5"
+                "type": "Hdmi5",
+                "description": "HDMI Input 5 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Input 5"
               }
             ]
           },
@@ -274,18 +274,18 @@
             "Type": "DirectInput",
             "AudioInputDetails": [
               {
-                "Type": "Hdmi6",
-                "Description": "HDMI Input 6 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 6"
+                "type": "Hdmi6",
+                "description": "HDMI Input 6 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Input 6"
               }
             ],
             "VideoInputDetails": [
               {
-                "Type": "Hdmi6",
-                "Description": "HDMI Input 6 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 6"
+                "type": "Hdmi6",
+                "description": "HDMI Input 6 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Input 6"
               }
             ]
           },
@@ -298,18 +298,18 @@
             "Type": "DirectInput",
             "AudioInputDetails": [
               {
-                "Type": "Hdmi7",
-                "Description": "HDMI Input 7 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 7"
+                "type": "Hdmi7",
+                "description": "HDMI Input 7 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Input 7"
               }
             ],
             "VideoInputDetails": [
               {
-                "Type": "Hdmi7",
-                "Description": "HDMI Input 7 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 7"
+                "type": "Hdmi7",
+                "description": "HDMI Input 7 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Input 7"
               }
             ]
           },
@@ -322,18 +322,18 @@
             "Type": "DirectInput",
             "AudioInputDetails": [
               {
-                "Type": "Hdmi8",
-                "Description": "HDMI Input 8 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 8"
+                "type": "Hdmi8",
+                "description": "HDMI Input 8 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Input 8"
               }
             ],
             "VideoInputDetails": [
               {
-                "Type": "Hdmi8",
-                "Description": "HDMI Input 8 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 8"
+                "type": "Hdmi8",
+                "description": "HDMI Input 8 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Input 8"
               }
             ]
           },
@@ -346,18 +346,18 @@
             "Type": "DirectInput",
             "AudioInputDetails": [
               {
-                "Type": "Hdmi9",
-                "Description": "HDMI Input 9 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 9"
+                "type": "Hdmi9",
+                "description": "HDMI Input 9 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Input 9"
               }
             ],
             "VideoInputDetails": [
               {
-                "Type": "Hdmi9",
-                "Description": "HDMI Input 9 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 9"
+                "type": "Hdmi9",
+                "description": "HDMI Input 9 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Input 9"
               }
             ]
           },
@@ -370,18 +370,18 @@
             "Type": "DirectInput",
             "AudioInputDetails": [
               {
-                "Type": "Hdmi10",
-                "Description": "HDMI Input 10 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 10"
+                "type": "Hdmi10",
+                "description": "HDMI Input 10 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Input 10"
               }
             ],
             "VideoInputDetails": [
               {
-                "Type": "Hdmi10",
-                "Description": "HDMI Input 10 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Input 10"
+                "type": "Hdmi10",
+                "description": "HDMI Input 10 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Input 10"
               }
             ]
           }
@@ -396,18 +396,18 @@
             "Type": "DirectOutput",
             "AudioOutputDetails": [
               {
-                "Type": "Hdmi1",
-                "Description": "HDMI Output 1 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 1"
+                "type": "Hdmi1",
+                "description": "HDMI Output 1 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Output 1"
               }
             ],
             "VideoOutputDetails": [
               {
-                "Type": "Hdmi1",
-                "Description": "HDMI Output 1 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 1"
+                "type": "Hdmi1",
+                "description": "HDMI Output 1 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Output 1"
               }
             ]
           },
@@ -420,18 +420,18 @@
             "Type": "DirectOutput",
             "AudioOutputDetails": [
               {
-                "Type": "Hdmi2",
-                "Description": "HDMI Output 2 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 2"
+                "type": "Hdmi2",
+                "description": "HDMI Output 2 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Output 2"
               }
             ],
             "VideoOutputDetails": [
               {
-                "Type": "Hdmi2",
-                "Description": "HDMI Output 2 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 2"
+                "type": "Hdmi2",
+                "description": "HDMI Output 2 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Output 2"
               }
             ]
           },
@@ -444,18 +444,18 @@
             "Type": "DirectOutput",
             "AudioOutputDetails": [
               {
-                "Type": "Hdmi3",
-                "Description": "HDMI Output 3 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 3"
+                "type": "Hdmi3",
+                "description": "HDMI Output 3 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Output 3"
               }
             ],
             "VideoOutputDetails": [
               {
-                "Type": "Hdmi3",
-                "Description": "HDMI Output 3 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 3"
+                "type": "Hdmi3",
+                "description": "HDMI Output 3 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Output 3"
               }
             ]
           },
@@ -468,18 +468,18 @@
             "Type": "DirectOutput",
             "AudioOutputDetails": [
               {
-                "Type": "Hdmi4",
-                "Description": "HDMI Output 4 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 4"
+                "type": "Hdmi4",
+                "description": "HDMI Output 4 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Output 4"
               }
             ],
             "VideoOutputDetails": [
               {
-                "Type": "Hdmi4",
-                "Description": "HDMI Output 4 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 4"
+                "type": "Hdmi4",
+                "description": "HDMI Output 4 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Output 4"
               }
             ]
           },
@@ -492,18 +492,18 @@
             "Type": "DirectOutput",
             "AudioOutputDetails": [
               {
-                "Type": "Hdmi5",
-                "Description": "HDMI Output 5 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 5"
+                "type": "Hdmi5",
+                "description": "HDMI Output 5 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Output 5"
               }
             ],
             "VideoOutputDetails": [
               {
-                "Type": "Hdmi5",
-                "Description": "HDMI Output 5 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 5"
+                "type": "Hdmi5",
+                "description": "HDMI Output 5 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Output 5"
               }
             ]
           },
@@ -516,18 +516,18 @@
             "Type": "DirectOutput",
             "AudioOutputDetails": [
               {
-                "Type": "Hdmi6",
-                "Description": "HDMI Output 6 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 6"
+                "type": "Hdmi6",
+                "description": "HDMI Output 6 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Output 6"
               }
             ],
             "VideoOutputDetails": [
               {
-                "Type": "Hdmi6",
-                "Description": "HDMI Output 6 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 6"
+                "type": "Hdmi6",
+                "description": "HDMI Output 6 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Output 6"
               }
             ]
           },
@@ -540,18 +540,18 @@
             "Type": "DirectOutput",
             "AudioOutputDetails": [
               {
-                "Type": "Hdmi7",
-                "Description": "HDMI Output 7 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 7"
+                "type": "Hdmi7",
+                "description": "HDMI Output 7 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Output 7"
               }
             ],
             "VideoOutputDetails": [
               {
-                "Type": "Hdmi7",
-                "Description": "HDMI Output 7 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 7"
+                "type": "Hdmi7",
+                "description": "HDMI Output 7 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Output 7"
               }
             ]
           },
@@ -564,18 +564,18 @@
             "Type": "DirectOutput",
             "AudioOutputDetails": [
               {
-                "Type": "Hdmi8",
-                "Description": "HDMI Output 8 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 8"
+                "type": "Hdmi8",
+                "description": "HDMI Output 8 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Output 8"
               }
             ],
             "VideoOutputDetails": [
               {
-                "Type": "Hdmi8",
-                "Description": "HDMI Output 8 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 8"
+                "type": "Hdmi8",
+                "description": "HDMI Output 8 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Output 8"
               }
             ]
           },
@@ -588,18 +588,18 @@
             "Type": "DirectOutput",
             "AudioOutputDetails": [
               {
-                "Type": "Hdmi9",
-                "Description": "HDMI Output 9 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 9"
+                "type": "Hdmi9",
+                "description": "HDMI Output 9 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Output 9"
               }
             ],
             "VideoOutputDetails": [
               {
-                "Type": "Hdmi9",
-                "Description": "HDMI Output 9 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 9"
+                "type": "Hdmi9",
+                "description": "HDMI Output 9 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Output 9"
               }
             ]
           },
@@ -612,18 +612,18 @@
             "Type": "DirectOutput",
             "AudioOutputDetails": [
               {
-                "Type": "Hdmi10",
-                "Description": "HDMI Output 10 Audio",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 10"
+                "type": "Hdmi10",
+                "description": "HDMI Output 10 Audio",
+                "connector": "Hdmi",
+                "friendlyName": "Output 10"
               }
             ],
             "VideoOutputDetails": [
               {
-                "Type": "Hdmi10",
-                "Description": "HDMI Output 10 Video",
-                "Connector": "Hdmi",
-                "FriendlyName": "Output 10"
+                "type": "Hdmi10",
+                "description": "HDMI Output 10 Video",
+                "connector": "Hdmi",
+                "friendlyName": "Output 10"
               }
             ]
           }
