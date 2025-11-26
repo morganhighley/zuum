@@ -1,7 +1,14 @@
 {
   "CrestronSerialDeviceApi": {
     "DeviceSupport": {
-      "SupportedSeries": ["4-Series"]
+      "SupportedSeries": ["4-Series"],
+      "SupportsDiscretePower": true,
+      "SupportsPowerFeedback": true,
+      "SupportsFeedback": true,
+      "SupportsDisconnect": true,
+      "SupportsReconnect": true,
+      "SupportsCoolDownTime": true,
+      "SupportsWarmUpTime": true
     },
     "GeneralInformation": {
       "DeviceType": "AV Switcher",
@@ -58,19 +65,39 @@
       },
       "StandardCommands": {
         "PowerOn": {
-          "Command": "POWER 01\r\n"
+          "StandardCommand": 6602,
+          "Command": "POWER 01\r\n",
+          "AllowIsQueueableOverride": true,
+          "AllowIsSendableOverride": true,
+          "Parameters": []
         },
         "PowerOff": {
-          "Command": "POWER 00\r\n"
+          "StandardCommand": 6601,
+          "Command": "POWER 00\r\n",
+          "AllowIsQueueableOverride": true,
+          "AllowIsSendableOverride": true,
+          "Parameters": []
         },
         "PowerPoll": {
-          "Command": "POWER ?\r\n"
+          "StandardCommand": 6603,
+          "Command": "POWER ?\r\n",
+          "AllowIsQueueableOverride": true,
+          "AllowIsSendableOverride": true,
+          "Parameters": []
         },
         "AudioVideoSwitcherRoute": {
-          "Command": "TX{output} {input}\r\n"
+          "StandardCommand": 0,
+          "Command": "TX{output} {input}\r\n",
+          "AllowIsQueueableOverride": true,
+          "AllowIsSendableOverride": true,
+          "Parameters": []
         },
         "AudioVideoSwitcherRoutePoll": {
-          "Command": "STATUS\r\n"
+          "StandardCommand": 0,
+          "Command": "STATUS\r\n",
+          "AllowIsQueueableOverride": true,
+          "AllowIsSendableOverride": true,
+          "Parameters": []
         }
       },
       "Feedback": {
