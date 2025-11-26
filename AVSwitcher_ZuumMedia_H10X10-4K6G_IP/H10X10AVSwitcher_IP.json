@@ -1,7 +1,6 @@
 {
-  "CrestronTcpDeviceApi": {
+  "CrestronSerialDeviceApi": {
     "DeviceSupport": {
-      "SupportedSeries": ["4-Series"],
       "SupportsDiscretePower": true,
       "SupportsPowerFeedback": true,
       "SupportsFeedback": true,
@@ -10,6 +9,7 @@
       "SupportsCoolDownTime": true,
       "SupportsWarmUpTime": true
     },
+    "DeviceSupport2": null,
     "GeneralInformation": {
       "DeviceType": "AV Switcher",
       "Manufacturer": "Zuum Media",
@@ -58,10 +58,10 @@
         "DeviceId": 0
       },
       "PowerWaitPeriod": {
-        "WarmUpPeriod": 3000,
-        "CoolDownPeriod": 1000,
         "UseLocalWarmupTimer": true,
-        "UseLocalCooldownTimer": true
+        "WarmUpTime": 3,
+        "UseLocalCooldownTimer": true,
+        "CoolDownTime": 1
       },
       "StandardCommands": {
         "PowerOn": {
