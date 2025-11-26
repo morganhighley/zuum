@@ -1,459 +1,106 @@
 {
-  "manufacturer": "Zuum Media",
-  "driverId": "795571cb-309d-420c-8191-da920869993c",
-  "className": "AVSwitcher_ZuumMedia_H10X10_4K6G_Serial.H10X10AVSwitcherSerial",
-  "assemblyFileName": "AVSwitcher_ZuumMedia_H10X10-4K6G_Serial.dll",
-  "driverSchemaVersion": "1.0",
-  "licenseRequired": false,
-  "supportedPlatforms": ["4-Series"],
-  "power": {
-    "useLocalWarmupTimer": true,
-    "warmUpTime": 3,
-    "useLocalCooldownTimer": true,
-    "coolDownTime": 1
-  },
-  "deviceType": "AV Switcher",
-  "deviceTypeId": "AVSwitcher",
-  "sdkVersion": "6.00.000.0025",
-  "driverVersion": "1.00.000.0001",
-  "supportedSeries": [
-    "4-Series"
-  ],
-  "description": "4K60Hz 10x10 HDMI Matrix Switcher with Audio Extraction. Supports up to 4K@60Hz 4:4:4, HDCP 2.2, HDR10, Dolby Vision, HLG. Features 2 S/PDIF outputs for audio extraction, 10 scene presets, and front panel/IR/RS-232/TCP/IP control.",
-  "supportedModels": [
-    "H10X10-4K6G"
-  ],
-  "features": [
-    {"displayName": "Disconnect is supported", "id": "SupportsDisconnect", "value": true},
-    {"displayName": "Reconnect is supported", "id": "SupportsReconnect", "value": true},
-    {"displayName": "Feedback is supported", "id": "SupportsFeedback", "value": true},
-    {"displayName": "Discrete Power is supported", "id": "SupportsDiscretePower", "value": true},
-    {"displayName": "Power Feedback is supported", "id": "SupportsPowerFeedback", "value": true},
-    {"displayName": "Switching is supported", "id": "SupportsSwitching", "value": true},
-    {"displayName": "Arrow Keys is supported", "id": "SupportsArrowKeys", "value": false},
-    {"displayName": "Asterisk is supported", "id": "SupportsAsterisk", "value": false},
-    {"displayName": "Back is supported", "id": "SupportsBack", "value": false},
-    {"displayName": "Change Channel is supported", "id": "SupportsChangeChannel", "value": false},
-    {"displayName": "Change Volume is supported", "id": "SupportsChangeVolume", "value": false},
-    {"displayName": "Channel Feedback is supported", "id": "SupportsChannelFeedback", "value": false},
-    {"displayName": "Clear is supported", "id": "SupportsClear", "value": false},
-    {"displayName": "Color Buttons is supported", "id": "SupportsColorButtons", "value": false},
-    {"displayName": "Cool Down Time is supported", "id": "SupportsCoolDownTime", "value": false},
-    {"displayName": "Dash is supported", "id": "SupportsDash", "value": false},
-    {"displayName": "Discrete Mute is supported", "id": "SupportsDiscreteMute", "value": false},
-    {"displayName": "Dvr Command is supported", "id": "SupportsDvrCommand", "value": false},
-    {"displayName": "Enter is supported", "id": "SupportsEnter", "value": false},
-    {"displayName": "Exit is supported", "id": "SupportsExit", "value": false},
-    {"displayName": "Favorite is supported", "id": "SupportsFavorite", "value": false},
-    {"displayName": "Forward Scan is supported", "id": "SupportsForwardScan", "value": false},
-    {"displayName": "Forward Skip is supported", "id": "SupportsForwardSkip", "value": false},
-    {"displayName": "Guide is supported", "id": "SupportsGuide", "value": false},
-    {"displayName": "Home is supported", "id": "SupportsHome", "value": false},
-    {"displayName": "Info is supported", "id": "SupportsInfo", "value": false},
-    {"displayName": "Keypad Back Space is supported", "id": "SupportsKeypadBackSpace", "value": false},
-    {"displayName": "Keypad Number is supported", "id": "SupportsKeypadNumber", "value": false},
-    {"displayName": "Last is supported", "id": "SupportsLast", "value": false},
-    {"displayName": "Letter Keys is supported", "id": "SupportsLetterKeys", "value": false},
-    {"displayName": "Live is supported", "id": "SupportsLive", "value": false},
-    {"displayName": "Menu is supported", "id": "SupportsMenu", "value": false},
-    {"displayName": "Mute is supported", "id": "SupportsMute", "value": false},
-    {"displayName": "Mute Feedback is supported", "id": "SupportsMuteFeedback", "value": false},
-    {"displayName": "Page Change is supported", "id": "SupportsPageChange", "value": false},
-    {"displayName": "Pause is supported", "id": "SupportsPause", "value": false},
-    {"displayName": "Period is supported", "id": "SupportsPeriod", "value": false},
-    {"displayName": "Play is supported", "id": "SupportsPlay", "value": false},
-    {"displayName": "Pound is supported", "id": "SupportsPound", "value": false},
-    {"displayName": "Record is supported", "id": "SupportsRecord", "value": false},
-    {"displayName": "Repeat is supported", "id": "SupportsRepeat", "value": false},
-    {"displayName": "Replay is supported", "id": "SupportsReplay", "value": false},
-    {"displayName": "Return is supported", "id": "SupportsReturn", "value": false},
-    {"displayName": "Reverse Scan is supported", "id": "SupportsReverseScan", "value": false},
-    {"displayName": "Reverse Skip is supported", "id": "SupportsReverseSkip", "value": false},
-    {"displayName": "Set Channel is supported", "id": "SupportsSetChannel", "value": false},
-    {"displayName": "Set Volume is supported", "id": "SupportsSetVolume", "value": false},
-    {"displayName": "Speed Slow is supported", "id": "SupportsSpeedSlow", "value": false},
-    {"displayName": "Stop is supported", "id": "SupportsStop", "value": false},
-    {"displayName": "Thumbs Down is supported", "id": "SupportsThumbsDown", "value": false},
-    {"displayName": "Thumbs Up is supported", "id": "SupportsThumbsUp", "value": false},
-    {"displayName": "Toggle Power is supported", "id": "SupportsTogglePower", "value": false},
-    {"displayName": "Volume Percent Feedback is supported", "id": "SupportsVolumePercentFeedback", "value": false},
-    {"displayName": "Warm Up Time is supported", "id": "SupportsWarmUpTime", "value": false}
-  ],
-  "baseModel": "H10X10-4K6G",
-  "communication": {
-    "defaultProperties": {
-      "type": "RS232",
-      "baud": 9600,
-      "parity": "None",
-      "dataBits": 8,
-      "stopBits": 1,
-      "hardwareHandshake": false,
-      "softwareHandshake": false,
-      "handshaking": {
-        "hardware": "None",
-        "software": "None"
-      },
-      "realBaudRate": "ComspecBaudRate9600",
-      "deviceId": 0
+  "CrestronSerialDeviceApi": {
+    "DeviceSupport": {
+      "SupportedSeries": ["4-Series"]
     },
-    "adjustableProperties": [],
-    "adjustable": true,
-    "type": "Serial",
-    "secure": false,
-    "authentication": {
-      "type": "None",
-      "required": false
-    }
-  },
-  "driverVersionDate": "2025-11-26 12:00:00.000",
-  "userAttributes": [],
-  "audioVideoSwitcher": {
-    "supportsAudioBreakaway": false,
-    "autoDetectConfiguration": false,
-    "msBetweenRouteCommands": 100,
-    "outputs": [
-      {
-        "id": "output1",
-        "friendlyName": "Output 1",
-        "type": "IndirectOutput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {},
-          "outputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Output 1", "connector": "GenericVideo", "friendlyName": "Video Output 1"}],
-            "audio": []
-          }
-        },
-        "ports": []
+    "GeneralInformation": {
+      "DeviceType": "AV Switcher",
+      "Manufacturer": "Zuum Media",
+      "BaseModel": "H10X10-4K6G",
+      "VersionDate": "2025-11-26T12:00:00",
+      "DriverVersion": "1.00.000.0001",
+      "SdkVersion": "6.00.000",
+      "Description": "4K60Hz 10x10 HDMI Matrix Switcher with Audio Extraction",
+      "Guid": "00000000-0000-0000-0000-000000000000",
+      "SupportedSeries": ["4-Series"],
+      "SupportedModels": ["H10X10-4K6G"],
+      "Developer": {
+        "Company": "Zuum Media",
+        "Contact": "",
+        "Email": "",
+        "Website": "",
+        "PhoneNumber": ""
       },
-      {
-        "id": "output2",
-        "friendlyName": "Output 2",
-        "type": "IndirectOutput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {},
-          "outputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Output 2", "connector": "GenericVideo", "friendlyName": "Video Output 2"}],
-            "audio": []
-          }
-        },
-        "ports": []
+      "DependencyGroup": ""
+    },
+    "Api": {
+      "Communication": {
+        "BaudRate": 9600,
+        "DataBits": 8,
+        "StopBits": 1,
+        "Parity": "None",
+        "HardwareHandshake": "None",
+        "SoftwareHandshake": "None",
+        "Delimiter": "\r\n",
+        "Authentication": {
+          "Type": "None"
+        }
       },
-      {
-        "id": "output3",
-        "friendlyName": "Output 3",
-        "type": "IndirectOutput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {},
-          "outputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Output 3", "connector": "GenericVideo", "friendlyName": "Video Output 3"}],
-            "audio": []
-          }
-        },
-        "ports": []
+      "PowerWaitPeriod": {
+        "WarmUpPeriod": 3000,
+        "CoolDownPeriod": 1000,
+        "UseLocalWarmupTimer": true,
+        "UseLocalCooldownTimer": true
       },
-      {
-        "id": "output4",
-        "friendlyName": "Output 4",
-        "type": "IndirectOutput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {},
-          "outputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Output 4", "connector": "GenericVideo", "friendlyName": "Video Output 4"}],
-            "audio": []
-          }
+      "StandardCommands": {
+        "PowerOn": {
+          "Command": "POWER 01\r\n"
         },
-        "ports": []
+        "PowerOff": {
+          "Command": "POWER 00\r\n"
+        },
+        "PowerPoll": {
+          "Command": "POWER ?\r\n"
+        },
+        "AudioVideoSwitcherRoute": {
+          "Command": "TX{output} {input}\r\n"
+        },
+        "AudioVideoSwitcherRoutePoll": {
+          "Command": "STATUS\r\n"
+        }
       },
-      {
-        "id": "output5",
-        "friendlyName": "Output 5",
-        "type": "IndirectOutput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {},
-          "outputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Output 5", "connector": "GenericVideo", "friendlyName": "Video Output 5"}],
-            "audio": []
+      "Feedback": {
+        "FeedbackCommands": [
+          {
+            "Key": "PowerOn",
+            "Regex": "POWER\\s*01"
+          },
+          {
+            "Key": "PowerOff",
+            "Regex": "POWER\\s*00"
           }
-        },
-        "ports": []
+        ]
       },
-      {
-        "id": "output6",
-        "friendlyName": "Output 6",
-        "type": "IndirectOutput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {},
-          "outputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Output 6", "connector": "GenericVideo", "friendlyName": "Video Output 6"}],
-            "audio": []
-          }
-        },
-        "ports": []
-      },
-      {
-        "id": "output7",
-        "friendlyName": "Output 7",
-        "type": "IndirectOutput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {},
-          "outputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Output 7", "connector": "GenericVideo", "friendlyName": "Video Output 7"}],
-            "audio": []
-          }
-        },
-        "ports": []
-      },
-      {
-        "id": "output8",
-        "friendlyName": "Output 8",
-        "type": "IndirectOutput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {},
-          "outputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Output 8", "connector": "GenericVideo", "friendlyName": "Video Output 8"}],
-            "audio": []
-          }
-        },
-        "ports": []
-      },
-      {
-        "id": "output9",
-        "friendlyName": "Output 9",
-        "type": "IndirectOutput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {},
-          "outputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Output 9", "connector": "GenericVideo", "friendlyName": "Video Output 9"}],
-            "audio": []
-          }
-        },
-        "ports": []
-      },
-      {
-        "id": "output10",
-        "friendlyName": "Output 10",
-        "type": "IndirectOutput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {},
-          "outputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Output 10", "connector": "GenericVideo", "friendlyName": "Video Output 10"}],
-            "audio": []
-          }
-        },
-        "ports": []
+      "AudioVideoSwitcher": {
+        "AutoDetectConfiguration": false,
+        "SupportsAudioBreakaway": false,
+        "NullInputIdentifier": "0",
+        "Inputs": [
+          { "ApiIdentifier": "1", "Name": "Input 1", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 1", "Connector": "GenericVideo", "FriendlyName": "HDMI 1"}], "AudioInputDetails": [] },
+          { "ApiIdentifier": "2", "Name": "Input 2", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 2", "Connector": "GenericVideo", "FriendlyName": "HDMI 2"}], "AudioInputDetails": [] },
+          { "ApiIdentifier": "3", "Name": "Input 3", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 3", "Connector": "GenericVideo", "FriendlyName": "HDMI 3"}], "AudioInputDetails": [] },
+          { "ApiIdentifier": "4", "Name": "Input 4", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 4", "Connector": "GenericVideo", "FriendlyName": "HDMI 4"}], "AudioInputDetails": [] },
+          { "ApiIdentifier": "5", "Name": "Input 5", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 5", "Connector": "GenericVideo", "FriendlyName": "HDMI 5"}], "AudioInputDetails": [] },
+          { "ApiIdentifier": "6", "Name": "Input 6", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 6", "Connector": "GenericVideo", "FriendlyName": "HDMI 6"}], "AudioInputDetails": [] },
+          { "ApiIdentifier": "7", "Name": "Input 7", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 7", "Connector": "GenericVideo", "FriendlyName": "HDMI 7"}], "AudioInputDetails": [] },
+          { "ApiIdentifier": "8", "Name": "Input 8", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 8", "Connector": "GenericVideo", "FriendlyName": "HDMI 8"}], "AudioInputDetails": [] },
+          { "ApiIdentifier": "9", "Name": "Input 9", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 9", "Connector": "GenericVideo", "FriendlyName": "HDMI 9"}], "AudioInputDetails": [] },
+          { "ApiIdentifier": "10", "Name": "Input 10", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 10", "Connector": "GenericVideo", "FriendlyName": "HDMI 10"}], "AudioInputDetails": [] }
+        ],
+        "Outputs": [
+          { "ApiIdentifier": "1", "Name": "Output 1", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 1", "Connector": "GenericVideo", "FriendlyName": "HDMI 1"}], "AudioOutputDetails": [] },
+          { "ApiIdentifier": "2", "Name": "Output 2", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 2", "Connector": "GenericVideo", "FriendlyName": "HDMI 2"}], "AudioOutputDetails": [] },
+          { "ApiIdentifier": "3", "Name": "Output 3", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 3", "Connector": "GenericVideo", "FriendlyName": "HDMI 3"}], "AudioOutputDetails": [] },
+          { "ApiIdentifier": "4", "Name": "Output 4", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 4", "Connector": "GenericVideo", "FriendlyName": "HDMI 4"}], "AudioOutputDetails": [] },
+          { "ApiIdentifier": "5", "Name": "Output 5", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 5", "Connector": "GenericVideo", "FriendlyName": "HDMI 5"}], "AudioOutputDetails": [] },
+          { "ApiIdentifier": "6", "Name": "Output 6", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 6", "Connector": "GenericVideo", "FriendlyName": "HDMI 6"}], "AudioOutputDetails": [] },
+          { "ApiIdentifier": "7", "Name": "Output 7", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 7", "Connector": "GenericVideo", "FriendlyName": "HDMI 7"}], "AudioOutputDetails": [] },
+          { "ApiIdentifier": "8", "Name": "Output 8", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 8", "Connector": "GenericVideo", "FriendlyName": "HDMI 8"}], "AudioOutputDetails": [] },
+          { "ApiIdentifier": "9", "Name": "Output 9", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 9", "Connector": "GenericVideo", "FriendlyName": "HDMI 9"}], "AudioOutputDetails": [] },
+          { "ApiIdentifier": "10", "Name": "Output 10", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 10", "Connector": "GenericVideo", "FriendlyName": "HDMI 10"}], "AudioOutputDetails": [] }
+        ]
       }
-    ],
-    "inputs": [
-      {
-        "id": "input1",
-        "friendlyName": "Input 1",
-        "type": "IndirectInput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Input 1", "connector": "GenericVideo", "friendlyName": "Video Input 1"}],
-            "audio": []
-          },
-          "outputs": {}
-        },
-        "ports": []
-      },
-      {
-        "id": "input2",
-        "friendlyName": "Input 2",
-        "type": "IndirectInput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Input 2", "connector": "GenericVideo", "friendlyName": "Video Input 2"}],
-            "audio": []
-          },
-          "outputs": {}
-        },
-        "ports": []
-      },
-      {
-        "id": "input3",
-        "friendlyName": "Input 3",
-        "type": "IndirectInput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Input 3", "connector": "GenericVideo", "friendlyName": "Video Input 3"}],
-            "audio": []
-          },
-          "outputs": {}
-        },
-        "ports": []
-      },
-      {
-        "id": "input4",
-        "friendlyName": "Input 4",
-        "type": "IndirectInput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Input 4", "connector": "GenericVideo", "friendlyName": "Video Input 4"}],
-            "audio": []
-          },
-          "outputs": {}
-        },
-        "ports": []
-      },
-      {
-        "id": "input5",
-        "friendlyName": "Input 5",
-        "type": "IndirectInput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Input 5", "connector": "GenericVideo", "friendlyName": "Video Input 5"}],
-            "audio": []
-          },
-          "outputs": {}
-        },
-        "ports": []
-      },
-      {
-        "id": "input6",
-        "friendlyName": "Input 6",
-        "type": "IndirectInput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Input 6", "connector": "GenericVideo", "friendlyName": "Video Input 6"}],
-            "audio": []
-          },
-          "outputs": {}
-        },
-        "ports": []
-      },
-      {
-        "id": "input7",
-        "friendlyName": "Input 7",
-        "type": "IndirectInput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Input 7", "connector": "GenericVideo", "friendlyName": "Video Input 7"}],
-            "audio": []
-          },
-          "outputs": {}
-        },
-        "ports": []
-      },
-      {
-        "id": "input8",
-        "friendlyName": "Input 8",
-        "type": "IndirectInput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Input 8", "connector": "GenericVideo", "friendlyName": "Video Input 8"}],
-            "audio": []
-          },
-          "outputs": {}
-        },
-        "ports": []
-      },
-      {
-        "id": "input9",
-        "friendlyName": "Input 9",
-        "type": "IndirectInput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Input 9", "connector": "GenericVideo", "friendlyName": "Video Input 9"}],
-            "audio": []
-          },
-          "outputs": {}
-        },
-        "ports": []
-      },
-      {
-        "id": "input10",
-        "friendlyName": "Input 10",
-        "type": "IndirectInput",
-        "manufacturer": "Zuum Media",
-        "model": "H10X10-4K6G",
-        "supportsAudioBreakaway": false,
-        "autoDetectConfiguration": false,
-        "connections": {
-          "inputs": {
-            "video": [{"type": "Hdmi1", "description": "Video Input 10", "connector": "GenericVideo", "friendlyName": "Video Input 10"}],
-            "audio": []
-          },
-          "outputs": {}
-        },
-        "ports": []
-      }
-    ]
+    },
+    "UserAttributes": []
   }
 }
