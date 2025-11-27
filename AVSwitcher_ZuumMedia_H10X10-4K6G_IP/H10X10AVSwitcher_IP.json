@@ -1,29 +1,30 @@
 {
   "CrestronSerialDeviceApi": {
     "DeviceSupport": {
-      "SupportsDiscretePower": true,
-      "SupportsPowerFeedback": true,
       "SupportsFeedback": true,
+      "SupportsDiscretePower": false,
+      "SupportsTogglePower": false,
+      "SupportsPowerFeedback": false,
+      "SupportsTemperatureFeedback": false,
+      "SupportsWarmUpTime": false,
+      "SupportsCoolDownTime": false,
       "SupportsDisconnect": true,
-      "SupportsReconnect": true,
-      "SupportsCoolDownTime": true,
-      "SupportsWarmUpTime": true
+      "SupportsReconnect": true
     },
-    "DeviceSupport2": null,
     "GeneralInformation": {
       "DeviceType": "AV Switcher",
       "Manufacturer": "Zuum Media",
       "BaseModel": "H10X10-4K6G",
-      "VersionDate": "2025-11-26T12:00:00",
+      "VersionDate": "2025-11-27 12:00:00.000",
       "DriverVersion": "1.00.000.0001",
-      "SdkVersion": "6.00.000",
+      "SdkVersion": "6.00.000.0025",
       "Description": "4K60Hz 10x10 HDMI Matrix Switcher with Audio Extraction",
       "Guid": "0861e031-3848-4708-854f-c977d44fd76e",
-      "SupportedSeries": ["4-Series"],
+      "SupportedSeries": ["H10X10"],
       "SupportedModels": ["H10X10-4K6G"],
       "Developer": {
         "Company": "Zuum Media",
-        "Contact": "",
+        "Contact": "Zuum Media",
         "Email": "",
         "Website": "",
         "PhoneNumber": ""
@@ -43,10 +44,10 @@
         "Port": 47011,
         "EnableAutoPolling": true,
         "EnableAutoReconnect": true,
-        "TimeBetweenCommands": 100,
-        "TimeBetweenCommandsOverride": 100,
-        "ResponseTimeout": 2000,
-        "WaitForResponse": false,
+        "TimeBetweenCommands": 250,
+        "TimeBetweenCommandsOverride": 0,
+        "ResponseTimeout": 3000,
+        "WaitForResponse": true,
         "IpProtocol": 0,
         "IsUserAdjustable": false,
         "Authentication": {
@@ -54,93 +55,501 @@
           "Required": false
         },
         "IsSecure": false,
-        "UserAdjustableProperties": null,
+        "UserAdjustableProperties": [],
         "DeviceId": 0
-      },
-      "PowerWaitPeriod": {
-        "UseLocalWarmupTimer": true,
-        "WarmUpTime": 3,
-        "UseLocalCooldownTimer": true,
-        "CoolDownTime": 1
       },
       "StandardCommands": {
         "PowerOn": {
-          "StandardCommand": 6602,
-          "Command": "POWER 01\r\n",
-          "AllowIsQueueableOverride": true,
-          "AllowIsSendableOverride": true,
-          "Parameters": []
-        },
-        "PowerOff": {
-          "StandardCommand": 6601,
-          "Command": "POWER 00\r\n",
-          "AllowIsQueueableOverride": true,
-          "AllowIsSendableOverride": true,
-          "Parameters": []
-        },
-        "PowerPoll": {
-          "StandardCommand": 6603,
-          "Command": "POWER ?\r\n",
-          "AllowIsQueueableOverride": true,
-          "AllowIsSendableOverride": true,
-          "Parameters": []
-        },
-        "AudioVideoSwitcherRoute": {
-          "StandardCommand": 0,
-          "Command": "TX{output} {input}\r\n",
-          "AllowIsQueueableOverride": true,
-          "AllowIsSendableOverride": true,
-          "Parameters": []
-        },
-        "AudioVideoSwitcherRoutePoll": {
-          "StandardCommand": 0,
-          "Command": "STATUS\r\n",
-          "AllowIsQueueableOverride": true,
-          "AllowIsSendableOverride": true,
-          "Parameters": []
+          "Command": "POWER 01\r\n"
         }
+      },
+      "CustomCommands": [],
+      "PowerWaitPeriod": {
+        "UseLocalWarmupTimer": false,
+        "WarmUpTime": 1,
+        "UseLocalCooldownTimer": false,
+        "CoolDownTime": 1
       },
       "Feedback": {
         "Header": "",
+        "ApiDelimiter": "\r\n",
         "CommandAckNak": {
-          "Ack": "",
-          "Nak": ""
+          "Ack": "OK",
+          "Nak": "ERR"
         },
         "PowerFeedback": {
-          "GroupHeader": "POWER",
           "Feedback": {
             "On": "01",
             "Off": "00"
-          }
+          },
+          "GroupHeader": "POWER"
+        },
+        "RoutedExtenderFeedback": {
+          "GroupHeader": "TX"
         }
       },
       "AudioVideoSwitcher": {
         "AutoDetectConfiguration": false,
         "SupportsAudioBreakaway": false,
         "NullInputIdentifier": "0",
-        "Inputs": [
-          { "ApiIdentifier": "1", "Name": "Input 1", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 1", "Connector": "GenericVideo", "FriendlyName": "HDMI 1"}], "AudioInputDetails": [] },
-          { "ApiIdentifier": "2", "Name": "Input 2", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 2", "Connector": "GenericVideo", "FriendlyName": "HDMI 2"}], "AudioInputDetails": [] },
-          { "ApiIdentifier": "3", "Name": "Input 3", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 3", "Connector": "GenericVideo", "FriendlyName": "HDMI 3"}], "AudioInputDetails": [] },
-          { "ApiIdentifier": "4", "Name": "Input 4", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 4", "Connector": "GenericVideo", "FriendlyName": "HDMI 4"}], "AudioInputDetails": [] },
-          { "ApiIdentifier": "5", "Name": "Input 5", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 5", "Connector": "GenericVideo", "FriendlyName": "HDMI 5"}], "AudioInputDetails": [] },
-          { "ApiIdentifier": "6", "Name": "Input 6", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 6", "Connector": "GenericVideo", "FriendlyName": "HDMI 6"}], "AudioInputDetails": [] },
-          { "ApiIdentifier": "7", "Name": "Input 7", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 7", "Connector": "GenericVideo", "FriendlyName": "HDMI 7"}], "AudioInputDetails": [] },
-          { "ApiIdentifier": "8", "Name": "Input 8", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 8", "Connector": "GenericVideo", "FriendlyName": "HDMI 8"}], "AudioInputDetails": [] },
-          { "ApiIdentifier": "9", "Name": "Input 9", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 9", "Connector": "GenericVideo", "FriendlyName": "HDMI 9"}], "AudioInputDetails": [] },
-          { "ApiIdentifier": "10", "Name": "Input 10", "VideoInputDetails": [{"Type": "HDMI", "Description": "HDMI Input 10", "Connector": "GenericVideo", "FriendlyName": "HDMI 10"}], "AudioInputDetails": [] }
+        "VolumeScalingInfo": {
+          "MaximumDeviceLevel": 100,
+          "MinimumDeviceLevel": 0,
+          "DeviceStepSize": 1
+        },
+        "RoutableOutputs": [
+          {
+            "ApiIdentifier": "OUTPUT#1",
+            "Id": "output1",
+            "Name": "Output 1",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectOutput",
+            "WarmUpTime": 1,
+            "CoolDownTime": 1,
+            "VolumeRampingRate": 250,
+            "AudioOutputDetails": [],
+            "VideoOutputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Output 1",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Output 1"
+              }
+            ],
+            "Ports": [],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {}
+          },
+          {
+            "ApiIdentifier": "OUTPUT#2",
+            "Id": "output2",
+            "Name": "Output 2",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectOutput",
+            "WarmUpTime": 1,
+            "CoolDownTime": 1,
+            "VolumeRampingRate": 250,
+            "AudioOutputDetails": [],
+            "VideoOutputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Output 2",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Output 2"
+              }
+            ],
+            "Ports": [],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {}
+          },
+          {
+            "ApiIdentifier": "OUTPUT#3",
+            "Id": "output3",
+            "Name": "Output 3",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectOutput",
+            "WarmUpTime": 1,
+            "CoolDownTime": 1,
+            "VolumeRampingRate": 250,
+            "AudioOutputDetails": [],
+            "VideoOutputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Output 3",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Output 3"
+              }
+            ],
+            "Ports": [],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {}
+          },
+          {
+            "ApiIdentifier": "OUTPUT#4",
+            "Id": "output4",
+            "Name": "Output 4",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectOutput",
+            "WarmUpTime": 1,
+            "CoolDownTime": 1,
+            "VolumeRampingRate": 250,
+            "AudioOutputDetails": [],
+            "VideoOutputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Output 4",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Output 4"
+              }
+            ],
+            "Ports": [],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {}
+          },
+          {
+            "ApiIdentifier": "OUTPUT#5",
+            "Id": "output5",
+            "Name": "Output 5",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectOutput",
+            "WarmUpTime": 1,
+            "CoolDownTime": 1,
+            "VolumeRampingRate": 250,
+            "AudioOutputDetails": [],
+            "VideoOutputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Output 5",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Output 5"
+              }
+            ],
+            "Ports": [],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {}
+          },
+          {
+            "ApiIdentifier": "OUTPUT#6",
+            "Id": "output6",
+            "Name": "Output 6",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectOutput",
+            "WarmUpTime": 1,
+            "CoolDownTime": 1,
+            "VolumeRampingRate": 250,
+            "AudioOutputDetails": [],
+            "VideoOutputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Output 6",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Output 6"
+              }
+            ],
+            "Ports": [],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {}
+          },
+          {
+            "ApiIdentifier": "OUTPUT#7",
+            "Id": "output7",
+            "Name": "Output 7",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectOutput",
+            "WarmUpTime": 1,
+            "CoolDownTime": 1,
+            "VolumeRampingRate": 250,
+            "AudioOutputDetails": [],
+            "VideoOutputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Output 7",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Output 7"
+              }
+            ],
+            "Ports": [],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {}
+          },
+          {
+            "ApiIdentifier": "OUTPUT#8",
+            "Id": "output8",
+            "Name": "Output 8",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectOutput",
+            "WarmUpTime": 1,
+            "CoolDownTime": 1,
+            "VolumeRampingRate": 250,
+            "AudioOutputDetails": [],
+            "VideoOutputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Output 8",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Output 8"
+              }
+            ],
+            "Ports": [],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {}
+          },
+          {
+            "ApiIdentifier": "OUTPUT#9",
+            "Id": "output9",
+            "Name": "Output 9",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectOutput",
+            "WarmUpTime": 1,
+            "CoolDownTime": 1,
+            "VolumeRampingRate": 250,
+            "AudioOutputDetails": [],
+            "VideoOutputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Output 9",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Output 9"
+              }
+            ],
+            "Ports": [],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {}
+          },
+          {
+            "ApiIdentifier": "OUTPUT#10",
+            "Id": "output10",
+            "Name": "Output 10",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectOutput",
+            "WarmUpTime": 1,
+            "CoolDownTime": 1,
+            "VolumeRampingRate": 250,
+            "AudioOutputDetails": [],
+            "VideoOutputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Output 10",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Output 10"
+              }
+            ],
+            "Ports": [],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {}
+          }
         ],
-        "Outputs": [
-          { "ApiIdentifier": "1", "Name": "Output 1", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 1", "Connector": "GenericVideo", "FriendlyName": "HDMI 1"}], "AudioOutputDetails": [] },
-          { "ApiIdentifier": "2", "Name": "Output 2", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 2", "Connector": "GenericVideo", "FriendlyName": "HDMI 2"}], "AudioOutputDetails": [] },
-          { "ApiIdentifier": "3", "Name": "Output 3", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 3", "Connector": "GenericVideo", "FriendlyName": "HDMI 3"}], "AudioOutputDetails": [] },
-          { "ApiIdentifier": "4", "Name": "Output 4", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 4", "Connector": "GenericVideo", "FriendlyName": "HDMI 4"}], "AudioOutputDetails": [] },
-          { "ApiIdentifier": "5", "Name": "Output 5", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 5", "Connector": "GenericVideo", "FriendlyName": "HDMI 5"}], "AudioOutputDetails": [] },
-          { "ApiIdentifier": "6", "Name": "Output 6", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 6", "Connector": "GenericVideo", "FriendlyName": "HDMI 6"}], "AudioOutputDetails": [] },
-          { "ApiIdentifier": "7", "Name": "Output 7", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 7", "Connector": "GenericVideo", "FriendlyName": "HDMI 7"}], "AudioOutputDetails": [] },
-          { "ApiIdentifier": "8", "Name": "Output 8", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 8", "Connector": "GenericVideo", "FriendlyName": "HDMI 8"}], "AudioOutputDetails": [] },
-          { "ApiIdentifier": "9", "Name": "Output 9", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 9", "Connector": "GenericVideo", "FriendlyName": "HDMI 9"}], "AudioOutputDetails": [] },
-          { "ApiIdentifier": "10", "Name": "Output 10", "VideoOutputDetails": [{"Type": "HDMI", "Description": "HDMI Output 10", "Connector": "GenericVideo", "FriendlyName": "HDMI 10"}], "AudioOutputDetails": [] }
+        "RoutableInputs": [
+          {
+            "ApiIdentifier": "INPUT#1",
+            "Id": "input1",
+            "Name": "Input 1",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectInput",
+            "AudioInputDetails": [],
+            "VideoInputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Input 1",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Input 1"
+              }
+            ],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {},
+            "Ports": []
+          },
+          {
+            "ApiIdentifier": "INPUT#2",
+            "Id": "input2",
+            "Name": "Input 2",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectInput",
+            "AudioInputDetails": [],
+            "VideoInputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Input 2",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Input 2"
+              }
+            ],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {},
+            "Ports": []
+          },
+          {
+            "ApiIdentifier": "INPUT#3",
+            "Id": "input3",
+            "Name": "Input 3",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectInput",
+            "AudioInputDetails": [],
+            "VideoInputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Input 3",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Input 3"
+              }
+            ],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {},
+            "Ports": []
+          },
+          {
+            "ApiIdentifier": "INPUT#4",
+            "Id": "input4",
+            "Name": "Input 4",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectInput",
+            "AudioInputDetails": [],
+            "VideoInputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Input 4",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Input 4"
+              }
+            ],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {},
+            "Ports": []
+          },
+          {
+            "ApiIdentifier": "INPUT#5",
+            "Id": "input5",
+            "Name": "Input 5",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectInput",
+            "AudioInputDetails": [],
+            "VideoInputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Input 5",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Input 5"
+              }
+            ],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {},
+            "Ports": []
+          },
+          {
+            "ApiIdentifier": "INPUT#6",
+            "Id": "input6",
+            "Name": "Input 6",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectInput",
+            "AudioInputDetails": [],
+            "VideoInputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Input 6",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Input 6"
+              }
+            ],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {},
+            "Ports": []
+          },
+          {
+            "ApiIdentifier": "INPUT#7",
+            "Id": "input7",
+            "Name": "Input 7",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectInput",
+            "AudioInputDetails": [],
+            "VideoInputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Input 7",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Input 7"
+              }
+            ],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {},
+            "Ports": []
+          },
+          {
+            "ApiIdentifier": "INPUT#8",
+            "Id": "input8",
+            "Name": "Input 8",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectInput",
+            "AudioInputDetails": [],
+            "VideoInputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Input 8",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Input 8"
+              }
+            ],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {},
+            "Ports": []
+          },
+          {
+            "ApiIdentifier": "INPUT#9",
+            "Id": "input9",
+            "Name": "Input 9",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectInput",
+            "AudioInputDetails": [],
+            "VideoInputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Input 9",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Input 9"
+              }
+            ],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {},
+            "Ports": []
+          },
+          {
+            "ApiIdentifier": "INPUT#10",
+            "Id": "input10",
+            "Name": "Input 10",
+            "Manufacturer": "Zuum Media",
+            "Model": "H10X10-4K6G",
+            "Type": "IndirectInput",
+            "AudioInputDetails": [],
+            "VideoInputDetails": [
+              {
+                "type": "Hdmi1",
+                "description": "Video Input 10",
+                "connector": "GenericVideo",
+                "friendlyName": "Video Input 10"
+              }
+            ],
+            "DeviceSupport": {},
+            "StandardCommands": {},
+            "Feedback": {},
+            "Ports": []
+          }
         ]
       }
     },
